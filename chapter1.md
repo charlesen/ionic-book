@@ -1,6 +1,4 @@
-# Chapitre 1 :  Une brève histoire du développement mobile
-
-
+# Chapitre 1 :  Une brève histoire du  mobile
 
 ### Il était une fois...
 
@@ -31,8 +29,6 @@ Une application mobile est dite native, si le développement effectué pour la c
 | Windows Phone \(Microsoft\) | C-Shart \(C\#\) |
 | ...etc |  |
 
-
-
 #### Applications hybrides
 
 Vous vous rappelez du seigneur des anneaux ? Oui ? Et bien le développement hybride est au mobile, ce que l'anneau de Sauron est à la terre du milieu.
@@ -57,17 +53,13 @@ function capturePhoto() {
 
 Pas de panique, on expliquera tout cela dans un prochain chapitre.
 
-
-
 ### Pourquoi et quand faire le choix d'un développement Hybride
 
 Considérons le schema ci-dessous qui décrit les couches utilisées dans chaque méthode de développemnt :![](/assets/webview_schema.jpg)
 
-
-
 Avant de vous engager dans un développement mobile, il est important de bien évaluer les avantages et les inconvénients de chacunes des méthodes présentées ci-dessus. Voici quelques questions à se poser pour vous aider à vous lancer :
 
-*   Quelles plates-formes mobiles souhaitez-vous cibler ?
+* Quelles plates-formes mobiles souhaitez-vous cibler ?
 * Voulez-vous distribuer votre application via les app Store ?
 * Vous cherchez à utiliser des fonctionnalités clés de l'appareil mobile?
 * Quelles sont vos capacités techniques et/ou celle de votre équipe de développement ?
@@ -75,8 +67,6 @@ Avant de vous engager dans un développement mobile, il est important de bien é
 N'hésitez pas à noter ces questions, y répondre, puis à les poser à vos interlocuteurs.
 
 Voilà plus en détail ce que ces différentes questions impliques.
-
-
 
 #### Quelles plates-formes mobiles souhaitez-vous cibler ?
 
@@ -105,6 +95,4 @@ Si vous décidez de créer une application native, vous aurez besoin de dévelop
 D'autre part, les applications Web et hybrides sont créées à l'aide de technologies du Web telles que HTML, CSS et JavaScript. Vous pouvez avoir une équipe qui peut cibler plusieurs plates-formes avec un seul ensemble de technologies. Cela vaut la peine alors de réfléchir à l'option Hybride qui pourrait vous faire économiser énormément de temps et d'argent.
 
 Ça tombe bien, Ionic permet la création d'applications hybrides et ce livre est là pour vous aider à décoller de la meilleure des façons.
-
-
 
