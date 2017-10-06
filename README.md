@@ -1,6 +1,10 @@
 # Introduction
 
+
+
 Si vous avez ce livre entre les mains c’est que vous avez décidé comme d’autres avant vous de vous lancer dans ce monde merveilleux du développement mobile. Vous rêvez de grandes choses, vous avez des idées qui sont susceptibles de révolutionner la vie de milliards d’individus, et vous êtes conscient qu’avoir des compétences en développement mobile vous sera utile : bravo, ce livre a été écrit pour vous.
+
+
 
 ### Application mobile : un marché à croissance exponentielle
 
@@ -13,8 +17,6 @@ On apprend ainsi que le mobile représente deux tiers du temps passé en ligne. 
 ![](/assets/comscore_digital_time.jpg)
 
 **Temps digital par tranche d'âge**
-
-
 
 Les 65 ans sont ceux qui consacrent le plus de temps aux ordinateurs. À l’inverse, les 18-24 ans passent moins d’un quart de leur temps sur un ordinateur...pour mieux le consacrer sur mobile.
 
@@ -30,8 +32,6 @@ Il y a donc véritablement là un gros marché à exploiter. Un marché qui ne c
 
 S’il y a quelques milliers d’années, l’écriture était une clé qui permettait d'atteindre le savoir et donc d’une certaine façon la pouvoir, il faut croire qu’être douée en développement mobile est aujourd’hui l'ultime compétence à posséder.
 
-
-
 ### De Zéro à l’App Store
 
 il y a quelques années lorsque j’ai commencé à m’intéresser au développement d’applications mobiles, je n’avais que quelques notions en en développement informatique. Mes études m’avaient permis de toucher à des langages de programmation comme Java, le PHP, le Pascal ou encore le C.
@@ -44,11 +44,5 @@ Aujourd’hui la donne n’est absolument plus la même et tant mieux d’ailleu
 
 Je ne peux m'empêcher de penser à cette époque où il fallait être un véritable génie de l’informatique pour mettre en place, puis publier un site internet sur le web. Aujourd’hui, quelques clics suffisent pour le faire grâce notamment aux CMS \(Content Management System pour Système de Gestion de contenus\) comme Wordpress ou Joomla!.
 
-
-
 Si la porte d'entrée des stores étaient autrefois réservées à quelques privilégiés \(les habitués quoi\), tout le monde peut aujourd'hui se lancer à l'assaut de gros marché du mobile et pourquoi pas devenir la futur licorne du web.
-
-
-
-[^1]: ComScore "The 2017 U.S. Mobile App Report" : [https://www.comscore.com/Insights/Presentations-and-Whitepapers/2017/The-2017-US-Mobile-App-Report](https://www.comscore.com/Insights/Presentations-and-Whitepapers/2017/The-2017-US-Mobile-App-Report)
 
