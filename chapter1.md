@@ -1,5 +1,7 @@
 # Chapitre 1 :  Une brève histoire du  mobile
 
+
+
 ### Il était une fois...
 
 Il y a longtemps, fort fort longtemps, en années technologiques bien sûr, le natif était roi et les développeurs d'applications mobiles ses sujets. Les temps de développement étaient en moyenne estimés en mois, la paie était attractive et les dev étaient des demi-dieux. Nul ou presque ne pouvait prétendre proposer une première version, la v1, en moins d’une journée sans passer pour un illuminé, pire un hérétique. Je vous l'ai dit, c’était il y a fort longtemps.
