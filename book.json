@@ -2,7 +2,7 @@
     "plugins": ["disqus"],
     "links": {
         "sidebar": {
-            "Contact us / Support": "https://www.gitbook.com/contact"
+            "Contacter l'auteur": "https://charlesen.fr/contact"
         }
     },
     "pluginsConfig": {
