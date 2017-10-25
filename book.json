@@ -1,0 +1,6 @@
+"plugins": ["disqus"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "ionic.edounze.com"
+        }
+    }
