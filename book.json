@@ -1,9 +1,7 @@
 {
     "plugins": ["disqus"],
     "links": {
-        "sidebar": {
-            "Contact": "https://charlesen.fr/contact"
-        }
+        "sidebar": {}
     },
     "pluginsConfig": {
     "disqus": {
