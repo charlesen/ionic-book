@@ -1,6 +1,9 @@
-"plugins": ["disqus"],
-    "pluginsConfig": {
-        "disqus": {
-            "shortName": "ionic.edounze.com"
+{
+    "plugins": [],
+    "links": {
+        "sidebar": {
+            "Contact us / Support": "https://www.gitbook.com/contact"
         }
-    }
+    },
+    "pluginsConfig": {}
+}
