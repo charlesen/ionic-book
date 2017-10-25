@@ -2,6 +2,8 @@
 
 ![](/assets/photo_profil_pvx_small.jpg)
 
+## Charles EDOU NZE
+
 Développeur informatique et diplômé d'école d'ingénieurs, je travaille depuis plusieurs années sur les technologies liées au web et aux mobiles \(smartphone, systèmes embarqués\), aussi bien dans le cadre de projets professionnels que personnels.
 
 Mon expérience en tant qu'employé d'une entreprise en pleine croissance m'a permis de développer des compétences aussi bien dans la gestion de projets à forte valeur ajoutée \(gestion du planning, retours client, recette, respect du cahier des charges,...\), que relationnel.
