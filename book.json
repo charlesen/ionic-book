@@ -7,7 +7,7 @@
     },
     "pluginsConfig": {
     "disqus": {
-            "shortName": "ionic.edounze.com"
+            "shortName": "ionic-edounze-com"
         }
     }
 }
