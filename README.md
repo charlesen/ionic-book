@@ -1,10 +1,12 @@
 # 
 
-# Développement d'applications mobiles robustes avec Ionic
+# Développement d'applications mobiles robustes avec le Ionic
 
 ![](/assets/mobile_dev.jpg)
 
-### _Par : Charles EDOU NZE_
+
+
+> ### _Charles EDOU NZE_
 
 
 
