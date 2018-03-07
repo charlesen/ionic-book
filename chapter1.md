@@ -1,4 +1,4 @@
-# Chapitre 1 :  Une brève histoire du  mobile
+# Chapitre 1 - Du rêve à la réalité : DuckCoin, la cryptomonnaie sur mobile
 
 ### Il était une fois...
 
