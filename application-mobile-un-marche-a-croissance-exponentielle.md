@@ -1,4 +1,4 @@
-# Chapitre 2 - Du rêve à la réalité : DuckCoin, la cryptomonnaie sur mobile
+# Chap 2 - Du rêve à la réalité : DuckCoin, la cryptomonnaie sur mobile
 
 Vous vous êtes déjà demandé pourquoi certaines applications mobiles étaient en tête de classement sur Google Play ou l’Apple Store, tandis que d’autres étaient complètement à la traîne, et ce malgré les tonnes de fonctionnalités qu’elles proposent ? Sachez qu’il y a une explication rationnelle à ce phénomène.
 
