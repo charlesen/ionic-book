@@ -34,9 +34,9 @@ Je faisais un peu de web, et j'ai compris à un moment donné qu’il était tem
 
 A cette époque, la tendance était très portée sur le natif et les choix proposés n’était pas forcément les meilleurs . Car créer une application mobile, même basique, relevait presque toujours du parcours du combattant, quand cela était tout simplement impossible pour le commun des mortels.
 
-Aujourd’hui la donne n’est absolument plus la même et tant mieux d’ailleurs. Tout le monde peu plus ou moins développer, sans trop de mal, une application mobile simple en seulement 24h et la publier sur le Google Play Store. J'ai d'ailleurs un ami, artiste profesionnel qui va bientôt lancer son application mobile à destination d'étudiants en musique. Il va le faire avec un niveau quasi-nul au départ en développement, web ou mobile.
+Aujourd’hui la donne n’est absolument plus la même et tant mieux d’ailleurs. Tout le monde peu plus ou moins développer, sans trop de mal, une application mobile simple en seulement 24h et la publier sur le Google Play Store. J'ai d'ailleurs un ami, artiste profesionnel, qui va bientôt lancer son application mobile à destination d'étudiants en musique. Le plus drôle est qu'il va le faire avec un niveau quasiment nul au départ en développement web et mobile.
 
-C'est pour dire à quel point les choses ont évolué depuis quelques années. Ce qui était il y a encore quelques temps  réservé aux pros du développement, les fameux _**"Ninja"**_, est désormais beaucoup plus accessibles aux jeunes développeurs ou futurs d’entre eux.
+C'est pour dire à quel point les choses ont évolué. Ce qui était, il y a encore quelques années,  réservé aux professionnels du développement, les fameux _**"Ninja"**_, est désormais beaucoup plus accessibles aux jeunes développeurs ou futurs d’entre eux.
 
 Je ne peux m'empêcher de penser à cette époque où il fallait être un véritable génie de l’informatique pour mettre en place, puis publier un site internet sur le web. Aujourd’hui, quelques clics suffisent pour le faire grâce notamment aux CMS \(Content Management System pour Système de Gestion de contenus\) comme Wordpress ou Joomla!.
 
