@@ -1,4 +1,4 @@
-# Chapitre 1 - Une brêve histoire du mobile
+# Chap 1 - Une brêve histoire du mobile
 
 ## Il était une fois...
 
@@ -95,8 +95,6 @@ Si vous décidez de créer une application native, vous aurez besoin de dévelop
 D'autre part, les applications Web et hybrides sont créées à l'aide de technologies du Web telles que HTML, CSS et JavaScript. Vous pouvez avoir une équipe qui peut cibler plusieurs plates-formes avec un seul ensemble de technologies. Cela vaut la peine alors de réfléchir à l'option Hybride qui pourrait vous faire économiser énormément de temps et d'argent.
 
 Ça tombe bien, Ionic permet la création d'applications hybrides et ce livre est là pour vous aider à décoller de la meilleure des façons.
-
-
 
 ## Pourquoi choisir Ionic ?
 
