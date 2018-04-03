@@ -94,13 +94,17 @@ Mais si les fonctions que vous cibler dépassent le cadre du PWA, là aussi pas 
 
 Grande question encore et loin d'être la moins importante. Si vous avez une grosse équipe de développement, vous êtes alors à l'abri de nombreux soucis. Vous aurez le choix d'utiliser l'une ou autre des trois méthodes précédentes. Vous êtes riche et donc vous le valez bien.
 
-Vous aurez besoin, pour créer une application native, de développeurs expérimentés maîtrisant à la fois les SDK \(outils de développement\)  et les langages de programmation de chaque plate-forme que vous souhaitez cibler.
+Vous aurez besoin, pour créer une application native, de développeurs expérimentés, maîtrisant à la fois les SDK \(outils de développement\)  et les langages de programmation de chaque plate-forme que vous souhaitez cibler.
 
-D'autre part, les applications Web et hybrides sont créées à l'aide de technologies du Web telles que HTML, CSS et JavaScript. Vous pouvez avoir une équipe qui peut cibler plusieurs plates-formes avec un seul ensemble de technologies. Cela vaut la peine alors de réfléchir à l'option Hybride qui pourrait vous faire économiser énormément de temps et d'argent.
+Mais si vous souhaitez ne pas mettre profit autant de compétences techniques pour un miniscule projet qui ne vous rapportera pas plus de 1% de votre chiffre d'affaires, alors cela vaudra peut être la peine de réfléchir à l'option Hybride qui pourrait vous faire économiser énormément de temps et d'argent.
 
 Ça tombe bien, Ionic permet la création d'applications hybrides et ce livre est là pour vous aider à décoller de la meilleure des façons.
 
 ## Pourquoi choisir Ionic ?
+
+cd
+
+
 
 [^1]: John Ronald Reuel Tolkien, plus connu sous la forme J. R. R. Tolkien, est un écrivain, poète, philologue, essayiste et professeur d’université anglais. Il est principalement connu pour ses romans _Le Hobbit_ et Le Seigneur des anneaux. \(Sources : [wikipédia](https://fr.wikipedia.org/wiki/J._R._R._Tolkien)\). 
 
