@@ -1,6 +1,6 @@
 # Chapitre 1 - Une brêve histoire du mobile
 
-### Il était une fois...
+## Il était une fois...
 
 Il y a longtemps, fort fort longtemps, en année technologique bien sûr, le natif était roi et les développeurs d'applications mobiles ses sujets. Les temps de développement étaient en moyenne estimés en mois, la paie était attractive et les dev étaient des demi-dieux. Nul ou presque ne pouvait prétendre proposer une première version, la v1, en moins d’une journée sans passer pour un illuminé, pire un hérétique. Je vous l'ai dit, c’était il y a fort longtemps.
 
@@ -95,4 +95,10 @@ Si vous décidez de créer une application native, vous aurez besoin de dévelop
 D'autre part, les applications Web et hybrides sont créées à l'aide de technologies du Web telles que HTML, CSS et JavaScript. Vous pouvez avoir une équipe qui peut cibler plusieurs plates-formes avec un seul ensemble de technologies. Cela vaut la peine alors de réfléchir à l'option Hybride qui pourrait vous faire économiser énormément de temps et d'argent.
 
 Ça tombe bien, Ionic permet la création d'applications hybrides et ce livre est là pour vous aider à décoller de la meilleure des façons.
+
+
+
+## Pourquoi choisir Ionic ?
+
+
 
