@@ -2,13 +2,11 @@
 
 Si vous avez ce livre entre les mains c’est que vous avez décidé comme d’autres avant vous de vous lancer dans ce monde merveilleux du développement mobile. Vous rêvez de grandes choses, vous avez des idées qui sont susceptibles de révolutionner la vie de milliards d’individus, et vous êtes conscient qu’avoir des compétences en développement mobile vous sera utile : bravo, ce livre a été écrit pour vous.
 
-### Application mobile : un marché à croissance exponentielle
-
 Selon un rapport[^1] de l'entreprise américaine comScore \(analyse publicitaire\), le nombre d'utilisateurs mobiles a dépassé les utilisateurs d’ordinateurs de bureau en 2014.
 
-L'entreprise a réalisée en juin dernier aux États-Unis, une étudde qui permet de mieux connaître les habitudes des internautes sur mobile.
+L'entreprise a réalisée aux États-Unis une étude qui permet de mieux connaître les habitudes des internautes sur mobile.
 
-On apprend ainsi que le mobile représente deux tiers du temps passé en ligne. Le desktop \(ordinateur\) ne représente plus que 34% du temps digital.
+On apprend ainsi que le mobile représente deux tiers du temps passé en ligne, le desktop \(ordinateur\) ne représentant plus que 34% du temps digital.
 
 ![](/assets/comscore_digital_time.jpg)
 

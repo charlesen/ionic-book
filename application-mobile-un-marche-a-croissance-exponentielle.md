@@ -2,7 +2,7 @@
 
 Vous vous êtes déjà demandé pourquoi certaines applications mobiles étaient en tête de classement sur Google Play ou l’Apple Store, tandis que d’autres étaient complètement à la traîne, et ce malgré les tonnes de fonctionnalités qu’elles proposent ? Sachez qu’il y a une explication rationnelle à ce phénomène.
 
-Quit à vouloir créer une application autant le faire bien. Pour ce faire, il y a plethore de méthodes, mais ma préférée reste la méthode MVP.
+Quit à vouloir créer une application autant la faire bien. Pour ce faire, il y a plethore de méthodes, mais ma préférée reste la méthode MVP.
 
 ## MVP : Kesako ?
 
