@@ -2,11 +2,11 @@
 
 ## Il était une fois...
 
-Il y a longtemps, fort fort longtemps, en année technologique bien sûr, le natif était roi et les développeurs d'applications mobiles ses sujets. Les temps de développement étaient en moyenne estimés en mois, la rémunération était attractive et les meilleurs développeurs étaient des demi-dieux. Nul ou presque ne pouvait prétendre proposer une première version, la tant convoitée V1, en moins d’une journée sans passer pour un illuminé, pire un hérétique. 
+Il y a longtemps, fort fort longtemps, en année technologique bien sûr, le natif était roi et les développeurs d'applications mobiles ses sujets. Les temps de développement étaient en moyenne estimés en mois, la rémunération était attractive et les meilleurs développeurs étaient des demi-dieux. Nul ou presque ne pouvait prétendre proposer une première version, la tant convoitée V1, en moins d’une journée sans passer pour un illuminé, pire un hérétique.
 
 Je vous l'ai dit, c’était il y a fort longtemps.
 
-Vous vouliez afficher du contenu issu d’une API \(rien à voir avec le dieu égyptien\) depuis votre BlackBerry Bold 9000 ? Une petite image toute mignogne et quelques lignes de texte sur un HTC Dream tout neuf ? Par de soucis, il vous fallait juste connaître le Java. 
+Vous vouliez afficher du contenu issu d’une API \(rien à voir avec le dieu égyptien\) depuis votre BlackBerry Bold 9000 ? Une petite image toute mignogne et quelques lignes de texte sur un HTC Dream tout neuf ? Par de soucis, il vous fallait juste connaître le Java.
 
 Si vous aviez le malheur de vouloir visualiser vos articles de blog et ceux de vos pages préférés depuis votre iPhone 3G en passant par un flux RSS créés par vos soins, il vous fallait absolument connaître l’Objective-C. Sinon, à moins d'avoir un gros budget et embaucher un développeur mobile, vous seriez contraint de passer votre chemin et plus vite que ça !
 
@@ -39,7 +39,7 @@ Une application est dite _**hybride**_ si elle est développée pour les smartph
 
 Les applications mobiles hybrides permettent aux développeurs de réutiliser leurs compétences existantes dans le développement web. Car, c'est bien connu, les développeurs n'aiment pas être bloqués par des contraintes \(maitriser Java, avoir un Mac,...\) imposées par des plates-formes propriétaires.
 
-Le développement d'applications mobiles hybrides semble attrayant pour la rentabilité d'une organisation. Pourquoi embaucher un développeur pour chaque plate-forme lorsque vous pouvez embaucher un développeur et cibler tous par le biais de HTML, CSS et JavaScript? Eh bien, la réalité est un peu plus compliquée.
+Le développement d'applications mobiles hybrides semble attrayant pour la rentabilité d'une organisation. Pourquoi embaucher un développeur pour chaque plate-forme lorsque vous pouvez embaucher un développeur et les cibler toutes grâce à des technologies aussi connues que HTML, CSS et JavaScript?.
 
 Les smartphones Android, iOS ou autre, embarque dans leur noyau interne une technologie appellée \*\*WebView\*\* permettant d'executer du code web au sein d'un environnement natif. Ainsi, il est possible de lancer la caméra de votre téléphone, via une simple fonction Javascript. Ce qui donnera ça :
 
@@ -99,8 +99,6 @@ D'autre part, les applications Web et hybrides sont créées à l'aide de techno
 Ça tombe bien, Ionic permet la création d'applications hybrides et ce livre est là pour vous aider à décoller de la meilleure des façons.
 
 ## Pourquoi choisir Ionic ?
-
-
 
 [^1]: John Ronald Reuel Tolkien, plus connu sous la forme J. R. R. Tolkien, est un écrivain, poète, philologue, essayiste et professeur d’université anglais. Il est principalement connu pour ses romans _Le Hobbit_ et Le Seigneur des anneaux. \(Sources : [wikipédia](https://fr.wikipedia.org/wiki/J._R._R._Tolkien)\). 
 
