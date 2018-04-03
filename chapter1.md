@@ -41,7 +41,7 @@ Les applications mobiles hybrides permettent aux développeurs de réutiliser le
 
 Le développement d'applications mobiles hybrides semble attrayant pour la rentabilité d'une organisation. Pourquoi embaucher un développeur pour chaque plate-forme lorsque vous pouvez embaucher un développeur et les cibler toutes grâce à des technologies aussi connues que HTML, CSS et JavaScript?.
 
-Les smartphones Android, iOS ou autre, embarque dans leur noyau interne une technologie appellée \*\*WebView\*\* permettant d'executer du code web au sein d'un environnement natif. Ainsi, il est possible de lancer la caméra de votre téléphone, via une simple fonction Javascript. Ce qui donnera ça :
+Les smartphones Android, iOS ou autre, embarque dans leur noyau interne une technologie appellée **WebView** permettant d'executer du code web au sein d'un environnement natif. Ainsi, il est possible de lancer la caméra de votre téléphone \(natif\), via une simple fonction Javascript \(web\). Ce qui donnerait ceci par exemple :
 
 ```js
 function capturePhoto() {
@@ -53,7 +53,7 @@ function capturePhoto() {
 }
 ```
 
-Pas de panique, on expliquera tout cela dans un prochain chapitre.
+Pas de panique, ce code écrit en JavaScript n'aura bientôt plus beaucoup de secrets pour vous.
 
 ### Pourquoi et quand faire le choix d'un développement Hybride
 
@@ -61,30 +61,32 @@ Considérons le schema ci-dessous qui décrit les couches utilisées dans chaque
 
 Avant de vous engager dans un développement mobile, il est important de bien évaluer les avantages et les inconvénients de chacunes des méthodes présentées ci-dessus. Voici quelques questions à se poser pour vous aider à vous lancer :
 
-* Quelles plates-formes mobiles souhaitez-vous cibler ?
-* Voulez-vous distribuer votre application via les app Store ?
-* Vous cherchez à utiliser des fonctionnalités clés de l'appareil mobile?
+* Quelles plates-formes mobiles souhaitez-vous cibler ? Android ? iOS ? Windows Phone ?
+* Voulez-vous distribuer votre application via un app Store ?
+* Cherchez-vous à utiliser une ou plusieurs fonctionnalités clés de l'appareil mobile ?
 * Quelles sont vos capacités techniques et/ou celle de votre équipe de développement ?
 
-N'hésitez pas à noter ces questions, y répondre, puis à les poser à vos interlocuteurs.
+N'hésitez pas à noter ces questions, à y répondre, puis à les poser aux personnes pour ou avec qui vous prévoyez de travailler.
 
 Voilà plus en détail ce que ces différentes questions impliques.
 
 #### Quelles plates-formes mobiles souhaitez-vous cibler ?
 
-Si vous souhaitez cibler plus d'une plate-forme mobile, vous avez alors plusieurs choix possibles.
+Si vous souhaitez cibler plus d'une plate-forme mobile, vous avez alors plusieurs choix possibles. Cela va de soi.
 
-De toute évidence, le Web offre la solution la plus attrayante, surtout si vous possédez déjà une version web de ce que vous souhaitez développer pour les mobile. Votre cible sera dans ce cas un navigateur mobile.
+De toute évidence, le Web offre la solution la plus attrayante, surtout si vous possédez déjà une version web de ce que vous souhaitez développer pour les mobiles. Votre cible sera dans ce cas un navigateur mobile. Dans ce cas, un simple développement d'une version responsive de votre site peut être suffisant.
 
-Un développement hybride peut être aussi dans ce cas de figure une excellente alternative.
+D'un autre côté, un développement hybride peut être aussi dans ce cas de figure une excellente alternative.
 
-Si ce que vous souhaitez proposer ne requiert pas d'avoir de grosses performances logiciels, alors le natif n'est surement pas une bonne idée. Sauf si vous ne voyez aucun inconvénient à recruter 3 développeurs différents ou à exploiter celui que vous avez déjà \(si ce n'est vous\). Dans tous les cas, préparez-vous à parler couramment l'Objective-C ou le Swift pour iOS, Java pour Android, et C-Sharp \(C \#\) pour Windows Phone, pour ne citer que ces trois plateformes.
+Si par contre que vous souhaitez proposer ne requiert pas d'avoir de très grosses performances logiciels, alors le natif n'est surement pas une bonne idée. Sauf si vous ne voyez aucun inconvénient à recruter 3 développeurs différents ou à exploiter celui que vous avez déjà \(si ce n'est vous\), le priver de vacances jusqu'à ce que mort s'en suive. Bon j'exagère un peu, mais c'est à peu près ça. Préparez-vous de toute façon, si votre choix se porte sur le natif, à parler couramment l'Objective-C ou le Swift pour iOS, Java ou Kotlin pour Android, et C-Sharp \(C \#\) pour Windows Phone, pour ne citer que ces trois plateformes.
 
 #### Voulez-vous distribuer votre application via les app Store ?
 
-Si vous souhaitez distribuer votre application via une boutique d'applications mobiles, vous devrez alors créer soit une application hybride, soit une native. Vous aurez dans tous les cas besoin d'un site internet qui servira de plateforme à vos utilisateurs au cas où ils rencontreraient des problèmes.
+Si vous souhaitez distribuer votre application via une boutique d'applications mobiles, vous devrez alors créer soit une application hybride, soit une native. Vous aurez dans tous les cas besoin d'un site internet qui servira de plateforme à vos utilisateurs au cas où ils rencontreraient des problèmes avec votre application mobile.
 
 #### Vous cherchez à utiliser des fonctionnalités clés de l'appareil mobile?
+
+Grâce aux PWA, on peut faire énormément de choses depuis un site mobile et toucher des fonctions qui dans le passé n'étaient accessible qu'en développement natif ou hybride. Je consacre un chapitre tout entier à cette technologie en fin de livre.
 
 Là aussi pas le choix, vous devrez passer par l'Hybride ou le natif. Et si vous souhaitez être irréprochable au niveau interface utilisateur et performance, alors le natif devra être votre premier choix.
 
