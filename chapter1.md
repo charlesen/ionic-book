@@ -88,13 +88,13 @@ Si vous souhaitez distribuer votre application via une boutique d'applications m
 
 Grâce aux PWA, on peut faire énormément de choses depuis un site mobile et toucher des fonctions qui dans le passé n'étaient accessible qu'en développement natif ou hybride. Je consacre un chapitre tout entier à cette technologie en fin de livre.
 
-Là aussi pas le choix, vous devrez passer par l'Hybride ou le natif. Et si vous souhaitez être irréprochable au niveau interface utilisateur et performance, alors le natif devra être votre premier choix.
+Mais si les fonctions que vous cibler dépassent le cadre du PWA, là aussi pas le choix, vous devrez passer par l'Hybride ou le natif. Et si vous souhaitez être irréprochable niveau interface utilisateur et performance, alors le natif devra être votre premier choix.
 
 #### Quelles sont vos capacités techniques et/ou celle de votre équipe de développement ?
 
-Grande question encore et loin d'être la moins importante. Si vous avez une grosse équipe de développement, vous êtes alors à l'abri de nombreux soucis. Vous aurez le choix d'utiliser l'une autre des trois méthodes précédentes.
+Grande question encore et loin d'être la moins importante. Si vous avez une grosse équipe de développement, vous êtes alors à l'abri de nombreux soucis. Vous aurez le choix d'utiliser l'une ou autre des trois méthodes précédentes. Vous êtes riche et donc vous le valez bien.
 
-Si vous décidez de créer une application native, vous aurez besoin de développeurs expérimentés maîtrisant à la fois les SDK \(outils de développement\)  et les langages de programmation de chaque plate-forme que vous souhaitez cibler.
+Vous aurez besoin, pour créer une application native, de développeurs expérimentés maîtrisant à la fois les SDK \(outils de développement\)  et les langages de programmation de chaque plate-forme que vous souhaitez cibler.
 
 D'autre part, les applications Web et hybrides sont créées à l'aide de technologies du Web telles que HTML, CSS et JavaScript. Vous pouvez avoir une équipe qui peut cibler plusieurs plates-formes avec un seul ensemble de technologies. Cela vaut la peine alors de réfléchir à l'option Hybride qui pourrait vous faire économiser énormément de temps et d'argent.
 
