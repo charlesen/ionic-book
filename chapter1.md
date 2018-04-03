@@ -2,17 +2,19 @@
 
 ## Il était une fois...
 
-Il y a longtemps, fort fort longtemps, en année technologique bien sûr, le natif était roi et les développeurs d'applications mobiles ses sujets. Les temps de développement étaient en moyenne estimés en mois, la paie était attractive et les dev étaient des demi-dieux. Nul ou presque ne pouvait prétendre proposer une première version, la v1, en moins d’une journée sans passer pour un illuminé, pire un hérétique. Je vous l'ai dit, c’était il y a fort longtemps.
+Il y a longtemps, fort fort longtemps, en année technologique bien sûr, le natif était roi et les développeurs d'applications mobiles ses sujets. Les temps de développement étaient en moyenne estimés en mois, la rémunération était attractive et les meilleurs développeurs étaient des demi-dieux. Nul ou presque ne pouvait prétendre proposer une première version, la tant convoitée V1, en moins d’une journée sans passer pour un illuminé, pire un hérétique. 
 
-Vous vouliez afficher du contenu issu d’une API publique sur un BlackBerry Bold 9000 ? Une petite image et quelques lignes de texte sur un HTC Dream tout neuf , tout mignon ? Par de soucis, il vous fallait tout simplement connaître le Java.
+Je vous l'ai dit, c’était il y a fort longtemps.
 
-Si vous aviez le malheur de vouloir visualiser vos articles de blog et ceux de vos pages préférés depuis votre iPhone 3G en passant par un flux RSS créés par vos soins, il vous fallait absolument connaître l’Objective-C. Sinon, à moins d'avoir un gros budget, vous seriez contraint de passer votre chemin et plus que ça !
+Vous vouliez afficher du contenu issu d’une API \(rien à voir avec le dieu égyptien\) depuis votre BlackBerry Bold 9000 ? Une petite image toute mignogne et quelques lignes de texte sur un HTC Dream tout neuf ? Par de soucis, il vous fallait juste connaître le Java. 
 
-Avec le temps, de nombreux projets ont vu le jour pour permettre à tout de se lancer dans l'univers impoyable du développement mobile et Ionic est surement celui qui est le plus abouti à l'heure où j'écris ces quelques lignes.
+Si vous aviez le malheur de vouloir visualiser vos articles de blog et ceux de vos pages préférés depuis votre iPhone 3G en passant par un flux RSS créés par vos soins, il vous fallait absolument connaître l’Objective-C. Sinon, à moins d'avoir un gros budget et embaucher un développeur mobile, vous seriez contraint de passer votre chemin et plus vite que ça !
+
+Avec le temps, de nombreux projets ont vu le jour pour permettre à tout le monde de se lancer dans l'univers impoyable du développement mobile et Ionic est surement celui qui est le plus abouti à l'heure où j'écris ces quelques lignes.
 
 ### Une méthode pour les gouverner tous
 
-Il existe plusieurs types de méthodes de développement pour atteindre les mobinautes : le web mobile, le natif et l'hybride.
+Il existe différentes méthodes de développement pour atteindre les mobinautes : le web mobile, le natif et l'hybride.
 
 #### Applications web mobile
 
@@ -20,18 +22,18 @@ Une application web mobile est une version allégée d'un site internet, optimis
 
 #### Applications natives
 
-Une application mobile est dite native, si le développement effectué pour la créer \(et donc le langage de programmation\) est spécifique à une plateforme cible.
+Une application mobile est dite native, si le développement effectué pour la créer \(et donc le langage de programmation\) est spécifique à la plateforme cible.
 
 | Plateforme cible | Langage de Programmation |
 | :--- | :--- |
 | Androig \(Google\) | Java, Kotlin |
 | iOS \(Apple\) | Objective-C, Swift |
-| Windows Phone \(Microsoft\) | C-Shart \(C\#\) |
+| Windows Phone \(Microsoft\) | C-Sharp \(C\#\) |
 | ...etc |  |
 
 #### Applications hybrides
 
-Vous vous rappelez du seigneur des anneaux ? Oui ? Et bien le développement hybride est au mobile, ce que l'anneau de Sauron est à la terre du milieu.
+Vous vous rappelez du seigneur des anneaux ? Oui ? Et bien le développement hybride est au mobile, ce que l'anneau de Sauron est à l'univers imaginée par Tolkien[^1].
 
 Une application est dite _**hybride**_ si elle est développée pour les smartphones avec les outils classiques du web \(html, javascript, css\).
 
@@ -99,4 +101,6 @@ D'autre part, les applications Web et hybrides sont créées à l'aide de techno
 ## Pourquoi choisir Ionic ?
 
 
+
+[^1]: John Ronald Reuel Tolkien, plus connu sous la forme J. R. R. Tolkien, est un écrivain, poète, philologue, essayiste et professeur d’université anglais. Il est principalement connu pour ses romans _Le Hobbit_ et Le Seigneur des anneaux. \(Sources : [wikipédia](https://fr.wikipedia.org/wiki/J._R._R._Tolkien)\). 
 
