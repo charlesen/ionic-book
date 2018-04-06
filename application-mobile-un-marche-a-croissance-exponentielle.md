@@ -44,7 +44,7 @@ Selon Wikipédia :
 
 > Une blockchain, ou chaîne de blocs, est une technologie de stockage et de transmission d'informations sans organe de contrôle. Techniquement, il s'agit d'une base de données distribuée dont les informations envoyées par les utilisateurs et les liens internes à la base sont vérifiés et groupés à intervalles de temps réguliers en blocs, l'ensemble étant sécurisé par cryptographie, et formant ainsi une chaîne
 
-
+Une image valant mieux qu'un discours, voici comment on pourrait représenter la technologie Blockchain :
 
 
 
