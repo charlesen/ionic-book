@@ -72,3 +72,5 @@ DuckCoin sera comme nous l'avons déjà dit une crypto-monnaie basée sur une bl
 
 La monnaie fonctionnera à peu près sur le même principe que le Bitcoin.
 
+Ce livre n'étant pas consacré à la Blockchain et aux cryptomonnaies, vous n'êtes pas obligé de lire la suite de ce chapitre et pouvez directement passer à la suite. Mais si vous êtes un temps soit peu curieux, alors restez, vous ne serez pas dessus je pense.
+
