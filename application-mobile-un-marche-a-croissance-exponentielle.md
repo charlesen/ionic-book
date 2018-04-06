@@ -241,13 +241,15 @@ Lorsqu'un utilisateur effectue une transaction, celle-ci est, comme on l'a vu, s
 
 Le noeud ayant réussi en premier à résoudre l'énigme se voit recompenser d'une somme en crypto. Bitcoin recompense par exemple ses mineurs à hauteur de 25 BTC \(à l'heure actuelle\).
 
-Une caractéristique la pow est l'asymétrie du coût de calcul : le travail doit être difficilement réalisable pour le demandeur, mais facilement vérifiable pour un tiers.
+Une caractéristique de la pow est l'asymétrie du coût de calcul : le travail doit être difficilement réalisable pour le demandeur, mais facilement vérifiable pour un tiers.
 
 Prenons par exemple une preuve de travail bien connu, le Captcha, que l'on retrouve sur de nombreux sites internet.
 
 ![](/assets/reCAPTCHA_Sample_White.png)
 
 Si pour un humain, saisir ces informations est déjà assez difficile, imaginez celle que rencontrera un robot spammeur.
+
+Pour notre algorithme de preuve de travail, choisissons arbitrairement que le hash d'un entier X, multiplié par un autre entier Y devra absolument se finir par le chiffre 0.
 
 Pour en savoir plus, n'hésitez pas à lire le bel article de Cryptoencyclopedie : [https://www.cryptoencyclopedie.com/single-post/Quest-ce-que-le-consensus-Proof-of-Work- ](https://www.cryptoencyclopedie.com/single-post/Quest-ce-que-le-consensus-Proof-of-Work- )
 
