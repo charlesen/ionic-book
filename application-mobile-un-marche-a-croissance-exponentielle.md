@@ -81,6 +81,7 @@ Pour développer la blockchain sur laquelle sera construite notre cryptomonnaie,
 ```py
 class Blockchain(object):
     def __init__(self):
+        # Constructeur : on initialise ici la chaîne et la liste qui contiendra les transactions
         self.chain = []
         self.transactions = []
 
