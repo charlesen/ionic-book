@@ -252,7 +252,11 @@ Prenons par exemple une preuve de travail bien connu, le Captcha, que l'on retro
 
 Si pour un humain, saisir ces informations est déjà assez difficile, imaginez celle que rencontrera un robot spammeur.
 
+---
+
 Pour en savoir plus, n'hésitez pas à lire le bel article de **Cryptoencyclopedie** : [https://www.cryptoencyclopedie.com/single-post/Quest-ce-que-le-consensus-Proof-of-Work- ](https://www.cryptoencyclopedie.com/single-post/Quest-ce-que-le-consensus-Proof-of-Work- )
+
+---
 
 Pour notre algorithme de preuve de travail, choisissons arbitrairement que le hash d'un entier X, multiplié par le chiffre 7 \(je l'aime bien ce chiffre, CR7, tout ça, tout ça...\) devra absolument se finir par le chiffre 0. On aurait ceci par exemple :
 
