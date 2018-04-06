@@ -107,6 +107,10 @@ class Blockchain(object):
 
 La classe Blockchain sera responsable de la gestion de la chaîne. Elle va stocker les transactions et pourra grâce à des méthodes ajouter de nouvelles transactions ou de nouveaux blocs à la chaîne.
 
+Un Bloc possède un index, c'est à dire un numéro qui permet de le situer dans la chaîne, un timestamp, une liste de transactions, une preuve de travail ou proof of work en anglais que nous abrégerons. Prenons par exemple le premier bloc de notre blockchain :
+
+ 
+
 Pour l'affichage et les interactions avec la blockchain, nous utiliseront un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
 Création, stockage
