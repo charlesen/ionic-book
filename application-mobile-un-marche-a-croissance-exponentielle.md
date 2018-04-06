@@ -107,7 +107,7 @@ class Blockchain(object):
 
 La classe Blockchain sera responsable de la gestion de la chaîne. Elle va stocker les transactions et pourra grâce à des méthodes ajouter de nouvelles transactions ou de nouveaux blocs à la chaîne.
 
-Un Bloc possède un _**index**_, c'est à dire un numéro qui permet de le situer dans la chaîne, un système d'horodatage appelé _**timestamp**_[^1], une _**liste**_** de transactions**, une **preuve de travail** ou proof of work en anglais que nous abrégerons _pow_,  un _**hash**_,_** **_c'est à dire une empreinte numérique, rendant le bloc unique en son genre, le hash du bloc précédant. Prenons par exemple le premier bloc de notre blockchain. Il ressemble à ceci :
+Un Bloc possède un _**index**_, c'est à dire un numéro qui permet de le situer dans la chaîne, un système d'horodatage appelé _**timestamp**_[^1], une _**liste**_** de transactions**, une **preuve de travail** ou proof of work en anglais que nous abrégerons _pow_,  un _**hash**_, c'est à dire une empreinte numérique rendant le bloc unique en son genre, le _**hash**_ du bloc précédant \(_previous\_hash_\). Prenons par exemple le premier bloc de notre blockchain. Il ressemble à ceci :
 
 ```py
 block = {
@@ -122,9 +122,11 @@ block = {
     ],
     'pow': 952,
     'hash': "e24db68eb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
-    'previous_hash': "def24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"
+    'previous_hash': ""
 }
 ```
+
+Ici, le premier block ne possède pas de hash pour le bloc précédent, ce qui est normal. Les blocs par contre devont l'avoir obligatoirement. C'est d'ailleurs cela qui garantit en partie la fiabilité de la blockchain. En effet, si un seul bloc devait être falsifié \(un utilisateur qui mentirait sur le montant total de ses avoirs en modifiant un bloc\), c'est toute la chaîne qui deviendrait invalide.
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliseront un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
