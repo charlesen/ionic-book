@@ -156,6 +156,8 @@ class Blockchain(object):
         return self.last_block['index'] + 1
 ```
 
+Chaque fois qu'un utilisateur souhaitera envoyer de l'argent à un autre, c'est cette méthode qui sera appelée.  Le tout \(la transaction\) sera stockée dans un le prochain bloc à miner \(notion que nous aborderons plus loin\)
+
 Pour l'affichage et les interactions avec la blockchain, nous utiliseront un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
 Création, stockage
