@@ -83,7 +83,7 @@ class Blockchain(object):
     def __init__(self):
         # Constructeur : on initialise ici la chaîne et la liste qui contiendra les transactions
         self.chain = []
-        self.transactions = []
+        self.current_transactions = []
 
     def new_block(self):
         # Permet la création d'un nouveau block qui sera à la chaine de blocs
@@ -132,7 +132,7 @@ A présent rentrons plus en détail sur le fonctionnement des méthodes de la cl
 
 ### Gestions des transactions
 
-La méthode new\_transaction est en charge de l'ajout de nouvelle transaction au sein d'un bloc.
+La méthode **new\_transaction** est en charge de l'ajout de nouvelle transaction au sein d'un bloc.
 
 ```py
 class Blockchain(object):
@@ -156,11 +156,85 @@ class Blockchain(object):
         return self.last_block['index'] + 1
 ```
 
-Chaque fois qu'un utilisateur souhaitera envoyer de l'argent à un autre, c'est cette méthode qui sera appelée.  Le tout \(la transaction\) sera stockée dans un le prochain bloc à miner \(notion que nous aborderons plus loin\)
+Chaque fois qu'un utilisateur souhaitera envoyer de l'argent à un autre, c'est cette méthode qui sera appelée.  Le tout \(la transaction\) sera stockée dans un le prochain bloc à miner \(notion que nous aborderons plus loin\).
 
-Pour l'affichage et les interactions avec la blockchain, nous utiliseront un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
+### Gestion des blocs
 
-Création, stockage
+A la création de la blockchain, nous allons devoir créer un bloc initial, qui stockera les toutes premières transactions de la blockchain. C'est à l'intérieur de ce bloc par exemple que l'on pourra stocker les transactions permettant d'envoyer de l'argent aux 20 premiers utilisateurs de notre cryptomonnaie. Ce bloc initial est appelé dans le milieu de la blockchain _**Genesis**_, pour genèse en français. Et avant la genèse, il n y a rien...en principe.
+
+```py
+
+import hashlib
+import json
+from time import time
+
+
+class Blockchain(object):
+    def __init__(self):
+        self.current_transactions = []
+        self.chain = []
+
+        # Création du bloc initial genesis
+        self.new_block(previous_hash=1, proof=100)
+
+    def new_block(self, proof, previous_hash=None):
+        """
+        Création d'un nouveau bloc dans la Blockchain
+        :param pow: <int> valeur retourné l'algorithme de preuve de travail
+        :param previous_hash: (Optionel pour le premier bloc) <str> Hash du bloc préc.
+        :return: <dict> Nouveau Bloc
+        """
+
+        block = {
+            'index': len(self.chain) + 1,
+            'timestamp': time(),
+            'transactions': self.current_transactions,
+            'pow': pow,
+            'previous_hash': previous_hash or self.hash(self.chain[-1]),
+        }
+
+        # Remise à zéro de la liste des transactions
+        self.current_transactions = []
+
+        self.chain.append(block)
+        return block
+
+    def new_transaction(self, sender, recipient, amount):
+        """
+	Création d'une nouvelle transaction qui sera intégré au dernier bloc à inclure dans la blockchain
+	:param sender: <str> Adresse (hash) du destinateur
+	:param recipient: <str> Adresse (hash) du destinataire
+	:param amount: <int> Montant envoyé par le 'sender' au 'recipient'
+	:return: <int> index du bloc qui stockera cette transaction
+	"""
+        self.current_transactions.append({
+            'sender': sender,
+            'recipient': recipient,
+            'amount': amount,
+        })
+
+        return self.last_block['index'] + 1
+
+    @property
+    def last_block(self):
+        return self.chain[-1]
+
+    @staticmethod
+    def hash(block):
+        """
+        Création d'un hash du bloc avec la fonction de hashage SHA-256
+        :param block: <dict> Block
+        :return: <str>
+        """
+
+        # On ordonne le bloc avant de le sérialiser
+        block_string = json.dumps(block, sort_keys=True).encode()
+        return hashlib.sha256(block_string).hexdigest()
+```
+
+Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
+
+
 
 [^1]: Le timestamp \(unix\) désigne le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC précise
 
