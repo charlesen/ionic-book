@@ -282,7 +282,48 @@ while sha256('{x*y}'.encode()).hexdigest()[-1] != "0000":
 temps2 = time.time()
 temps = (temps2-temps1)*1000.0
 print('La solution est x = {x} au bout de {temps} s')
+```
 
+On l'ajoute à notre code principale :
+
+```
+import hashlib
+import json
+
+from time import time
+from uuid import uuid4
+
+
+class Blockchain(object):
+    ...
+        
+    def proof_of_work(self, last_proof):
+        """
+        Un algorithm de Preuve de travail :
+         - Trouver un nombre x tel que hash(xy) contient 4 zeros en fin de chaine, x étant la preuve précendente
+         - x est la preuve précendente, and y la nouvelle
+        :param last_proof: <int>
+        :return: <int>
+        """
+
+        proof = 0
+        while self.valid_proof(last_proof, proof) is False:
+            proof += 1
+
+        return proof
+
+    @staticmethod
+    def valid_proof(last_proof, proof):
+        """
+        Validation du résulat la preuve de travail : est-ce que hash(last_proof, proof) contient bien n chiffres zero?
+        :param last_proof: <int> Preuve précédente
+        :param proof: <int> Preuve actuelle
+        :return: <bool>
+        """
+
+        guess = f'{last_proof}{proof}'.encode()
+        guess_hash = hashlib.sha256(guess).hexdigest()
+        return guess_hash[:4] == "0000"
 ```
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
