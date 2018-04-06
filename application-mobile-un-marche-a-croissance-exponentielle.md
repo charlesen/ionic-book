@@ -135,17 +135,16 @@ A présent rentrons plus en détail sur le fonctionnement des méthodes de la cl
 La méthode new\_transaction est en charge de l'ajout de nouvelle transaction au sein d'un bloc.
 
 ```py
-
 class Blockchain(object):
     ...
-    
+
     def new_transaction(self, sender, recipient, amount):
         """
         Création d'une nouvelle transaction qui sera intégré au dernier bloc à inclure dans la blockchain
-        :param sender: <str> Adresse (hash) de l'expéditeur
-        :param recipient: <str> Adresse (hash) du destinateur
-        :param amount: <int> Amount
-        :return: <int> The index of the Block that will hold this transaction
+        :param sender: <str> Adresse (hash) du destinateur
+        :param recipient: <str> Adresse (hash) du destinataire
+        :param amount: <int> Montant envoyé par le 'sender' au 'recipient'
+        :return: <int> index du bloc qui stockera cette transaction
         """
 
         self.current_transactions.append({
@@ -156,8 +155,6 @@ class Blockchain(object):
 
         return self.last_block['index'] + 1
 ```
-
-
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliseront un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
