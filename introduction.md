@@ -6,7 +6,7 @@ Dès les premiers instants du mobile, il n'y avait vraiment qu'une seule façon 
 * Gérer plusieurs codes sources
 * Embaucher et retenir des développeurs natifs hautement spécialisés et coûteux 
 
-Depuis, beaucoup d'eau a coulé sous les ponts et les demandes de produits adaptés aux mobiles ont augmenté de manière exponentielle. 
+Depuis, beaucoup d'eau a coulé sous les ponts et les demandes de produits adaptés aux mobiles ont augmenté de manière exponentielle.
 
 Ainsi, selon un rapport[^1] de l'entreprise américaine comScore \(analyse publicitaire\), le nombre d'utilisateurs mobiles a dépassé les utilisateurs d’ordinateurs de bureau en 2014.
 
@@ -16,11 +16,13 @@ On apprend ainsi que le mobile représente deux tiers du temps passé en ligne, 
 
 ![](/assets/comscore_digital_time.jpg)
 
-
-
 Les 65 ans sont ceux qui consacrent le plus de temps aux ordinateurs. À l’inverse, les 18-24 ans passent moins d’un quart de leur temps sur un ordinateur...pour mieux le consacrer sur mobile.
 
+
+
 ![](/assets/mobile-desktop-age-612x269.jpg)
+
+
 
 Globalement, et la plupart des études statistiques sont unanimes là-dessus, les 18 à 24 ans sont ceux qui utilisent le plus les applications mobiles. Ils sont suivis de près respectivement par les 25 à 34 ans, les 35 à 44 ans, les 45 à 54 ans, puis les plus de 55 ans. Les femmes passeraient plus de temps que les hommes sur le web mobile, et la moyenne de temps passée sur des applications mobiles a augmenté de 20% en seulement 1 an, entre 2014 et 2015.
 
@@ -30,9 +32,9 @@ De plus, les applications mobiles ont engrangé des bénéfices atteignant les 3
 
 D'ici 2022 par exemple 70% de toutes les interactions de logiciels d'entreprises devraient s'effectuer sur des appareils mobiles. Il y a donc véritablement là un gros marché à exploiter. Un marché qui ne cesse de grossir au fil des années.
 
-S’il y a quelques milliers d’années, l’écriture était une clé qui permettait d'atteindre le savoir et donc d’une certaine façon la pouvoir, il faut croire qu’être douée en développement mobile est aujourd’hui l'ultime compétence à posséder.
+S’il y a quelques milliers d’années, l’écriture a été l'un des déclencheurs d'une révolution qui nous impacte encore aujourd'hui, il faut croire qu’être douée en développement mobile est aujourd’hui, et le sera encore durant longtemps, une compétence à posséder d'urgence.
 
-## De Zéro à l’App Store
+
 
 il y a quelques années lorsque j’ai commencé à m’intéresser au développement d’applications mobiles, je n’avais que quelques notions en en développement informatique. Mes études m’avaient permis de toucher à des langages de programmation comme Java, le PHP, le Pascal ou encore le C.
 
