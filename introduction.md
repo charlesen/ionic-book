@@ -1,14 +1,14 @@
 # Introduction
 
-Dès les premiers instants du mobile, il n'y avait vraiment qu'une seule façon d'offrir aux utilisateurs la performance et les fonctionnalités qu'ils attendaient : vous deviez utiliser un SDK, c'est à dire un ensemble d'outils logiciels spécifiques à la plateforme que vous souhaitiez cibler. Bien sûr, cela impliquait un certain nombre de contraintes : 
+Dès les premiers instants du mobile, il n'y avait vraiment qu'une seule façon d'offrir aux utilisateurs la performance et les fonctionnalités qu'ils attendaient : vous deviez utiliser un SDK, c'est à dire un ensemble d'outils logiciels spécifiques à la plateforme que vous souhaitiez cibler. Bien sûr, cela impliquait un certain nombre de contraintes :
 
 * Construire une version différentes pour chaque plate-forme mobile
 * Gérer plusieurs codes sources
 * Embaucher et retenir des développeurs natifs hautement spécialisés et coûteux 
 
-Le temps a passé et la demande de produits adaptés aux mobiles a augmenté de façon exponentielle. D'ici 2022 par exemple 70% de toutes les interactions de logiciels d'entreprises devraient s'effectuer sur des appareils mobiles
+Depuis, beaucoup d'eau a coulé sous les ponts et les demandes de produits adaptés aux mobiles ont augmenté de manière exponentielle. 
 
-Selon un rapport[^1] de l'entreprise américaine comScore \(analyse publicitaire\), le nombre d'utilisateurs mobiles a dépassé les utilisateurs d’ordinateurs de bureau en 2014.
+Ainsi, selon un rapport[^1] de l'entreprise américaine comScore \(analyse publicitaire\), le nombre d'utilisateurs mobiles a dépassé les utilisateurs d’ordinateurs de bureau en 2014.
 
 L'entreprise a réalisée aux États-Unis une étude qui permet de mieux connaître les habitudes des internautes sur mobile.
 
@@ -16,7 +16,7 @@ On apprend ainsi que le mobile représente deux tiers du temps passé en ligne, 
 
 ![](/assets/comscore_digital_time.jpg)
 
-## **Temps digital par tranche d'âge**
+
 
 Les 65 ans sont ceux qui consacrent le plus de temps aux ordinateurs. À l’inverse, les 18-24 ans passent moins d’un quart de leur temps sur un ordinateur...pour mieux le consacrer sur mobile.
 
@@ -28,7 +28,7 @@ Selon une autre entreprise américaine, Gartner, plus de 268 milliards de télé
 
 De plus, les applications mobiles ont engrangé des bénéfices atteignant les 35 milliards de dollars en 2014, 45 milliards de dollars En 2015, 58 milliards de dollars en 2016, et un montant prévu de 77 milliards de dollars en 2017, comme dit précédemment. Autant dire qu'il y a énormément d'argents et surtout d'opportunités en jeu.
 
-Il y a donc véritablement là un gros marché à exploiter. Un marché qui ne cesse de grossir au fil des années.
+D'ici 2022 par exemple 70% de toutes les interactions de logiciels d'entreprises devraient s'effectuer sur des appareils mobiles. Il y a donc véritablement là un gros marché à exploiter. Un marché qui ne cesse de grossir au fil des années.
 
 S’il y a quelques milliers d’années, l’écriture était une clé qui permettait d'atteindre le savoir et donc d’une certaine façon la pouvoir, il faut croire qu’être douée en développement mobile est aujourd’hui l'ultime compétence à posséder.
 
