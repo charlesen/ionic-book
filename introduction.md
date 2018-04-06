@@ -1,6 +1,12 @@
 # Introduction
 
-les premiers jours du mobile, il n'y avait vraiment qu'une seule façon de donner aux utilisateurs la performance et les fonctionnalités qu'ils attendaient. Vous deviez utiliser un SDK natif. Bien sûr, cela est venu avec des compromis: • Construire en parallèle pour chaque plate-forme mobile • Gestion de plusieurs bases de code • Embaucher et retenir des développeurs natifs hautement spécialisés et coûteux Pendant ce temps, la demande pour les expériences mobiles a augmenté de façon exponentielle. D'ici 2022, 70% de toutes les interactions de logiciels d'entreprises devraient s'effectuer sur des appareils mobiles
+Dès les premiers instants du mobile, il n'y avait vraiment qu'une seule façon d'offrir aux utilisateurs la performance et les fonctionnalités qu'ils attendaient : vous deviez utiliser un SDK, c'est à dire un ensemble d'outils logiciels spécifiques à la plateforme que vous souhaitiez cibler. Bien sûr, cela impliquait un certain nombre de contraintes : 
+
+* Construire une version différentes pour chaque plate-forme mobile
+* Gérer plusieurs codes sources
+* Embaucher et retenir des développeurs natifs hautement spécialisés et coûteux 
+
+Le temps a passé et la demande de produits adaptés aux mobiles a augmenté de façon exponentielle. D'ici 2022 par exemple 70% de toutes les interactions de logiciels d'entreprises devraient s'effectuer sur des appareils mobiles
 
 Selon un rapport[^1] de l'entreprise américaine comScore \(analyse publicitaire\), le nombre d'utilisateurs mobiles a dépassé les utilisateurs d’ordinateurs de bureau en 2014.
 
