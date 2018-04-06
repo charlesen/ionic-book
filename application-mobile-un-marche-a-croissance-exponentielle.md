@@ -83,16 +83,16 @@ class Blockchain(object):
     def __init__(self):
         self.chain = []
         self.transactions = []
-        
+
     def new_block(self):
         # Permet la création d'un nouveau block qui sera à la chaine de blocs
         pass
-    
+
     def new_transaction(self):
         # Ajoute une nouvelle transaction à la liste des transactions. 
         # Un bloc peut contenir plusieurs transactions, toutes les unes que les autres
         pass
-    
+
     @staticmethod
     def hash(block):
         # Permet le hashage d'un Bloc
@@ -104,9 +104,7 @@ class Blockchain(object):
         pass
 ```
 
-Cette class Python permet d'initialiser une Blockchain simple. 
-
-
+La classe Blockchain sera responsable de la gestion de la chaîne. Elle va stocker les transactions et pourra grâce à des méthodes ajouter de nouvelles transactions ou de nouveaux blocs à la chaîne. 
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliseront un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
