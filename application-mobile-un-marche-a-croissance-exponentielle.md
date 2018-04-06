@@ -128,6 +128,10 @@ block = {
 
 Ici, le premier bloc ne possède pas de hash pour le bloc précédent \(_previous\_hash_\), ce qui est normal. Par contre, les blocs suivants devront l'avoir obligatoirement. C'est d'ailleurs cela qui garantit en partie la fiabilité de la blockchain. En effet, si un seul bloc devait être falsifié \(un utilisateur qui mentirait sur le montant total de ses avoirs en modifiant un bloc\), c'est toute la chaîne qui deviendrait invalide.
 
+A présent rentrons plus en détail sur le fonctionnement des méthodes de la classe BlockChain.
+
+
+
 Pour l'affichage et les interactions avec la blockchain, nous utiliseront un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
 Création, stockage
