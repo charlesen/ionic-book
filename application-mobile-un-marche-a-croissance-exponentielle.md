@@ -46,11 +46,17 @@ Selon Wikipédia :
 
 Une blockchain contient des données créées par différents utilisateurs dans le temps et chaque acteur ou noeud de la blockchain possède une copie de celle-ci.
 
-Il existe différents types de blockchains : celles qui sont privés, c'est à dire qu'un nombre limité d'acteurs, choisi arbitrairement, a le droit d'agir sur la blockchain, et celles qui sont publiques et donc accessibles à tout le monde sans aucune restriction. Comme l'a dit le mathématicien Jean-Paul Delahaye, la blockchain peut être assimilée à 
+Il existe différents types de blockchains : celles qui sont privés, c'est à dire qu'un nombre limité d'acteurs, choisi arbitrairement, a le droit d'agir sur la blockchain, et celles qui sont publiques et donc accessibles à tout le monde sans aucune restriction. Comme l'a dit le mathématicien Jean-Paul Delahaye, la blockchain peut être assimilée à
 
 > un très grand cahier, que tout le monde peut lire librement et gratuitement, sur lequel tout le monde peut écrire, mais qui est impossible à effacer et indestructible._ _
 
 Une image valant mieux qu'un discours, voici comment on pourrait représenter la technologie Blockchain de manière simple :
+
+![](/assets/fonctionnement-blockchain1.png)
+
+![](/assets/blck-schema.png)
+
+                                                                           **Source :** Blockchain France
 
 
 
