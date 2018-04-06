@@ -233,7 +233,7 @@ class Blockchain(object):
 
 ### La Preuve de travail, Proof of Work \(pow\)
 
-
+La preuve de travail est la méthode qui permet de créer ou miner un nouveau bloc de la blockchain.
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
