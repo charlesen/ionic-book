@@ -56,9 +56,9 @@ Une image valant mieux qu'un discours, voici comment on pourrait représenter la
 
 ![](/assets/blck-schema.png)
 
-                                                                          **Source : Blockchain France**
-
-
+```
+                                                                      **Source : Blockchain France**
+```
 
 
 
