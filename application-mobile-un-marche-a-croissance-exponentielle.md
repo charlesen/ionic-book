@@ -286,7 +286,7 @@ print('La solution est x = {x} au bout de {temps} s')
 
 On l'ajoute à notre code principale :
 
-```
+```py
 import hashlib
 import json
 
@@ -296,7 +296,7 @@ from uuid import uuid4
 
 class Blockchain(object):
     ...
-        
+
     def proof_of_work(self, last_proof):
         """
         Un algorithm de Preuve de travail :
