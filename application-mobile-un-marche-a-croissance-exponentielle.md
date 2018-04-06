@@ -239,6 +239,14 @@ La preuve de travail est la méthode qui permet de créer ou miner un nouveau bl
 
 Lorsqu'un utilisateur effectue une transaction, celle-ci est, comme on l'a vu, stockée dans un bloc. Une fois que le bloc possède un certain nombre de transactions, il devra être intégré à la blockchain pour sauvegarde. C'est à ce moment là qu'intervient le minage par preuve de travail. Chaque noeud \(ordinateur\) va recevoir le bloc souhaitant intégrer la chaine et effectuer un certain nombre de calculs suffisament difficiles pour dissuader un noeud pirate. Et plus la chaine est longue comme celle de Bitcoin et d'autres cryptomonnaies, et plus la pow est énegivore et décourageante pour le noeud pirate. Le noeud qui réussi en premier à résoudre l'énigme se voit recompser d'une somme en crypto. Bitcoin recompense par exemple ses mineurs à auteur de 25 BTC à l'heure actuelle.
 
+Une caractéristique la pow est l'asymétrie du coût de calcul : le travail doit être difficilement réalisable pour le demandeur, mais facilement vérifiable pour un tiers.
+
+Prenons par exemple une preuve de travail bien connu, le Captcha, que l'on retrouve sur de nombreux sites internet.
+
+![](/assets/reCAPTCHA_Sample_White.png)
+
+
+
 Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
 [^1]: Le timestamp \(unix\) désigne le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC précise
