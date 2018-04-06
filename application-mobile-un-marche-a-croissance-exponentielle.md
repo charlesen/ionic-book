@@ -76,7 +76,37 @@ Ce livre n'étant pas consacré à la Blockchain et aux cryptomonnaies, vous n'�
 
 ### Construction de la Blockchain
 
-Pour développer la blockchain sur laquelle sera construite notre cryptomonnaie, nous allons utiliser le langage de programmation que j'utilise au quotidien dans le cadre de mon travail.
+Pour développer la blockchain sur laquelle sera construite notre cryptomonnaie, nous allons utiliser le langage de programmation Python, qui est assez simple à maîtriser.
+
+```py
+class Blockchain(object):
+    def __init__(self):
+        self.chain = []
+        self.transactions = []
+        
+    def new_block(self):
+        # Permet la création d'un nouveau block qui sera à la chaine de blocs
+        pass
+    
+    def new_transaction(self):
+        # Ajoute une nouvelle transaction à la liste des transactions. 
+        # Un bloc peut contenir plusieurs transactions, toutes les unes que les autres
+        pass
+    
+    @staticmethod
+    def hash(block):
+        # Permet le hashage d'un Bloc
+        pass
+
+    @property
+    def last_block(self):
+        # Renvoie le dernier bloc de la chaine
+        pass
+```
+
+Cette class Python permet d'initialiser une Blockchain simple. 
+
+
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliseront un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
