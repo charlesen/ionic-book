@@ -249,7 +249,13 @@ Prenons par exemple une preuve de travail bien connu, le Captcha, que l'on retro
 
 Si pour un humain, saisir ces informations est déjà assez difficile, imaginez celle que rencontrera un robot spammeur.
 
-Pour notre algorithme de preuve de travail, choisissons arbitrairement que le hash d'un entier X, multiplié par un autre entier Y devra absolument se finir par le chiffre 0.
+Pour notre algorithme de preuve de travail, choisissons arbitrairement que le hash d'un entier X, multiplié par un autre entier Y devra absolument se finir par le chiffre 0. On aurait ceci par exemple :
+
+```py
+hash(x * y) = ac23dc...0
+```
+
+
 
 Pour en savoir plus, n'hésitez pas à lire le bel article de Cryptoencyclopedie : [https://www.cryptoencyclopedie.com/single-post/Quest-ce-que-le-consensus-Proof-of-Work- ](https://www.cryptoencyclopedie.com/single-post/Quest-ce-que-le-consensus-Proof-of-Work- )
 
