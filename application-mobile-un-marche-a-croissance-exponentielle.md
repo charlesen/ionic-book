@@ -258,10 +258,31 @@ Pour en savoir plus, n'hésitez pas à lire le bel article de **Cryptoencycloped
 
 ---
 
-Pour notre algorithme de preuve de travail, choisissons arbitrairement que le hash d'un entier X, multiplié par le chiffre 7 \(je l'aime bien ce chiffre, CR7, tout ça, tout ça...\) devra absolument se finir par le chiffre 0. On aurait ceci par exemple :
+Pour notre algorithme de preuve de travail, choisissons arbitrairement que le hash d'un entier X, multiplié par le chiffre 7 \(je l'aime bien ce chiffre, CR7, tout ça, tout ça...\) devra absolument se finit par 4 chiffres 0. On aurait ceci par exemple :
 
 ```py
-hash(x * 7) = ac23dc...0
+hash(x * 7) = ecad23dc...0000
+```
+
+Ce donnerait le code suivant :
+
+```py
+#!/usr/bin/env
+# coding: utf-8
+import time
+from hashlib import sha256
+x = 10 # Une valeur qui variera et que l'on stockera dans les blocs
+y = 7  # Notre chiffre préféré :-)
+
+temps1 = time.time()
+while sha256('{x*y}'.encode()).hexdigest()[-1] != "0000":
+    print y
+    y += 1
+
+temps2 = time.time()
+temps = (temps2-temps1)*1000.0
+print('La solution est x = {x} au bout de {temps} s')
+
 ```
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
