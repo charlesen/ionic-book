@@ -1,6 +1,6 @@
 # Introduction
 
-Si vous avez ce livre entre les mains c’est que vous avez décidé comme d’autres avant vous de vous lancer dans ce monde merveilleux du développement mobile. Vous rêvez de grandes choses, vous avez des idées qui sont susceptibles de révolutionner la vie de milliards d’individus, et vous êtes conscient qu’avoir des compétences en développement mobile vous sera utile : bravo, ce livre a été écrit pour vous.
+les premiers jours du mobile, il n'y avait vraiment qu'une seule façon de donner aux utilisateurs la performance et les fonctionnalités qu'ils attendaient. Vous deviez utiliser un SDK natif. Bien sûr, cela est venu avec des compromis: • Construire en parallèle pour chaque plate-forme mobile • Gestion de plusieurs bases de code • Embaucher et retenir des développeurs natifs hautement spécialisés et coûteux Pendant ce temps, la demande pour les expériences mobiles a augmenté de façon exponentielle. Par 2022, 70% de toutes les interactions de logiciels d'entreprise devraient se produire sur appareils mobiles
 
 Selon un rapport[^1] de l'entreprise américaine comScore \(analyse publicitaire\), le nombre d'utilisateurs mobiles a dépassé les utilisateurs d’ordinateurs de bureau en 2014.
 
@@ -41,4 +41,8 @@ C'est pour dire à quel point les choses ont évolué. Ce qui était, il y a enc
 Je ne peux m'empêcher de penser à cette époque où il fallait être un véritable génie de l’informatique pour mettre en place, puis publier un site internet sur le web. Aujourd’hui, quelques clics suffisent pour le faire grâce notamment aux CMS \(Content Management System pour Système de Gestion de contenus\) comme Wordpress ou Joomla!.
 
 Si la porte d'entrée des stores étaient autrefois réservées à quelques privilégiés \(les habitués quoi\), tout le monde peut aujourd'hui se lancer à l'assaut du gros marché du mobile et pourquoi pas devenir la prochaine grosse du milieu high-tech.
+
+
+
+Si vous lisez ce livre en ce moment c’est que vous avez décidé comme d’autres avant vous de vous lancer dans ce monde merveilleux du développement mobile. Vous rêvez de grandes choses, vous avez des idées qui sont susceptibles de révolutionner la vie de milliards d’individus, et vous êtes conscient qu’avoir des compétences en développement mobile vous sera utile : bravo, ce livre a été écrit pour vous.
 
