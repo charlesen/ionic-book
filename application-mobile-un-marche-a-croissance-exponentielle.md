@@ -74,3 +74,5 @@ De plus, la monnaie fonctionnera à peu près sur le même principe que le Bitco
 
 Ce livre n'étant pas consacré à la Blockchain et aux cryptomonnaies, vous n'êtes pas obligé de lire la suite de ce chapitre et pouvez directement passer à la suite. Mais si vous êtes un tant soit peu curieux, alors restez, vous ne serez pas dessus je pense.
 
+
+
