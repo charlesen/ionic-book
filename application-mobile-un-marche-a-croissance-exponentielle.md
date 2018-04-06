@@ -60,5 +60,9 @@ Une image valant mieux qu'un discours, voici comment on pourrait représenter la
                                    Source : Blockchain France
 ```
 
+Les applications de la Blockchain sont multiples car elle permet d'éliminer les tiers de confiance habituels que sont les banques, les assurances, les notaires,...et même l'Etat.
 
+Si l'euro a de la valeur aujourd'hui c'est d'abord parce que cette valeur nous la lui accordons et que les banques et les Etats européens veillent à ce que cela soit toujours le cas en limitant sa quantité et sa provenance \(BCE\), en punissant pénalement la création de fausses monnaies,...
+
+Avec la blockchain, ses tiers de confiance peuvent s'en aller en paix, la confiance étant mutualisé entre les différents noeud du réseau blockchain. Rien ne nous empêche alors de créer notre propre monnaie, ce que nous allons dans les prochains chapitres notre cryptomonnaies **DuckCoin**. 
 
