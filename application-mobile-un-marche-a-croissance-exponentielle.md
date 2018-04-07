@@ -301,13 +301,13 @@ class Blockchain(object):
         """
         Un algorithm de Preuve de travail :
          - Trouver un nombre x tel que hash(xy) contient 4 zeros en fin de chaine, x étant la preuve précendente
-         - x est la preuve précendente, and y la nouvelle
+         - x est la preuve précendente, et y la nouvelle
         :param last_proof: <int>
         :return: <int>
         """
 
         proof = 0
-        while self.valid_proof(last_proof, proof) is False:
+        while not self.valid_proof(last_proof, proof):
             proof += 1
 
         return proof
@@ -327,8 +327,6 @@ class Blockchain(object):
 ```
 
 J'ai testé cette preuve de travail, elle est requiert quand même pas mal de temps de calcul. C'est pourquoi, je vous en propose une deuxième, beaucoup moins fiable, mais qui nous permettra d'avoir une blockchain qui fonctionne à peu près rapidement.
-
-
 
 
 
