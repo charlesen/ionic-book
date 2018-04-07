@@ -309,7 +309,7 @@ class Blockchain(object):
 
 On aurait pu compliquer le calcul en testant un nombre de zéros beaucoup plus grand, mais l'on se contentera de 3 zéros. Si vous passer de 3 à 4, le même calcul avec les mêmes valeurs en entrée est largement plus long. Donc on imagine bien que plus l'on augmente le nombre de zéros, et plus les choses se compliquent.
 
-Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à celle que l'on a implementé, utilise un nombre de zéros égal à 21 ! C'est quand même énorme.
+Un test avec une valeur de x=2018, permet d'avoir un résultat en 0.07s environ
 
 ```py
 import time
@@ -328,6 +328,12 @@ temps = (fin-debut)*1000.0
 # Hash trouvé : 000e7ea9705df1fe65fe077d5054fe4a12aa6bbe074d5060ed9f0b251e16d0f9
 # La solution est y = 566 au bout de 0.0716059207916 s
 ```
+
+Le meme test prend plus de 6s pour un nombre de zéros égal à 4.
+
+Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à celle que l'on a implementé, utilise un nombre de zéros égal à 18 ! C'est quand même énorme.
+
+![](/assets/block_screen.png)
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
