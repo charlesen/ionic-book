@@ -267,9 +267,9 @@ hash(x * y) = 000ecad23dc...
 Cela donnerait le code suivant :
 
 ```py
-import hashlib
 import json
 
+from hashlib import sha256
 from time import time
 from uuid import uuid4
 
@@ -334,6 +334,10 @@ Le meme test prend plus de 6s pour un nombre de zéros égal à 4.
 Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à celle que l'on a implementé, utilise un nombre de zéros égal à 18 ! C'est quand même énorme.
 
 ![](/assets/block_screen.png)
+
+### Interaction avec la Blockchain DuckCoin
+
+
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
