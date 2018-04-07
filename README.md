@@ -16,7 +16,7 @@
 
 [Chap 1 - Une brêve histoire du mobile](/chapter1.md)
 
-[Chap 2 - Du rêve à la réalité : DuckCoin, la cryptomonnaie sur mobile](/application-mobile-un-marche-a-croissance-exponentielle.md)
+[Chap 2 - Cas pratique: DuckCoin, la cryptomonnaie sur mobile](/application-mobile-un-marche-a-croissance-exponentielle.md)
 
 Chap 3 - Installation de Ionic et premières prises en main
 
