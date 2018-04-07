@@ -312,16 +312,18 @@ On aurait pu compliquer le calcul en testant un nombre de zéros beaucoup plus g
 Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à celle que l'on a implementé, utilise un nombre de zéros égal à 21 ! C'est quand même énorme.
 
 ```py
+import time
+
 x = 2018 # Dernière preuve
 y = 0  # Valeur que l'on incrémentera jusqu'à trouver le bon résultat
 
-temps1 = time.time()
+debut = time.time()
 while not valid_proof(x,y):
     y += 1
     print y
 
-temps2 = time.time()
-temps = (temps2-temps1)*1000.0
+fin = time.time()
+temps = (fin-debut)*1000.0
 
 # Hash trouvé : 000e7ea9705df1fe65fe077d5054fe4a12aa6bbe074d5060ed9f0b251e16d0f9
 # La solution est y = 566 au bout de 63.7757778168 ms
