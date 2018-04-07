@@ -326,6 +326,12 @@ class Blockchain(object):
         return guess_hash[:4] == "0000"
 ```
 
+J'ai testé cette preuve de travail, elle est requiert quand même pas mal de temps de calcul. C'est pourquoi, je vous en propose une deuxième, beaucoup moins fiable, mais qui nous permettra d'avoir une blockchain qui fonctionne à peu près rapidement.
+
+
+
+
+
 Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
 [^1]: Le timestamp \(unix\) désigne le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC précise
