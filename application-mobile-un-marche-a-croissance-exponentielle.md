@@ -297,8 +297,8 @@ class Blockchain(object):
     @staticmethod
     def valid_proof(last_proof, proof):
         """
-        Validation du résulat la preuve de travail : est-ce que hash(last_proof, proof) 
-        commence bien par 3 zeros
+        Validation du résulat de la preuve de travail : est-ce que hash(last_proof, proof) 
+        commence bien par 3 zeros ?
         :param last_proof: <int> Preuve précédente
         :param proof: <int> Preuve actuelle
         :return: <bool>
@@ -337,9 +337,9 @@ Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à cell
 
 ### Interaction avec la Blockchain DuckCoin
 
+Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Le projet sera visible depuis l'adresse : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
 
-Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
 [^1]: Le timestamp \(unix\) désigne le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC précise
 
