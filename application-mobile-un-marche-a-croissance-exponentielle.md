@@ -166,8 +166,9 @@ Chaque fois qu'un utilisateur souhaitera envoyer de l'argent à un autre, c'est 
 A la création de la blockchain, nous allons devoir créer un bloc initial, qui stockera les toutes premières transactions de la blockchain. C'est à l'intérieur de ce bloc par exemple que l'on pourra stocker les transactions permettant d'envoyer de l'argent aux 20 premiers utilisateurs de notre cryptomonnaie. Ce bloc initial est appelé dans le milieu de la blockchain _**Genesis**_, pour genèse en français. Et avant la genèse, il n y a rien...en principe.
 
 ```py
-import hashlib
 import json
+from hashlib sha256
+
 from time import time
 
 
@@ -203,12 +204,12 @@ class Blockchain(object):
 
     def new_transaction(self, sender, recipient, amount):
         """
-    Création d'une nouvelle transaction qui sera intégré au dernier bloc à inclure dans la blockchain
-    :param sender: <str> Adresse (hash) du destinateur
-    :param recipient: <str> Adresse (hash) du destinataire
-    :param amount: <int> Montant envoyé par le 'sender' au 'recipient'
-    :return: <int> index du bloc qui stockera cette transaction
-    """
+        Création d'une nouvelle transaction qui sera intégré au dernier bloc à inclure dans la blockchain
+        :param sender: <str> Adresse (hash) du destinateur
+        :param recipient: <str> Adresse (hash) du destinataire
+        :param amount: <int> Montant envoyé par le 'sender' au 'recipient'
+        :return: <int> index du bloc qui stockera cette transaction
+        """
         self.current_transactions.append({
             'sender': sender,
             'recipient': recipient,
@@ -231,7 +232,7 @@ class Blockchain(object):
 
         # On ordonne le bloc avant de le sérialiser
         block_string = json.dumps(block, sort_keys=True).encode()
-        return hashlib.sha256(block_string).hexdigest()
+        return sha256(block_string).hexdigest()
 ```
 
 ### La Preuve de travail, Proof of Work \(pow\)
@@ -279,7 +280,7 @@ class Blockchain(object):
 
     def proof_of_work(self, last_proof):
         """
-        Un algorithm de Preuve de travail :
+        Un algorithme de Preuve de travail :
          - Trouver un nombre x tel que hash(xy) commence par 3 zeros
          - x étant la preuve précendente (last_proof)
          - y étant une valeur que l'on incrémentera en partant de zero et qui 
@@ -287,7 +288,6 @@ class Blockchain(object):
         :param last_proof: <int>
         :return: <int>
         """
-
         proof = 0
         while not self.valid_proof(last_proof, proof):
             proof += 1
@@ -337,7 +337,9 @@ Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à cell
 
 ### Interaction avec la Blockchain DuckCoin
 
-Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Le projet sera visible depuis l'adresse : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
+Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Si vous souhaitez en savoir plus sur Flask, n'hésitez pas à lire l'excellente documentation en ligne : [http://flask.pocoo.org/](http://flask.pocoo.org/)
+
+Notre cryptomonnaie sera disponible à l'adresse : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
 Nous créerons les actions suivantes :
 
@@ -346,7 +348,10 @@ Nous créerons les actions suivantes :
 | /transactions/new | Permet d'ajouter une nouvelle transaction |
 | /mine | Minage d'un nouveau bloc |
 | /chain | Retourne la blockchain complète |
-cdcd
+
+
+
+
 
 [^1]: Le timestamp \(unix\) désigne le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC précise
 
