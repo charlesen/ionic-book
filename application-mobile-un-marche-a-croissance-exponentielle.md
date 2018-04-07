@@ -300,8 +300,10 @@ class Blockchain(object):
     def proof_of_work(self, last_proof):
         """
         Un algorithm de Preuve de travail :
-         - Trouver un nombre x tel que hash(xy) contient 4 zeros en fin de chaine, x étant la preuve précendente
-         - x est la preuve précendente, et y la nouvelle
+         - Trouver un nombre x tel que hash(xy) contient 4 zeros en fin de chaine
+         - x étant la preuve précendente (last_proof)
+         - y étant une valeur que l'on incrémentera en partant de zero et qui 
+         à la fin du calcul deviendra la nouvelle preuve (proof)
         :param last_proof: <int>
         :return: <int>
         """
@@ -315,20 +317,19 @@ class Blockchain(object):
     @staticmethod
     def valid_proof(last_proof, proof):
         """
-        Validation du résulat la preuve de travail : est-ce que hash(last_proof, proof) contient bien n chiffres zero?
+        Validation du résulat la preuve de travail : est-ce que hash(last_proof, proof) 
+        finit bien par 3 chiffres zero
         :param last_proof: <int> Preuve précédente
         :param proof: <int> Preuve actuelle
         :return: <bool>
         """
-
-        guess = f'{last_proof}{proof}'.encode()
-        guess_hash = hashlib.sha256(guess).hexdigest()
-        return guess_hash[:4] == "0000"
+        proof_hash = sha256(str(last_proof*proof)).hexdigest()
+        return proof_hash[:3] == "000"
 ```
 
-J'ai testé cette preuve de travail, elle est requiert quand même pas mal de temps de calcul. C'est pourquoi, je vous en propose une deuxième, beaucoup moins fiable, mais qui nous permettra d'avoir une blockchain qui fonctionne à peu près rapidement.
+On aurait pu compliquer le calcul en testant une valeur de nonce \(les zéros en fin de chaine\) beaucoup plus grande, mais l'on se contentera de 3 zéros. 
 
-
+Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à celle que l'on a implementé, utilise un nonce=21 : on doit donc trouver un hash finissant par 21 zéros ! C'est juste énorme.
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
