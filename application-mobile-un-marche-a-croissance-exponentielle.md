@@ -326,7 +326,7 @@ fin = time.time()
 temps = (fin-debut)*1000.0
 
 # Hash trouvé : 000e7ea9705df1fe65fe077d5054fe4a12aa6bbe074d5060ed9f0b251e16d0f9
-# La solution est y = 566 au bout de 63.7757778168 ms
+# La solution est y = 566 au bout de 0.0716059207916 s
 ```
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
