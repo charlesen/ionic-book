@@ -346,6 +346,7 @@ Nous créerons les actions suivantes :
 | /transactions/new | Permet d'ajouter une nouvelle transaction |
 | /mine | Minage d'un nouveau bloc |
 | /chain | Retourne la blockchain complète |
+cdcd
 
 [^1]: Le timestamp \(unix\) désigne le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC précise
 
