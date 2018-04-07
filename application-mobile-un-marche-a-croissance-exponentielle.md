@@ -258,33 +258,13 @@ Pour en savoir plus, n'hésitez pas à lire le bel article de **Cryptoencycloped
 
 ---
 
-Pour notre algorithme de preuve de travail, choisissons arbitrairement que le hash d'un entier X, multiplié par le chiffre 7 \(je l'aime bien ce chiffre, CR7, tout ça, tout ça...\) devra absolument se finit par 4 chiffres 0. On aurait ceci par exemple :
+Pour notre algorithme de preuve de travail, choisissons arbitrairement que le hash d'un entier X, multiplié par un autre entier Y devra absolument se commencer par 3 chiffres 0. On aurait ceci par exemple :
 
 ```py
-hash(x * 7) = ecad23dc...0000
+hash(x * y) = 000ecad23dc...
 ```
 
-Ce donnerait le code suivant :
-
-```py
-#!/usr/bin/env
-# coding: utf-8
-import time
-from hashlib import sha256
-x = 10 # Une valeur qui variera et que l'on stockera dans les blocs
-y = 7  # Notre chiffre préféré :-)
-
-temps1 = time.time()
-while sha256('{x*y}'.encode()).hexdigest()[-1] != "0000":
-    print y
-    y += 1
-
-temps2 = time.time()
-temps = (temps2-temps1)*1000.0
-print('La solution est x = {x} au bout de {temps} s')
-```
-
-On l'ajoute à notre code principale :
+Cela donnerait le code suivant :
 
 ```py
 import hashlib
@@ -300,7 +280,7 @@ class Blockchain(object):
     def proof_of_work(self, last_proof):
         """
         Un algorithm de Preuve de travail :
-         - Trouver un nombre x tel que hash(xy) contient 4 zeros en fin de chaine
+         - Trouver un nombre x tel que hash(xy) commence par 3 zeros
          - x étant la preuve précendente (last_proof)
          - y étant une valeur que l'on incrémentera en partant de zero et qui 
          à la fin du calcul deviendra la nouvelle preuve (proof)
@@ -318,7 +298,7 @@ class Blockchain(object):
     def valid_proof(last_proof, proof):
         """
         Validation du résulat la preuve de travail : est-ce que hash(last_proof, proof) 
-        finit bien par 3 chiffres zero
+        commence bien par 3 zeros
         :param last_proof: <int> Preuve précédente
         :param proof: <int> Preuve actuelle
         :return: <bool>
@@ -327,9 +307,25 @@ class Blockchain(object):
         return proof_hash[:3] == "000"
 ```
 
-On aurait pu compliquer le calcul en testant une valeur de nonce \(les zéros en fin de chaine\) beaucoup plus grande, mais l'on se contentera de 3 zéros. 
+On aurait pu compliquer le calcul en testant un nombre de zéros beaucoup plus grand, mais l'on se contentera de 3 zéros. Si vous passer de 3 à 4, le même calcul avec les mêmes valeurs en entrée est largement plus long. Donc on imagine bien que plus l'on augmente le nombre de zéros, et plus les choses se compliquent.
 
-Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à celle que l'on a implementé, utilise un nonce=21 : on doit donc trouver un hash finissant par 21 zéros ! C'est juste énorme.
+Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à celle que l'on a implementé, utilise un nombre de zéros égal à 21 ! C'est quand même énorme.
+
+```py
+x = 2018 # Dernière preuve
+y = 0  # Valeur que l'on incrémentera jusqu'à trouver le bon résultat
+
+temps1 = time.time()
+while not valid_proof(x,y):
+    y += 1
+    print y
+
+temps2 = time.time()
+temps = (temps2-temps1)*1000.0
+
+# Hash trouvé : 000e7ea9705df1fe65fe077d5054fe4a12aa6bbe074d5060ed9f0b251e16d0f9
+# La solution est y = 566 au bout de 63.7757778168 ms
+```
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Tous les détails vous pourrez les trouver directement à l'adrese du projet : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
 
