@@ -26,6 +26,18 @@ Comme son nom peut le suggérer, NPM est le gestionnaire de packet de NodeJS, qu
 
 Pour installer NodeJS, il suffit simplement de visiter l'adresse : [https://nodejs.org/en/download/](https://nodejs.org/en/download/) et de télécharger de gestionnaire d'installation au format **.msi** et se laisser guider. Le gestionnaire installera également NPM.
 
+Ouvrez un invite de commande en saisissant CTRL+R, puis cmd, et depuis cet invite, saisir :
+
+```
+node -v
+```
+
+Vous devriez voir s'afficher la version actuelle de NodeJs.
+
+#### Mac OS
+
+L'installation sous Mac OS est à peu près la même que sous Windows car il vous suffit de cliquer sur la version Node correspondant à cet OS. D'ailleurs en visitant simplement le site [https://nodejs.org/en/download/](https://nodejs.org/en/download/), une version adaptée à votre  système d'exploitation vous sera proposée automatiquement. 
+
 #### Linux \(Ubuntu\)
 
 sous linux et en particulier Ubuntu, il vous suffit de saisir les commandes suivantes depuis un invite de commandes :
@@ -50,7 +62,7 @@ $ node -v
 v8.11.1
 ```
 
-#### Mac OS
+
 
 Ionic CLI et Cordova
 
