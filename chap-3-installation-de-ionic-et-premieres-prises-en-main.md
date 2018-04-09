@@ -18,7 +18,7 @@ De plus, NodeJS, à l'instar de Ionic, est Open Source, gratuit et disponible po
 
 ![](/assets/npm.png)
 
-Comme son nom semble le suggérer, NPM est le gestionnaire de packet NodeJS. La technologie NodeJS étant très modulaire, son ecosystème est constamment enrichie par des modules développés par les membres de sa large communauté.
+Comme son nom peut le suggérer, NPM est le gestionnaire de packet de NodeJS, qui étant très modulaire, voit son ecosystème  constamment enrichie par des modules développés par les membres de sa large communauté.
 
 ### Installation
 
