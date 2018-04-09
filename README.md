@@ -30,7 +30,7 @@ Chap 7 - Introduction au framework Angular
 
 Chap 8 - Architecture avancée d'une application Ionic : composants, Directives, Providers et Modules
 
-Chap 9 - Notions de débogage d'une application mobile
+Chap 9 - Débogage, Tests et Monitoring
 
 Chap 10 - Ionic et son écosystème : Cloud, Lab et Creator
 
