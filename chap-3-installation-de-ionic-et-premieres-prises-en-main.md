@@ -36,7 +36,7 @@ Vous devriez voir s'afficher la version actuelle de NodeJs.
 
 #### Mac OS
 
-L'installation sous Mac OS est à peu près la même que sous Windows car il vous suffit de cliquer sur la version Node correspondant à cet OS. D'ailleurs en visitant simplement le site [https://nodejs.org/en/download/](https://nodejs.org/en/download/), une version adaptée à votre  système d'exploitation vous sera proposée automatiquement. 
+L'installation sous Mac OS est à peu près la même que sous Windows car il vous suffit de cliquer sur la version Node correspondant à cet OS. D'ailleurs en visitant simplement le site [https://nodejs.org/en/download/](https://nodejs.org/en/download/), une version adaptée à votre  système d'exploitation vous sera proposée automatiquement.
 
 #### Linux \(Ubuntu\)
 
@@ -62,7 +62,15 @@ $ node -v
 v8.11.1
 ```
 
+### Ionic CLI et Cordova
+
+Une fois Node et NPM installés, le reste se passera en ligne de commande. Ouvrez donc votre terminal préféré et saisissez les commandes suivantes pour installer Ionic et Cordova :
+
+```
+$ npm install -g ionic cordova
+```
+
+Voilà, vous y êtes. On va donc pouvoir créer notre application mobile.
 
 
-Ionic CLI et Cordova
 
