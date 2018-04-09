@@ -1,8 +1,8 @@
 # 
 
-# Développement d'applications mobiles robustes avec le Framework Ionic
+# Développement d'applications mobiles le Framework Ionic
 
-![](/assets/mobile_dev.jpg)
+![](/assets/0.png)
 
 ---
 
