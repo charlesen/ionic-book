@@ -126,7 +126,7 @@ Ionic c'est d'abord Apache Cordova et ses nombreux plugins natifs, Angular de Go
 
 ![](/assets/cordova-ng-ionic.png)
 
-### Code une fois, déployer partout
+### Coder une fois, déployer partout
 
 Et oui, c'est surement l'un des plus gros avantages de Ionic : la possibilité de développer votre application une fois, et la déployer sur plusieurs terminaux mobiles.
 
