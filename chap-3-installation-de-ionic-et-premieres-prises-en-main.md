@@ -12,11 +12,9 @@ JavaScript, on nous l'a toujours dit, est un langage dit côté client. Les chos
 
 De plus, NodeJS, à l'instar de Ionic, est Open Source, gratuit et disponible pour différentes plateformes \(Windows, Linux, Unix, Mac OS,...\)
 
-NPM : le gestionnaire de packet
+### NPM : Node Package Manager
 
-
+Comme son nom semble le suggérer, NPM est le gestionnaire de packet NodeJS. La technologie NodeJS étant très modulaire, son ecosystème est constamment 
 
 Ionic CLI et Cordova
-
-
 
