@@ -126,7 +126,11 @@ Ionic c'est d'abord Apache Cordova et ses nombreux plugins natifs, Angular de Go
 
 ### Code une fois, déployer partout
 
-Et oui, c'est surement l'un des plus gros avantages de Ionic : la possibilité de développer votre application une fois, et la déployer sur plusieurs terminaux mobiles. Alors que la plupart des outils de développement d'applications mobiles hybrides sont difficiles d'accès, parfois peu ou mal documentés, Ionic propose une architecture beaucoup plus simple utiliser et une documentation claire, concise.
+Et oui, c'est surement l'un des plus gros avantages de Ionic : la possibilité de développer votre application une fois, et la déployer sur plusieurs terminaux mobiles. 
+
+![](/assets/Ionic-Framework-Training1.png)
+
+Alors que la plupart des outils de développement d'applications mobiles hybrides sont difficiles d'accès, parfois peu ou mal documentés, Ionic propose une architecture beaucoup plus simple utiliser et une documentation claire, concise.
 
 ### Une interface utilisateur élégante
 
@@ -135,8 +139,6 @@ Le framework proposent de nombreux composants et templates qui vous faciliteront
 ### Tests et debogage simples
 
 Tester une application mobile n'aura jamais été aussi simple. Ionic vous laisse le choix de tester votre application mobile soit directement depuis votre navigateur préféré, depuis un emulateur, votre téléphone connecté en USB ou alors via les applications Ionic App Dev et Ionic View \(qui vous permet en autre de faire tester votre application à distance sans passer par un app store\).
-
-
 
 [^1]: John Ronald Reuel Tolkien, plus connu sous la forme J. R. R. Tolkien, est un écrivain, poète, philologue, essayiste et professeur d’université anglais. Il est principalement connu pour ses romans _Le Hobbit_ et Le Seigneur des anneaux. \(Sources : [wikipédia](https://fr.wikipedia.org/wiki/J._R._R._Tolkien)\). 
 
