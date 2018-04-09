@@ -134,15 +134,17 @@ Et oui, c'est surement l'un des plus gros avantages de Ionic : la possibilité d
 
 Alors que la plupart des outils de développement d'applications mobiles hybrides sont difficiles d'accès, parfois peu ou mal documentés, Ionic propose une architecture beaucoup plus simple utiliser et une documentation claire, concise.
 
-### Une interface utilisateur élégante
+### Des composants logiciels élégants
 
 Le framework proposent de nombreux composants et templates qui vous faciliteront énormément la vie. Pas besoin d'être un expert UX pour commencer à créer des applications élégante et ergonomiques : quelques clics et quelques lignes de codes suffisent.
+
+![](/assets/screenshot_6.png)
+
+![](/assets/screenshot_4.png)
 
 ### Tests et debogage simples
 
 Tester une application mobile n'aura jamais été aussi simple. Ionic vous laisse le choix de tester votre application mobile soit directement depuis votre navigateur préféré, depuis un emulateur, votre téléphone connecté en USB ou alors via les applications Ionic App Dev et Ionic View \(qui vous permet en autre de faire tester votre application à distance sans passer par un app store\).
-
-
 
 ### Un ecosystème riche
 
@@ -152,8 +154,6 @@ Une autre force de Ionic est très certainement son large panel de produits à l
 * [**Ionic Cloud**](https://ionicframework.com/pro/deploy) : pour la gestion de son code, le build, la publication sur les app stores et le monitoring \(bug, logs, statistiques,...\)
 * [**Ionic creator**](https://ionicframework.com/pro/creator) : pour créer une application sans saisir une seule ligne de code. Pratique quand on débute.
 * [**Ionic Market**](https://market.ionicframework.com/) : pour trouver des templates, des kits, des plugins, gratuits et prêts à l'emploie. Pour mettre à la vente vos propres réalisations ou pour tout simplement trouver l'inspirations
-
-
 
 [^1]: John Ronald Reuel Tolkien, plus connu sous la forme J. R. R. Tolkien, est un écrivain, poète, philologue, essayiste et professeur d’université anglais. Il est principalement connu pour ses romans _Le Hobbit_ et Le Seigneur des anneaux. \(Sources : [wikipédia](https://fr.wikipedia.org/wiki/J._R._R._Tolkien)\). 
 
