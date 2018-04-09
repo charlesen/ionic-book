@@ -28,7 +28,5 @@ Comme son nom semble le suggérer, NPM est le gestionnaire de packet NodeJS. La 
 
 #### Mac OS
 
-
-
 Ionic CLI et Cordova
 
