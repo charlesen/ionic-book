@@ -80,9 +80,11 @@ Pour installer le SDK de Java, il vous suffit de visiter le site : [http://www.o
 
 ### Mac OS et Linux
 
-
-
 ## Android SDK
 
-Voilà, vous y êtes. On va donc pouvoir créer notre application mobile.
+La meilleur façon d'installer le SDK d'Android est encore d'installer Android Studio. Pour ce faire, rien de plus simple, il suffit de visiter le site [https://developer.android.com/studio/index.html\#downloads](https://developer.android.com/studio/index.html#downloads) 
+
+
+
+Voilà, vous y êtes. On va donc pouvoir créer notre première application mobile.
 
