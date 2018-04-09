@@ -16,4 +16,5 @@
 * [Chap 9 - Tests et débogages avancés](chap-9-debogage-tests-et-monitoring.md)
 * [Chap 10 - Ionic et son écosystème : Cloud, Lab, View et Creator](chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md)
 * [Chap 11 - Publication sur les stores](chap-11-publication-sur-les-stores.md)
+* [Chap 12 - Introduction au PWA avec Stencil et Capacitor](chap-12-introduction-au-pwa-avec-stencil-et-capacitor.md)
 
