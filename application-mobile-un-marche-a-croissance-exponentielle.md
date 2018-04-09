@@ -158,11 +158,13 @@ class Blockchain(object):
         return self.last_block['index'] + 1
 ```
 
-Chaque fois qu'un utilisateur souhaitera envoyer de l'argent à un autre, c'est cette méthode qui sera appelée.  Le tout \(la transaction\) sera stockée dans un le prochain bloc à miner \(notion que nous aborderons plus loin\).
+Chaque fois qu'un utilisateur souhaitera envoyer de l'argent à un autre, c'est cette méthode qui sera appelée.  Le tout \(la transaction\) sera stockée dans le prochain bloc à miner \(notion que nous aborderons plus loin\).
 
 ### Gestion des blocs
 
-A la création de la blockchain, nous allons devoir créer un bloc initial, qui stockera les toutes premières transactions de la blockchain. C'est à l'intérieur de ce bloc par exemple que l'on pourra stocker les transactions permettant d'envoyer de l'argent aux 20 premiers utilisateurs de notre cryptomonnaie. Ce bloc initial est appelé dans le milieu de la blockchain _**Genesis**_, pour genèse en français. Et avant la genèse, il n y a rien...en principe.
+A la création de la blockchain, nous allons devoir créer un bloc initial, qui stockera les toutes premières transactions de la blockchain. C'est à l'intérieur de ce bloc par exemple que l'on pourra stocker les transactions permettant d'envoyer de l'argent aux 20 premiers utilisateurs de notre cryptomonnaie. Et oui, avoir de l'argent en stock c'est bien, mais si personne ne s'en sert, elle n'a aucune valeur. 
+
+Ce bloc initial est appelé dans l'univers des cryptomonnaies, le bloc _**Genesis**_, pour genèse en français. Et avant la genèse, il n y a rien...en principe.
 
 ```py
 import json
@@ -177,7 +179,7 @@ class Blockchain(object):
         self.chain = []
 
         # Création du bloc initial genesis
-        self.new_block(previous_hash=1, proof=100)
+        self.new_block(previous_hash='', proof=100)
 
     def new_block(self, proof, previous_hash=None):
         """
