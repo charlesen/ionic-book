@@ -338,9 +338,7 @@ Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à cell
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Si vous souhaitez en savoir plus sur Flask, n'hésitez pas à lire l'excellente documentation en ligne : [http://flask.pocoo.org/](http://flask.pocoo.org/)
 
-Notre cryptomonnaie sera disponible à l'adresse : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/)
-
-Nous créerons les actions suivantes :
+Notre cryptomonnaie qui est disponible à l'adresse : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/) peut être exploitée via les actions suivantes :
 
 | Action | Description |
 | :--- | :--- |
