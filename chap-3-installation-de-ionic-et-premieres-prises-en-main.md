@@ -28,7 +28,7 @@ Pour installer NodeJS, il suffit simplement de visiter l'adresse : [https://node
 
 #### Linux \(Ubuntu\)
 
-sous linux et en particulier Ubuntu, il vous suffit, depuis un invite de commande, de saisir :
+sous linux et en particulier Ubuntu, il vous suffit de saisir les commandes suivantes depuis un invite de commandes :
 
 ```
 $ sudo apt-get update
@@ -49,8 +49,6 @@ $ node -v
 
 v8.11.1
 ```
-
-
 
 #### Mac OS
 
