@@ -1,11 +1,10 @@
-
----
-
 # Chap 2 - Cas pratique : DuckCoin, la cryptomonnaie sur mobile
 
 Explorer Ionic et son écosystème peut vite devenir très long, alors pour faire à peu près le tour du sujet, je vous propose dans ce livre de partir d'un projet concret qui va nous permettre d'aborder tous les concepts techniques dont vous aurez besoin pour lancer votre propre application mobile.
 
-Après réflexion, et aimant surfer sur les tendances technologiques du moment, j'aimerais vous proposer d'explorer l'univers des cryptomonnaie en développant une application que l'on appelera **DuckCoin**.
+Après réflexion, et aimant surfer sur les tendances technologiques du moment, je vous propose d'explorer l'univers des cryptomonnaies en développant notre propre monnaie numérique, basé sur une blockchain du même et que nous appelerons **DuckCoin, **en hommage à la mascotte du département MMI de l'IUT de Troyes.
+
+Un site internet a été créé pour l'occasion. Vous pourrez le visiter, vous inscrire et tester notre cryptomonnaie solidaire : [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr)![](/assets/duckcoin.png)
 
 C’est à la une de quasiment tous les journaux d’information. Par une seule semaine sans que l’on vous parle ci et là du Bitcoin, de Ripple ou d’une autre crypto-monnaie en vogue.
 
@@ -348,10 +347,6 @@ Nous créerons les actions suivantes :
 | /transactions/new | Permet d'ajouter une nouvelle transaction |
 | /mine | Minage d'un nouveau bloc |
 | /chain | Retourne la blockchain complète |
-
-
-
-
 
 [^1]: Le timestamp \(unix\) désigne le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC précise
 
