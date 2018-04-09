@@ -12,5 +12,8 @@
 * [Chap 6 - Introduction au langage TypeScript, le futur de JavaScript](chap-6-introduction-au-langage-typescript-le-futur-de-javascript.md)
 * [Chap 7 - Introduction au framework Angular](chap-7-introduction-au-framework-angular.md)
 * [Chap 8 - Architecture avancée d'une application Ionic : composants, Directives, Providers et Modules](chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md)
-* [Chap 9 - Débogage, Tests et Monitoring](chap-9-debogage-tests-et-monitoring.md)
+* [Chap 9 - Tests et débogages avancés](chap-9-debogage-tests-et-monitoring.md)
+* [Chap 10 - Ionic et son écosystème : Cloud, Lab, View et Creator](chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md)
+* [Chap 11 - Publication sur les stores](chap-11-publication-sur-les-stores.md)
+* [Chap 12 - Introduction au PWA avec Stencil et Capacitor](chap-12-introduction-au-pwa.md)
 
