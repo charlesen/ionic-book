@@ -24,7 +24,33 @@ Comme son nom peut le suggérer, NPM est le gestionnaire de packet de NodeJS, qu
 
 #### Windows
 
+Pour installer NodeJS, il suffit simplement de visiter l'adresse : [https://nodejs.org/en/download/](https://nodejs.org/en/download/) et de télécharger de gestionnaire d'installation au format **.msi** et se laisser guider. Le gestionnaire installera également NPM.
+
 #### Linux \(Ubuntu\)
+
+sous linux et en particulier Ubuntu, il vous suffit, depuis un invite de commande, de saisir :
+
+```
+$ sudo apt-get update
+$ sudo apt-get install nodejs npm
+```
+
+une fois l'installation effective, il faut encore créer les liens symboliques suivants :
+
+```
+$ sudo ln -s /usr/bin/nodejs /usr/local/bin/node
+$ sudo ln -s /usr/bin/npm /usr/local/bin/npm
+```
+
+Pour vous vérifier que tout s'est bien passé, il vous suffit de saisir la commande suivante qui vous retournera la version actuelle de Node
+
+```
+$ node -v
+
+v8.11.1
+```
+
+
 
 #### Mac OS
 
