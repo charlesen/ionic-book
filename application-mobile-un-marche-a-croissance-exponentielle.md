@@ -134,7 +134,7 @@ A présent rentrons plus en détail sur le fonctionnement des méthodes de la cl
 
 ### Gestions des transactions
 
-La méthode **new\_transaction** est en charge de l'ajout de nouvelle transaction au sein d'un bloc.
+La méthode **new\_transaction** est en charge de l'ajout de nouvelles transactions au sein d'un bloc.
 
 ```py
 class Blockchain(object):
