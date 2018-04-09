@@ -62,7 +62,7 @@ $ node -v
 v8.11.1
 ```
 
-### Ionic CLI et Cordova
+## Ionic CLI et Cordova
 
 Une fois Node et NPM installés, le reste se passera en ligne de commande. Ouvrez donc votre terminal préféré et saisissez les commandes suivantes pour installer Ionic et Cordova :
 
@@ -70,13 +70,19 @@ Une fois Node et NPM installés, le reste se passera en ligne de commande. Ouvre
 $ npm install -g ionic cordova
 ```
 
-Java JDK
+Avant d'aller plus loin, il sera peut etre nécessaire d'installer d'autres logiciels comme le SDK de Java ou celui d'Android. Si ces logiciels sont déjà installé, vous pourrez directement passer à la suite, sinon, suivez le guide.
+
+## Java JDK
+
+### Windows
+
+Pour installer le SDK de Java, il vous suffit de visiter le site : [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) et de choisir le fichier adapté à votre système d'exploitation \(32 ou 64 bits\)
+
+### Mac OS et Linux
 
 
 
-Android SDK
-
-
+## Android SDK
 
 Voilà, vous y êtes. On va donc pouvoir créer notre application mobile.
 
