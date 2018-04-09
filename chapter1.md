@@ -112,7 +112,7 @@ Mais si vous souhaitez ne pas mettre profit autant de compétences techniques po
 
 ### Open Source et totalement gratuit
 
-Un avantage non considérable, surtout si l'on souhaite customiser un peu son travail, l'adapter à son contexte professionnel,...Gratuit, mais pas bradé pour autant. En effet, l'inconvénient d'un outil à parfois été son absence d'évolution et d'adaptation aux défis technologiques. Ce n'est pas le cas de Ionic, qui est passé d'une version 1 déjà révolutionnaire, à une version 3 extrêmement riche.
+Un avantage non considérable, surtout si l'on souhaite customiser un peu son travail, l'adapter à son contexte professionnel,...Gratuit, mais pas bradé pour autant. En effet, l'inconvénient d'un outil Open Source à parfois été son absence d'évolution et d'adaptation aux défis technologiques. Ce n'est pas le cas de Ionic, qui est par exemple passé d'une version 1 déjà révolutionnaire, à une version 3 extrêmement riche. Au moment de la rédaction de ce livre, une version 4 s'apprete à être lancé publiquement.
 
 ### Une large communauté
 
@@ -124,9 +124,11 @@ Rien que sur Stackoverflow en ce moment, le tag  ["ionic framework"](https://sta
 
 Ionic c'est d'abord Apache Cordova et ses nombreux plugins natifs, Angular de Google, NodeJS et bien d'autres technologies Open Source qui ont fait leur preuve depuis des années et ne cessent de croître à vitesse grand V.
 
+![](/assets/cordova-ng-ionic.png)
+
 ### Code une fois, déployer partout
 
-Et oui, c'est surement l'un des plus gros avantages de Ionic : la possibilité de développer votre application une fois, et la déployer sur plusieurs terminaux mobiles. 
+Et oui, c'est surement l'un des plus gros avantages de Ionic : la possibilité de développer votre application une fois, et la déployer sur plusieurs terminaux mobiles.
 
 ![](/assets/Ionic-Framework-Training1.png)
 
@@ -139,6 +141,19 @@ Le framework proposent de nombreux composants et templates qui vous faciliteront
 ### Tests et debogage simples
 
 Tester une application mobile n'aura jamais été aussi simple. Ionic vous laisse le choix de tester votre application mobile soit directement depuis votre navigateur préféré, depuis un emulateur, votre téléphone connecté en USB ou alors via les applications Ionic App Dev et Ionic View \(qui vous permet en autre de faire tester votre application à distance sans passer par un app store\).
+
+
+
+### Un ecosystème riche
+
+Une autre force de Ionic est très certainement son large panel de produits à la disposition des développeurs. On peut citer par exemple :
+
+* [**Les outils de déboggages**](https://ionicframework.com/pro/view) : Ionic view et Ionic Dev app
+* [**Ionic Cloud**](https://ionicframework.com/pro/deploy) : pour la gestion de son code, le build, la publication sur les app stores et le monitoring \(bug, logs, statistiques,...\)
+* [**Ionic creator**](https://ionicframework.com/pro/creator) : pour créer une application sans saisir une seule ligne de code. Pratique quand on débute.
+* [**Ionic Market**](https://market.ionicframework.com/) : pour trouver des templates, des kits, des plugins, gratuits et prêts à l'emploie. Pour mettre à la vente vos propres réalisations ou pour tout simplement trouver l'inspirations
+
+
 
 [^1]: John Ronald Reuel Tolkien, plus connu sous la forme J. R. R. Tolkien, est un écrivain, poète, philologue, essayiste et professeur d’université anglais. Il est principalement connu pour ses romans _Le Hobbit_ et Le Seigneur des anneaux. \(Sources : [wikipédia](https://fr.wikipedia.org/wiki/J._R._R._Tolkien)\). 
 
