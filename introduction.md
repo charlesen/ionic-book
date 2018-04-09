@@ -2,7 +2,7 @@
 
 Dès les premiers instants du mobile, il n'y avait vraiment qu'une seule façon d'offrir aux utilisateurs la performance et les fonctionnalités qu'ils attendaient : vous deviez utiliser un SDK, c'est à dire un ensemble d'outils logiciels spécifiques à la plateforme que vous souhaitiez cibler. Bien sûr, cela impliquait un certain nombre de contraintes :
 
-* Construire une version différentes pour chaque plate-forme mobile
+* Construire une version différente pour chaque plate-forme mobile
 * Gérer plusieurs codes sources
 * Embaucher et retenir des développeurs natifs hautement spécialisés et coûteux 
 
