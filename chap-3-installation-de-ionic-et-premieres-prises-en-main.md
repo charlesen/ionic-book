@@ -9,6 +9,7 @@ Parmi ces outils nous pouvons citer principalement :
 * **Apache Cordova** : un framework open-source développé par la Fondation Apache. Il permet de créer des applications pour différentes plateformes en HTML, CSS et JavaScript.
 
 * **NodeJS** : est un logiciel permettant de développer et d’exécuter du code JavaScript côté serveur, contrairement à ce qu’on a l’habitude de voir avec le javascript côté client.
+
 * **NPM** : le gestionnaire de paquet de NodeJS
 * **Angular** : un framework Javascript développé par Google
 * **TypeScript** : un langage de programmation libre et open source développé par Microsoft qui a pour but d’améliorer et de sécuriser la production de code JavaScript.
@@ -65,7 +66,7 @@ $ sudo ln -s /usr/bin/nodejs /usr/local/bin/node
 $ sudo ln -s /usr/bin/npm /usr/local/bin/npm
 ```
 
-Pour vous vérifier que tout s'est bien passé, il vous suffit de saisir la commande suivante qui vous retournera la version actuelle de Node
+Pour vérifier que tout s'est bien passé, il vous suffit de saisir la commande suivante qui vous retournera la version actuelle de Node :
 
 ```
 $ node -v
