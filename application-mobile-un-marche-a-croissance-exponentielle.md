@@ -162,7 +162,7 @@ Chaque fois qu'un utilisateur souhaitera envoyer de l'argent à un autre, c'est 
 
 ### Gestion des blocs
 
-A la création de la blockchain, nous allons devoir créer un bloc initial, qui stockera les toutes premières transactions de la blockchain. C'est à l'intérieur de ce bloc par exemple que l'on pourra stocker les transactions permettant d'envoyer de l'argent aux 20 premiers utilisateurs de notre cryptomonnaie. Et oui, avoir de l'argent en stock c'est bien, mais si personne ne s'en sert, elle n'a aucune valeur. 
+A la création de la blockchain, nous allons devoir créer un bloc initial, qui stockera les toutes premières transactions de la blockchain. C'est à l'intérieur de ce bloc par exemple que l'on pourra stocker les transactions permettant d'envoyer de l'argent aux 20 premiers utilisateurs de notre cryptomonnaie. Et oui, avoir de l'argent en stock c'est bien, mais si personne ne s'en sert, elle n'a aucune valeur.
 
 Ce bloc initial est appelé dans l'univers des cryptomonnaies, le bloc _**Genesis**_, pour genèse en français. Et avant la genèse, il n y a rien...en principe.
 
@@ -184,7 +184,7 @@ class Blockchain(object):
     def new_block(self, proof, previous_hash=None):
         """
         Création d'un nouveau bloc dans la Blockchain
-        :param pow: <int> valeur retourné l'algorithme de preuve de travail
+        :param proof: <int> valeur retourné l'algorithme de preuve de travail
         :param previous_hash: (Optionel pour le premier bloc) <str> Hash du bloc préc.
         :return: <dict> Nouveau Bloc
         """
@@ -193,7 +193,7 @@ class Blockchain(object):
             'index': len(self.chain) + 1,
             'timestamp': time(),
             'transactions': self.current_transactions,
-            'pow': pow,
+            'proof': proof,
             'previous_hash': previous_hash or self.hash(self.chain[-1]),
         }
 
