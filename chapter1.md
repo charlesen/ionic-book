@@ -138,9 +138,9 @@ Alors que la plupart des outils de développement d'applications mobiles hybride
 
 Le framework proposent de nombreux composants et templates qui vous faciliteront énormément la vie. Pas besoin d'être un expert UX pour commencer à créer des applications élégante et ergonomiques : quelques clics et quelques lignes de codes suffisent.
 
-![](/assets/screenshot_6.png)
+![](/assets/screenshot_6_tiny.png)![](/assets/screenshot_4_tiny.png)
 
-![](/assets/screenshot_4.png)
+
 
 ### Tests et debogage simples
 
