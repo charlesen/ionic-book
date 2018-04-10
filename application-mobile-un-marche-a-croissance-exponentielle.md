@@ -252,7 +252,7 @@ Prenons par exemple une preuve de travail bien connu, le Captcha, que l'on retro
 
 ![](/assets/reCAPTCHA_Sample_White.png)
 
-Si pour un humain, saisir ces informations est déjà assez difficile, imaginez celle que rencontrera un robot spammeur.
+Si pour un humain, saisir ces informations est déjà assez difficile, imaginez ce qu'éprouvera un robot spammeur.
 
 ---
 
