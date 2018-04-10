@@ -1,18 +1,11 @@
 {
-  "plugins": ["disqus", "download-pdf-link", "-lunr", "-search", "search-plus"],
+  "plugins": ["disqus", "-lunr", "-search", "search-plus"],
   "links": {
     "sidebar": {}
   },
   "pluginsConfig": {
     "disqus": {
       "shortName": "ionic-edounze-com"
-    },
-    "download-pdf-link": {
-      "base": "https://www.gitbook.com/book/poppy-project/poppy-docs/",
-      "label": {
-          "en": "Download PDF",
-          "fr": "Télécharger le PDF"
-      }
     }
   }
 }
