@@ -110,7 +110,7 @@ Mais si vous souhaitez ne pas mettre profit autant de compétences techniques po
 
 ## Pourquoi choisir Ionic ?
 
-### Open Source et totalement gratuit
+### Open Source et 100% gratuit
 
 Un avantage non considérable, surtout si l'on souhaite customiser un peu son travail, l'adapter à son contexte professionnel,...Gratuit, mais pas bradé pour autant. En effet, l'inconvénient d'un outil Open Source à parfois été son absence d'évolution et d'adaptation aux défis technologiques. Ce n'est pas le cas de Ionic, qui est par exemple passé d'une version 1 déjà révolutionnaire, à une version 3 extrêmement riche. Au moment de la rédaction de ce livre, une version 4 s'apprete à être lancé publiquement.
 
@@ -139,8 +139,6 @@ Alors que la plupart des outils de développement d'applications mobiles hybride
 Le framework proposent de nombreux composants et templates qui vous faciliteront énormément la vie. Pas besoin d'être un expert UX pour commencer à créer des applications élégante et ergonomiques : quelques clics et quelques lignes de codes suffisent.
 
 ![](/assets/screenshot_6_tiny.png)![](/assets/screenshot_4_tiny.png)
-
-
 
 ### Tests et debogage simples
 
