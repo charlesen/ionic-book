@@ -92,7 +92,7 @@ class Blockchain(object):
         pass
 
     def new_transaction(self):
-        # Ajoute une nouvelle transaction à la liste des transactions. 
+        # Ajoute une nouvelle transaction à la liste des transactions.
         # Un bloc peut contenir plusieurs transactions, toutes les unes que les autres
         pass
 
@@ -284,7 +284,7 @@ class Blockchain(object):
         Un algorithme de Preuve de travail :
          - Trouver un nombre x tel que hash(xy) commence par 3 zeros
          - x étant la preuve précendente (last_proof)
-         - y étant une valeur que l'on incrémentera en partant de zero et qui 
+         - y étant une valeur que l'on incrémentera en partant de zero et qui
          à la fin du calcul deviendra la nouvelle preuve (proof)
         :param last_proof: <int>
         :return: <int>
@@ -298,7 +298,7 @@ class Blockchain(object):
     @staticmethod
     def valid_proof(last_proof, proof):
         """
-        Validation du résulat de la preuve de travail : est-ce que hash(last_proof, proof) 
+        Validation du résulat de la preuve de travail : est-ce que hash(last_proof, proof)
         commence bien par 3 zeros ?
         :param last_proof: <int> Preuve précédente
         :param proof: <int> Preuve actuelle
@@ -348,5 +348,6 @@ Notre cryptomonnaie qui est disponible à l'adresse : [https://duckcoin.charlese
 | /mine | Minage d'un nouveau bloc |
 | /chain | Retourne la blockchain complète |
 
-[^1]: Le timestamp \(unix\) désigne le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC précise
+Maintenant que notre outil est en place, nous pouvons seirenement nous lancer dans la création de l'application mobile qui nous permettra d'interagir la Blockchain, gérer son portefeuille, envoyer ou recevoir de l'argent.
 
+[^1]: Le timestamp \(unix\) désigne le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC précise
