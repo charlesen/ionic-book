@@ -324,7 +324,7 @@ while not valid_proof(x,y):
     print y
 
 fin = time.time()
-temps = fin-debut
+duree = fin-debut
 
 # Hash trouvé : 000e7ea9705df1fe65fe077d5054fe4a12aa6bbe074d5060ed9f0b251e16d0f9
 # La solution est y = 566 au bout de 0.0716059207916 s
@@ -332,7 +332,7 @@ temps = fin-debut
 
 Le meme test prend plus de 6s pour un nombre de zéros égal à 4.
 
-Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à celle que l'on a implementé, utilise un nombre de zéros égal à 18 ! C'est quand même énorme.
+Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à celle que l'on a implementé, utilise un nombre de zéros égal à 18 \(voir image ci-dessous\). C'est quand même énorme !
 
 ![](/assets/block_screen.png)
 
