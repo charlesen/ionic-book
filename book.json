@@ -1,5 +1,5 @@
 {
-  "plugins": ["disqus", "download-pdf-link"],
+  "plugins": ["disqus", "download-pdf-link", "-lunr", "-search", "search-plus"],
   "links": {
     "sidebar": {}
   },
