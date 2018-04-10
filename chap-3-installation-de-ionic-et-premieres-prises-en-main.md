@@ -7,6 +7,7 @@ Parmi ces outils nous pouvons citer principalement :
 * **Ionic CLI** : c'est le couteau suisse de Ionic, un en de fonction disponible en ligne de commandes pour créer une application, la compiler, la déployer,...
 
 * **Apache Cordova** : un framework open-source développé par la Fondation Apache. Il permet de créer des applications pour différentes plateformes en HTML, CSS et JavaScript.
+
 * **NodeJS** : est un logiciel permettant de développer et d’exécuter du code JavaScript côté serveur, contrairement à ce qu’on a l’habitude de voir avec le javascript côté client.
 * **NPM** : le gestionnaire de paquet de NodeJS
 * **Angular** : un framework Javascript développé par Google
@@ -79,6 +80,8 @@ Une fois Node et NPM installés, le reste se passera en ligne de commande. Ouvre
 ```
 $ npm install -g ionic cordova
 ```
+
+Le paramètre _"-g"_ permet une installation global de ces outils. De cette manière, vous n'aurez pas besoin d'être dans un repertoire particulier pour utiliser les commandes **ionic** ou **cordova**.
 
 Avant d'aller plus loin, il sera peut etre nécessaire d'installer d'autres logiciels comme le SDK de Java ou celui d'Android. Si ces logiciels sont déjà installé, vous pourrez directement passer à la suite, sinon, suivez le guide.
 
