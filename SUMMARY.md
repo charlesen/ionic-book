@@ -7,7 +7,7 @@
 * [Introduction](introduction.md)
 * [Chap 1 - Une brêve histoire du mobile](chapter1.md)
 * [Chap 2 - Cas pratique : DuckCoin, la cryptomonnaie sur mobile](application-mobile-un-marche-a-croissance-exponentielle.md)
-* [Chap 3 - Installation de Ionic et premières prises en main](chap-3-installation-de-ionic-et-premieres-prises-en-main.md)
+* [Chap 3 - Installation de Ionic et première prise en main](chap-3-installation-de-ionic-et-premieres-prises-en-main.md)
 * [Chap 4 - Templates et Customisation](chap-4-templates-et-customisation.md)
 * [Chap 5 - Utilisation des composants Ionic](chap-5-utilisation-des-composants-ionic.md)
 * [Chap 6 - Introduction au langage TypeScript, le futur de JavaScript](chap-6-introduction-au-langage-typescript-le-futur-de-javascript.md)

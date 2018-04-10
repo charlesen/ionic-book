@@ -1,4 +1,4 @@
-# Chap 3 - Installation de Ionic et premières prises en main
+# Chap 3 - Installation de Ionic et première prise en main
 
 Ionic utilise un certain nombre d'outils permettant de créer rapidement une application mobile. Pris séparement, ils sont relativement efficace, mais mis en ensemble, ils sont d'une redoutable efficacité.
 
@@ -82,9 +82,7 @@ Pour installer le SDK de Java, il vous suffit de visiter le site : [http://www.o
 
 ## Android SDK
 
-La meilleur façon d'installer le SDK d'Android est encore d'installer Android Studio. Pour ce faire, rien de plus simple, il suffit de visiter le site [https://developer.android.com/studio/index.html\#downloads](https://developer.android.com/studio/index.html#downloads) 
-
-
+La meilleur façon d'installer le SDK d'Android est encore d'installer Android Studio. Pour ce faire, rien de plus simple, il suffit de visiter le site [https://developer.android.com/studio/index.html\#downloads](https://developer.android.com/studio/index.html#downloads)
 
 Voilà, vous y êtes. On va donc pouvoir créer notre première application mobile.
 
