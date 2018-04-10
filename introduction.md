@@ -44,3 +44,5 @@ Si la porte d'entrée des stores étaient autrefois réservées à quelques priv
 
 Si vous lisez ce livre en ce moment c’est que vous avez décidé comme d’autres avant vous de vous lancer dans ce monde merveilleux du développement d'applications mobiles. Vous rêvez de grandes choses, vous avez des idées qui sont susceptibles de révolutionner la vie de milliards d’individus, et vous êtes conscient qu’avoir des compétences en développement mobile vous sera utile : bravo, ce livre a été écrit pour vous.
 
+[^1]: _The 2017 US Mobile App Repport_, [à télécharger en version PDF](/assets/ComScore_2017_Report.pdf)** **: 
+
