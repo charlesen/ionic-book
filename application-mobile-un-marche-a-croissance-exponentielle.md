@@ -348,7 +348,7 @@ Notre cryptomonnaie qui est disponible à l'adresse : [https://duckcoin.charlese
 | /mine | Minage d'un nouveau bloc |
 | /chain | Retourne la blockchain complète |
 
-Maintenant que notre outil est en place, nous pouvons seirenement nous lancer dans la création de l'application mobile qui nous permettra d'interagir la Blockchain, gérer son portefeuille, envoyer ou recevoir de l'argent sous forme de tokens **DCK**.
+Maintenant que notre outil est en place, nous pouvons seirenement nous lancer dans la création de l'application mobile qui nous permettra d'interagir avec la Blockchain, gérer notre portefeuille, envoyer ou recevoir de l'argent sous forme de tokens **DCK**.
 
 [^1]: Le timestamp \(unix\) désigne le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC précise
 
