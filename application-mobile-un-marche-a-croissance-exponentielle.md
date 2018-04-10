@@ -324,7 +324,7 @@ while not valid_proof(x,y):
     print y
 
 fin = time.time()
-temps = (fin-debut)*1000.0
+temps = fin-debut
 
 # Hash trouvé : 000e7ea9705df1fe65fe077d5054fe4a12aa6bbe074d5060ed9f0b251e16d0f9
 # La solution est y = 566 au bout de 0.0716059207916 s
