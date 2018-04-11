@@ -326,15 +326,36 @@ sidemenu ........... ionic1 A starting project for Ionic using a side menu with 
 maps ............... ionic1 An Ionic starter project using Google Maps and a side menu
 ```
 
-cd
-
 il est également possible de créer une application à partir d'un dépot git :
 
 ```
 $ ionic start monappli_sur_git https://github.com/charlesen/monappli_sur_git
 ```
 
-cd
+Une fois votre application créée, entrez dans le dossier créé, puis démarrer le projet :
+
+```
+$ cd monappli
+$ ionic serve -lc
+```
+
+Ionic devrait ensuite ouvrir votre application depuis votre navigateur préféré.
+
+
+
+## Création du projet Duckcoin
+
+Comme nous l'avons vu, il est possible de créer une application mobile à partir d'un dépôt git. C'est ce que nous allons faire pour l'application DuckCoin.
+
+Ouvrez donc votre terminal et saisissez les commandes suivantes :
+
+```
+$ ionic start duckcoin https://github.com/charlesen/duckcoin
+$ cd duckcoin
+$ ionic serve -lc
+```
+
+
 
 
 
