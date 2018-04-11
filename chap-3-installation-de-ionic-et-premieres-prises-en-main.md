@@ -471,13 +471,21 @@ Que se passe-t-il dans la console ? Dans votre navigateur ? Quelles solutions pr
 
 ![](/assets/ionic_error2.png)
 
- 
-
-6. Editer le fichier **src/app/app.module.ts** de manière à corriger le maximum d'erreur 
+6. Editer le fichier **src/app/app.module.ts** de manière à corriger le maximum d'erreur
 
 7. Effectuez les actions précédentes pour l'onglet Portefeuille \(renommage + resolutions de bugs\) : **contact.html** en **wallet.html**, **contact.scss** en **wallet.scss**, **contact.scss** en **wallet.scss**, **contact.ts** en **wallet.ts**.
 
-7. 
+![](/assets/screen_accueil.png)
+
+8.Ajustez le style CSS de la page d'accueil pour rendre le contenu de l'onglet un peu plus joli : **src/pages/home/home.scss**.
+
+9. cd
+
+10. 
+
+11. 
+
+12. 
 
 
 
