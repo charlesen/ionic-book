@@ -161,6 +161,7 @@ Sous Linux, il est également possible de l'installer en saisissant simplement l
 
 ```
 $ apt install git
+$ ios-sim –version # Pour vérifier que tout s'est bien passé
 ```
 
 ## Installation via un script Bash \(Ubuntu\)
