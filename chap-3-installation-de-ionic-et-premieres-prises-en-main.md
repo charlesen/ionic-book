@@ -11,6 +11,7 @@ Parmi ces outils nous pouvons citer principalement :
 * **NodeJS** : est un logiciel permettant de développer et d’exécuter du code JavaScript côté serveur, contrairement à ce qu’on a l’habitude de voir avec le javascript côté client.
 
 * **NPM** : le gestionnaire de paquet de NodeJS
+
 * **Angular** : un framework Javascript développé par Google
 * **TypeScript** : un langage de programmation libre et open source développé par Microsoft qui a pour but d’améliorer et de sécuriser la production de code JavaScript.
 * **SASS** : un langage de génération de feuilles de style \(CSS dynamique\)
@@ -86,17 +87,46 @@ Le paramètre _"-g"_ permet une installation global de ces outils. De cette mani
 
 Avant d'aller plus loin, il sera peut etre nécessaire d'installer d'autres logiciels comme le SDK de Java ou celui d'Android. Si ces logiciels sont déjà installé, vous pourrez directement passer à la suite, sinon, suivez le guide.
 
-## Java JDK
+## Autres utilitaires
 
-### Windows
+### Java SDK
 
-Pour installer le SDK de Java, il vous suffit de visiter le site : [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) et de choisir le fichier adapté à votre système d'exploitation \(32 ou 64 bits\)
+#### Windows
 
-### Mac OS et Linux
+Pour installer le SDK de Java sous Windows, il vous suffit de visiter le site : [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) et de choisir le fichier adapté à votre système d'exploitation \(32 ou 64 bits\)
 
-## Android SDK
+#### Mac OS et Linux
+
+##### Mise à jour des dépots
+
+```
+$ sudo add-apt-repository ppa:openjdk-r/ppa
+$ sudo apt-get update
+```
+
+Installation d'OpenJDK
+
+```
+sudo apt-get install openjdk-8-jdk
+```
+
+
+
+### Android SDK
 
 La meilleur façon d'installer le SDK d'Android est encore d'installer Android Studio. Pour ce faire, rien de plus simple, il suffit de visiter le site [https://developer.android.com/studio/index.html\#downloads](https://developer.android.com/studio/index.html#downloads)
+
+
+
+### Git
+
+Ionic utilise le gestionnaire de dépôt Git dans son workflow actuelle de développement. Pour l'installer, rien de plus simple, il vous suffit d'aller sur la page de téléchargement suivante : https://git-scm.com/downloads et choisir le paquet correspondant à votre OS.
+
+Sous Linux, il est également possible de l'installer en saisissant simplement la commande :
+
+```
+$ apt install git
+```
 
 Voilà, vous y êtes. On va donc pouvoir créer notre première application mobile.
 
