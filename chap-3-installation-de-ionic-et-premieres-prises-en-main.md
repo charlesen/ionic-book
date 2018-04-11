@@ -13,6 +13,7 @@ Parmi ces outils nous pouvons citer principalement :
 * **NPM** : le gestionnaire de paquet de NodeJS
 
 * **Angular** : un framework Javascript développé par Google
+
 * **TypeScript** : un langage de programmation libre et open source développé par Microsoft qui a pour but d’améliorer et de sécuriser la production de code JavaScript.
 * **SASS** : un langage de génération de feuilles de style \(CSS dynamique\)
 * ...
@@ -110,17 +111,13 @@ Installation d'OpenJDK
 sudo apt-get install openjdk-8-jdk
 ```
 
-
-
 ### Android SDK
 
 La meilleur façon d'installer le SDK d'Android est encore d'installer Android Studio. Pour ce faire, rien de plus simple, il suffit de visiter le site [https://developer.android.com/studio/index.html\#downloads](https://developer.android.com/studio/index.html#downloads)
 
-
-
 ### Git
 
-Ionic utilise le gestionnaire de dépôt Git dans son workflow actuelle de développement. Pour l'installer, rien de plus simple, il vous suffit d'aller sur la page de téléchargement suivante : https://git-scm.com/downloads et choisir le paquet correspondant à votre OS.
+Ionic utilise le gestionnaire de dépôt Git dans son workflow de développement actuel. Pour l'installer, rien de plus simple, il vous suffit d'aller sur la page de téléchargement suivante : [https://git-scm.com/downloads](https://git-scm.com/downloads) et choisir le paquet correspondant à votre OS.
 
 Sous Linux, il est également possible de l'installer en saisissant simplement la commande :
 
