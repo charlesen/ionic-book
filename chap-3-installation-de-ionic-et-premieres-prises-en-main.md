@@ -332,7 +332,7 @@ il est également possible de créer une application à partir d'un dépot git :
 $ ionic start monappli_sur_git https://github.com/charlesen/monappli_sur_git
 ```
 
-Une fois votre application créée, entrez dans le dossier créé, puis démarrer le projet :
+Une fois votre application créée, accédez au dossier nouvellement créé, puis démarrer le projet :
 
 ```
 $ cd monappli
@@ -340,8 +340,6 @@ $ ionic serve -lc
 ```
 
 Ionic devrait ensuite ouvrir votre application depuis votre navigateur préféré.
-
-
 
 ## Création du projet Duckcoin
 
@@ -354,10 +352,8 @@ $ ionic start duckcoin https://github.com/charlesen/duckcoin
 $ cd duckcoin
 $ ionic serve -lc
 ```
+
 Voilà, vous y êtes.
 
-
-
-
-
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
+
