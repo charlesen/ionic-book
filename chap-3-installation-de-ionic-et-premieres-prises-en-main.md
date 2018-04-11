@@ -409,7 +409,33 @@ Félicitations, vous avez créé votre première application. Dans le chapitre s
    1. Home en _**Accueil**_
    2. About en _**Minage**_
    3. Contact en _**Portefeuille**_
-2. Faites que dans l'onglet
+2. Faites les modifications suivantes dans les onglets
+   1. **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site https://duckcoin.charlesen.fr. Et renommer l'intitulé de la page, de **Home** à _**Duckcoin**_.
+   2. **Minage** : Renommer le nom de la page en _**Minage**_. 
+3. Editez le fichier **theme/variables.scss** et modifier le contenu de la façon suivante :
+
+```js
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #488aff,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  duckcoin :   #df4932 // <!-- ICI
+);
+```
+
+   4. 
+
+
 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
