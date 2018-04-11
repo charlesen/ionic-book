@@ -17,6 +17,7 @@ Parmi ces outils nous pouvons citer principalement :
 * **TypeScript** : un langage de programmation libre et open source développé par Microsoft qui a pour but d’améliorer et de sécuriser la production de code JavaScript.
 
 * **SASS** : un langage de génération de feuilles de style \(CSS dynamique\)
+
 * ...
 
 ## NodeJS et NPM
@@ -114,7 +115,25 @@ sudo apt-get install openjdk-8-jdk
 
 ### Android SDK
 
-La meilleur façon d'installer le SDK d'Android est encore d'installer Android Studio. Pour ce faire, rien de plus simple, il suffit de visiter le site [https://developer.android.com/studio/index.html\#downloads](https://developer.android.com/studio/index.html#downloads)
+La meilleur façon d'installer le SDK d'Android est encore d'installer Android Studio. Pour ce faire, rien de plus simple, il suffit de visiter le site [https://developer.android.com/studio/index.html\#downloads](https://developer.android.com/studio/index.html#downloads) et de télécharger le paquet associé à votre OS.
+
+#### Windows
+
+Une fois le téléchargement effectué, vous n'aurez plus qu'à lancer l'installation en cliquant sur le fichier au format **.exe **et suivre le setup. L'installation du SDK se fera en même temps.
+
+Voilà, c'est tout.
+
+#### Mac OS
+
+1. Lancer l'installation en cliquant sur le fichier au format .dmg téléchargé précédemment.
+2. Glisser-déposer \(Drag-n-drop\) ensuite Android Studio dans le dossier Applications
+3. Le setup devrait ensuite finaliser l'installation du SDK
+
+Voilà.
+
+#### Linux
+
+cd
 
 ### Git
 
@@ -125,8 +144,6 @@ Sous Linux, il est également possible de l'installer en saisissant simplement l
 ```
 $ apt install git
 ```
-
-
 
 ## Installation via un script Bash pour Linux \(Ubuntu\)
 
@@ -255,10 +272,9 @@ cd ~/Desktop && rm "gradle.zip"
 
 echo "----------------------------------"
 echo "Restart your Ubuntu session for installation to complete..."
-
 ```
 
 Voilà, vous y êtes. On va donc pouvoir créer notre première application mobile.
 
-[^1]: Ubuntu Ionic Installer : https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh
+[^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
