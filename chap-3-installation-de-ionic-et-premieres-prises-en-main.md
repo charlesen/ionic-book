@@ -397,7 +397,7 @@ $ ionic serve -lc
 
 ![](/assets/screen_app1.png)
 
-Félicitations, vous avez créé votre première application. Dans le chapitre suivant, nous allons la customiser pour qu'il soit un peu plus à notre image.
+Félicitations, vous avez créé votre première application. Dans le [chapitre suivant](/chap-4-templates-et-customisation.md), nous allons la customiser pour qu'il soit un peu plus à notre image.
 
 ## Exercez-vous
 
@@ -413,6 +413,7 @@ Félicitations, vous avez créé votre première application. Dans le chapitre s
 2. Faites les modifications suivantes dans les onglets
    1. **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr). Et renommer l'intitulé de la page, de **Home** à _**Duckcoin**_. \(**src/pages/home/home.html\)**
    2. **Minage** : Renommer le nom de la page en _**Minage**_. 
+   3. **Portefeuille** : Renommer le nom de la page en _**Portefeuille**_. 
 3. Editez le fichier **theme/variables.scss** et modifier le contenu de la façon suivante :
 
 ```js
@@ -458,13 +459,27 @@ Enregistrez, puis dans le fichier **src/pages/home/home.html**, effectuez les mo
 
 Que s'est-il passé ?
 
-Faites la même chose pour l'ensemble des onglets. 
+Faites la même chose pour l'ensemble des onglets.
 
-4. Adaptez le code hexadécimal de la couleur duckcoin pour qu'il soit le plus proche de vos goûts. Le meilleur code couleur sera utilisé dans la suite du projet :-\)
+4 . Adaptez le code hexadécimal de la couleur duckcoin pour qu'il soit le plus proche de vos goûts. Le meilleur code couleur sera utilisé dans la suite du projet :-\)
 
-5. Renommez les fichiers **about.html** en **mining.html**, **about.scss** en **mining.scss**, **about.scss** en **mining.scss**, **about.ts** en **mining.ts**. Puis, renommer le dossier **about** \(src/pages/about\) en **mining** \(src/pages/mining\). Que se passe-t-il dans la console ? Dans votre navigateur ?
+5. Renommez les fichiers **about.html** en **mining.html**, **about.scss** en **mining.scss**, **about.scss** en **mining.scss**, **about.ts** en **mining.ts**. Puis, renommer le dossier **about** \(src/pages/about\) en **mining** \(src/pages/mining\). 
 
-6. 
+Dans le fichier **mining.ts**, remplacez **AboutPage** par **MiningPage**.
+
+Que se passe-t-il dans la console ? Dans votre navigateur ? Quelles solutions proposeriez-vous ? Voir par exemple le contenu du fichier src/pages/mining/mining.ts.
+
+![](/assets/ionic_error2.png)
+
+ 
+
+6. Editer le fichier **src/app/app.module.ts** de manière à corriger le maximum d'erreur 
+
+7. Effectuez les actions précédentes pour l'onglet Portefeuille \(renommage + resolutions de bugs\) : **contact.html** en **wallet.html**, **contact.scss** en **wallet.scss**, **contact.scss** en **wallet.scss**, **contact.ts** en **wallet.ts**.
+
+7. 
+
+
 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
