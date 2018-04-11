@@ -143,9 +143,15 @@ Si votre OS est une machine 64-bit, vous aller devoir installer quelques dépend
 $ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 ```
 
-### Xcode \(Mac OS uniquement\)
+### Xcode et ios-sim \(Mac OS uniquement\)
 
-Pour installer Xcode, il vous suffit de visiter l'url suivante [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) et de cliquer sur **"Download"**.
+Pour installer **Xcode**, il vous suffit de visiter l'url suivante [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) et de cliquer sur **"Download"**.
+
+Pour l'émulateur **ios-sim**, depuis votre terminal, saisissez la commande suivante :
+
+```bash
+$ sudo npm install -g ios-sim
+```
 
 ### Git
 
