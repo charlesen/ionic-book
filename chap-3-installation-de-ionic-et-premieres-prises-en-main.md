@@ -143,6 +143,10 @@ Si votre OS est une machine 64-bit, vous aller devoir installer quelques dépend
 $ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 ```
 
+### Xcode \(Mac OS uniquement\)
+
+Pour installer Xcode, il vous suffit de visiter l'url suivante https://developer.apple.com/xcode/ et de cliquer sur **"Download"**.
+
 ### Git
 
 Ionic utilise le gestionnaire de dépôt Git dans son workflow de développement actuel. Pour l'installer, rien de plus simple, il vous suffit d'aller sur la page de téléchargement suivante : [https://git-scm.com/downloads](https://git-scm.com/downloads) et choisir le paquet correspondant à votre OS.
@@ -285,8 +289,6 @@ echo "Restart your Ubuntu session for installation to complete..."
 Voilà, vous y êtes. On va donc pouvoir créer notre première application mobile.
 
 ## Première application Ionic
-
-
 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
