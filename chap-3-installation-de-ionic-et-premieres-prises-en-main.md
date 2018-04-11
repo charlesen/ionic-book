@@ -294,5 +294,47 @@ Voilà, vous y êtes. On va donc pouvoir créer notre première application mobi
 
 ## Première application Ionic
 
+
+
+Pour créer votre première application, rien de plus simple : 
+
+```
+$ ionic start monAppli sidemenu
+```
+
+La syntaxe générique est la suivante :
+
+```
+$ ionic start [<name>] [<template>]
+```
+
+| Entrée | Description |
+| :--- | :--- |
+| name | C'est le nom de votre application au format Camel par ex. |
+| template | C'est le template ionic de votre choix. Pour afficher la liste des templates disponible actuellement, vous pouvez saisir la commande **ionic start --list **\(voir ci-dessous\) |
+
+```
+$ ionic start --list
+tabs ............... ionic-angular A starting project with a simple tabbed interface
+blank .............. ionic-angular A blank starter project
+sidemenu ........... ionic-angular A starting project with a side menu with navigation in the content area
+super .............. ionic-angular A starting project complete with pre-built pages, providers and best practices for Ionic development.
+conference ......... ionic-angular A project that demonstrates a realworld application
+tutorial ........... ionic-angular A tutorial based project that goes along with the Ionic documentation
+aws ................ ionic-angular AWS Mobile Hub Starter
+tabs ............... ionic1 A starting project for Ionic using a simple tabbed interface
+blank .............. ionic1 A blank starter project for Ionic
+sidemenu ........... ionic1 A starting project for Ionic using a side menu with navigation in the content area
+maps ............... ionic1 An Ionic starter project using Google Maps and a side menu
+```
+
+
+
+
+
+cd
+
+
+
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
