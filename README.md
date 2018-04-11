@@ -1,4 +1,4 @@
-# Développement d'applications mobiles avec le Framework Ionic
+# Développement d'applications mobiles avec Ionic
 
 ![](/assets/0.png)
 
