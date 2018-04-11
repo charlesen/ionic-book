@@ -143,8 +143,6 @@ Si votre OS est une machine 64-bit, vous aller devoir installer quelques dépend
 $ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 ```
 
-
-
 ### Git
 
 Ionic utilise le gestionnaire de dépôt Git dans son workflow de développement actuel. Pour l'installer, rien de plus simple, il vous suffit d'aller sur la page de téléchargement suivante : [https://git-scm.com/downloads](https://git-scm.com/downloads) et choisir le paquet correspondant à votre OS.
@@ -155,7 +153,7 @@ Sous Linux, il est également possible de l'installer en saisissant simplement l
 $ apt install git
 ```
 
-## Installation via un script Bash pour Linux \(Ubuntu\)
+## Installation via un script Bash \(Ubuntu\)
 
 Un script trouvé sur github[^1] , et que j'ai un peu adapté, fait extremement bien le travail, car il vous permet d'installer tous ces utilitaires via un seul fichier bash.
 
