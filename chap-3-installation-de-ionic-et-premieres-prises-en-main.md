@@ -409,8 +409,9 @@ Félicitations, vous avez créé votre première application. Dans le chapitre s
    1. Home en _**Accueil**_
    2. About en _**Minage**_
    3. Contact en _**Portefeuille**_
+   4. Que se passe t-il dans la console à chaque enregistrement ?
 2. Faites les modifications suivantes dans les onglets
-   1. **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site https://duckcoin.charlesen.fr. Et renommer l'intitulé de la page, de **Home** à _**Duckcoin**_.
+   1. **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr). Et renommer l'intitulé de la page, de **Home** à _**Duckcoin**_.
    2. **Minage** : Renommer le nom de la page en _**Minage**_. 
 3. Editez le fichier **theme/variables.scss** et modifier le contenu de la façon suivante :
 
@@ -429,13 +430,33 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  duckcoin :   #df4932 // <!-- ICI
+  duckcoin :  #df4932 // <!-- ICI
 );
 ```
 
-   4. 
+Enregistrez, puis dans le fichier **src/pages/home/home.html**, effectuez les modifications suivantes 
 
+```
+<ion-header>
+  <ion-navbar color="duckcoin"><!-- ICI -->
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
 
+<ion-content padding>
+  <h2>Welcome to Ionic!</h2>
+  <p>
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    Take a look at the <code>src/pages/</code> directory to add or change tabs,
+    update any existing page or create new pages.
+  </p>
+</ion-content>
+```
+
+Que s'est-il passé ?
 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
