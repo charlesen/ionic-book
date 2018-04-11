@@ -328,5 +328,15 @@ maps ............... ionic1 An Ionic starter project using Google Maps and a sid
 
 cd
 
+il est également possible de créer une application à partir d'un dépot git :
+
+```
+$ ionic start monappli_sur_git https://github.com/charlesen/monappli_sur_git
+```
+
+cd
+
+
+
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
