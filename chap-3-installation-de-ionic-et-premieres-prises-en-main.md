@@ -297,8 +297,16 @@ Voilà, vous y êtes. On va donc pouvoir créer notre première application mobi
 Pour créer votre première application, rien de plus simple :
 
 ```
-$ ionic start monAppli sidemenu
+$ ionic start monAppli tabs
+✔ Creating directory ./monAppli - done!
+✔ Downloading and extracting tabs starter - done!
+
+? Would you like to integrate your new app with Cordova to target native iOS and Android? (y/N)
 ```
+
+A la question _"Would you like to integrate your new app with Cordova to target native iOS and Android?"_ saisir **"y"**.
+
+
 
 La syntaxe générique est la suivante :
 
