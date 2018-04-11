@@ -395,19 +395,11 @@ $ cd duckcoin
 $ ionic serve -lc
 ```
 
-
-
 ![](/assets/screen_app1.png)
-
-
 
 Faites le tour de l'application pour découvrir un petit peu son architecture. Dans le chapitre suivant, nous allons la customiser pour qu'il soit un peu plus à notre image.
 
-
-
 ### Exercez-vous
-
-
 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
