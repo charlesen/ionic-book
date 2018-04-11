@@ -145,7 +145,7 @@ $ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz
 
 ### Xcode \(Mac OS uniquement\)
 
-Pour installer Xcode, il vous suffit de visiter l'url suivante https://developer.apple.com/xcode/ et de cliquer sur **"Download"**.
+Pour installer Xcode, il vous suffit de visiter l'url suivante [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) et de cliquer sur **"Download"**.
 
 ### Git
 
@@ -284,6 +284,13 @@ cd ~/Desktop && rm "gradle.zip"
 
 echo "----------------------------------"
 echo "Restart your Ubuntu session for installation to complete..."
+```
+
+Copier le code ci-dessus dans fichier install\_ionic.sh puis executer le.
+
+```bash
+$ chmod u+x install_ionic.sh
+$ ./install_ionic.sh
 ```
 
 Voilà, vous y êtes. On va donc pouvoir créer notre première application mobile.
