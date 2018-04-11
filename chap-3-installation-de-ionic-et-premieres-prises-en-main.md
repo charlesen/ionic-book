@@ -274,7 +274,7 @@ echo "----------------------------------"
 echo "Redémarrer votre session Ubuntu pour finaliser l'installation..."
 ```
 
-Copier le code ci-dessus dans fichier install\_ionic.sh puis executer le.
+Copier le code ci-dessus dans fichier install\_ionic.sh puis executer le :
 
 ```bash
 $ chmod u+x install_ionic.sh
