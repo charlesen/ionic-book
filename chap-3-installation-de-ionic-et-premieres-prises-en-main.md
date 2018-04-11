@@ -42,7 +42,7 @@ Comme son nom peut le suggérer, NPM est le gestionnaire de packet de NodeJS, qu
 
 Pour installer NodeJS, il suffit simplement d'aller à l'adresse : [https://nodejs.org/en/download/](https://nodejs.org/en/download/), de télécharger le gestionnaire d'installation au format **.msi** et se laisser guider. Le gestionnaire installera également NPM.
 
-Ouvrez un invite de commande en saisissant CTRL+R, puis cmd, et depuis cet invite, saisir :
+Ouvrez un invite de commande en saisissant Windows + R, puis cmd, et depuis cet invite, saisir :
 
 ```
 node -v
