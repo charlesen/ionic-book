@@ -159,7 +159,7 @@ $ apt install git
 
 ## Installation via un script Bash \(Ubuntu\)
 
-Un script trouvé sur github[^1] , et que j'ai un peu adapté, fait extremement bien le travail, car il vous permet d'installer tous ces utilitaires via un seul fichier bash.
+Un script trouvé sur github[^1] , et que j'ai un peu adapté, fait assez bien le travail, car il vous permet d'installer tous ces utilitaires via un seul fichier bash.
 
 ```bash
 #!/bin/bash
