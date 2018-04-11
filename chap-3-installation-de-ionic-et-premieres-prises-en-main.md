@@ -388,7 +388,7 @@ $ ionic start duckcoin https://github.com/charlesen/duckcoin
 
 ![](/assets/ionic_screen_2.png)
 
-lancez l'application avec la commande serve :
+Démarrez ensuite l'application avec la commande serve :
 
 ```
 $ cd duckcoin
@@ -397,9 +397,19 @@ $ ionic serve -lc
 
 ![](/assets/screen_app1.png)
 
-Faites le tour de l'application pour découvrir un petit peu son architecture. Dans le chapitre suivant, nous allons la customiser pour qu'il soit un peu plus à notre image.
+Félicitations, vous avez créé votre première application. Dans le chapitre suivant, nous allons la customiser pour qu'il soit un peu plus à notre image.
 
-### Exercez-vous
+## Exercez-vous
+
+1. Faites le tour de l'application pour découvrir un petit peu son architecture
+
+![](/assets/archi_duckcoin.png)
+
+1. Renommer les différents onglets :
+   1. Home en _**Accueil**_
+   2. About en _**Minage**_
+   3. Contact en _**Portefeuille**_
+2. Faites que dans l'onglet
 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
