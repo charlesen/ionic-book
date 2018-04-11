@@ -1,354 +1,394 @@
-# Chap 2 - Cas pratique : DuckCoin, la cryptomonnaie sur mobile
+# Chap 3 - Installation de Ionic et première prise en main
 
-Explorer Ionic et son écosystème peut vite devenir très long, alors pour faire à peu près le tour du sujet, je vous propose dans ce livre de partir d'un projet concret qui va nous permettre d'aborder tous les concepts techniques dont vous aurez besoin pour lancer votre propre application mobile.
+Ionic utilise un certain nombre d'outils permettant de créer rapidement une application mobile. Pris séparement, ils sont plus ou moins efficace, voir indépendant, mais mis en ensemble, ils sont d'une redoutable efficacité.
 
-Après réflexion, et aimant surfer sur les tendances technologiques du moment, je vous propose d'explorer l'univers des cryptomonnaies en développant notre propre monnaie numérique, basé sur une blockchain du même et que nous appelerons **DuckCoin, **en hommage à la mascotte du département MMI de l'IUT de Troyes.
+Parmi ces outils nous pouvons citer principalement :
 
-Un site internet a été créé pour l'occasion. Vous pourrez le visiter, vous inscrire et tester notre cryptomonnaie solidaire : [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr)![](/assets/duckcoin.png)
+* **Ionic CLI** : c'est le couteau suisse de Ionic, un en de fonction disponible en ligne de commandes pour créer une application, la compiler, la déployer,...
 
-C’est à la une de quasiment tous les journaux d’information. Par une seule semaine sans que l’on vous parle ci et là du Bitcoin, de Ripple ou d’une autre crypto-monnaie en vogue.
+* **Apache Cordova** : un framework open-source développé par la Fondation Apache. Il permet de créer des applications pour différentes plateformes en HTML, CSS et JavaScript.
 
-Une crypto-monnaie est selon Wikipédia :
+* **NodeJS** : est un logiciel permettant de développer et d’exécuter du code JavaScript côté serveur, contrairement à ce qu’on a l’habitude de voir avec le javascript côté client.
 
-> Une monnaie virtuelle utilisable sur un réseau informatique décentralisé, de pair à pair
+* **NPM** : le gestionnaire de paquet de NodeJS
 
-Dit autrement, c’est comme remplacer ses euros, ses dollars ou ses francs CFA par une devise stockée en ligne ou directement dans votre ordinateur ou clé usb. Bitcoin, la plus célèbre des crypto-monnaies et celle qui vaut le plus chère, a été lancé quelques temps seulement après la crise financière de 2008 : la fameuse crise des subprimes.
+* **Angular** : un framework Javascript développé par Google
 
-Quelques années plus tard, on dénombre plus de 1000 crypto-monnaies selon le site internet [CoinMarketCap](https://coinmarketcap.com/) pour une capitalisation boursière \(valeur au prix du marché de l’ensemble des crypto-monnaies en circulation\) de plus de 740 milliards de dollars. C’est juste énorme et ce n’est rien comparé au potentiel de ce nouveau marché.
+* **TypeScript** : un langage de programmation libre et open source développé par Microsoft qui a pour but d’améliorer et de sécuriser la production de code JavaScript.
 
-## Principales crypto-monnaies
+* **SASS** : un langage de génération de feuilles de style \(CSS dynamique\)
 
-### Bitcoin
+* ...
 
-Bitcoin est une devise virtuelle pair-à-pair décentralisée qui fonctionne grâce à ses utilisateurs, sans autorité centrale ni intermédiaire. Elle vaut à l’heure où j’écris ces quelques lignes autour de 6 616,51 dollars, soit environ 5 405,71 euros, soit plus de 3,5 millions de Franc CFA. C’est juste énorme.
+## NodeJS et NPM
 
-**1 Bitcoin = €5 405,71**
+### NodeJS en bref
 
-### Ripple
+![](/assets/1200px-Node.js_logo.svg.png)
 
-Ripple est un système de règlement brut en temps réel, un marché des changes et un réseau de transfert de fonds. Également appelé le Ripple Transaction Protocol ou Protocole Ripple, il est construit sur un protocole Internet distribué et open source, un registre de consensus et une monnaie native appelée XRP. Lancé en 2012, le réseau Ripple a pour objectif de permettre des transactions financières mondiales sécurisées, instantanées et presque gratuites, de toute taille sans rejets de débit.
+Depuis son commencement, JavaScript, a été, comme vous le savez très certainement, est un langage dit côté client. Mais les choses ont quelque peu évolué avec NodeJS : cette technologie permet en effet d'executer du code écrit en JavaScript, aussi bien sur un navigateur \(côté client\), que côté serveur, tout comme des langages comme le Python ou encore le PHP.
 
-Ripple et Bitcoin utilisent une méthode différente pour parvenir à un consensus réseau. Ripple utilise un processus de consensus itératif, tandis que Bitcoin utilise le « Proof of Work » \(minage\). Par conséquent, Ripple est plus rapide que Bitcoin. La finalisation des transactions ne prend que quelques secondes.
+De plus, NodeJS, à l'instar de Ionic, est Open Source, gratuit et disponible pour différentes plateformes \(Windows, Linux, Unix, Mac OS,...\)
 
-**1 Ripple = €0,382906**
+### NPM : Node Package Manager
 
-### Ethereum
+![](/assets/npm.png)
 
-Ethereum est une devise virtuelle développée sur une plateforme logicielle ouverte basée sur la technologie blockchain qui permet aux développeurs de créer et déployer des applications décentralisées qui exécutent des contrats intelligents \(_**« smart contracts »**_\). C’est fin 2013 que Vitalik Buterin, un chercheur et développeur en crypto-monnaie, propose Ethereum.
+Comme son nom peut le suggérer, NPM est le gestionnaire de packet de NodeJS, qui étant très modulaire, voit son ecosystème  constamment enrichie par des modules développés par les membres de sa large communauté.
 
-À l’instar de Bitcoin, Ethereum est un réseau de blockchain publique. Bien qu’il existe des différences techniques considérables entre les deux, la distinction la plus importante est que Bitcoin et Ethereum diffèrent considérablement en termes d’objectifs et de capacités.Tandis que la blockchain bitcoin est utilisée pour suivre la propriété d’une devise virtuelle \(Bitcoins\), la blockchain Ethereum se concentre sur l’exécution du code de programmation de toute application décentralisée.
+### Installation
 
-**1 Ethereum = €300,78**
+#### Windows
 
-## La Blockchain pour les nuls
+Pour installer NodeJS, il suffit simplement d'aller à l'adresse : [https://nodejs.org/en/download/](https://nodejs.org/en/download/), de télécharger le gestionnaire d'installation au format **.msi** et se laisser guider. Le gestionnaire installera également NPM.
 
-Selon Wikipédia :
-
-> Une blockchain, ou chaîne de blocs, est une technologie de stockage et de transmission d'informations sans organe de contrôle. Techniquement, il s'agit d'une base de données distribuée dont les informations envoyées par les utilisateurs et les liens internes à la base sont vérifiés et groupés à intervalles de temps réguliers en blocs, l'ensemble étant sécurisé par cryptographie, et formant ainsi une chaîne
-
-Une blockchain contient des données créées par différents utilisateurs dans le temps et chaque acteur ou noeud de la blockchain possède une copie de celle-ci.
-
-Il existe différents types de blockchains : celles qui sont privés, c'est à dire qu'un nombre limité d'acteurs, choisi arbitrairement, a le droit d'agir sur la blockchain, et celles qui sont publiques et donc accessibles à tout le monde sans aucune restriction. Comme l'a dit le mathématicien Jean-Paul Delahaye, une blockchain publique comme celle de Bitcoin peut être assimilée à
-
-> un très grand cahier, que tout le monde peut lire librement et gratuitement, sur lequel tout le monde peut écrire, mais qui est impossible à effacer et indestructible._ _
-
-Une image valant mieux qu'un discours, voici comment on pourrait représenter la technologie Blockchain de manière simple :
-
-![](/assets/fonctionnement-blockchain1.png)
-
-![](/assets/blck-schema.png)
+Ouvrez un invite de commande en saisissant Windows + R, puis cmd, et depuis cet invite, saisir :
 
 ```
-                                   Source : Blockchain France
+node -v
 ```
 
-Les applications de la Blockchain sont multiples car elle permet d'éliminer les tiers de confiance habituels que sont les banques, les assurances, les notaires,...et même l'Etat.
+Vous devriez voir s'afficher la version actuelle de NodeJs.
 
-Si l'euro a de la valeur aujourd'hui c'est d'abord parce que cette valeur nous la lui accordons et que les banques et les Etats européens veillent à ce que cela soit toujours le cas en limitant sa quantité et sa provenance \(BCE\), en punissant pénalement la création de fausses monnaies,...
+#### Mac OS
 
-Avec la blockchain, ces tiers de confiance peuvent s'en aller en paix, la confiance étant répartie entre les différents acteurs du réseau blockchain. Rien ne nous empêche alors de créer notre propre monnaie, la distribuer et de la valoriser auprès d'un large panel de développeurs d'applications mobiles enthousiastes. C'est ce que nous allons faire tout au long des chapitres avec la cryptomonnaie **DuckCoin**.
+L'installation sous Mac OS est à peu près la même que sous Windows car il vous suffit de cliquer sur la version Node correspondant à cet OS. D'ailleurs en visitant simplement le site [https://nodejs.org/en/download/](https://nodejs.org/en/download/), une version adaptée à votre  système d'exploitation vous sera proposée automatiquement.
 
-## Duckcoin : principes de fonctionnement
+#### Linux \(Ubuntu\)
 
-DuckCoin sera comme nous l'avons déjà dit une crypto-monnaie basée sur une blockchain publique. L'application mobile que nous allons développer tout au long de ce livre portera le même nom.
+sous linux et en particulier Ubuntu, il vous suffit de saisir les commandes suivantes depuis un invite de commandes :
 
-De plus, la monnaie fonctionnera à peu près sur le même principe que le Bitcoin, en tout cas en ce qui concerne son architecture.
-
-Ce livre n'étant pas consacré à la Blockchain et aux cryptomonnaies, vous n'êtes pas obligé de lire la suite de ce chapitre et pouvez directement passer à la suite. Mais si vous êtes un tant soit peu curieux, alors restez, vous ne serez pas dessus je pense.
-
-### Construction de la Blockchain
-
-Pour développer la blockchain sur laquelle sera construite notre cryptomonnaie, nous allons utiliser le langage de programmation Python, qui est assez simple à maîtriser.
-
-```py
-class Blockchain(object):
-    def __init__(self):
-        # Constructeur : on initialise ici la chaîne et la liste qui contiendra les transactions
-        self.chain = []
-        self.current_transactions = []
-
-    def new_block(self):
-        # Permet la création d'un nouveau block qui sera à la chaine de blocs
-        pass
-
-    def new_transaction(self):
-        # Ajoute une nouvelle transaction à la liste des transactions.
-        # Un bloc peut contenir plusieurs transactions, toutes les unes que les autres
-        pass
-
-    @staticmethod
-    def hash(block):
-        # Permet le hashage d'un Bloc
-        pass
-
-    @property
-    def last_block(self):
-        # Renvoie le dernier bloc de la chaine
-        pass
+```
+$ sudo apt-get update
+$ sudo apt-get install nodejs npm
 ```
 
-La classe Blockchain sera responsable de la gestion de la chaîne. Elle va stocker les transactions et pourra grâce à des méthodes ajouter de nouvelles transactions ou de nouveaux blocs à la chaîne.
+une fois l'installation effective, il faut encore créer les liens symboliques suivants :
 
-Un Bloc possède un _**index**_, c'est à dire un numéro qui permet de le situer dans la chaîne, un système d'horodatage appelé _**timestamp**_[^1], une _**liste**_** de transactions**, une **preuve de travail** ou proof of work en anglais que nous abrégerons _pow_,  un _**hash**_, c'est à dire une empreinte numérique rendant le bloc unique en son genre, le _**hash**_ du bloc précédant \(_previous\_hash_\). Prenons par exemple le premier bloc de notre blockchain. Il ressemble à ceci :
-
-```py
-block = {
-    'index': 1,
-    'timestamp': 1506057130.100625,
-    'transactions': [
-        {
-            'sender': "2327147fe1f5426f9dd545de4b27ee00",
-            'recipient': "82dec7f5cdfa2934df3954a5c7c7da5df1f",
-            'amount': 30,
-        }
-    ],
-    'proof': 952,
-    'hash': "e24db68eb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
-    'previous_hash': ""
-}
+```
+$ sudo ln -s /usr/bin/nodejs /usr/local/bin/node
+$ sudo ln -s /usr/bin/npm /usr/local/bin/npm
 ```
 
-Ici, le premier bloc ne possède pas de hash pour le bloc précédent \(_previous\_hash_\), ce qui est normal. Par contre, les blocs suivants devront l'avoir obligatoirement. C'est d'ailleurs cela qui garantit en partie la fiabilité de la blockchain. En effet, si un seul bloc devait être falsifié \(un utilisateur qui mentirait sur le montant total de ses avoirs en modifiant un bloc\), c'est toute la chaîne qui deviendrait invalide.
+Pour vérifier que tout s'est bien passé, il vous suffit de saisir la commande suivante qui vous retournera la version actuelle de Node :
 
-A présent rentrons plus en détail sur le fonctionnement des méthodes de la classe BlockChain.
+```
+$ node -v
 
-### Gestions des transactions
-
-La méthode **new\_transaction** est en charge de l'ajout de nouvelles transactions au sein d'un bloc.
-
-```py
-class Blockchain(object):
-    ...
-
-    def new_transaction(self, sender, recipient, amount):
-        """
-        Création d'une nouvelle transaction qui sera intégré au dernier bloc à inclure dans la blockchain
-        :param sender: <str> Adresse (hash) du destinateur
-        :param recipient: <str> Adresse (hash) du destinataire
-        :param amount: <int> Montant envoyé par le 'sender' au 'recipient'
-        :return: <int> index du bloc qui stockera cette transaction
-        """
-
-        self.current_transactions.append({
-            'sender': sender,
-            'recipient': recipient,
-            'amount': amount,
-        })
-
-        return self.last_block['index'] + 1
+v8.11.1
 ```
 
-Chaque fois qu'un utilisateur souhaitera envoyer de l'argent à un autre, c'est cette méthode qui sera appelée.  Le tout \(la transaction\) sera stockée dans le prochain bloc à miner \(notion que nous aborderons plus loin\).
+## Ionic CLI et Cordova
 
-### Gestion des blocs
+Une fois Node et NPM installés, le reste se passera en ligne de commande. Ouvrez donc votre terminal préféré et saisissez les commandes suivantes pour installer Ionic et Cordova :
 
-A la création de la blockchain, nous allons devoir créer un bloc initial, qui stockera les toutes premières transactions de la blockchain. C'est à l'intérieur de ce bloc par exemple que l'on pourra stocker les transactions permettant d'envoyer de l'argent aux 20 premiers utilisateurs de notre cryptomonnaie. Et oui, avoir de l'argent en stock c'est bien, mais si personne ne s'en sert, elle n'a aucune valeur.
-
-Ce bloc initial est appelé dans l'univers des cryptomonnaies, le bloc _**Genesis**_, pour genèse en français. Et avant la genèse, il n y a rien...en principe.
-
-```py
-import json
-from hashlib sha256
-
-from time import time
-
-
-class Blockchain(object):
-    def __init__(self):
-        self.current_transactions = []
-        self.chain = []
-
-        # Création du bloc initial genesis
-        self.new_block(previous_hash='', proof=100)
-
-    def new_block(self, proof, previous_hash=None):
-        """
-        Création d'un nouveau bloc dans la Blockchain
-        :param proof: <int> valeur retourné l'algorithme de preuve de travail
-        :param previous_hash: (Optionel pour le premier bloc) <str> Hash du bloc préc.
-        :return: <dict> Nouveau Bloc
-        """
-
-        block = {
-            'index': len(self.chain) + 1,
-            'timestamp': time(),
-            'transactions': self.current_transactions,
-            'proof': proof,
-            'previous_hash': previous_hash or self.hash(self.chain[-1]),
-        }
-
-        # Remise à zéro de la liste des transactions
-        self.current_transactions = []
-
-        self.chain.append(block)
-        return block
-
-    def new_transaction(self, sender, recipient, amount):
-        """
-        Création d'une nouvelle transaction qui sera intégré au dernier bloc à inclure dans la blockchain
-        :param sender: <str> Adresse (hash) du destinateur
-        :param recipient: <str> Adresse (hash) du destinataire
-        :param amount: <int> Montant envoyé par le 'sender' au 'recipient'
-        :return: <int> index du bloc qui stockera cette transaction
-        """
-        self.current_transactions.append({
-            'sender': sender,
-            'recipient': recipient,
-            'amount': amount,
-        })
-
-        return self.last_block['index'] + 1
-
-    @property
-    def last_block(self):
-        return self.chain[-1]
-
-    @staticmethod
-    def hash(block):
-        """
-        Création d'un hash du bloc avec la fonction de hashage SHA-256
-        :param block: <dict> Block
-        :return: <str>
-        """
-
-        # On ordonne le bloc avant de le sérialiser
-        block_string = json.dumps(block, sort_keys=True).encode()
-        return sha256(block_string).hexdigest()
+```
+$ npm install -g ionic cordova
 ```
 
-### La Preuve de travail, Proof of Work \(pow\)
+Le paramètre _"-g"_ permet une installation global de ces outils. De cette manière, vous n'aurez pas besoin d'être dans un repertoire particulier pour utiliser les commandes **ionic** ou **cordova**.
 
-La preuve de travail est la méthode qui permet de créer ou miner un nouveau bloc de la blockchain. Il s'agit d'un algorithm permettant, comme le rappel Wikipédia :
+Avant d'aller plus loin, il sera peut etre nécessaire d'installer d'autres logiciels comme le SDK de Java ou celui d'Android. Si ces logiciels sont déjà installé, vous pourrez directement passer à la suite, sinon, suivez le guide.
 
-> de dissuader, sur un réseau informatique, des attaques par déni de service et autres abus de service tels que le spam en requérant de la puissance de calcul et de traitement par ordinateur au demandeur de service. C'est un système difficile à produire car il est coûteux en temps et en énergie.
+## Autres utilitaires
 
-Lorsqu'un utilisateur effectue une transaction, celle-ci est, comme on l'a vu, stockée dans un bloc. Une fois que le bloc possède un certain nombre de transactions, il devra être intégré à la blockchain pour sauvegarde. C'est à ce moment là qu'intervient le minage par preuve de travail. Chaque noeud \(ordinateur\) va recevoir le bloc souhaitant intégrer la chaine et effectuer un certain nombre de calculs suffisament longs pour dissuader un noeud pirate. Et plus la chaine est longue comme celle de Bitcoin et d'autres cryptomonnaies, et plus le calcul est énegivore et décourageante pour le noeud pirate.
+### Java SDK
 
-Le noeud ayant réussi en premier à résoudre l'énigme se voit recompenser d'une somme en crypto. Bitcoin recompense par exemple ses mineurs à hauteur de 25 BTC \(à l'heure actuelle\).
+#### Windows
 
-Une caractéristique de la pow est l'asymétrie du coût de calcul : le travail doit être difficilement réalisable pour le demandeur, mais facilement vérifiable pour un tiers.
+Pour installer le SDK de Java sous Windows, il vous suffit de visiter le site : [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) et de choisir le fichier adapté à votre système d'exploitation \(32 ou 64 bits\)
 
-Prenons par exemple une preuve de travail bien connu, le Captcha, que l'on retrouve sur de nombreux sites internet.
+#### Mac OS et Linux
 
-![](/assets/reCAPTCHA_Sample_White.png)
+##### Mise à jour des dépots
 
-Si pour un humain, saisir ces informations est déjà assez difficile, imaginez ce qu'éprouvera un robot spammeur.
-
----
-
-Pour en savoir plus, n'hésitez pas à lire le bel article de **Cryptoencyclopedie** : [https://www.cryptoencyclopedie.com/single-post/Quest-ce-que-le-consensus-Proof-of-Work- ](https://www.cryptoencyclopedie.com/single-post/Quest-ce-que-le-consensus-Proof-of-Work- )
-
----
-
-Pour notre algorithme de preuve de travail, choisissons arbitrairement que le hash d'un entier X, multiplié par un autre entier Y devra absolument se commencer par 3 chiffres 0. On aurait ceci par exemple :
-
-```py
-hash(x * y) = 000ecad23dc...
+```
+$ sudo add-apt-repository ppa:openjdk-r/ppa
+$ sudo apt-get update
 ```
 
-Cela donnerait le code suivant :
+Installation d'OpenJDK
 
-```py
-import json
-
-from hashlib import sha256
-from time import time
-from uuid import uuid4
-
-
-class Blockchain(object):
-    ...
-
-    def proof_of_work(self, last_proof):
-        """
-        Un algorithme de Preuve de travail :
-         - Trouver un nombre x tel que hash(xy) commence par 3 zeros
-         - x étant la preuve précendente (last_proof)
-         - y étant une valeur que l'on incrémentera en partant de zero et qui
-         à la fin du calcul deviendra la nouvelle preuve (proof)
-        :param last_proof: <int>
-        :return: <int>
-        """
-        proof = 0
-        while not self.valid_proof(last_proof, proof):
-            proof += 1
-
-        return proof
-
-    @staticmethod
-    def valid_proof(last_proof, proof):
-        """
-        Validation du résulat de la preuve de travail : est-ce que hash(last_proof, proof)
-        commence bien par 3 zeros ?
-        :param last_proof: <int> Preuve précédente
-        :param proof: <int> Preuve actuelle
-        :return: <bool>
-        """
-        proof_hash = sha256(str(last_proof*proof)).hexdigest()
-        return proof_hash[:3] == "000"
+```
+sudo apt-get install openjdk-8-jdk
 ```
 
-On aurait pu compliquer le calcul en testant un nombre de zéros beaucoup plus grand, mais l'on se contentera de 3 zéros. Si vous passer de 3 à 4, le même calcul avec les mêmes valeurs en entrée est largement plus long. Donc on imagine bien que plus l'on augmente le nombre de zéros, et plus les choses se compliquent.
+### Android SDK
 
-Un test avec une valeur de x=2018, permet d'avoir un résultat en 0.07s environ
+La meilleur façon d'installer le SDK d'Android est encore d'installer Android Studio. Pour ce faire, rien de plus simple, il suffit de visiter le site [https://developer.android.com/studio/index.html\#downloads](https://developer.android.com/studio/index.html#downloads) et de télécharger le paquet associé à votre OS.
 
-```py
-import time
+#### Windows
 
-x = 2018 # Dernière preuve
-y = 0  # Valeur que l'on incrémentera jusqu'à trouver le bon résultat
+Une fois le téléchargement effectué, vous n'aurez plus qu'à lancer l'installation en cliquant sur le fichier au format **.exe **et suivre le setup. L'installation du SDK se fera en même temps.
 
-debut = time.time()
-while not valid_proof(x,y):
-    y += 1
-    print y
+Voilà, c'est tout.
 
-fin = time.time()
-duree = fin-debut
+#### Mac OS
 
-# Hash trouvé : 000e7ea9705df1fe65fe077d5054fe4a12aa6bbe074d5060ed9f0b251e16d0f9
-# La solution est y = 566 au bout de 0.0716059207916 s
+1. Lancer l'installation en cliquant sur le fichier au format **.dmg** téléchargé précédemment.
+2. Glisser-déposer \(Drag-n-drop\) ensuite Android Studio dans le dossier Applications
+3. Le setup devrait ensuite finaliser l'installation du SDK
+
+Voilà.
+
+#### Linux
+
+1. Décompresser le fichier **.zip** téléchargé précédemment dans un dossier approprié. Je vous propose le dossier **/opt/** de manière à le partager entre les différents acteurs de votre OS.
+2. Ouvrez un invite de commande \(CTRL + ALT + T\) et executer le fichier **/opt/android-studio/bin/studio.sh**.
+3. Suivez le setup
+
+Si votre OS est une machine 64-bit, vous aller devoir installer quelques dépendances logicielles :
+
+```
+$ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 ```
 
-Le meme test prend plus de 6s pour un nombre de zéros égal à 4.
+### Xcode et ios-sim \(Mac OS uniquement\)
 
-Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à celle que l'on a implementé, utilise un nombre de zéros égal à 18 \(voir image ci-dessous\). C'est quand même énorme !
+Pour installer **Xcode**, il vous suffit de visiter l'url suivante [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) et de cliquer sur **"Download"**.
 
-![](/assets/block_screen.png)
+Pour l'émulateur **ios-sim**, depuis votre terminal, saisissez la commande suivante :
 
-### Interaction avec la Blockchain DuckCoin
+```bash
+$ sudo npm install -g ios-sim
+$ ios-sim –version # Pour vérifier que tout s'est bien passé
+```
 
-Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Si vous souhaitez en savoir plus sur Flask, n'hésitez pas à lire l'excellente documentation en ligne : [http://flask.pocoo.org/](http://flask.pocoo.org/)
+### Git
 
-Notre cryptomonnaie qui est disponible à l'adresse : [https://duckcoin.charlesen.fr/](https://duckcoin.charlesen.fr/) peut être exploitée via les actions suivantes :
+Ionic utilise le gestionnaire de dépôt Git dans son workflow de développement actuel. Pour l'installer, rien de plus simple, il vous suffit d'aller sur la page de téléchargement suivante : [https://git-scm.com/downloads](https://git-scm.com/downloads) et choisir le paquet correspondant à votre OS.
 
-| Action | Description |
+Sous Linux, il est également possible de l'installer en saisissant simplement la commande :
+
+```
+$ apt install git
+```
+
+## Installation via un script Bash \(Ubuntu\)
+
+Un script trouvé sur github[^1] , et que j'ai un peu adapté, fait assez bien le travail, car il vous permet d'installer tous ces utilitaires via un seul fichier bash.
+
+```bash
+#!/bin/bash
+# Ubuntu Developer Script For Ionic Framework
+# Created by Nic Raboy
+# http://www.nraboy.com
+#
+#
+# Télécharge et configure les logiciels suivants :
+#
+#   Java JDK
+#   Apache Ant
+#   Android
+#   Apache Cordova
+#   Ionic Framework
+#   Gradle
+
+HOME_PATH=$(cd ~/ && pwd)
+INSTALL_PATH=/opt
+ANDROID_SDK_PATH=/opt/android-sdk
+NODE_PATH=/opt/node
+GRADLE_PATH=/opt/gradle
+
+# x86_64 ou i686
+LINUX_ARCH="$(lscpu | grep 'Architecture' | awk -F\: '{ print $2 }' | tr -d ' ')"
+
+# Android Linux SDK pour les architectures x64 et x86
+ANDROID_SDK_X64="http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz"
+ANDROID_SDK_X86="http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz"
+
+
+# Gradle
+GRADLE_ALL="https://services.gradle.org/distributions/gradle-2.9-all.zip"
+
+if [ "$LINUX_ARCH" == "x86_64" ]; then
+    # Add i386 architecture
+    dpkg --add-architecture i386
+fi
+
+# Mise à jour des dépots Ubuntu
+apt-get update
+
+cd ~/Desktop
+
+if [ "$LINUX_ARCH" == "x86_64" ]; then
+
+    wget -c "$ANDROID_SDK_X64" -O "android-sdk.tgz" --no-check-certificate
+    wget -c "$GRADLE_ALL" -O "gradle.zip" --no-check-certificate
+
+    tar zxvf "android-sdk.tgz" -C "$INSTALL_PATH"
+    unzip "gradle.zip"
+    mv "gradle-2.9" "$INSTALL_PATH"
+
+    cd "$INSTALL_PATH" && mv "android-sdk-linux" "android-sdk"
+    cd "$INSTALL_PATH" && mv "gradle-2.9" "gradle"
+
+    # Dépendances pour les architecture x86
+    apt-get install -qq -y libc6:i386 libgcc1:i386 libstdc++6:i386 libz1:i386
+
+else
+
+    wget -c "$ANDROID_SDK_X86" -O "android-sdk.tgz" --no-check-certificate
+    wget -c "$GRADLE_ALL" -O "gradle.zip" --no-check-certificate
+
+    tar zxvf "android-sdk.tgz" -C "$INSTALL_PATH"
+    unzip "gradle.zip"
+    mv "gradle-2.9" "$INSTALL_PATH"
+
+    cd "$INSTALL_PATH" && mv "android-sdk-linux" "android-sdk"
+    cd "$INSTALL_PATH" && mv "gradle-2.9" "gradle"
+
+fi
+
+cd "$INSTALL_PATH" && chown root:root "android-sdk" -R
+cd "$INSTALL_PATH" && chmod 777 "android-sdk" -R
+
+cd ~/
+
+# MAJ du PATH de manière persistante
+echo "export PATH=\$PATH:$ANDROID_SDK_PATH/tools" >> ".profile"
+echo "export PATH=\$PATH:$ANDROID_SDK_PATH/platform-tools" >> ".profile"
+echo "export PATH=\$PATH:$GRADLE_PATH/bin" >> ".profile"
+
+# MAJ du PATH de manière temporaire le temps de l'installation
+export PATH=$PATH:$ANDROID_SDK_PATH/tools
+export PATH=$PATH:$ANDROID_SDK_PATH/platform-tools
+export PATH=$PATH:$GRADLE_PATH/bin
+
+# Installation du JDK, Apache Ant et Git
+apt-get -qq -y install default-jdk ant
+apt-get install git
+
+# MAJ de la variable d'environnement JAVA_HOME
+export JAVA_HOME="$(find /usr -type l -name 'default-java')"
+if [ "$JAVA_HOME" != "" ]; then
+    echo "export JAVA_HOME=$JAVA_HOME" >> ".profile"
+fi
+
+# Installation d'Apache Cordova et du framework Ioni
+npm install -g cordova
+npm install -g ionic
+
+cd "$INSTALL_PATH" && chmod 777 "node" -R
+cd "$INSTALL_PATH" && chmod 777 "gradle" -R
+
+# Suppression des fichiers d'installation
+cd ~/Desktop && rm "android-sdk.tgz"
+cd ~/Desktop && rm "nodejs.tgz"
+cd ~/Desktop && rm "gradle.zip"
+
+echo "----------------------------------"
+echo "Redémarrer votre session Ubuntu pour finaliser l'installation..."
+```
+
+Copier le code ci-dessus dans fichier install\_ionic.sh puis executer le :
+
+```bash
+$ chmod u+x install_ionic.sh
+$ ./install_ionic.sh
+```
+
+Redémarrez ensuite votre machine.
+
+## Création d'un compte Ionic PRO
+
+Cette étape va nous permettre de disposer d'un compte sur le cloud de Ionic. On en parle en détails au [Chapitre 10](/chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md), mais globalement, Ionic Cloud permet de :
+
+* Compiler une application devoir installer sur son local toutes les dépendances nécessaires.
+* Faire tester votre application en avant-première via l'application Ionic View
+* Gérer les erreurs levées dans l'application mobile
+* ...
+
+La création d'un compte est gratuite et pour ce faire, rendez-vous à l'adresse [https://dashboard.ionicjs.com/signup](https://dashboard.ionicjs.com/signup) et remplissez le formulaire pour compléter votre inscription.
+
+![](/assets/ionic_pro.png)
+
+Connectez-vous ensuite à Ionic PRO et cliquez sur le bouton **"New app"** pour créer une application que l'on liera plus tard à notre application mobile.
+
+Donnez un nom à cette nouvelle app. Par exemple **"Duckcoin"**.
+
+![](/assets/duckcoin_cloud.png)
+
+Une fois l'application créée, un identifiant unique lui est attribuée. Cet identifiant nous sera utile à la création de notre application depuis notre poste de travail.
+
+Voilà, vous y êtes. On va donc pouvoir créer notre première application mobile.
+
+## Première application Ionic
+
+Pour créer votre première application, rien de plus simple :
+
+```
+$ ionic start monAppli tabs
+✔ Creating directory ./monAppli - done!
+✔ Downloading and extracting tabs starter - done!
+
+? Would you like to integrate your new app with Cordova to target native iOS and Android? (y/N)
+```
+
+A la question _"Would you like to integrate your new app with Cordova to target native iOS and Android?"_ saisir **"y"**.
+
+Et à la question _"Install the free Ionic Pro SDK and connect your app?"_ , répondez aussi par un **"y"**.
+
+Vous allez devoir entrez vos identifiants et générer une paire clé privé/publique en choisissant _**"Automatically setup new a SSH key pair for Ionic Pro"**_
+
+Suivez ensuite le setup et garder les valeurs par défaut \(choisir **"Y"** à chaque fois\).
+
+La syntaxe générique d'une création d'application est la suivante :
+
+```
+$ ionic start [<name>] [<template>]
+```
+
+| Entrée | Description |
 | :--- | :--- |
-| /transactions/new | Permet d'ajouter une nouvelle transaction |
-| /mine | Minage d'un nouveau bloc |
-| /chain | Retourne la blockchain complète |
+| name | C'est le nom de votre application au format Camel par ex. Vous pouvez également l'écrire tout en minuscule \(ce que je recommande\) |
+| template | C'est le template ionic de votre choix. Pour afficher la liste des templates disponible actuellement, vous pouvez saisir la commande **ionic start --list **\(voir ci-dessous\) |
 
-Maintenant que notre outil est en place, nous pouvons seirenement nous lancer dans la création de l'application mobile qui nous permettra d'interagir avec la Blockchain, gérer notre portefeuille, envoyer ou recevoir de l'argent sous forme de tokens **DCK**.
+```
+$ ionic start --list
+tabs ............... ionic-angular A starting project with a simple tabbed interface
+blank .............. ionic-angular A blank starter project
+sidemenu ........... ionic-angular A starting project with a side menu with navigation in the content area
+super .............. ionic-angular A starting project complete with pre-built pages, providers and best practices for Ionic development.
+conference ......... ionic-angular A project that demonstrates a realworld application
+tutorial ........... ionic-angular A tutorial based project that goes along with the Ionic documentation
+aws ................ ionic-angular AWS Mobile Hub Starter
+tabs ............... ionic1 A starting project for Ionic using a simple tabbed interface
+blank .............. ionic1 A blank starter project for Ionic
+sidemenu ........... ionic1 A starting project for Ionic using a side menu with navigation in the content area
+maps ............... ionic1 An Ionic starter project using Google Maps and a side menu
+```
 
-[^1]: Le timestamp \(unix\) désigne le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC précise
+il est également possible de créer une application à partir d'un dépot git :
+
+```
+$ ionic start monappli_sur_git https://github.com/charlesen/monappli_sur_git
+```
+
+Une fois votre application créée, accédez au dossier nouvellement créé, puis démarrer le projet :
+
+```
+$ cd monappli
+$ ionic serve -lc
+```
+
+Ionic devrait ensuite ouvrir votre application depuis votre navigateur préféré.
+
+## Création du projet Duckcoin
+
+Comme nous l'avons vu, il est possible de créer une application mobile à partir d'un dépôt git. C'est ce que nous allons faire pour l'application DuckCoin.
+
+Ouvrez donc votre terminal et saisissez les commandes suivantes :
+
+```
+$ ionic start duckcoin https://github.com/charlesen/duckcoin
+$ cd duckcoin
+$ ionic serve -lc
+```
+
+![](/assets/screen_app1.png)
+
+Faites le tour de l'application pour découvrir un petit peu son architecture. Dans le chapitre suivant, nous allons la customiser pour qu'il soit un peu plus à notre image.
+
+[^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
