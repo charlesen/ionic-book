@@ -6,7 +6,7 @@
 * [A propos de l'auteur](a-propos-de-lauteur.md)
 * [Introduction](introduction.md)
 * [Chap 1 - Une brêve histoire du mobile](chapter1.md)
-* [Chap 2 - Cas pratique : DuckCoin, la cryptomonnaie sur mobile](application-mobile-un-marche-a-croissance-exponentielle.md)
+* [Chap 2 - Cas pratique : DuckCoin, la cryptomonnaie sur mobile](chap-2.md)
 * [Chap 3 - Installation de Ionic et première prise en main](chap-3-installation-de-ionic-et-premieres-prises-en-main.md)
 * [Chap 4 - Templates et Customisation](chap-4-templates-et-customisation.md)
 * [Chap 5 - Utilisation des composants Ionic](chap-5-utilisation-des-composants-ionic.md)
@@ -17,4 +17,3 @@
 * [Chap 10 - Ionic et son écosystème : Cloud, Lab, View et Creator](chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md)
 * [Chap 11 - Publication sur les stores](chap-11-publication-sur-les-stores.md)
 * [Chap 12 - Introduction au PWA avec Stencil et Capacitor](chap-12-introduction-au-pwa-avec-stencil-et-capacitor.md)
-
