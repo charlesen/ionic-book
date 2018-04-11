@@ -168,12 +168,11 @@ Un script trouvé sur github[^1] , et que j'ai un peu adapté, fait extremement 
 # http://www.nraboy.com
 #
 #
-# Downloads and configures the following:
+# Télécharge et configure les logiciels suivants :
 #
 #   Java JDK
 #   Apache Ant
 #   Android
-#   NPM
 #   Apache Cordova
 #   Ionic Framework
 #   Gradle
@@ -184,15 +183,15 @@ ANDROID_SDK_PATH=/opt/android-sdk
 NODE_PATH=/opt/node
 GRADLE_PATH=/opt/gradle
 
-# x86_64 or i686
+# x86_64 ou i686
 LINUX_ARCH="$(lscpu | grep 'Architecture' | awk -F\: '{ print $2 }' | tr -d ' ')"
 
-# Latest Android Linux SDK for x64 and x86 as of 12-19-2015
+# Android Linux SDK pour les architectures x64 et x86
 ANDROID_SDK_X64="http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz"
 ANDROID_SDK_X86="http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz"
 
 
-# Latest Gradle as of 12-19-2015
+# Gradle
 GRADLE_ALL="https://services.gradle.org/distributions/gradle-2.9-all.zip"
 
 if [ "$LINUX_ARCH" == "x86_64" ]; then
@@ -200,7 +199,7 @@ if [ "$LINUX_ARCH" == "x86_64" ]; then
     dpkg --add-architecture i386
 fi
 
-# Update all Ubuntu software repository lists
+# Mise à jour des dépots Ubuntu
 apt-get update
 
 cd ~/Desktop
@@ -217,7 +216,7 @@ if [ "$LINUX_ARCH" == "x86_64" ]; then
     cd "$INSTALL_PATH" && mv "android-sdk-linux" "android-sdk"
     cd "$INSTALL_PATH" && mv "gradle-2.9" "gradle"
 
-    # Android SDK requires some x86 architecture libraries even on x64 system
+    # Dépendances pour les architecture x86
     apt-get install -qq -y libc6:i386 libgcc1:i386 libstdc++6:i386 libz1:i386
 
 else
@@ -239,27 +238,27 @@ cd "$INSTALL_PATH" && chmod 777 "android-sdk" -R
 
 cd ~/
 
-# Add Android and NPM paths to the profile to preserve settings on boot
+# MAJ du PATH de manière persistante
 echo "export PATH=\$PATH:$ANDROID_SDK_PATH/tools" >> ".profile"
 echo "export PATH=\$PATH:$ANDROID_SDK_PATH/platform-tools" >> ".profile"
 echo "export PATH=\$PATH:$GRADLE_PATH/bin" >> ".profile"
 
-# Add Android and NPM paths to the temporary user path to complete installation
+# MAJ du PATH de manière temporaire le temps de l'installation
 export PATH=$PATH:$ANDROID_SDK_PATH/tools
 export PATH=$PATH:$ANDROID_SDK_PATH/platform-tools
 export PATH=$PATH:$GRADLE_PATH/bin
 
-# Install JDK, Apache Ant and Git
+# Installation du JDK, Apache Ant et Git
 apt-get -qq -y install default-jdk ant
 apt-get install git
 
-# Set JAVA_HOME based on the default OpenJDK installed
+# MAJ de la variable d'environnement JAVA_HOME
 export JAVA_HOME="$(find /usr -type l -name 'default-java')"
 if [ "$JAVA_HOME" != "" ]; then
     echo "export JAVA_HOME=$JAVA_HOME" >> ".profile"
 fi
 
-# Install Apache Cordova and Ionic Framework
+# Installation d'Apache Cordova et du framework Ioni
 npm install -g cordova
 npm install -g ionic
 
@@ -272,7 +271,7 @@ cd ~/Desktop && rm "nodejs.tgz"
 cd ~/Desktop && rm "gradle.zip"
 
 echo "----------------------------------"
-echo "Restart your Ubuntu session for installation to complete..."
+echo "Redémarrer votre session Ubuntu pour finaliser l'installation..."
 ```
 
 Copier le code ci-dessus dans fichier install\_ionic.sh puis executer le.
