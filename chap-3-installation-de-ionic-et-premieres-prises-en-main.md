@@ -411,7 +411,7 @@ Félicitations, vous avez créé votre première application. Dans le chapitre s
    3. Contact en _**Portefeuille**_
    4. Que se passe t-il dans la console à chaque enregistrement ?
 2. Faites les modifications suivantes dans les onglets
-   1. **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr). Et renommer l'intitulé de la page, de **Home** à _**Duckcoin**_.
+   1. **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr). Et renommer l'intitulé de la page, de **Home** à _**Duckcoin**_. \(**src/pages/home/home.html\)**
    2. **Minage** : Renommer le nom de la page en _**Minage**_. 
 3. Editez le fichier **theme/variables.scss** et modifier le contenu de la façon suivante :
 
@@ -434,7 +434,7 @@ $colors: (
 );
 ```
 
-Enregistrez, puis dans le fichier **src/pages/home/home.html**, effectuez les modifications suivantes 
+Enregistrez, puis dans le fichier **src/pages/home/home.html**, effectuez les modifications suivantes
 
 ```
 <ion-header>
@@ -457,6 +457,14 @@ Enregistrez, puis dans le fichier **src/pages/home/home.html**, effectuez les mo
 ```
 
 Que s'est-il passé ?
+
+Faites la même chose pour l'ensemble des onglets. 
+
+4. Adaptez le code hexadécimal de la couleur duckcoin pour qu'il soit le plus proche de vos goûts. Le meilleur code couleur sera utilisé dans la suite du projet :-\)
+
+5. Renommez les fichiers **about.html** en **mining.html**, **about.scss** en **mining.scss**, **about.scss** en **mining.scss**, **about.ts** en **mining.ts**. Puis, renommer le dossier **about** \(src/pages/about\) en **mining** \(src/pages/mining\). Que se passe-t-il dans la console ? Dans votre navigateur ?
+
+6. 
 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
