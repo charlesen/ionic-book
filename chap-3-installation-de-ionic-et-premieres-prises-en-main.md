@@ -329,7 +329,7 @@ Et à la question _"Install the free Ionic Pro SDK and connect your app?"_ , ré
 
 Vous allez devoir entrez vos identifiants et générer une paire clé privé/publique en choisissant _**"Automatically setup new a SSH key pair for Ionic Pro"**_
 
-Suivez ensuite le setup et garder les valeurs par défaut.
+Suivez ensuite le setup et garder les valeurs par défaut \(choisir **"Y"** à chaque fois\).
 
 La syntaxe générique d'une création d'application est la suivante :
 
