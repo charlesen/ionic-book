@@ -265,7 +265,7 @@ npm install -g ionic
 cd "$INSTALL_PATH" && chmod 777 "node" -R
 cd "$INSTALL_PATH" && chmod 777 "gradle" -R
 
-# Clean up any files that were downloaded from the internet
+# Suppression des fichiers d'installation
 cd ~/Desktop && rm "android-sdk.tgz"
 cd ~/Desktop && rm "nodejs.tgz"
 cd ~/Desktop && rm "gradle.zip"
