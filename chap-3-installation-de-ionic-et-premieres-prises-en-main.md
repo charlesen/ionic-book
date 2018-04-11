@@ -125,7 +125,7 @@ Voilà, c'est tout.
 
 #### Mac OS
 
-1. Lancer l'installation en cliquant sur le fichier au format .dmg téléchargé précédemment.
+1. Lancer l'installation en cliquant sur le fichier au format **.dmg** téléchargé précédemment.
 2. Glisser-déposer \(Drag-n-drop\) ensuite Android Studio dans le dossier Applications
 3. Le setup devrait ensuite finaliser l'installation du SDK
 
@@ -133,7 +133,17 @@ Voilà.
 
 #### Linux
 
-cd
+1. Décompresser le fichier **.zip** téléchargé précédemment dans un dossier approprié. Je vous propose le dossier **/opt/** de manière à le partager entre les différents acteurs de votre OS.
+2. Ouvrez un invite de commande \(CTRL + ALT + T\) et executer le fichier **/opt/android-studio/bin/studio.sh**. 
+3. Suivez le setup
+
+Si votre OS est une machine 64-bit, vous aller devoir installer quelques dépendances logicielles :
+
+```
+$ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+```
+
+
 
 ### Git
 
