@@ -294,9 +294,7 @@ Voilà, vous y êtes. On va donc pouvoir créer notre première application mobi
 
 ## Première application Ionic
 
-
-
-Pour créer votre première application, rien de plus simple : 
+Pour créer votre première application, rien de plus simple :
 
 ```
 $ ionic start monAppli sidemenu
@@ -310,7 +308,7 @@ $ ionic start [<name>] [<template>]
 
 | Entrée | Description |
 | :--- | :--- |
-| name | C'est le nom de votre application au format Camel par ex. |
+| name | C'est le nom de votre application au format Camel par ex. Vous pouvez également l'écrire tout en minuscule \(ce que je recommande\) |
 | template | C'est le template ionic de votre choix. Pour afficher la liste des templates disponible actuellement, vous pouvez saisir la commande **ionic start --list **\(voir ci-dessous\) |
 
 ```
@@ -328,13 +326,7 @@ sidemenu ........... ionic1 A starting project for Ionic using a side menu with 
 maps ............... ionic1 An Ionic starter project using Google Maps and a side menu
 ```
 
-
-
-
-
 cd
-
-
 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
