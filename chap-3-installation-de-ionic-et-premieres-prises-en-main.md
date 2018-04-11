@@ -134,7 +134,7 @@ Voilà.
 #### Linux
 
 1. Décompresser le fichier **.zip** téléchargé précédemment dans un dossier approprié. Je vous propose le dossier **/opt/** de manière à le partager entre les différents acteurs de votre OS.
-2. Ouvrez un invite de commande \(CTRL + ALT + T\) et executer le fichier **/opt/android-studio/bin/studio.sh**. 
+2. Ouvrez un invite de commande \(CTRL + ALT + T\) et executer le fichier **/opt/android-studio/bin/studio.sh**.
 3. Suivez le setup
 
 Si votre OS est une machine 64-bit, vous aller devoir installer quelques dépendances logicielles :
@@ -354,10 +354,10 @@ $ ionic start duckcoin https://github.com/charlesen/duckcoin
 $ cd duckcoin
 $ ionic serve -lc
 ```
+Voilà, vous y êtes.
 
 
 
 
 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
-
