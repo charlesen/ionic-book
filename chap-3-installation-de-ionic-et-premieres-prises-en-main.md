@@ -282,6 +282,8 @@ $ chmod u+x install_ionic.sh
 $ ./install_ionic.sh
 ```
 
+Redémarrez ensuite votre machine.
+
 Voilà, vous y êtes. On va donc pouvoir créer notre première application mobile.
 
 ## Première application Ionic
