@@ -290,6 +290,16 @@ $ ./install_ionic.sh
 
 Redémarrez ensuite votre machine.
 
+## Création d'un compte Ionic PRO
+
+Cette étape va nous permettre de disposer d'un compte sur le cloud de Ionic. On en parle en détails au [Chapitre 10](/chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md). La création d'un compte est gratuite, donc autant en profiter. Pour ce faire, rendez-vous à l'adresse https://dashboard.ionicjs.com/signup et remplissez le formulaire pour compléter votre inscription.
+
+Une fois connecté à Ionic PRO, cliquez sur le bouton "New app" pour créer une application que l'on liera plus tard à notre application mobile.
+
+Nommé cette app **"Duckcoin"**.
+
+![](/assets/duckcoin_cloud.png)
+
 Voilà, vous y êtes. On va donc pouvoir créer notre première application mobile.
 
 ## Première application Ionic
@@ -306,7 +316,7 @@ $ ionic start monAppli tabs
 
 A la question _"Would you like to integrate your new app with Cordova to target native iOS and Android?"_ saisir **"y"**.
 
-
+Et à la question _"Install the free Ionic Pro SDK and connect your app?" _répondez "n" pour le moment.
 
 La syntaxe générique est la suivante :
 
