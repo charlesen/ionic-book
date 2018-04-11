@@ -303,7 +303,7 @@ La création d'un compte est gratuite et pour ce faire, rendez-vous à l'adresse
 
 Connectez-vous ensuite à Ionic PRO et cliquez sur le bouton **"New app"** pour créer une application que l'on liera plus tard à notre application mobile.
 
-Nommez cette nouvelle app **"Duckcoin"**.
+Donnez un nom à cette nouvelle app. Par exemple **"Duckcoin"**.
 
 ![](/assets/duckcoin_cloud.png)
 
@@ -325,9 +325,13 @@ $ ionic start monAppli tabs
 
 A la question _"Would you like to integrate your new app with Cordova to target native iOS and Android?"_ saisir **"y"**.
 
-Et à la question _"Install the free Ionic Pro SDK and connect your app?"_ , répondez aussi par un "y".
+Et à la question _"Install the free Ionic Pro SDK and connect your app?"_ , répondez aussi par un **"y"**.
 
-La syntaxe générique est la suivante :
+Vous allez devoir entrez vos identifiants et générer une paire clé privé/publique en choisissant _**"Automatically setup new a SSH key pair for Ionic Pro"**_
+
+Suivez ensuite le setup et garder les valeurs par défaut.
+
+La syntaxe générique d'une création d'application est la suivante :
 
 ```
 $ ionic start [<name>] [<template>]
