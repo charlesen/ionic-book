@@ -301,6 +301,8 @@ Cette étape va nous permettre de disposer d'un compte sur le cloud de Ionic. On
 
 La création d'un compte est gratuite et pour ce faire, rendez-vous à l'adresse [https://dashboard.ionicjs.com/signup](https://dashboard.ionicjs.com/signup) et remplissez le formulaire pour compléter votre inscription.
 
+![](/assets/ionic_pro.png)
+
 Connectez-vous ensuite à Ionic PRO et cliquez sur le bouton **"New app"** pour créer une application que l'on liera plus tard à notre application mobile.
 
 Donnez un nom à cette nouvelle app. Par exemple **"Duckcoin"**.
