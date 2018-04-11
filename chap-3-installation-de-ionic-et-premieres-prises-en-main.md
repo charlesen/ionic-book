@@ -292,13 +292,22 @@ Redémarrez ensuite votre machine.
 
 ## Création d'un compte Ionic PRO
 
-Cette étape va nous permettre de disposer d'un compte sur le cloud de Ionic. On en parle en détails au [Chapitre 10](/chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md). La création d'un compte est gratuite, donc autant en profiter. Pour ce faire, rendez-vous à l'adresse https://dashboard.ionicjs.com/signup et remplissez le formulaire pour compléter votre inscription.
+Cette étape va nous permettre de disposer d'un compte sur le cloud de Ionic. On en parle en détails au [Chapitre 10](/chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md), mais globalement, Ionic Cloud permet de :
 
-Une fois connecté à Ionic PRO, cliquez sur le bouton "New app" pour créer une application que l'on liera plus tard à notre application mobile.
+* Compiler une application devoir installer sur son local toutes les dépendances nécessaires.
+* Faire tester votre application en avant-première via l'application Ionic View
+* Gérer les erreurs levées dans l'application mobile
+* ...
 
-Nommé cette app **"Duckcoin"**.
+La création d'un compte est gratuite et pour ce faire, rendez-vous à l'adresse [https://dashboard.ionicjs.com/signup](https://dashboard.ionicjs.com/signup) et remplissez le formulaire pour compléter votre inscription.
+
+Connectez-vous ensuite à Ionic PRO et cliquez sur le bouton **"New app"** pour créer une application que l'on liera plus tard à notre application mobile.
+
+Nommez cette nouvelle app **"Duckcoin"**.
 
 ![](/assets/duckcoin_cloud.png)
+
+Une fois l'application créée, un identifiant unique lui est attribuée. Cet identifiant nous sera utile à la création de notre application depuis notre poste de travail.
 
 Voilà, vous y êtes. On va donc pouvoir créer notre première application mobile.
 
@@ -316,7 +325,7 @@ $ ionic start monAppli tabs
 
 A la question _"Would you like to integrate your new app with Cordova to target native iOS and Android?"_ saisir **"y"**.
 
-Et à la question _"Install the free Ionic Pro SDK and connect your app?" _répondez "n" pour le moment.
+Et à la question _"Install the free Ionic Pro SDK and connect your app?"_ , répondez aussi par un "y".
 
 La syntaxe générique est la suivante :
 
