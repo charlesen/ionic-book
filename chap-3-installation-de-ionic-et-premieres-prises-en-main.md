@@ -151,6 +151,7 @@ Pour l'émulateur **ios-sim**, depuis votre terminal, saisissez la commande suiv
 
 ```bash
 $ sudo npm install -g ios-sim
+$ ios-sim –version # Pour vérifier que tout s'est bien passé
 ```
 
 ### Git
@@ -161,7 +162,6 @@ Sous Linux, il est également possible de l'installer en saisissant simplement l
 
 ```
 $ apt install git
-$ ios-sim –version # Pour vérifier que tout s'est bien passé
 ```
 
 ## Installation via un script Bash \(Ubuntu\)
