@@ -8,8 +8,6 @@ Dans ce chapitre, nous allons apprendre à customiser un peu plus notre applicat
 
 ## Customisation
 
-
-
 ## Templates et création de nouvelles pages
 
 ### Racine de toutes les pages
@@ -45,10 +43,9 @@ export class MyApp {
     });
   }
 }
-
 ```
 
-On pourrait tout à fait remplacer le rootPage par une autre page, la page de Minage par exemple. 
+On pourrait tout à fait remplacer le rootPage par une autre page, la page de Minage par exemple.
 
 ```js
 import { Component } from '@angular/core';
@@ -80,8 +77,6 @@ Ce qui ferait que par défaut, lorsque votre application se lancera on aura par 
 
 ![](/assets/screen_duck_2.png)![](/assets/duck_screen_min1.png)
 
-
-
 ### Création d'une nouvelle page
 
 Pour créer une nouvelle page, il vous suffit de saisir la commande **ionic g page LeNomDeLaPage**  :
@@ -94,8 +89,6 @@ $ ionic g page Profile
 Dans cet exemple, j'ai créé une nouvelle page pour afficher un profil utilisateur. Cette commande m'a automatiquement générer le triplet : **fichier .ts + fichier .html + fichier .scss**.
 
 ![](/assets/screen_22.png)
-
-
 
 **profile.ts**
 
@@ -125,7 +118,6 @@ export class ProfilePage {
   }
 
 }
-
 ```
 
 **profile.html**
@@ -149,7 +141,6 @@ export class ProfilePage {
 <ion-content padding>
 
 </ion-content>
-
 ```
 
 **profile.scss**
@@ -158,10 +149,55 @@ export class ProfilePage {
 page-profile {
 
 }
+```
+
+
+
+Ajoutons à présent cette nouvelle page à notre système d'onglet comme ceci :
+
+**src/pages/tabs/tabs.ts**
+
+```
+import { Component } from '@angular/core';
+
+import { MiningPage } from '../mining/mining';
+import { WalletPage } from '../wallet/wallet';
+import { HomePage } from '../home/home';
+import { ProfilePage } from '../profile/profile'; // On importe la nouvelle page ICI
+
+@Component({
+  templateUrl: 'tabs.html'
+})
+export class TabsPage {
+
+  tab1Root = HomePage;
+  tab2Root = MiningPage;
+  tab3Root = WalletPage;
+  tab4Root = ProfilePage; // On créé le nouvel onglet
+
+  constructor() {
+
+  }
+}
 
 ```
 
-cdcd
+
+
+**src/pages/tabs/tabs.html**
+
+```js
+<ion-tabs>
+  <ion-tab [root]="tab1Root" tabTitle="Accueil" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Minage" tabIcon="information-circle"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Portefeuille" tabIcon="contacts"></ion-tab>
+  <!-- Affichage du nouvel onglet -->
+  <ion-tab [root]="tab4Root" tabTitle="Profil" tabIcon="user"></ion-tab>
+</ion-tabs>
+
+```
+
+c
 
 
 
