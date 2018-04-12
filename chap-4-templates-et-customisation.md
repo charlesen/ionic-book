@@ -334,7 +334,7 @@ L'élement button fait partie des composants que propose Ionic. Dans le [chapitr
 
 2\) Dan la fonction **gotoHome**, remplacez "push" par "pop" : this.navCtrl.pop. Que constatez-vous ?
 
-3\) Editez le fichier **app.module.ts **de la manière suivante : 
+3\) Editez le fichier **app.module.ts **de la manière suivante :
 
 ```js
 ...
@@ -358,4 +358,33 @@ L'élement button fait partie des composants que propose Ionic. Dans le [chapitr
 ```
 
 Que remarquez-vous ?
+
+4\) Allez à l'adresse suivante : [https://ionicframework.com/docs/components](https://ionicframework.com/docs/components)
+
+Comment à partir des informations qu'y s'y trouve peut-on rajouter une liste d'éléments en page d'accueil \(voir screen suivant\)
+
+![](/assets/screen_home_2.png)
+
+**Astuces :** 
+
+```
+export class HomePage {
+  selected : any = '';
+  items : any = [];
+  constructor(public navCtrl: NavController) {
+    this.items = [
+      {'title':'Bitcoin', 'currency':'btc', 'price':'5000€'},
+      {'title':'Ethereum', 'currency':'eth', 'price':'500€'},
+      {'title':'Ripple', 'currency':'xrp', 'price':'0.4€'}
+    ];
+  }
+
+  itemSelected(item) {
+    this.selected =item;
+  }
+
+}
+```
+
+5\) Testez d'autres composants
 
