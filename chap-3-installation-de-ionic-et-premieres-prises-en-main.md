@@ -96,11 +96,11 @@ Avant d'aller plus loin, il sera nécessaire d'installer d'autres logiciels comm
 
 ### Java SDK
 
-#### Windows
+#### Windows et Mac OS
 
 Pour installer le SDK de Java sous Windows, il vous suffit de visiter le site : [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) et de choisir le fichier adapté à votre système d'exploitation \(32 ou 64 bits\)
 
-#### Mac OS et Linux
+#### Linux
 
 ##### Mise à jour des dépots
 
@@ -397,8 +397,6 @@ $ ionic serve -lc
 
 ![](/assets/screen_app1.png)
 
-
-
 ### Struction du projet
 
 Faisons un peu le tour de l'anatomie d'un projet type sous Ionic.
@@ -439,8 +437,6 @@ On retrouve du code écrit en TypeScript \(nous en reparlerons en détails au [c
 On retrouve aussi du htlm, du css,...
 
 > **Ecran Mobile = 1 Fichier .ts + 1 Fichier .html + 1 Fichier .scss**
-
-
 
 le fichier **src/app/app.module.ts** est le point d'entrée métier de notre application.
 
