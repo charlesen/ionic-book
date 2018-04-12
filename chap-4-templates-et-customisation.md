@@ -191,5 +191,142 @@ export class TabsPage {
 </ion-tabs>
 ```
 
-c
+Il faut ensuite déclarer cette nouvelle page dans le module principale, pour que la communauté des pages puissent le connaitre et pouvoir eventuellement l'appeler si besoin. Pour cela, il vous faut modifier le fichier src/app/app.module.ts de la manière suivante :
+
+```js
+import { NgModule, ErrorHandler } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { MyApp } from './app.component';
+
+import { MiningPage } from '../pages/mining/mining';
+import { WalletPage } from '../pages/wallet/wallet';
+import { HomePage } from '../pages/home/home';
+import { ProfilePage } from '../pages/profile/profile'; // On importe la nouvelle page ICI
+import { TabsPage } from '../pages/tabs/tabs';
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+
+@NgModule({
+  declarations: [
+    MyApp,
+    MiningPage,
+    WalletPage,
+    HomePage,
+    ProfilePage, // On la déclare ici
+    TabsPage
+  ],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(MyApp)
+  ],
+  bootstrap: [IonicApp],
+  entryComponents: [
+    MyApp,
+    MiningPage,
+    WalletPage,
+    HomePage,
+    ProfilePage, // Et là
+    TabsPage
+  ],
+  providers: [
+    StatusBar,
+    SplashScreen,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
+})
+export class AppModule {}
+
+```
+
+Après enregistrement vous devriez voir ceci s'afficher à présent :
+
+![](/assets/screen_profile_1.png) 
+
+### Navigation entre différentes pages
+
+Pour passer d'une page, par exemple de la page de Profil, à la page d'accueil par exemple, on utilise ce que l'on appelle le controleur de navigation \(NavController\), que vous avez du voir apparaitre dans chaque page.
+
+**src/pages/profile/profile.ts**
+
+```js
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular'; // ICI
+
+
+@IonicPage()
+@Component({
+  selector: 'page-profile',
+  templateUrl: 'profile.html',
+})
+export class ProfilePage {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) { // Et là
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad ProfilePage');
+  }
+
+}
+
+```
+
+
+
+Dans ce fichier, ajoutez la fonction gotoHome suivante :
+
+```
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular'; // ICI
+
+import { HomePage } from '../home/home'; // On importe la Page d'accueil
+
+@IonicPage()
+@Component({
+  selector: 'page-profile',
+  templateUrl: 'profile.html',
+})
+export class ProfilePage {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) { // Et là
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad ProfilePage');
+  }
+
+  /**
+  ** Cette fonction permet d'aller à la page d'accueil
+  **/
+  gotoHome() {
+    this.navCtrl.push(HomePage, {
+      un_parametre: 'Je suis un paramètre'
+    });
+  }
+
+}
+
+```
+
+Puis, modifions un peu le fichier **src/pages/profile/profile.ts **pour afficher un bouton qui nous permettra d'appeller cette action :
+
+```
+<ion-header>
+
+  <ion-navbar color="duckcoin">
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+Profil utilisateur
+<ion-button (click)="gotoHome()">Aller à l'accueil</ion-button>
+</ion-content>
+
+```
+
+cd
 
