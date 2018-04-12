@@ -330,7 +330,7 @@ L'élement button fait partie des composants que propose Ionic. Dans le [chapitr
 
 ## Exercez-vous
 
-1\) Créer la page Profile précédente et configurer là pour quelle soit dans le thème de l'application. Corrigez les bugs eventuels.
+1\) Créez la page **Profile** précédente et configurer là pour quelle soit dans le thème de l'application. Corrigez les bugs eventuels.
 
 2\) Dan la fonction **gotoHome**, remplacez **"push"** par **"pop"** : **this.navCtrl.pop**. Que constatez-vous ?
 
