@@ -22,7 +22,7 @@ Les 65 ans sont ceux qui consacrent le plus de temps aux ordinateurs. À l’inv
 
 Globalement, et la plupart des études statistiques sont unanimes là-dessus, les 18 à 24 ans sont ceux qui utilisent le plus les applications mobiles. Ils sont suivis de près respectivement par les 25 à 34 ans, les 35 à 44 ans, les 45 à 54 ans, puis les plus de 55 ans. Les femmes passeraient plus de temps que les hommes sur le web mobile, et la moyenne de temps passée sur des applications mobiles a augmenté de 20% en seulement 1 an, entre 2014 et 2015.
 
-Selon une autre entreprise américaine, Gartner, plus de 268 milliards de téléchargements mobiles généreront des revenus d'environ 77 milliards de dollars en 2017.
+Selon une autre entreprise américaine, Gartner, plus de 268 milliards de téléchargements mobiles devraient générer des revenus d'environ 77 milliards de dollars en 2017.
 
 De plus, les applications mobiles ont engrangé des bénéfices atteignant les 35 milliards de dollars en 2014, 45 milliards de dollars En 2015, 58 milliards de dollars en 2016, et un montant prévu de 77 milliards de dollars en 2017, comme dit précédemment. Autant dire qu'il y a énormément d'argents et surtout d'opportunités en jeu.
 
