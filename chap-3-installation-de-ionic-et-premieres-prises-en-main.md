@@ -417,7 +417,7 @@ Félicitations, vous avez créé votre première application. Dans le [chapitre 
 
 2\) Faites les modifications suivantes dans les onglets
 
-* **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr). Et renommer l'intitulé de la page, de **Home** à _**Duckcoin**_. \(**src/pages/home/home.html\)**
+* **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr). Et renommer l'intitulé de la page, de **Home** à _**Duckcoin**_. \(**src/pages/home/home.html\). **Les images sont à placer dans le dossier **src/assets/imgs**.
 
 * **Minage** : Renommer le nom de la page en _**Minage**_.
 
@@ -454,15 +454,7 @@ Enregistrez, puis dans le fichier **src/pages/home/home.html**, effectuez les mo
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  LE CONTENU QUE VOUS AVEZ MODIFIÉ JUSTE AVANT ;-)
 </ion-content>
 ```
 
