@@ -26,7 +26,7 @@ Une application mobile est dite native, si le développement effectué pour la c
 
 | Plateforme cible | Langage de Programmation |
 | :--- | :--- |
-| Androig \(Google\) | Java, Kotlin |
+| Android \(Google\) | Java, Kotlin |
 | iOS \(Apple\) | Objective-C, Swift |
 | Windows Phone \(Microsoft\) | C-Sharp \(C\#\) |
 | ...etc |  |

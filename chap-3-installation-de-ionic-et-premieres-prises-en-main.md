@@ -407,23 +407,23 @@ Félicitations, vous avez créé votre première application. Dans le [chapitre 
 
 1\) Renommer les différents onglets :
 
- - Home en _**Accueil**_
+* Home en _**Accueil**_
 
- - About en _**Minage**_
+* About en _**Minage**_
 
-  - Contact en _**Portefeuille**_
+  * Contact en _**Portefeuille**_
 
-  - Que se passe t-il dans la console à chaque enregistrement ?
+  * Que se passe t-il dans la console à chaque enregistrement ?
 
 2\) Faites les modifications suivantes dans les onglets
 
- - **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr). Et renommer l'intitulé de la page, de **Home** à _**Duckcoin**_. \(**src/pages/home/home.html\)**
+* **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr). Et renommer l'intitulé de la page, de **Home** à _**Duckcoin**_. \(**src/pages/home/home.html\)**
 
- - **Minage** : Renommer le nom de la page en _**Minage**_. 
+* **Minage** : Renommer le nom de la page en _**Minage**_.
 
- - **Portefeuille** : Renommer le nom de la page en _**Portefeuille**_. 
+* **Portefeuille** : Renommer le nom de la page en _**Portefeuille**_.
 
- 3\) Editez le fichier **theme/variables.scss** et modifier le contenu de la façon suivante :
+3\) Editez le fichier **theme/variables.scss** et modifier le contenu de la façon suivante :
 
 ```js
 // Named Color Variables
@@ -472,7 +472,7 @@ Faites la même chose pour l'ensemble des onglets.
 
 4\) Adaptez le code hexadécimal de la couleur duckcoin pour qu'il soit le plus proche de vos goûts. Le meilleur code couleur sera utilisé dans la suite du projet :-\)
 
-5\) Renommez les fichiers **about.html** en **mining.html**, **about.scss** en **mining.scss**, **about.scss** en **mining.scss**, **about.ts** en **mining.ts**. Puis, renommer le dossier **about** \(src/pages/about\) en **mining** \(src/pages/mining\). 
+5\) Renommez les fichiers **about.html** en **mining.html**, **about.scss** en **mining.scss**, **about.scss** en **mining.scss**, **about.ts** en **mining.ts**. Puis, renommer le dossier **about** \(src/pages/about\) en **mining** \(src/pages/mining\).
 
 Dans le fichier **mining.ts**, remplacez **AboutPage** par **MiningPage**.
 
@@ -486,12 +486,7 @@ Que se passe-t-il dans la console ? Dans votre navigateur ? Quelles solutions pr
 
 ![](/assets/screen_accueil.png)
 
-8.Ajustez le style CSS de la page d'accueil pour rendre le contenu de l'onglet un peu plus joli : **src/pages/home/home.scss**.
+8.Ajustez le style CSS de la page d'accueil pour rendre le contenu de l'onglet un peu plus joli : **src/pages/home/home.scss**. N'hésitez pas utiliser l'inspecteur de votre navigateur \(F12\).
 
-1. cd
-
-2. 
-3. 
-4. 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
