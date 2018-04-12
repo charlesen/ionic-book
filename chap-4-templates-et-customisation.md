@@ -320,7 +320,6 @@ Puis, modifions un peu le fichier **src/pages/profile/profile.ts **pour afficher
 Profil utilisateur
 <button ion-button (click)="gotoHome()">Aller à l'accueil</button>
 </ion-content>
-
 ```
 
 Qui donne le résultat suivant :
@@ -333,7 +332,30 @@ L'élement button fait partie des composants que propose Ionic. Dans le [chapitr
 
 1\) Créer la page Profile précédente et configurer là pour quelle soit dans le thème de l'application. Corrigez les bugs eventuels.
 
-2\) 
+2\) Dan la fonction **gotoHome**, remplacez "push" par "pop" : this.navCtrl.pop. Que constatez-vous ?
 
+3\) Editez le fichier **app.module.ts **de la manière suivante : 
 
+```js
+...
+@NgModule({
+  declarations: [
+    MyApp,
+    MiningPage,
+    WalletPage,
+    HomePage,
+    ProfilePage, // On la déclare ici
+    TabsPage
+  ],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(MyApp,{
+        tabsPlacement: 'top',
+        backButtonText: 'Retour'
+    })
+  ],
+  ...
+```
+
+Que remarquez-vous ?
 
