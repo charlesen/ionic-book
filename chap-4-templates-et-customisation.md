@@ -8,6 +8,34 @@ Dans ce chapitre, nous allons apprendre à customiser un peu plus notre applicat
 
 ## Customisation
 
+### Classes utilitaires
+
+Ionic propose un certain nombre d'attributs qui vont nous permettre de travailler la mise en forme de notre application \(alignement de texte, padding, margin,...\), sans devoir réinventer la roue en créer ses propres classes CSS.
+
+#### Alignement de texte
+
+| Attribut | Style CSS correspondant | Fonction |
+| :--- | :--- | :--- |
+| text-left | text-align:left | Aligne le contenu à gauche |
+| text-right | text-align:right | Aligne le contenu à droite |
+| text-start | text-align:start | Identique à text-left si la direction est d'écriture du texte va gauche à droite et text-right si la direction du texte va de droite à gauche. |
+| text-end | text-align:end | Identique à text-right si la direction d'écriture va de gauche à droite et text-left si la direction va de droite à gauche. |
+| text-center | text-align:center | Aligne le contenu au milieu |
+|  |  |  |
+
+
+
+  
+
+
+### Utilisation de SASS \(Syntactically Awesome Stylesheets\)
+
+Ionic est construit sur Sass, un langage de génération de feuilles de style facile à prendre en main et qui va nous permettre de définir des styles par défaut pour notre application, mais aussi de modifier ceux définis par défaut dans Ionic.
+
+Pour ajouter vos propres styles Sass, il suffit simplement de modifier le fichier **src/theme/variables.scss**.
+
+
+
 ## Templates et création de nouvelles pages
 
 ### Racine de toutes les pages
