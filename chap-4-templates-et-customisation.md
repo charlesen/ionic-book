@@ -171,7 +171,7 @@ export class TabsPage {
   tab1Root = HomePage;
   tab2Root = MiningPage;
   tab3Root = WalletPage;
-  tab4Root = ProfilePage; // On créé le nouvel onglet
+  tab4Root = ProfilePage; // On crée le nouvel onglet
 
   constructor() {
 
