@@ -365,7 +365,7 @@ Comment à partir des informations qu'y s'y trouve peut-on rajouter une liste d'
 
 ![](/assets/screen_home_2.png)
 
-**Astuces :** 
+**Astuces :**
 
 ```
 export class HomePage {
@@ -387,4 +387,6 @@ export class HomePage {
 ```
 
 5\) Testez d'autres composants
+
+6\) Créer une page Setting et ajoutez à cette page un formulaire avec des elements simples : nom, prenom, adresse,...
 
