@@ -1,4 +1,167 @@
 # Chap 4 - Templates et Customisation
 
+Dans le chapitre précédent nous avons installé Ionic et ses dépendances. Nous avons également pu créer notre application Duckcoin et nous nous sommes amusés à le modifier tant bien que mal.
+
+![](/assets/screen_duck_2.png)
+
+Dans ce chapitre, nous allons apprendre à customiser un peu plus notre application mobile et à créer de nouvelles pages.
+
+## Customisation
+
+
+
+## Templates et création de nouvelles pages
+
+### Racine de toutes les pages
+
+Considérons le fichier **src/app/app.html**, c'est à partir de ce fichier que sera rendu toutes les autres pages.
+
+```js
+<ion-nav [root]="rootPage"></ion-nav>
+```
+
+On y définit un paramètre rootPage qui sera en fait le composant à afficher par défaut, une sorte d'index. Ce paramètre rootPage est lui-même déclaré dans le fichier **app.component.ts**.
+
+```
+import { Component } from '@angular/core';
+import { Platform } from 'ionic-angular';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { TabsPage } from '../pages/tabs/tabs';
+
+@Component({
+  templateUrl: 'app.html'
+})
+export class MyApp {
+  rootPage:any = TabsPage; // <!-- ICI
+
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+    platform.ready().then(() => {
+      // Okay, so the platform is ready and our plugins are available.
+      // Here you can do any higher level native things you might need.
+      statusBar.styleDefault();
+      splashScreen.hide();
+    });
+  }
+}
+
+```
+
+On pourrait tout à fait remplacer le rootPage par une autre page, la page de Minage par exemple. 
+
+```js
+import { Component } from '@angular/core';
+import { Platform } from 'ionic-angular';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { TabsPage } from '../pages/tabs/tabs';
+import { MiningPage } from '../pages/mining/mining'; // <!-- ICI
+
+@Component({
+  templateUrl: 'app.html'
+})
+export class MyApp {
+  rootPage :any = MiningPage; // <!-- et LÀ
+
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+    platform.ready().then(() => {
+      // Okay, so the platform is ready and our plugins are available.
+      // Here you can do any higher level native things you might need.
+      statusBar.styleDefault();
+      splashScreen.hide();
+    });
+  }
+}
+```
+
+Ce qui ferait que par défaut, lorsque votre application se lancera on aura par défaut cette page de Minage au lieu de la page affichant des onglets.
+
+![](/assets/screen_duck_2.png)![](/assets/duck_screen_min1.png)
+
+
+
+### Création d'une nouvelle page
+
+Pour créer une nouvelle page, il vous suffit de saisir la commande **ionic g page LeNomDeLaPage**  :
+
+```
+$ ionic g page Profile
+[OK] Generated a page named Profile!
+```
+
+Dans cet exemple, j'ai créé une nouvelle page pour afficher un profil utilisateur. Cette commande m'a automatiquement générer le triplet : **fichier .ts + fichier .html + fichier .scss**.
+
+![](/assets/screen_22.png)
+
+
+
+**profile.ts**
+
+```js
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+/**
+ * Generated class for the ProfilePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
+@IonicPage()
+@Component({
+  selector: 'page-profile',
+  templateUrl: 'profile.html',
+})
+export class ProfilePage {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad ProfilePage');
+  }
+
+}
+
+```
+
+**profile.html**
+
+```js
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+</ion-content>
+
+```
+
+**profile.scss**
+
+```
+page-profile {
+
+}
+
+```
+
+cdcd
+
 
 
