@@ -151,8 +151,6 @@ page-profile {
 }
 ```
 
-
-
 Ajoutons à présent cette nouvelle page à notre système d'onglet comme ceci :
 
 **src/pages/tabs/tabs.ts**
@@ -179,10 +177,7 @@ export class TabsPage {
 
   }
 }
-
 ```
-
-
 
 **src/pages/tabs/tabs.html**
 
@@ -192,12 +187,9 @@ export class TabsPage {
   <ion-tab [root]="tab2Root" tabTitle="Minage" tabIcon="information-circle"></ion-tab>
   <ion-tab [root]="tab3Root" tabTitle="Portefeuille" tabIcon="contacts"></ion-tab>
   <!-- Affichage du nouvel onglet -->
-  <ion-tab [root]="tab4Root" tabTitle="Profil" tabIcon="user"></ion-tab>
+  <ion-tab [root]="tab4Root" tabTitle="Profil" tabIcon="person"></ion-tab>
 </ion-tabs>
-
 ```
 
 c
-
-
 
