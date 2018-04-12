@@ -401,7 +401,7 @@ Félicitations, vous avez créé votre première application. Dans le [chapitre 
 
 ## Exercez-vous
 
-1. Faites le tour de l'application pour découvrir un petit peu son architecture
+0\) Faites le tour de l'application pour découvrir un petit peu son architecture
 
 ![](/assets/archi_duckcoin.png)
 
@@ -417,11 +417,11 @@ Félicitations, vous avez créé votre première application. Dans le [chapitre 
 
 2\) Faites les modifications suivantes dans les onglets
 
-* **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr). Et renommer l'intitulé de la page, de **Home** à _**Duckcoin**_. \(**src/pages/home/home.html\). **Les images sont à placer dans le dossier **src/assets/imgs**.
+* **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr). Et renommer la page, de **Home** à _**Duckcoin**_. \(**src/pages/home/home.html\). **Les images sont à placer dans le dossier **src/assets/imgs**.
 
-* **Minage** : Renommer le nom de la page en _**Minage**_.
+* **Minage** : Changer l'intitulé de la page en _**Minage**_.
 
-* **Portefeuille** : Renommer le nom de la page en _**Portefeuille**_.
+* **Portefeuille** : Changer l'intitulé de la page en _**Portefeuille**_.
 
 3\) Editez le fichier **theme/variables.scss** et modifier le contenu de la façon suivante :
 
@@ -472,13 +472,13 @@ Que se passe-t-il dans la console ? Dans votre navigateur ? Quelles solutions pr
 
 ![](/assets/ionic_error2.png)
 
-6\) Editer le fichier **src/app/app.module.ts** de manière à corriger le maximum d'erreur
+6\) Editer le fichier **src/app/app.module.ts** de manière à corriger le maximum d'erreurs.
 
 7\) Effectuez les actions précédentes pour l'onglet Portefeuille \(renommage + resolutions de bugs\) : **contact.html** en **wallet.html**, **contact.scss** en **wallet.scss**, **contact.scss** en **wallet.scss**, **contact.ts** en **wallet.ts**.
 
-![](/assets/screen_accueil.png)
+![](/assets/screen_duck_2.png)
 
-8.Ajustez le style CSS de la page d'accueil pour rendre le contenu de l'onglet un peu plus joli : **src/pages/home/home.scss**. N'hésitez pas utiliser l'inspecteur de votre navigateur \(F12\).
+8\) Ajustez le style CSS de la page d'accueil pour rendre le contenu de l'onglet un peu plus joli : **src/pages/home/home.scss**. N'hésitez pas utiliser l'inspecteur de votre navigateur \(F12\).
 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
