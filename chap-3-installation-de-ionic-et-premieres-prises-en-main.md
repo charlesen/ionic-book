@@ -98,11 +98,11 @@ Avant d'aller plus loin, il sera nécessaire d'installer d'autres logiciels comm
 
 #### Windows et Mac OS
 
-Pour installer le SDK de Java sous Windows, il vous suffit de visiter le site : [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) et de choisir le fichier adapté à votre système d'exploitation \(32 ou 64 bits\)
+Pour installer le SDK de Java sous Windows et Mac, il vous suffit de visiter le site : [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) et de choisir le fichier adapté à votre machine \(32 ou 64 bits\)
 
 #### Linux
 
-##### Mise à jour des dépots
+##### Mise à jour des dépôts
 
 ```
 $ sudo add-apt-repository ppa:openjdk-r/ppa
@@ -136,7 +136,7 @@ Voilà.
 #### Linux
 
 1. Décompresser le fichier **.zip** téléchargé précédemment dans un dossier approprié. Je vous propose le dossier **/opt/** de manière à le partager entre les différents acteurs de votre OS.
-2. Ouvrez un invite de commande \(CTRL + ALT + T\) et executer le fichier **/opt/android-studio/bin/studio.sh**.
+2. Ouvrez un invite de commandes \(CTRL + ALT + T\) et executer le fichier **/opt/android-studio/bin/studio.sh**.
 3. Suivez le setup
 
 Si votre OS est une machine 64-bit, vous aller devoir installer quelques dépendances logicielles :
