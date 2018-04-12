@@ -237,12 +237,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ]
 })
 export class AppModule {}
-
 ```
 
 Après enregistrement vous devriez voir ceci s'afficher à présent :
 
-![](/assets/screen_profile_1.png) 
+![](/assets/screen_profile_1.png)
 
 ### Navigation entre différentes pages
 
@@ -270,10 +269,7 @@ export class ProfilePage {
   }
 
 }
-
 ```
-
-
 
 Dans ce fichier, ajoutez la fonction gotoHome suivante :
 
@@ -307,7 +303,6 @@ export class ProfilePage {
   }
 
 }
-
 ```
 
 Puis, modifions un peu le fichier **src/pages/profile/profile.ts **pour afficher un bouton qui nous permettra d'appeller cette action :
@@ -323,10 +318,22 @@ Puis, modifions un peu le fichier **src/pages/profile/profile.ts **pour afficher
 
 <ion-content padding>
 Profil utilisateur
-<ion-button (click)="gotoHome()">Aller à l'accueil</ion-button>
+<button ion-button (click)="gotoHome()">Aller à l'accueil</button>
 </ion-content>
 
 ```
 
-cd
+Qui donne le résultat suivant :
+
+![](/assets/screen_profile_3.png) ![](/assets/screen_profile_4.png)
+
+L'élement button fait partie des composants que propose Ionic. Dans le [chapitre suivant](/chap-5-utilisation-des-composants-ionic.md), nous ferons le tour de ces principaux composants et apprendrons à la customiser.
+
+## Exercez-vous
+
+1\) Créer la page Profile précédente et configurer là pour quelle soit dans le thème de l'application. Corrigez les bugs eventuels.
+
+2\) 
+
+
 
