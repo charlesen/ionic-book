@@ -20,7 +20,7 @@ Considérons le fichier **src/app/app.html**, c'est à partir de ce fichier que 
 
 On y définit un paramètre rootPage qui sera en fait le composant à afficher par défaut, une sorte d'index. Ce paramètre rootPage est lui-même déclaré dans le fichier **app.component.ts**.
 
-```
+```js
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -155,7 +155,7 @@ Ajoutons à présent cette nouvelle page à notre système d'onglet comme ceci :
 
 **src/pages/tabs/tabs.ts**
 
-```
+```js
 import { Component } from '@angular/core';
 
 import { MiningPage } from '../mining/mining';
