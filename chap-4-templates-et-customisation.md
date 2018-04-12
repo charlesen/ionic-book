@@ -86,7 +86,7 @@ $ ionic g page Profile
 [OK] Generated a page named Profile!
 ```
 
-Dans cet exemple, j'ai créé une nouvelle page pour afficher un profil utilisateur. Cette commande m'a automatiquement générer le triplet : **fichier .ts + fichier .html + fichier .scss**.
+Dans cet exemple, j'ai créé une nouvelle page pour afficher un profil utilisateur. Cette commande m'a automatiquement généré le triplet : **fichier .ts + fichier .html + fichier .scss**. On reparlera dans un prochain chapitre du quatrième type de fichier en **.module.ts**.
 
 ![](/assets/screen_22.png)
 
@@ -191,7 +191,7 @@ export class TabsPage {
 </ion-tabs>
 ```
 
-Il faut ensuite déclarer cette nouvelle page dans le module principale, pour que la communauté des pages puissent le connaitre et pouvoir eventuellement l'appeler si besoin. Pour cela, il vous faut modifier le fichier src/app/app.module.ts de la manière suivante :
+Il faut ensuite déclarer cette nouvelle page dans le module principal, pour que la "communauté des pages puissent le connaitre et pouvoir éventuellement l'appeler si besoin. Pour cela, il vous faut modifier le fichier src/app/app.module.ts de la manière suivante :
 
 ```js
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -361,7 +361,7 @@ Que remarquez-vous ?
 
 4\) Allez à l'adresse suivante : [https://ionicframework.com/docs/components](https://ionicframework.com/docs/components)
 
-Comment à partir des informations qu'y s'y trouve peut-on rajouter une liste d'éléments en page d'accueil \(voir screen suivant\)
+Comment à partir des informations qu'y s'y trouvent peut-on rajouter une liste d'éléments en page d'accueil \(voir screen suivant\)
 
 ![](/assets/screen_home_2.png)
 
