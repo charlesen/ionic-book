@@ -397,8 +397,6 @@ $ ionic serve -lc
 
 ![](/assets/screen_app1.png)
 
-
-
 ### Struction du projet
 
 Faisons un peu le tour de l'anatomie d'un projet type sous Ionic.
@@ -440,8 +438,6 @@ On retrouve aussi du htlm, du css,...
 
 > **Ecran Mobile = 1 Fichier .ts + 1 Fichier .html + 1 Fichier .scss**
 
-
-
 le fichier **src/app/app.module.ts** est le point d'entrée métier de notre application.
 
 ```js
@@ -455,9 +451,9 @@ le fichier **src/app/app.module.ts** est le point d'entrée métier de notre app
 export class AppModule {}
 ```
 
-C'est dans ce fichier que l'on décide quelle composant \(ici MyApp\) sera le composant principal. On expliquera ces notions de composants dans le [chapitre 8](/chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md).
+C'est dans ce fichier que l'on décide quelle composant \(ici MyApp\) sera le composant principal. On expliquera ces notions de composant dans le [chapitre 8](/chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md).
 
-Dans le [chapitre suivant](/chap-4-templates-et-customisation.md), nous allons apprendre à customiser notre application pour qu'elle soit un peu plus à notre image.Mais en attendant, exerçons-vous un peu.
+Dans le [chapitre suivant](/chap-4-templates-et-customisation.md), nous allons apprendre à customiser notre application pour qu'elle soit un peu plus à notre image.Mais en attendant, exercez-vous un peu.
 
 ## Exercez-vous
 
@@ -471,9 +467,9 @@ Dans le [chapitre suivant](/chap-4-templates-et-customisation.md), nous allons a
 
 * About en _**Minage**_
 
-  * Contact en _**Portefeuille**_
+* Contact en _**Portefeuille**_
 
-  * Que se passe t-il dans la console à chaque enregistrement ?
+* Que se passe t-il dans la console à chaque enregistrement ?
 
 2\) Faites les modifications suivantes dans les onglets
 
@@ -528,7 +524,7 @@ Faites la même chose pour l'ensemble des onglets.
 
 Dans le fichier **mining.ts**, remplacez **AboutPage** par **MiningPage**.
 
-Que se passe-t-il dans la console ? Dans votre navigateur ? Quelles solutions proposeriez-vous ? Voir par exemple le contenu du fichier src/pages/mining/mining.ts.
+Que se passe-t-il dans la console ? Dans votre navigateur ? Quelles solutions proposeriez-vous ? Voir par exemple le contenu du fichier **src/pages/mining/mining.ts**.
 
 ![](/assets/ionic_error2.png)
 
