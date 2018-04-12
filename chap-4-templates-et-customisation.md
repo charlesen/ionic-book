@@ -332,9 +332,9 @@ L'élement button fait partie des composants que propose Ionic. Dans le [chapitr
 
 1\) Créer la page Profile précédente et configurer là pour quelle soit dans le thème de l'application. Corrigez les bugs eventuels.
 
-2\) Dan la fonction **gotoHome**, remplacez "push" par "pop" : this.navCtrl.pop. Que constatez-vous ?
+2\) Dan la fonction **gotoHome**, remplacez **"push"** par **"pop"** : **this.navCtrl.pop**. Que constatez-vous ?
 
-3\) Editez le fichier **app.module.ts **de la manière suivante :
+3\) Éditez le fichier **app.module.ts **de la manière suivante :
 
 ```js
 ...
@@ -361,7 +361,7 @@ Que remarquez-vous ?
 
 4\) Allez à l'adresse suivante : [https://ionicframework.com/docs/components](https://ionicframework.com/docs/components)
 
-Comment à partir des informations qu'y s'y trouvent peut-on rajouter une liste d'éléments en page d'accueil \(voir screen suivant\)
+Comment à partir des informations qu'y s'y trouvent peut-on rajouter une liste d'éléments en page d'accueil \(voir screen ci-dessous\) ?
 
 ![](/assets/screen_home_2.png)
 
@@ -388,5 +388,5 @@ export class HomePage {
 
 5\) Testez d'autres composants
 
-6\) Créer une page Setting et ajoutez à cette page un formulaire avec des elements simples : nom, prenom, adresse,...
+6\) Créez une page **Setting **et ajoutez à cette page un formulaire avec des éléments simples : nom, prénom, adresse,...
 
