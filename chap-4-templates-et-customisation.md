@@ -25,7 +25,29 @@ Ionic met à disposition un ensemble d'attributs utilitaires qui peuvent être u
 
 Une liste beaucoup plus exhaustive se trouve dans la documentation qui est extrement bien faite [https://ionicframework.com/docs/theming/css-utilities/](https://ionicframework.com/docs/theming/css-utilities/)
 
+On va pouvoir utiliser ces attributs directement dans nos pages. Nous allons par exemple centrer le h2 du contenu de la page d'accueil et justifer le contenu du texte qui le suit :
 
+**src/pages/home/home.html**
+
+```js
+<ion-header>
+  <ion-navbar color="duckcoin">
+    <ion-title>Duckcoin</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2 text-center>La monnaie solidaire</h2> <!-- ICI -->
+  <p text-justify> <!-- Et Là -->
+    DuckCoin, c'est la monnaie qui rend aimable, redonne le sourire et change la face du monde.
+    Elle a été faite pour des gens sympas, juste comme toi.
+  </p>
+  ...
+</ion-content>
+
+```
+
+![](/assets/screen_home_5.png)
 
 ### Utilisation de SASS
 
