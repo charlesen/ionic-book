@@ -59,19 +59,34 @@ Mais tout l'intérêt de TypeScript est surtout de pouvoir ajouter à JavaScript
 
 Créons une classe Licence et ajoutons-y des paramètres et quelques méthodes au passage.
 
-
-
 ## Types de base
 
 Contrairement à JavaScript où les types sont définis au remplissage d'une variable, TypeScript propose un typage de variable beaucoup plus fort.
 
-La définition d'une variable se fait de la manière suivante :
+La définition générale d'une variable se fait de la manière suivante :
+
+let nomDeLaVariable: leTypeDeBase \[= valeur par défaut - Optionnel\];
 
 ### Booléen
 
 ```js
 let isConnected: boolean = false;
 ```
+
+### Nombre
+
+```
+let valeur_decimal: number = 6;
+let valeur_hex: number = 0xf00d;
+let valeur_binary: number = 0b1010;
+let valeur_octal: number = 0o744;
+```
+
+ccdd
+
+
+
+
 
 
 
@@ -98,8 +113,6 @@ export class HomePage {
 }
 ```
 
-
-
 ## Exercez-vous
 
 1\) Dans le fichier demo, ajouter la liste d'éléments suivante :
@@ -111,6 +124,4 @@ let transactions = [
 ```
 
 cd
-
-
 
