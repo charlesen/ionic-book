@@ -12,8 +12,6 @@ Dans ce chapitre, nous allons apprendre à customiser un peu plus notre applicat
 
 Ionic met à disposition un ensemble d'attributs utilitaires qui peuvent être utilisés sur n'importe quel élément afin de modifier du texte, le centrer par exemple, ou encore gérer les marges. A la différence de Bootstrap où on fait usage de classes css \(row, col,...\), ici on utilisera plutôt des attributs.
 
-#### Modificateur de texte
-
 | Attribut | Style CSS correspondant | Description |
 | :--- | :--- | :--- |
 | text-left | text-align: left | Aligne du texte à gauche |
@@ -23,9 +21,9 @@ Ionic met à disposition un ensemble d'attributs utilitaires qui peuvent être u
 | text-center | text-align:center | Centre le contenu |
 | text-justify | text-align:justify | Justfie le contenu |
 
-Une liste beaucoup plus exhaustive se trouve dans la documentation qui est extrement bien faite [https://ionicframework.com/docs/theming/css-utilities/](https://ionicframework.com/docs/theming/css-utilities/)
+Une liste beaucoup plus exhaustive se trouve dans la documentation qui est extrêmement bien faite [https://ionicframework.com/docs/theming/css-utilities/](https://ionicframework.com/docs/theming/css-utilities/)
 
-On va pouvoir utiliser ces attributs directement dans nos pages. Nous allons par exemple centrer le h2 du contenu de la page d'accueil et justifer le contenu du texte qui le suit :
+On va pouvoir utiliser ces attributs directement dans nos pages. Centrons par exemple le h2 de la page d'accueil et justifions le contenu du texte qui le suit :
 
 **src/pages/home/home.html**
 
@@ -44,10 +42,13 @@ On va pouvoir utiliser ces attributs directement dans nos pages. Nous allons par
   </p>
   ...
 </ion-content>
-
 ```
 
 ![](/assets/screen_home_5.png)
+
+### Grille CSS responsive
+
+
 
 ### Utilisation de SASS
 
