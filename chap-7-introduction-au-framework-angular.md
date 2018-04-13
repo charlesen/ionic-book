@@ -1,8 +1,8 @@
 # Chap 7 - Introduction au framework Angular
 
-AngularJS est un framework JavaScript libre et open source développé par Google. Il permet la construction d'applications client reactives en HTML et en TypeScript. Angular est lui-même écrit en TypeScript.
+AngularJS est un framework JavaScript libre et open source développé par Google. Il permet la construction d'applications client reactives en HTML et en TypeScript. Angular est d'ailleurs lui-même écrit en TypeScript.
 
-Angular, propose un outil, 'Angular CLI \(Command line\), qui facilite la création et le développement de projets web en ligne de commande.
+Angular, propose un outil, Angular CLI \(Command line\), qui facilite la création et le développement de projets web en ligne de commande.
 
 Pour mieux comprendre le fonctionnement d'Angular, rien de mieux que développer un petit projet web basé sur celui-ci.
 
@@ -81,8 +81,6 @@ app.component.ts
 app.module.ts
 ```
 
-
-
 Une application a toujours au moins un module racine qui permet le lancement du projet \(à l'exemple d'un fichier index.html en racine d'un site web\). C'est ce module qui va amorcer le composant Root \(principal\).
 
 ## Exercez-vous
@@ -134,6 +132,4 @@ Que s'est-il passé dans ce qui est affiché dans votre navigateur ?
 ![](/assets/render_appcompo.png)
 
 Que pouvez-vous conclure sur le rôle d'un composant ? Comprenez-vous mieux comment fonctionne les composants Ionic ?
-
-
 
