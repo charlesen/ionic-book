@@ -97,11 +97,35 @@ Chose intéressante pour les chaînes de caractères, il est possible de les uti
 let fullName: string = `Charles EDOU NZE`;
 let age: number = 30;
 let sentence: string = `Salut, mon name est ${ fullName }.
+                        J'aurai ${ age + 1 } ans à la fin de l'année.`;
 
-J'aurai ${ age + 1 } ans à la fin de l'année.`;
 ```
 
-ccd
+Ceci est l'équivalent de concaténer des chaines de caractères avec le signe "+".
+
+### Les tableaux
+
+```js
+let list_nombres_premiers: number[] = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31];
+```
+
+### Any
+
+On l'utilise quand on ne sait pas trop qu'elle type de données on aura à traiter. C'est souvent le cas quand on utilise un API proprietaire.
+
+```
+let variableApi: any = 4;
+variableApi = "c'est une chaine de caractère";
+variableApi = false; // ou un booléan finalement
+```
+
+
+
+## Les Classes
+
+Un des gros avantages de TypeScript est la possibilité de créer des classes, ce qui n'était pas tout à fait \(au sens strict\) en JavaScript, même s'il était possible de créer un genre de classe avec l'attribut prototype.
+
+
 
 ## Comment TypeScript s'intègre à Ionic
 
