@@ -14,11 +14,18 @@ Ionic met à disposition un ensemble d'attributs utilitaires qui peuvent être u
 
 #### Modificateur de texte
 
-|  |  |
-| :--- | :--- |
-|  |  |
+| Attribut | Style CSS correspondant | Description |
+| :--- | :--- | :--- |
+| text-left | text-align: left | Aligne du texte à gauche |
+| text-right | text-align:right | Aligne du texte à droite |
+| text-start | text-align:start | Identique à text-left si la direction d'écriture va de gauche vers la droite et text-right si la direction est de droite vers la gauche. |
+| text-end | text-align:end | Identique à text-right si la direction d'écriture est de gauche vers la droite et de text-left si la direction est de droite vers la gauche. |
+| text-center | text-align:center | Centre le contenu |
+| text-justify | text-align:justify | Justfie le contenu |
 
-c
+Une liste beaucoup plus exhaustive se trouve dans la documentation qui est extrement bien faite [https://ionicframework.com/docs/theming/css-utilities/](https://ionicframework.com/docs/theming/css-utilities/)
+
+
 
 ### Utilisation de SASS
 
