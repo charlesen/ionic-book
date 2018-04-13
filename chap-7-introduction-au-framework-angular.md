@@ -127,9 +127,50 @@ Que s'est-il passé dans ce qui est affiché dans votre navigateur ?
 * **DuckWeb**
   * **Transaction**
 
-5\) Ouvrez le fichier **src/app/transaction/transaction.component.ts** dans le constructeur, définissez  une liste de transaction comme vu dans le TP précédent. Puis modifiez le fichier **src/app/transaction/transaction.component.html**, de manière à avoir le résultat suivant :
+5\) Remplacez le contenu du fichier **src/app/transaction/transaction.component.html**. Quel changement dans votre navigateur ?
+
+6\) Ouvrez le fichier **src/app/transaction/transaction.component.ts** dans le constructeur, définissez  une liste de transactions comme vu dans le TP précédent, puis modifiez le fichier **src/app/transaction/transaction.component.html**, de manière à avoir le résultat suivant :
 
 ![](/assets/render_appcompo.png)
 
 Que pouvez-vous conclure sur le rôle d'un composant ? Comprenez-vous mieux comment fonctionne les composants Ionic ?
+
+7\) Dans le fichier **src/app/transaction/transaction.component.ts**, ajoutez les lignes suivantes dans la partie dédiée aux imports :
+
+```
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+```
+
+Puis le modifiez le fichier comme ceci :
+
+    import { Component, OnInit } from '@angular/core';
+    import { Injectable } from '@angular/core';
+    import { HttpClient } from '@angular/common/http';
+
+    const apiUrl='https://duckcoin.charlesen.fr'
+
+    @Component({
+      selector: 'app-transaction',
+      templateUrl: './transaction.component.html',
+      styleUrls: ['./transaction.component.css']
+    })
+    export class TransactionComponent implements OnInit {
+      transactions: any = [];
+      constructor(private http: HttpClient) {
+        //
+        this.http.get(`${apiUrl}/transactions`).subscribe(data => function(){
+          console.log('transactions::data', data);
+        });
+      }
+
+      ngOnInit() {
+      }
+
+    }
+
+
+Vous avez planté normalement. Savez-vous pourquoi ?
+
+
 
