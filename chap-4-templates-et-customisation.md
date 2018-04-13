@@ -48,7 +48,33 @@ On va pouvoir utiliser ces attributs directement dans nos pages. Centrons par ex
 
 ### Grille CSS responsive
 
+Ionic propose également un système de grille css pour permettre une meilleur gestion de blocs de contenus. Il est assez similiare dans sa syntaxe à celui que propose Bootstrap.
 
+```js
+<h2>Profil utilisateur</h2>
+<ion-grid>
+  <ion-row>
+    <ion-col col-lg-1>
+      <img src="assets/imgs/logo.jpg"/>
+    </ion-col>
+    <ion-col>
+      Charles E.
+    </ion-col>
+    <ion-col>
+      Développeur Web et Mobile
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      Intérêt pour la finance, la blockchain, les technologies mobiles et le O'tacos
+    </ion-col>
+  </ion-row>
+</ion-grid>
+```
+
+![](/assets/screen_profile_5.png)
+
+Pour plus de détails, merci de consulter la documentation correspondante : [https://ionicframework.com/docs/theming/responsive-grid/](https://ionicframework.com/docs/theming/responsive-grid/) 
 
 ### Utilisation de SASS
 
@@ -127,7 +153,7 @@ page-profile {
 }
 ```
 
-c
+![](/assets/screenprofile_1.png)
 
 ## Templates et création de nouvelles pages
 
