@@ -380,7 +380,7 @@ En vous basant sur ce qui a été fait précédemment avec la liste des cryptomo
 
 [https://ionicframework.com/docs/components/\#modals](https://ionicframework.com/docs/components/#modals)
 
-P.S : il est possible de passer des paramètres à une fenetre modale, puis de les récupérer dans la fenetre concernée :
+**P.S :** il est possible de passer des paramètres à une fenetre modale, puis de les récupérer dans la fenetre concernée :
 
 Ouverture de la fenêtre avec passage de paramètres :
 
@@ -399,7 +399,7 @@ export class MaPage {
 }
 ```
 
-Récupération des données dans la classe de la fenetre :
+Récupération des données dans la classe de la fenêtre :
 
 ```js
 export class MaPageModal {
