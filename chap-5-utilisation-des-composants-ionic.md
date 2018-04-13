@@ -30,7 +30,17 @@ Faites que cette page soit la page par défaut, en modifiant le fichier **src/ap
 
 4\) Sans modifier l'onglet Accueil, adaptez les autres onglets Minage, Portefeuille
 
+P.S. : Ionic propose un ensemble d'icônes que l'on peut intégrer facilement dans l'appli. 
+
+```js
+<ion-icon name="home"></ion-icon>
+```
+
+La liste de toutes les icônes disponibles se trouve à l'adresse  [https://ionicframework.com/docs/ionicons/](https://ionicframework.com/docs/ionicons/)
+
 ![](/assets/miner_img.jpg)![](/assets/wallet_img.jpg)
 
-5\) Améliorez l'onglet Profil avec différents aux composants.
+5\) Améliorez les onglets Profil et More \(page Settings créé dans le TP précédent\) avec différents aux composants. Dans l'onglet Setting on pourra par exemple avoir la possibilité de choisir plusieurs devises différentes et d'en cocher une par défaut, ou encore de choisir la langue par défaut,...laissez libre cours à votre imagination ;-\)
+
+
 
