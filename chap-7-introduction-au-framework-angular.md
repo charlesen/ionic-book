@@ -85,6 +85,12 @@ app.module.ts
 
 Une application a toujours au moins un module racine qui permet le lancement du projet \(à l'exemple d'un fichier index.html en racine d'un site web\). C'est ce module qui va amorcer le composant Root \(principal\).
 
+
+
+Angular dans les templates
+
+
+
 ## Exercez-vous
 
 1\) Créez un nouveau projet comme expliqué précédemment
