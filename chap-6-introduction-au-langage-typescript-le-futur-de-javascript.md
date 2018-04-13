@@ -207,9 +207,46 @@ for (let i of list) {
 }
 ```
 
+## Les conditions
+
+Comme en JavaScript. On retrouve les tradionnels "if..else" , "switch...case" :
+
+```js
+if(une_conditon) {  
+   // La condition est vraie
+} else {
+   // Elle est fausse  
+}
+```
+
+Et un switch-case :
+
+```
+switch(meteo) { 
+   case 'soleil': { 
+      //Il fait beau 
+      break; 
+   } 
+   case 'pluie': { 
+      // il fait moins beau 
+      break; 
+   } 
+   default: { 
+      // devine 
+      break; 
+   } 
+} 
+```
 
 
-## cd
+
+## Constantes
+
+Une constante comme son nom le suppose est censé de ne pas être changé par la suite ou redéfini par la suite. On pourra par exemple y stocker une URL d'une API.
+
+```js
+const apiUrl = 'https://duckcoin.charlesen.fr';
+```
 
 
 
