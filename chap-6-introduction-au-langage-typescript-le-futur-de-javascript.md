@@ -271,7 +271,7 @@ export class HomePage {
 
 ## Exercez-vous
 
-1\) On veut afficher la liste des dernières transactions de la Blockchain sous forme de la liste dans l'onglet, tout en bas du texte de bienvenue.On définit la liste de transactions ci-dessous :
+1\) On veut afficher la liste des dernières transactions de la Blockchain sous forme de liste dans l'onglet Accueil, tout en bas du texte de bienvenue.On définit la liste de transactions ci-dessous :
 
 ```js
     this.transactions = [
