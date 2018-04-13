@@ -74,7 +74,7 @@ Ionic propose également un système de grille css pour permettre une meilleur g
 
 ![](/assets/screen_profile_5.png)
 
-Pour plus de détails, merci de consulter la documentation correspondante : [https://ionicframework.com/docs/theming/responsive-grid/](https://ionicframework.com/docs/theming/responsive-grid/) 
+Pour plus de détails, merci de consulter la documentation correspondante : [https://ionicframework.com/docs/theming/responsive-grid/](https://ionicframework.com/docs/theming/responsive-grid/)
 
 ### Utilisation de SASS
 
@@ -154,6 +154,34 @@ page-profile {
 ```
 
 ![](/assets/screenprofile_1.png)
+
+
+
+De manière générale, les Variables Sass vous permettent de définir une valeur une fois, puis de l'utiliser à plusieurs endroits différents. Une variable commence toujours par un signe dollar \($\) et est initialisé comme une propriété CSS classique. 
+
+Suppossons par exemple que l'on souhaiterait imposer une largeur maximale sur un certain nombre de composants de notre application \(des images, boutons,...\). On pourrait par exemple faire ceci dans le fichier variables.css :
+
+**src/theme/variables.scss**
+
+```
+$max-width: 400px;
+```
+
+Puis dans une ou plusieurs feuilles de style scss invoquer notre variable :
+
+```
+div {
+    width:$max-width;
+}
+```
+
+On pourrait même faire des calculs sur la variable  :
+
+```
+img {
+    width : $max-width/10;
+}
+```
 
 ## Templates et création de nouvelles pages
 
