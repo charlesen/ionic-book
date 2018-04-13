@@ -12,8 +12,6 @@ Dans ce chapitre, nous allons apprendre à customiser un peu plus notre applicat
 
 Ionic met à disposition un ensemble d'attributs utilitaires qui peuvent être utilisés sur n'importe quel élément afin de modifier du texte, le centrer par exemple, ou encore gérer les marges. A la différence de Bootstrap où on fait usage de classes css \(row, col,...\), ici on utilisera plutôt des attributs.
 
-
-
 #### Modificateur de texte
 
 |  |  |
@@ -83,22 +81,20 @@ Il est également possible d'appeler des variables définis dans ce fichier **sr
 
 ```
 page-profile {
-  button {
+  button[ion-button] {
     background: color($colors, duckcoin, base);
   }
 }
-
 ```
 
 qui est l'équivalent css de :
 
 ```
 page-profile {
-  button {
+  button[ion-button] {
     background: #df4932;
   }
 }
-
 ```
 
 c
