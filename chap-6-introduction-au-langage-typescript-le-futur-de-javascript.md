@@ -98,7 +98,6 @@ let fullName: string = `Charles EDOU NZE`;
 let age: number = 30;
 let sentence: string = `Salut, mon name est ${ fullName }.
                         J'aurai ${ age + 1 } ans à la fin de l'année.`;
-
 ```
 
 Ceci est l'équivalent de concaténer des chaines de caractères avec le signe "+".
@@ -119,13 +118,31 @@ variableApi = "c'est une chaine de caractère";
 variableApi = false; // ou un booléan finalement
 ```
 
-
-
 ## Les Classes
 
 Un des gros avantages de TypeScript est la possibilité de créer des classes, ce qui n'était pas tout à fait \(au sens strict\) en JavaScript, même s'il était possible de créer un genre de classe avec l'attribut prototype.
 
+```js
+class classeMmi {
+    intervenant: string;
+    etudiants: string[];
+    constructor(intervenant: string, etudiants:string[]) {
+        this.intervenant = intervenant;
+        this.etudiants = etudiants;
+    }
+    getIntervenant() {
+        return "L'intervenant actuel s'appelle " + this.intervenant;
+    }
+    getEtudiants() {
+         return this.etudiants;
+    }
+}
 
+let classeLPMim = new classeMmi("charles", ['etudiant1','etudiant_n']);
+classeLPMim.getIntervenant() // Retourne L'intervenant actuel s'appelle charles
+```
+
+cd
 
 ## Comment TypeScript s'intègre à Ionic
 
