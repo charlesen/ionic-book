@@ -144,26 +144,72 @@ let classeLPMim = new classeMmi("charles", ['etudiant1','etudiant_n']);
 classeLPMim.getIntervenant() // Retourne L'intervenant actuel s'appelle charles
 ```
 
-
-
 ## Les itérateurs
 
 #### Boucle for..of
 
 Cette boucle permet d'afficher les éléments d'une liste pure.
 
-```
-let someArray = [1, "deux", 'trois'];
+```js
+let unArray = [1, "deux", 'trois'];
 
-for (let entry of someArray) {
-    console.log(entry); // 1, "deux", "trois"
+for (let valeur of unArray) {
+    console.log(valeur); // 1, "deux", "trois"
 }
-
 ```
 
+cette boucle est aussi celle qu'il faudra utiliser quand on voudra boucler sur des listes d'objets :
 
+```js
+let unArrayObjets = [{'nom':'etudiant 1', 'num':1}, {'nom':'etudiant 2', 'num':2}];
+
+for (let item of unArrayObjets) {
+    console.log(item.nom); // etudiant 1 etudiant 2
+}
+```
 
 #### Boucle for..in
+
+Reprenons le code précédent, mais en utilisant la boucle for..in
+
+```js
+let unArray = [1, "deux", 'trois'];
+
+for (let index in unArray) {
+    console.log(index); // 0, 1, 2
+}
+```
+
+La boucle renvoie en fait les indexes de chaque valeur et ne doit être utilisé dans ce cas là que si l'on souhaite vraiment récupérer les indexes d'un tableau.
+
+Mais le véritable intérêt pour moi de la boucle **for..in** est de pouvoir boucler sur les propriétés d'un objet.
+
+```js
+let etudiant = {'nom':'Etudiant 001', 'num':1};
+for (let cle in etudiant) {
+    console.log(etudiant[cle]) // Renvoie Etudiant 001
+}
+```
+
+Et un petit résumé de ce que renvoie l'une ou l'autre des deux boucles :
+
+```js
+let list = [4, 5, 6];
+let etudiant = {'nom':'Etudiant', 'num':1};
+
+
+for (let i in list) {
+   console.log(i); // "0", "1", "2",
+}
+
+for (let i of list) {
+   console.log(i); // "4", "5", "6"
+}
+```
+
+
+
+## cd
 
 
 
