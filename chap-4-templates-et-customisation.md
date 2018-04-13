@@ -8,6 +8,101 @@ Dans ce chapitre, nous allons apprendre à customiser un peu plus notre applicat
 
 ## Customisation
 
+### Attributs de style
+
+Ionic met à disposition un ensemble d'attributs utilitaires qui peuvent être utilisés sur n'importe quel élément afin de modifier du texte, le centrer par exemple, ou encore gérer les marges. A la différence de Bootstrap où on fait usage de classes css \(row, col,...\), ici on utilisera plutôt des attributs.
+
+
+
+#### Modificateur de texte
+
+|  |  |
+| :--- | :--- |
+|  |  |
+
+c
+
+### Utilisation de SASS
+
+Ionic est construit sur Sass \(Syntactically Awesome Stylesheets\), un langage de génération de feuilles de style, robuste et facile à prendre en main. En fait si vous savez déjà définir une feuille de style, ce langage ne vous choquera pas trop. Grâce à cette technologie embarquée dans Ionic, nous allons non seulement pouvoir définir des styles génériques pour notre application, qui pourront être utilisé à plusieurs endroits différents, mais nous pourrons également changer les styles par défaut des attributs et composants Ionic.
+
+La définition ou la redéfinition de style css dynamique se fait depuis le fichier **src/theme/variables.scss** :
+
+```js
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #488aff,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  duckcoin:   #df4932 // Notre première valeur SASS
+);
+```
+
+Vous pouvez ici effectuer des changements sur les valeurs par défaut des thèmes primaire, secondaire, ...Et ils s'appliqueront automatiquement à l'ensemble de vos composants.
+
+```
+<ion-header>
+  <ion-navbar color="duckcoin">
+    <ion-title>Duckcoin</ion-title>
+  </ion-navbar>
+</ion-header>
+```
+
+Ici la barre de navigation aura comme couleur de fond \(background\) celle définie dans le fichier de variables scss et comme couleur de texte du blanc. Si vous voulez autre chose que du blanc, disons du jaune, vous devriez modifier votre style comme ceci :
+
+**src/theme/variables.scss**
+
+```
+$colors: (
+  primary:    #488aff,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  duckcoin: (
+    base: #df4932,
+    contrast: yellow
+  )
+);
+```
+
+![](/assets/screen_home_4.png)
+
+Il est également possible d'appeler des variables définis dans ce fichier **src/theme/variables.scss** directement dans nos fichiers scss. Changeons par exemple la couleur du bouton présent dans l'onglet Profil :
+
+**src/pages/profile/profile.scss**
+
+```
+page-profile {
+  button {
+    background: color($colors, duckcoin, base);
+  }
+}
+
+```
+
+qui est l'équivalent css de :
+
+```
+page-profile {
+  button {
+    background: #df4932;
+  }
+}
+
+```
+
+c
+
 ## Templates et création de nouvelles pages
 
 ### Racine de toutes les pages
@@ -330,7 +425,7 @@ L'élement button fait partie des composants que propose Ionic. Dans le [chapitr
 
 ## Exercez-vous
 
-1\) Créer la page Profile précédente et configurer là pour quelle soit dans le thème de l'application. Corrigez les bugs eventuels.
+1\) Créez la page Profile précédente et configurez là pour quelle soit dans le thème de l'application. Corrigez les bugs eventuels.
 
 2\) Dan la fonction **gotoHome**, remplacez "push" par "pop" : this.navCtrl.pop. Que constatez-vous ?
 
@@ -388,5 +483,5 @@ export class HomePage {
 
 5\) Testez d'autres composants
 
-6\) Créer une page Setting et ajoutez à cette page un formulaire avec des elements simples : nom, prenom, adresse,...
+6\) Créez une page Setting et ajoutez à cette page un formulaire avec des elements simples : nom, prenom, adresse,...
 
