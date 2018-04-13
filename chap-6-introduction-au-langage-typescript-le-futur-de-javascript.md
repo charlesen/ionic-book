@@ -118,9 +118,11 @@ variableApi = "c'est une chaine de caractère";
 variableApi = false; // ou un booléan finalement
 ```
 
-## Les Classes
+## Les Classes et les méthodes
 
 Un des gros avantages de TypeScript est la possibilité de créer des classes, ce qui n'était pas tout à fait \(au sens strict\) en JavaScript, même s'il était possible de créer un genre de classe avec l'attribut prototype.
+
+Les méthodes elles sont équivalentes aux fonctions JavaScript, mais le mot clé "function".
 
 ```js
 class classeMmi {
@@ -142,11 +144,32 @@ let classeLPMim = new classeMmi("charles", ['etudiant1','etudiant_n']);
 classeLPMim.getIntervenant() // Retourne L'intervenant actuel s'appelle charles
 ```
 
-cd
+
+
+## Les itérateurs
+
+#### Boucle for..of
+
+Cette boucle permet d'afficher les éléments d'une liste pure.
+
+```
+let someArray = [1, "deux", 'trois'];
+
+for (let entry of someArray) {
+    console.log(entry); // 1, "deux", "trois"
+}
+
+```
+
+
+
+#### Boucle for..in
+
+
 
 ## Comment TypeScript s'intègre à Ionic
 
-En fait, TypeScript est présent partout ou presque dans Ionic. Les classes définit dans les fichiers .ts de chaque page sont écrit, comme vous vous en doutiez surement, en TypeScript :
+En fait, TypeScript est présent partout ou presque dans Ionic. Les classes définies dans les fichiers .ts de chaque page sont écrites, comme vous vous en doutiez surement, en TypeScript :
 
 ```js
 export class HomePage {
@@ -169,7 +192,7 @@ export class HomePage {
 
 ## Exercez-vous
 
-1\) Dans le fichier demo, ajouter la liste d'éléments suivante :
+1\) Dans le fichier demo\_typescript.ts, ajouter la liste d'éléments suivante :
 
 ```
 let transactions = [
