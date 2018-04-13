@@ -57,9 +57,23 @@ Bien évidemment le contenu du fichier **demo\_typescript.js **est strictement l
 
 Mais tout l'intérêt de TypeScript est surtout de pouvoir ajouter à JavaScript des notions de classes, d'interface, d'héritage ou de Polymorphisme,...
 
+Créons une classe Licence et ajoutons-y des paramètres et quelques méthodes au passage.
 
 
-Créons une classe Licence et ajoutons-y des paramètres
+
+## Types de base
+
+Contrairement à JavaScript où les types sont définis au remplissage d'une variable, TypeScript propose un typage de variable beaucoup plus fort.
+
+La définition d'une variable se fait de la manière suivante :
+
+### Booléen
+
+```js
+let isConnected: boolean = false;
+```
+
+
 
 ## Comment TypeScript s'intègre à Ionic
 
@@ -83,6 +97,20 @@ export class HomePage {
 
 }
 ```
+
+
+
+## Exercez-vous
+
+1\) Dans le fichier demo, ajouter la liste d'éléments suivante :
+
+```
+let transactions = [
+    {''}
+]
+```
+
+cd
 
 
 
