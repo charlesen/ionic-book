@@ -65,30 +65,43 @@ Contrairement à JavaScript où les types sont définis au remplissage d'une var
 
 La définition générale d'une variable se fait de la manière suivante :
 
-let nomDeLaVariable: leTypeDeBase \[= valeur par défaut - Optionnel\];
+```js
+let nomDeLaVariable: leTypeDeBase [= valeur par défaut - Optionnel];
+```
 
-### Booléen
+### Booléens
 
 ```js
 let isConnected: boolean = false;
 ```
 
-### Nombre
+### Nombres
 
-```
+```js
 let valeur_decimal: number = 6;
 let valeur_hex: number = 0xf00d;
 let valeur_binary: number = 0b1010;
 let valeur_octal: number = 0o744;
 ```
 
-ccdd
+### String
 
+```js
+let color: string = "blue";
+color = 'red'; # On a le choix entre les guillemets simples ou doubles
+```
 
+Chose intéressante pour les chaînes de caractères, il est possible de les utiliser sous forme de template, un truc que l'on rencontrait jusqu'à lors dans des langages de haut niveau comme Python.
 
+```js
+let fullName: string = `Charles EDOU NZE`;
+let age: number = 30;
+let sentence: string = `Salut, mon name est ${ fullName }.
 
+J'aurai ${ age + 1 } ans à la fin de l'année.`;
+```
 
-
+ccd
 
 ## Comment TypeScript s'intègre à Ionic
 
