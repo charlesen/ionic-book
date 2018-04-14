@@ -207,6 +207,16 @@ for (let i of list) {
 }
 ```
 
+### Calculs et transformations sur les listes avec map, filter et reduce
+
+cd
+
+https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209
+
+https://scotch.io/tutorials/list-processing-with-map-filter-and-reduce
+
+
+
 ## Les conditions
 
 Comme en JavaScript. On retrouve les tradionnels "if..else" , "switch...case" :
