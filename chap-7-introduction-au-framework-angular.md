@@ -93,7 +93,16 @@ Sources : [https://www.tutorialspoint.com/angular4/index.htm](https://www.tutori
 
 Permet de boucler sur les éléments d'un tableau à l'intérieur d'un template html.
 
+Supposons que l'on ait définit la liste des mois de l'année dans une liste :
+
+```js
+let months_of_year = ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 
+                      'Aout', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
 ```
+
+l'affichage de tous les éléments se fait simplement de la manière suivante :
+
+```js
 <div *ngFor="let month of months_of_year">
    Mois de l'année : {{month}}
 </div>
@@ -106,8 +115,6 @@ Comme vous pouvez le devinez,  \*ngIf est la version "if...else" adaptée aux te
 ```js
 <span *ngIf="isConnected">Je suis connecté.</span>
 ```
-
-
 
 ## Exercez-vous
 
