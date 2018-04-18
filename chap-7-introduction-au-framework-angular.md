@@ -184,44 +184,46 @@ Que pouvez-vous conclure sur le rôle d'un composant ? Comprenez-vous mieux comm
 
 7\) Dans le fichier **src/app/transaction/transaction.component.ts**, ajoutez les lignes suivantes dans la partie dédiée aux imports :
 
-```
+```js
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 ```
 
 Puis modifiez le fichier comme ceci :
 
-    import { Component, OnInit } from '@angular/core';
-    import { Injectable } from '@angular/core';
-    import { HttpClient } from '@angular/common/http';
+```js
+import { Component, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
-    const apiUrl='https://duckcoin.charlesen.fr'
+const apiUrl='https://duckcoin.charlesen.fr'
 
-    @Component({
-      selector: 'app-transaction',
-      templateUrl: './transaction.component.html',
-      styleUrls: ['./transaction.component.css']
-    })
-    export class TransactionComponent implements OnInit {
-      transactions: any = [];
-      constructor(private http: HttpClient) {
-        // On récupère du contenu via une requete Http Get
-        this.http.get(`${apiUrl}/transactions`).subscribe(data => {
-          this.transactions = data['transactions'];
-        });
-        //...
-      }
+@Component({
+  selector: 'app-transaction',
+  templateUrl: './transaction.component.html',
+  styleUrls: ['./transaction.component.css']
+})
+export class TransactionComponent implements OnInit {
+  transactions: any = [];
+  constructor(private http: HttpClient) {
+    // On récupère du contenu via une requete Http Get
+    this.http.get(`${apiUrl}/transactions`).subscribe(data => {
+      this.transactions = data['transactions'];
+    });
+    //...
+  }
 
-      ngOnInit() {
-      }
+  ngOnInit() {
+  }
 
-    }
+}
+```
 
 Vous avez planté normalement. Savez-vous pourquoi ?
 
-Grâce à l'utilisation du module http, vous avez pu récupérer des données directement depuis le site hébergeant notre blockchain. 
+Grâce à l'utilisation du module http, vous avez pu récupérer des données directement depuis le site hébergeant notre blockchain.
 
-Vous retrouverez les sources des exercices de ce TP à l'adresse: 
+Vous retrouverez les sources des exercices de ce TP à l'adresse:
 
 [https://github.com/charlesen/ionic-book/tree/master/examples/duckweb](https://github.com/charlesen/ionic-book/tree/master/examples/duckweb)
 
