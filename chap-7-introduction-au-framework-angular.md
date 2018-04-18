@@ -207,8 +207,11 @@ export class TransactionComponent implements OnInit {
   transactions: any = [];
   constructor(private http: HttpClient) {
     // On récupère du contenu via une requete Http Get
-    this.http.get(`${apiUrl}/transactions`).subscribe(data => {
+    this.http.get(`${apiUrl}/transactions`).subscribe(
+      data => {
       this.transactions = data['transactions'];
+    }, err => {
+        console.log("Une erreur s'est produite.")
     });
     //...
   }
