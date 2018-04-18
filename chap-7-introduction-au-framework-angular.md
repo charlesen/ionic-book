@@ -85,8 +85,6 @@ app.module.ts
 
 Une application a toujours au moins un module racine qui permet le lancement du projet \(à l'exemple d'un fichier index.html en racine d'un site web\). C'est ce module qui va amorcer le composant Root \(principal\).
 
-Sources : [https://www.tutorialspoint.com/angular4/index.htm](https://www.tutorialspoint.com/angular4/index.htm)
-
 ## Angular dans les templates
 
 ### \*ngFor
@@ -110,7 +108,7 @@ l'affichage de tous les éléments se fait simplement de la manière suivante :
 
 ### \*ngIf
 
-Comme vous pouvez le devinez,  \*ngIf est la version "if...else" adaptée aux templates.
+Comme vous pouvez le devinez,  \*ngIf est le _**"if...else"**_ adaptée aux templates.
 
 ```js
 <span *ngIf="isConnected">Je suis connecté.</span>
@@ -203,4 +201,13 @@ Puis le modifiez le fichier comme ceci :
     }
 
 Vous avez planté normalement. Savez-vous pourquoi ?
+
+
+
+## Sources
+
+* Angular Tutorial : [https://www.tutorialspoint.com/angular4/index.htm](https://www.tutorialspoint.com/angular4/index.htm)
+* Documentation officielle : [https://angular.io/docs](https://angular.io/docs)
+
+
 
