@@ -219,11 +219,17 @@ Puis modifiez le fichier comme ceci :
 
 Vous avez planté normalement. Savez-vous pourquoi ?
 
-## Sources
+Grâce à l'utilisation du module http, vous avez pu récupérer des données directement depuis le site hébergeant notre blockchain. 
+
+Vous retrouverez les sources des exercices de ce TP à l'adresse: 
+
+[https://github.com/charlesen/ionic-book/tree/master/examples/duckweb](https://github.com/charlesen/ionic-book/tree/master/examples/duckweb)
+
+## Annexes
 
 * Angular Tutorial : [https://www.tutorialspoint.com/angular4/index.htm](https://www.tutorialspoint.com/angular4/index.htm)
 * Documentation officielle :
-  *  [https://angular.io/docs](https://angular.io/docs)
+  * [https://angular.io/docs](https://angular.io/docs)
   * [https://cli.angular.io/](https://cli.angular.io/)
 
 
