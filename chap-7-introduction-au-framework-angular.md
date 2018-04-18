@@ -116,7 +116,7 @@ Comme vous pouvez le devinez,  \*ngIf est le _**"if...else"**_ adaptée aux temp
 
 ### Pipe
 
-Comme dans la plupart des moteurs de templates, Angular permet l'utilisation de pipes qui permettent de modifier une variable ou un contenu avant qu'il soit affiché.
+Comme dans la plupart des moteurs de templates, Angular permet l'utilisation de pipes qui permettent de modifier une variable ou un contenu avant qu'il soit affiché. Le framework proposent un certain nombre de pipes prêts à l'emploi, comme _titlecase_, _currency_,...Mais il est tout à fait possible de créer son propre pipe.
 
 ```js
 <div>
