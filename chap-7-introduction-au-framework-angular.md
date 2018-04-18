@@ -85,9 +85,19 @@ app.module.ts
 
 Une application a toujours au moins un module racine qui permet le lancement du projet \(à l'exemple d'un fichier index.html en racine d'un site web\). C'est ce module qui va amorcer le composant Root \(principal\).
 
-Sources : https://www.tutorialspoint.com/angular4/index.htm
+Sources : [https://www.tutorialspoint.com/angular4/index.htm](https://www.tutorialspoint.com/angular4/index.htm)
 
-Angular dans les templates
+## Angular dans les templates
+
+### \*ngFor
+
+Permet de boucler sur les éléments d'un tableau à l'intérieur d'un template html.
+
+
+
+### \*ngIf
+
+Comme vous pouvez le devinez, cette \*ngIf est la condition "if" adaptée aux templates.
 
 ## Exercez-vous
 
