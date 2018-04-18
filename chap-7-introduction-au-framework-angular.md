@@ -189,7 +189,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 ```
 
-Puis le modifiez le fichier comme ceci :
+Puis modifiez le fichier comme ceci :
 
     import { Component, OnInit } from '@angular/core';
     import { Injectable } from '@angular/core';
@@ -205,10 +205,11 @@ Puis le modifiez le fichier comme ceci :
     export class TransactionComponent implements OnInit {
       transactions: any = [];
       constructor(private http: HttpClient) {
-        //
-        this.http.get(`${apiUrl}/transactions`).subscribe(data => function(){
-          console.log('transactions::data', data);
+        // On récupère du contenu via une requete Http Get
+        this.http.get(`${apiUrl}/transactions`).subscribe(data => {
+          this.transactions = data['transactions'];
         });
+        //...
       }
 
       ngOnInit() {
@@ -221,7 +222,9 @@ Vous avez planté normalement. Savez-vous pourquoi ?
 ## Sources
 
 * Angular Tutorial : [https://www.tutorialspoint.com/angular4/index.htm](https://www.tutorialspoint.com/angular4/index.htm)
-* Documentation officielle : [https://angular.io/docs](https://angular.io/docs)
+* Documentation officielle :
+  *  [https://angular.io/docs](https://angular.io/docs)
+  * [https://cli.angular.io/](https://cli.angular.io/)
 
 
 
