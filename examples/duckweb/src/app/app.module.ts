@@ -14,6 +14,7 @@ import { TransactionComponent } from './transaction/transaction.component';
   ],
   imports: [
     BrowserModule,
+    // Bien importer le module httpClient apres le module browser
     HttpClientModule
   ],
   providers: [],
