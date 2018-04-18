@@ -93,11 +93,21 @@ Sources : [https://www.tutorialspoint.com/angular4/index.htm](https://www.tutori
 
 Permet de boucler sur les éléments d'un tableau à l'intérieur d'un template html.
 
-
+```
+<div *ngFor="let month of months_of_year">
+   Mois de l'année : {{month}}
+</div>
+```
 
 ### \*ngIf
 
-Comme vous pouvez le devinez, cette \*ngIf est la condition "if" adaptée aux templates.
+Comme vous pouvez le devinez,  \*ngIf est la version "if...else" adaptée aux templates.
+
+```js
+<span *ngIf="isConnected">Je suis connecté.</span>
+```
+
+
 
 ## Exercez-vous
 
@@ -115,7 +125,7 @@ Que s'est-il passé ? Ouvrez le fichier **src/app/transaction/transaction.compon
 
 4\) Ouvrez le fichier **src/app/app.component.html**, et remplacez le contenu ci-dessous \(on ne gardera que le logo d'Angular\)
 
-```
+```js
 <h2>Here are some links to help you start: </h2>
 <ul>
   <li>
@@ -132,7 +142,7 @@ Que s'est-il passé ? Ouvrez le fichier **src/app/transaction/transaction.compon
 
 Par le code suivant :
 
-```py
+```js
 <app-transaction></app-transaction>
 ```
 
