@@ -1,4 +1,4 @@
-# Chap 8 - Architecture avancée d'une application Ionic : composants, Directives, Providers et Modules
+# Chap 8 - Architecture avancée d'une application Ionic : Modules, Composants, Directives, Providers
 
 
 
