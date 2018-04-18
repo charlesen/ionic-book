@@ -55,7 +55,7 @@ En avant d'aller plus loin découvrons un peu la structure, puis l'architecture 
 
 ## Architecture d'un projet Angular
 
-Les blocs de base d'une application Angular sont les composants. Un composant peut être vu comme comme un ensemble composé :
+Le bloc de base d'une application Angular est le composant, qui peut être vu comme comme la combinaison :
 
 * D'une **Vue** : du contenu HTML
 * D'un **Modèle** de données : les informations qui vont être affichées dans le contenu HTML
@@ -63,11 +63,11 @@ Les blocs de base d'une application Angular sont les composants. Un composant pe
 
 Un composant peut être constitué d'autres composants. Par exemple :
 
-* Twitter \[Composant Root\] 
-  * Header \(Titre, logo,...
-  * Un contenu principal \[Composant Content\]
-    * Tweets \[Composant Tweets\]
-      * Un tweet \[Composant Tweet\] est constitué de contenu
+* **Twitter** \[Composant Root\] 
+  * **Entête** \(Titre, logo,...
+  * **Un contenu** principal \[Composant Content\]
+    * **Tweets** \[Composant liste de Tweets\]
+      * **Un tweet** \[Composant Tweet\] est constitué de contenu
         * ce contenu peut être soit une image \[Composant image\], soit du texte \[Composant texte\]
         * ce contenu est aussi fait de commentaires \[Composant Commentaire\]
 
@@ -83,7 +83,34 @@ app.component.ts
 app.module.ts
 ```
 
-Une application a toujours au moins un module racine qui permet le lancement du projet \(à l'exemple d'un fichier index.html en racine d'un site web\). C'est ce module qui va amorcer le composant Root \(principal\).
+Une application a toujours au moins un module racine qui permet le lancement du projet \(à l'exemple d'un fichier index.html en racine d'un site web\). C'est ce module qui va amorcer le composant Root \(**AppComponent**\).
+
+Par convention, celui-ci s'appelle **AppModule** est définidans le fichier **src/app/app.module.ts**.
+
+```js
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+
+import { AppComponent } from './app.component';
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    TransactionComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+```
+
+S'il fallait faire un comparatif avec un véhicule, les composants seraient des élements comme le pare-brise, les retroviseurs, les roues, ...tandis que le module Root serait le moteur, sans lequel le véhicule, même le plus beau au monde \(avec les plus beaux composants\), ne pourrait démarrer.
 
 ## Angular dans les templates
 
