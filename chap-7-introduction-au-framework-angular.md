@@ -114,6 +114,22 @@ Comme vous pouvez le devinez,  \*ngIf est le _**"if...else"**_ adaptée aux temp
 <span *ngIf="isConnected">Je suis connecté.</span>
 ```
 
+### Pipe
+
+Comme dans la plupart des moteurs de templates, Angular permet l'utilisation de pipes qui permettent de modifier une variable ou un contenu avant qu'il soit affiché.
+
+```js
+<div>
+   <h2>{{ 'charles edou nze' | titlecase }}</h2>
+</div>
+```
+
+**titlecase** permet de mettre en capitale les premières lettres de chaque mot. Ce qui donnera le résultat suivant :
+
+```
+Charles EDOU NZE
+```
+
 ## Exercez-vous
 
 1\) Créez un nouveau projet comme expliqué précédemment
