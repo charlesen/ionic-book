@@ -202,8 +202,6 @@ Puis le modifiez le fichier comme ceci :
 
 Vous avez planté normalement. Savez-vous pourquoi ?
 
-
-
 ## Sources
 
 * Angular Tutorial : [https://www.tutorialspoint.com/angular4/index.htm](https://www.tutorialspoint.com/angular4/index.htm)
