@@ -18,11 +18,11 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -342,9 +342,9 @@
 <pre><code class="lang-js">$ tsc demo_typescript.ts 
 $ ls -l
 total <span class="hljs-number">304</span>
--rw-rw-r--   <span class="hljs-number">1</span> cee cee   <span class="hljs-number">6180</span> avril <span class="hljs-number">11</span> <span class="hljs-number">22</span>:<span class="hljs-number">14</span> config.xml
--rw-rw-r--   <span class="hljs-number">1</span> cee cee    <span class="hljs-number">131</span> avril <span class="hljs-number">13</span> <span class="hljs-number">07</span>:<span class="hljs-number">12</span> demo_typescript.js
--rw-rw-r--   <span class="hljs-number">1</span> cee cee    <span class="hljs-number">133</span> avril <span class="hljs-number">13</span> <span class="hljs-number">07</span>:<span class="hljs-number">04</span> demo_typescript.ts
+-rw-rw-r--   <span class="hljs-number">1</span> charles charles   <span class="hljs-number">6180</span> avril <span class="hljs-number">11</span> <span class="hljs-number">22</span>:<span class="hljs-number">14</span> config.xml
+-rw-rw-r--   <span class="hljs-number">1</span> charles charles    <span class="hljs-number">131</span> avril <span class="hljs-number">13</span> <span class="hljs-number">07</span>:<span class="hljs-number">12</span> demo_typescript.js
+-rw-rw-r--   <span class="hljs-number">1</span> charles charles    <span class="hljs-number">133</span> avril <span class="hljs-number">13</span> <span class="hljs-number">07</span>:<span class="hljs-number">04</span> demo_typescript.ts
 </code></pre>
 <p><strong>demo_typescript.js</strong></p>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ditBonjour</span>(<span class="hljs-params">person</span>) </span>{
@@ -543,8 +543,9 @@ politiciens.forEach(<span class="hljs-function"><span class="hljs-keyword">funct
 <p>Vous aurez souvent l&apos;occasion d&apos;utiliser ces m&#xE9;thodes qui sont extr&#xEA;ment puissante. On peut comme dit pr&#xE9;c&#xE9;demment les concat&#xE9;ner les unes derri&#xE8;re les autres. On peut par exemple calculer la moyenne d&apos;&#xE2;ge des politiciens de moins 50 ans pr&#xE9;c&#xE9;dents en une seule ligne de code. Oui je sais, je suis cruel de vous l&apos;avoir cach&#xE9; jusque l&#xE0; :-).</p>
 <pre><code class="lang-js">politiciens.filter((politicien) =&gt; politicien.age &lt;= <span class="hljs-number">50</span> )
            .reduce(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">previous, current, index</span>) </span>{
-                      <span class="hljs-keyword">return</span> [(previous + current.age)];
-           }, <span class="hljs-number">0</span>)/politiciens_U50.length;
+                      <span class="hljs-keyword">return</span> previous + current.age;
+           }, <span class="hljs-number">0</span>)/politiciens.filter((politicien) =&gt; politicien.age &lt;= <span class="hljs-number">50</span> )
+.length;
 
 <span class="hljs-comment">// Renvoie bien : 45.75</span>
 </code></pre>
@@ -761,7 +762,7 @@ export class MaPage {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Chap 6 - Introduction au langage TypeScript, le futur de JavaScript","level":"1.11","depth":1,"next":{"title":"Chap 7 - Introduction au framework Angular","level":"1.12","depth":1,"path":"chap-7-introduction-au-framework-angular.md","ref":"chap-7-introduction-au-framework-angular.md","articles":[]},"previous":{"title":"Chap 5 - Utilisation des composants Ionic","level":"1.10","depth":1,"path":"chap-5-utilisation-des-composants-ionic.md","ref":"chap-5-utilisation-des-composants-ionic.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ionic-edounze-com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{}},"gitbook":"*"},"file":{"path":"chap-6-introduction-au-langage-typescript-le-futur-de-javascript.md","mtime":"2018-04-19T10:12:46.811Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-19T12:17:20.365Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Chap 6 - Introduction au langage TypeScript, le futur de JavaScript","level":"1.11","depth":1,"next":{"title":"Chap 7 - Introduction au framework Angular","level":"1.12","depth":1,"path":"chap-7-introduction-au-framework-angular.md","ref":"chap-7-introduction-au-framework-angular.md","articles":[]},"previous":{"title":"Chap 5 - Utilisation des composants Ionic","level":"1.10","depth":1,"path":"chap-5-utilisation-des-composants-ionic.md","ref":"chap-5-utilisation-des-composants-ionic.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ionic-edounze-com"},"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{}},"gitbook":"*"},"file":{"path":"chap-6-introduction-au-langage-typescript-le-futur-de-javascript.md","mtime":"2018-04-19T12:17:53.453Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-19T12:21:02.845Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -779,19 +780,11 @@ export class MaPage {
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
         
     
         
