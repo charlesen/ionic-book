@@ -1,7 +1,5 @@
 # Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services et Pipes
 
-
-
 ## Composants
 
 La majorité des développements sous Angular, et comme vous l'aurez compris, sous Ionic également \(Ionic étant en fin de compte un projet Angular\), est effectué au niveau des composants. Nous avons déjà étudier le composant Root, dont l'arborescence est la suivante :
@@ -27,25 +25,13 @@ $ ionic g component monComposant
 
 Il faut ensuite rajouter ce nouveau composant à la section **"declaration"** du fichier **src/app/app.module.ts**.
 
-
-
-
-
 ## Modules
-
-
 
 ## Directives
 
-
-
 ## Providers
 
-
-
 ## Services
-
-
 
 ## Pipes
 
