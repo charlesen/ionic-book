@@ -104,6 +104,14 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
+Un code qui demande à être un pei expliqué :
+
+Declaration
+
+Import
+
+Providers
+
 Vous n'aurez pas nécessairement besoin de créer des modules manuellement, car la création par exemple d'un composant le fera pour vous.
 
 ## Persistance de données
