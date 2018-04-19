@@ -325,7 +325,8 @@ Vous aurez souvent l'occasion d'utiliser ces méthodes qui sont extrêment puiss
 politiciens.filter((politicien) => politicien.age <= 50 )
            .reduce(function (previous, current, index) {
                       return previous + current.age;
-           }, 0)/politiciens_U50.length;
+           }, 0)/politiciens.filter((politicien) => politicien.age <= 50 )
+.length;
 
 // Renvoie bien : 45.75
 ```
