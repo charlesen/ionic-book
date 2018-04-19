@@ -43,13 +43,15 @@ console.log("Ceci est un message à mon navigateur web...Mayday ! Mayday !")
 
 Il est possible de jouer sur le type d'affichage
 
-
-
 ### Inspection du code source
 
-La plupart des navigateur dispose désormais d'un outil d'inspection de code source, disponible par exemple depuis la touche F12 ou clic-droit - **"Inspecter..."**.
+La plupart des navigateurs dispose désormais d'un outil d'inspection de code source, disponible par exemple depuis la touche F12 ou clic-droit - **"Inspecter..."**.
 
-Une application Ionic étant écrit en JavaScript, CSS et Html, vous n'aurez plus qu'à visualiser votre code et ajuster les choses au besoin : style CSS manquant ou non adapté,...
+![](/assets/screen_console_1.png)
+
+Une application Ionic étant écrit en JavaScript, CSS et Html, vous n'aurez plus qu'à visualiser votre code et ajuster les choses au besoin : style CSS manquant ou non adapté, une image en 404,...
+
+![](/assets/screen_console_2.png)
 
 ### Point d'arrêt \(Breakpoint\)
 
@@ -70,8 +72,6 @@ if (maVariable) {
 ```
 
 c
-
-
 
 [^1]: L'application Ionic View pour iOS est à l'heure où j'écris ces quelques lignes indisponible sur l'Apple Store, ayant été désactivé par la plateforme qui lui propose le fait d'être une application permettant d'executer d'autres applications. Selon Apple, chaque application doit disposer de son propre contexte d'execution et ce que fait Ionic View enfreindrait sa politique interne.
 
