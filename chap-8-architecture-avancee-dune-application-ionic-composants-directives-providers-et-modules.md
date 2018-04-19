@@ -97,11 +97,9 @@ $ ionic g directive bigger
 [OK] Generated a directive named bigger!
 ```
 
-
-
 On déclare ensuite une fois pour toute le module mère de toutes les directives dans le fichier **src/app/app.module.ts** :
 
-```
+```js
 // ...
 //Modules
 import {ComponentsModule} from '../components/components.module';
@@ -221,5 +219,5 @@ On déclare ici le composant principal de l'application
 
 3\)
 
-4\) Créez une directive que vous nommérez "bigger". Celle-ci permettra d'augmenter la taille de l'élement qui l'invoquera.
+4\) Créez une directive que vous nommérez **"bigger"**. Celle-ci permettra d'augmenter la taille \(font-size\) de l'élement qui l'invoquerait.
 
