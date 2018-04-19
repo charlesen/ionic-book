@@ -73,8 +73,6 @@ A présent vous pouvez appeler votre composant sous forme de tag dans n'importe 
 <moncomposant></moncomposant>
 ```
 
-## Modules
-
 ## Directives
 
 ## Providers
@@ -82,6 +80,31 @@ A présent vous pouvez appeler votre composant sous forme de tag dans n'importe 
 ## Services
 
 ## Pipes
+
+## Modules
+
+Un module angular permet de regrouper en un seul endroit des composants, des directives, des pipes et des services de l'application. Le code général d'un module ressemble à ceci :
+
+```js
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+
+@NgModule({
+   declarations: [
+      AppComponent
+   ],
+   imports: [
+      BrowserModule
+   ],
+   providers: [],
+   bootstrap: [AppComponent]
+})
+
+export class AppModule { }
+```
+
+Vous n'aurez pas nécessairement besoin de créer des modules manuellement, car la création par exemple d'un composant le fera pour vous.
 
 ## Persistance de données
 
