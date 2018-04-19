@@ -319,12 +319,12 @@ let moyenne_age = politiciens_U50.reduce(function (previous, current, index) {
 // moyenne_age : 45.75
 ```
 
-Vous aurez souvent l'occasion d'utiliser ces méthodes qui sont extrêment puissante. On peut comme dit précédemment les concaténer les unes derrière les autres. On peut par exemple calculer la moyenne d'âge des politiciens de moins 50 ans précédents en une seule ligne de code. Oui je sais, je suis cruel de vous l'avoir caché jusque là :-\)
+Vous aurez souvent l'occasion d'utiliser ces méthodes qui sont extrêment puissante. On peut comme dit précédemment les concaténer les unes derrière les autres. On peut par exemple calculer la moyenne d'âge des politiciens de moins 50 ans précédents en une seule ligne de code. Oui je sais, je suis cruel de vous l'avoir caché jusque là :-\).
 
 ```js
 politiciens.filter((politicien) => politicien.age <= 50 )
            .reduce(function (previous, current, index) {
-                      return (previous + current.age);
+                      return [(previous + current.age)];
            }, 0)/politiciens_U50.length;
 
 // Renvoie bien : 45.75
