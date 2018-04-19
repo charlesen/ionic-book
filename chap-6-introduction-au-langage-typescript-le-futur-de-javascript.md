@@ -209,7 +209,79 @@ for (let i of list) {
 
 ### Calculs et transformations sur les listes avec map, filter et reduce
 
-cd
+#### Map
+
+Considerons la liste de politiciens suivante : 
+
+```js
+let politiciens = [{
+        'prenom': 'Emmanuel',
+        'nom': 'Macron',
+        'age': 40,
+      },
+      {
+        'prenom': 'Edouard',
+        'nom': 'Philippe',
+        'age': 47,
+      },
+      {
+        'prenom': 'Bruno',
+        'nom': 'Le Maire',
+        'age': 49,
+      },
+      {
+        'prenom': 'Virginie',
+        'nom': 'Calmels',
+        'age': 47,
+      },
+      {
+        'prenom': 'Alain',
+        'nom': 'Juppé',
+        'age': 72,
+}]
+
+```
+
+
+
+Pour extraire uniquement les noms de chacun d'entre eux, JavaScript propose différentes solutions comme celle-ci : 
+
+```js
+let politiciens_noms = [];
+ 
+for (let i = 0, max = politiciens.length; i < max; i += 1) {
+ 
+    politiciens_noms.push(politiciens[i].nom);
+ 
+}
+
+// politiciens_noms
+// (5) ["Macron", "Philippe", "Le Maire", "Calmels", "Juppé"]
+```
+
+Ou encore celle là :
+
+```
+let politiciens_noms = [];
+ 
+politiciens.forEach(function (task) {
+ 
+    politiciens_noms.push(task.name);
+     
+});
+```
+
+Mais avec la méthode Map, la récupération se fait de manière beaucoup plus efficace :
+
+```js
+let politiciens_noms = politiciens.map(function (politicien, index, array) {
+ 
+    return politicien.name; 
+ 
+});
+```
+
+
 
 [https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209](https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209)
 
