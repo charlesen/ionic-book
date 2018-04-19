@@ -38,9 +38,9 @@ Il faut ensuite, compiler ce code pour générer un fichier .js interprétable p
 $ tsc demo_typescript.ts 
 $ ls -l
 total 304
--rw-rw-r--   1 cee cee   6180 avril 11 22:14 config.xml
--rw-rw-r--   1 cee cee    131 avril 13 07:12 demo_typescript.js
--rw-rw-r--   1 cee cee    133 avril 13 07:04 demo_typescript.ts
+-rw-rw-r--   1 charles charles   6180 avril 11 22:14 config.xml
+-rw-rw-r--   1 charles charles    131 avril 13 07:12 demo_typescript.js
+-rw-rw-r--   1 charles charles    133 avril 13 07:04 demo_typescript.ts
 ```
 
 **demo\_typescript.js**
@@ -324,8 +324,9 @@ Vous aurez souvent l'occasion d'utiliser ces méthodes qui sont extrêment puiss
 ```js
 politiciens.filter((politicien) => politicien.age <= 50 )
            .reduce(function (previous, current, index) {
-                      return [(previous + current.age)];
-           }, 0)/politiciens_U50.length;
+                      return previous + current.age;
+           }, 0)/politiciens.filter((politicien) => politicien.age <= 50 )
+.length;
 
 // Renvoie bien : 45.75
 ```
