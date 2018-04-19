@@ -97,6 +97,31 @@ $ ionic g directive bigger
 [OK] Generated a directive named bigger!
 ```
 
+
+
+On déclare ensuite une fois pour toute le module mère de toutes les directives dans le fichier **src/app/app.module.ts** :
+
+```
+// ...
+//Modules
+import {ComponentsModule} from '../components/components.module';
+import {DirectivesModule} from '../directives/directives.module';
+import { HttpClientModule } from '@angular/common/http';
+
+//...
+
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    ComponentsModule,
+    DirectivesModule, // ICI
+    IonicModule.forRoot(DuckCoinApp,{
+        // tabsPlacement: 'top',
+        backButtonText: 'Retour'
+    })
+  ],
+```
+
 cd
 
 ## Services ou Providers
