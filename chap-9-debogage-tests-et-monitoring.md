@@ -33,7 +33,7 @@ Faisons le tour de quelques méthodes qui vont vous aider à debugger efficaceme
 
 ### L'indétronable console.log\(\) et console.info\(\)
 
-Vous avez surement du l'utiliser au moins une fois dans vos développements JavaScript. 
+Vous avez surement du l'utiliser au moins une fois dans vos développements JavaScript.
 
 La méthode de logging de l'objet Console vous permet d'afficher le contenu d'une variable, du texte, un message...bref, à peu près tout, de votre code source vers le navigateur web.
 
@@ -43,7 +43,35 @@ console.log("Ceci est un message à mon navigateur web...Mayday ! Mayday !")
 
 Il est possible de jouer sur le type d'affichage
 
- 
+
+
+### Inspection du code source
+
+La plupart des navigateur dispose désormais d'un outil d'inspection de code source, disponible par exemple depuis la touche F12 ou clic-droit - **"Inspecter..."**.
+
+Une application Ionic étant écrit en JavaScript, CSS et Html, vous n'aurez plus qu'à visualiser votre code et ajuster les choses au besoin : style CSS manquant ou non adapté,...
+
+### Point d'arrêt \(Breakpoint\)
+
+Il est également possible d'ajouter des points d'arrêts dans votre code source. Très pratique quand on se demande pour un bout de code ne fonctionne pas et que l'on souhaite avancer pas à pas jusqu'à trouver la source du problème.
+
+Vous avez le choix d'ajouter ce point d'arrêt depuis votre navigateur ou alors depuis votre code source à l'aide du mot clé **"debugger"** :
+
+```js
+let maVariable = "Je suis un variable";
+....
+
+// L'execution du code prendra fin ici...Pour avancer, faites F10 sur Chrome
+debugger;
+
+if (maVariable) {
+  alert(maVariable)
+}
+```
+
+c
+
+
 
 [^1]: L'application Ionic View pour iOS est à l'heure où j'écris ces quelques lignes indisponible sur l'Apple Store, ayant été désactivé par la plateforme qui lui propose le fait d'être une application permettant d'executer d'autres applications. Selon Apple, chaque application doit disposer de son propre contexte d'execution et ce que fait Ionic View enfreindrait sa politique interne.
 
