@@ -14,7 +14,7 @@ app.module.ts
 
 Nous avons aussi écrit un composant **Transaction** qui nous permettait d'afficher la liste de nos dernières transactions.
 
-![](/assets/screen_component.png)
+![](/assets/render_appcompo.png)
 
 La création d'un nouveau composant se fait simplement en saisissant la commande suivante à la racine de votre projet ionic :
 
@@ -36,8 +36,6 @@ Il faut ensuite rajouter ce nouveau composant à la section **"declaration"** du
 ## Pipes
 
 ## Base de données
-
-
 
 
 
