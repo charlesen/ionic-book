@@ -69,7 +69,7 @@ Je vous rassure, vous n'aurez pas à faire tout cela à chaque création de comp
 
 A présent vous pouvez appeler votre composant sous forme de tag dans n'importe quel fichier html de l'application.
 
-```
+```js
 <moncomposant></moncomposant>
 ```
 
@@ -85,9 +85,9 @@ A présent vous pouvez appeler votre composant sous forme de tag dans n'importe 
 
 ## Persistance de données
 
+## Exercez-vous
 
+1\) Créez un nouveau composant nommé "transaction" qui affichera la liste des dernières transactions de la blockchain. Cette liste est à récupérer à l'adresse : [https://duckcoin.charlesen.fr/transactions](https://duckcoin.charlesen.fr/transactions).
 
-Exercez-vous
-
-1\) Créez un nouveau composant nommé "transaction" qui affichera la liste des dernières transactions de la blockchain. Cette liste est à récupérer à l'adresse : https://duckcoin.charlesen.fr/transactions.
+2\) Appelez ce nouveau composant dans l'onglet Portefeuille
 
