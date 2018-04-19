@@ -211,11 +211,9 @@ for (let i of list) {
 
 cd
 
-https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209
+[https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209](https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209)
 
-https://scotch.io/tutorials/list-processing-with-map-filter-and-reduce
-
-
+[https://scotch.io/tutorials/list-processing-with-map-filter-and-reduce](https://scotch.io/tutorials/list-processing-with-map-filter-and-reduce)
 
 ## Les conditions
 
