@@ -1,4 +1,4 @@
-# Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services et Pipes
+# Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et Stockage en base de données
 
 ## Composants
 
@@ -34,6 +34,10 @@ Il faut ensuite rajouter ce nouveau composant à la section **"declaration"** du
 ## Services
 
 ## Pipes
+
+## Base de données
+
+
 
 
 
