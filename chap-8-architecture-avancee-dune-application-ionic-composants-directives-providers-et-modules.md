@@ -120,11 +120,19 @@ Supposons que l'on souhaite récupérer la liste des dernières transactions sou
 
     }
 
-Une première solution serait de copier le code de cette classe. Mais si une autre page souhaite également avoir accès à cette même liste, la copie alors apparait comme une mauvaise solution. 
+Une première solution serait de copier le code de cette classe. Mais si une autre page souhaite également avoir accès à cette même liste, la copie alors apparait comme une mauvaise solution.
 
 C'est là qu'interviennent les **Services**, qui sont en fait des bouts de codes metiers, des méthodes, qui peuvent appeler dans d'autres pages, sans devoir les réecrire. On code une fois, on les réutilise partout.
 
 Nous aurons par exemple besoin des services pour la gestion des sessions utilisateurs. En effet, à peu près toutes les pages de notre application auront besoin de s'assurer que notre utilisateur courant est bien connecté.
+
+```
+$ ionic g provider User
+
+[OK] Generated a provider named User!
+```
+
+Cette commande va créer un nouveau service **User**, dans lequel nous déclarerons un certain nombre de méthodes pour la gestion de l'authentification, la création de comptes utilisateur,...
 
 ## Pipes
 
