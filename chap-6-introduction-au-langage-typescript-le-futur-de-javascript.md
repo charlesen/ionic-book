@@ -211,7 +211,7 @@ for (let i of list) {
 
 #### Map
 
-Considerons la liste de politiciens suivante : 
+Considerons la liste de politiciens suivante :
 
 ```js
 let politiciens = [{
@@ -238,36 +238,33 @@ let politiciens = [{
         'prenom': 'Alain',
         'nom': 'Juppé',
         'age': 72,
-}]
-
+}];
 ```
 
-
-
-Pour extraire uniquement les noms de chacun d'entre eux, JavaScript propose différentes solutions comme celle-ci : 
+Pour extraire uniquement les noms tout en majuscule de chacun d'entre eux, JavaScript propose différentes solutions comme celle-ci :
 
 ```js
 let politiciens_noms = [];
- 
+
 for (let i = 0, max = politiciens.length; i < max; i += 1) {
- 
-    politiciens_noms.push(politiciens[i].nom);
- 
+
+    politiciens_noms.push(politiciens[i].nom.toUpperCase());
+
 }
 
 // politiciens_noms
-// (5) ["Macron", "Philippe", "Le Maire", "Calmels", "Juppé"]
+// (5) ["MACRON", "PHILIPPE", "LE MAIRE", "CALMELS", "JUPPÉ"]
 ```
 
 Ou encore celle là :
 
-```
+```js
 let politiciens_noms = [];
- 
-politiciens.forEach(function (task) {
- 
-    politiciens_noms.push(task.name);
-     
+
+politiciens.forEach(function (politicien) {
+
+    politiciens_noms.push(politicien.nom.toUpperCase());
+
 });
 ```
 
@@ -275,17 +272,39 @@ Mais avec la méthode Map, la récupération se fait de manière beaucoup plus e
 
 ```js
 let politiciens_noms = politiciens.map(function (politicien, index, array) {
- 
-    return politicien.name; 
- 
+
+    return politicien.nom.toUpperCase(); 
+
 });
+// politiciens_noms
+// (5) ["MACRON", "PHILIPPE", "LE MAIRE", "CALMELS", "JUPPÉ"]
 ```
 
+La méthode donne accès dans son callback à chaque item du tableau depuis la variable **politicien**, à sa position \(**index\)** à l'intiérieur du tableau, et enfin du tableau lui-même \(**array**\).
 
+Avec cette méthode, vous n'aurez pas à vous inquieter de l'index de la boucle ou d'utiliser la méthode push pour stocker vos éléments. De plus, la méthode renvoyant un Array, il est tout à fait possible de d'appliquer une autre méthode juste après la méthode map.
 
-[https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209](https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209)
+#### Filter
 
-[https://scotch.io/tutorials/list-processing-with-map-filter-and-reduce](https://scotch.io/tutorials/list-processing-with-map-filter-and-reduce)
+Cette méthode fait exactement ce que nom semble suggérer : à partir d'un tableau reçu en entrée, il le filtre en éliminant les éléments non désiré selon une condition determinée.
+
+Reprenons notre liste de politiciens et ne retenons que ceux de moins de 50 ans. Grâce à la methode filter, il suffit de faire :
+
+```js
+let politiciens_U50 = politiciens.filter((politicien) => politicien.age <= 50 );
+
+// (4) [{…}, {…}, {…}, {…}]
+// 0:{prenom: "Emmanuel", nom: "Macron", age: 40}
+// 1:{prenom: "Edouard", nom: "Philippe", age: 47}
+// 2:{prenom: "Bruno", nom: "Le Maire", age: 49}
+// 3:{prenom: "Virginie", nom: "Calmels", age: 47}
+// length:4 
+// __proto__:Array(0)
+```
+
+#### Reduce
+
+Si la fonction map permet de créer un nouveau tableau en transformant chaque élément d'un tableau
 
 ## Les conditions
 
@@ -498,6 +517,14 @@ export class MaPageModal {
   }
 }
 ```
+
+
+
+## Annexes
+
+* Documentation sur les méthodes Map, filter et Reduce : 
+  * [https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-2620](https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209)
+  * [https://scotch.io/tutorials/list-processing-with-map-filter-and-reduce](#)
 
 
 
