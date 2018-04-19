@@ -3,25 +3,18 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Chap 8 - Architecture avancée d'une application Ionic : Modules, Composants, Directives et Providers · GitBook</title>
+        <title>Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et persistance de données | Développement d'applications mobiles avec Ionic</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
         
         
         
-    
-    <link rel="stylesheet" href="gitbook/style.css">
-
-    
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
@@ -29,39 +22,16 @@
                 
             
                 
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
-
-    
-
-    
-        
-        <link rel="stylesheet" href="styles/website.css">
         
     
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-        
-    
-    
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
-
     
     <link rel="next" href="chap-9-debogage-tests-et-monitoring.html" />
     
@@ -76,10 +46,6 @@
     <div class="book-summary">
         
             
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
-
             
                 <nav role="navigation">
                 
@@ -258,7 +224,7 @@
                 <a href="chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.html">
             
                     
-                    Chap 8 - Architecture avancée d'une application Ionic : Modules, Composants, Directives et Providers
+                    Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et persistance de données
             
                 </a>
             
@@ -341,7 +307,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Chap 8 - Architecture avancée d'une application Ionic : Modules, Composants, Directives et Providers</a>
+        <a href="." >Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et persistance de données</a>
     </h1>
 </div>
 
@@ -351,12 +317,9 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div class="search-plus" id="book-search-results">
-    <div class="search-noresults">
-    
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="chap-8---architecture-avanc&#xE9;e-dune-application-ionic--composants-modules-directives-providers-services-et-pipes">Chap 8 - Architecture avanc&#xE9;e d&apos;une application Ionic : Composants, Modules, Directives, Providers, Services et Pipes</h1>
+                                <h1 id="chap-8---architecture-avanc&#xE9;e-dune-application-ionic--composants-modules-directives-providers-services-pipes-et-persistance-de-donn&#xE9;es">Chap 8 - Architecture avanc&#xE9;e d&apos;une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et persistance de donn&#xE9;es</h1>
 <h2 id="composants">Composants</h2>
 <p>La majorit&#xE9; des d&#xE9;veloppements sous Angular, et comme vous l&apos;aurez compris, sous Ionic &#xE9;galement (Ionic &#xE9;tant en fin de compte un projet Angular), est effectu&#xE9; au niveau des composants. Nous avons d&#xE9;j&#xE0; &#xE9;tudier le composant Root, dont l&apos;arborescence est la suivante :</p>
 <pre><code class="lang-js">app.component.css
@@ -366,37 +329,46 @@ app.component.ts
 app.module.ts
 </code></pre>
 <p>Nous avons aussi &#xE9;crit un composant <strong>Transaction</strong> qui nous permettait d&apos;afficher la liste de nos derni&#xE8;res transactions.</p>
-<p><img src="assets/screen_component.png" alt=""></p>
+<p><img src="assets/render_appcompo.png" alt=""></p>
 <p>La cr&#xE9;ation d&apos;un nouveau composant se fait simplement en saisissant la commande suivante &#xE0; la racine de votre projet ionic :</p>
 <pre><code class="lang-bash">$ ionic g component monComposant
 [OK] Generated a component named monComposant!
+
+
+src/components/moncomposant.css
+src/components/moncomposant.html
+src/components/moncomposant.spec.ts
+src/components/moncomposant.ts
+src/components/components.module.ts
 </code></pre>
-<p>Il faut ensuite rajouter ce nouveau composant &#xE0; la section <strong>&quot;declaration&quot;</strong> du fichier <strong>src/app/app.module.ts</strong>.</p>
+<p>On voit ici qu&apos;un module (components.module.ts) a aussi &#xE9;t&#xE9; cr&#xE9;&#xE9;. Rappelons que les modules sont charg&#xE9;s du bootstrapping (d&#xE9;marrage) d&apos;un composant. C&apos;est donc ce module qu&apos;il faudra d&#xE9;clarer dans le module principal <strong>src/app/app.module.ts </strong>:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Modules</span>
+<span class="hljs-keyword">import</span> { ComponentsModule } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../components/components.module&apos;</span>;
+
+<span class="hljs-comment">// ...</span>
+
+imports: [
+    BrowserModule,
+    HttpClientModule,
+    ComponentsModule, <span class="hljs-comment">// Importer le module ici </span>
+    IonicModule.forRoot(MyApp, {
+      <span class="hljs-comment">// tabsPlacement: &apos;top&apos;,</span>
+      backButtonText: <span class="hljs-string">&apos;Retour&apos;</span>
+    })
+],
+
+<span class="hljs-comment">// ...</span>
+</code></pre>
 <h2 id="modules">Modules</h2>
 <h2 id="directives">Directives</h2>
 <h2 id="providers">Providers</h2>
 <h2 id="services">Services</h2>
 <h2 id="pipes">Pipes</h2>
+<h2 id="persistance-de-donn&#xE9;es">Persistance de donn&#xE9;es</h2>
 
                                 
                                 </section>
                             
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
                         </div>
                     </div>
                 
@@ -420,7 +392,7 @@ app.module.ts
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Chap 8 - Architecture avancée d'une application Ionic : Modules, Composants, Directives et Providers","level":"1.13","depth":1,"next":{"title":"Chap 9 - Tests et débogages avancés","level":"1.14","depth":1,"path":"chap-9-debogage-tests-et-monitoring.md","ref":"chap-9-debogage-tests-et-monitoring.md","articles":[]},"previous":{"title":"Chap 7 - Introduction au framework Angular","level":"1.12","depth":1,"path":"chap-7-introduction-au-framework-angular.md","ref":"chap-7-introduction-au-framework-angular.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ionic-edounze-com"},"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{}},"gitbook":"*"},"file":{"path":"chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md","mtime":"2018-04-19T06:37:50.832Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-19T10:09:53.091Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et persistance de données","level":"1.13","depth":1,"next":{"title":"Chap 9 - Tests et débogages avancés","level":"1.14","depth":1,"path":"chap-9-debogage-tests-et-monitoring.md","ref":"chap-9-debogage-tests-et-monitoring.md","articles":[]},"previous":{"title":"Chap 7 - Introduction au framework Angular","level":"1.12","depth":1,"path":"chap-7-introduction-au-framework-angular.md","ref":"chap-7-introduction-au-framework-angular.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ionic-edounze-com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{}},"gitbook":"*"},"file":{"path":"chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md","mtime":"2018-04-19T10:12:46.811Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-19T12:17:20.365Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -438,11 +410,19 @@ app.module.ts
         
     
         
-        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
         
     
         

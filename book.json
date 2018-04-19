@@ -1,5 +1,5 @@
 {
-  "plugins": ["disqus", "-lunr", "-search", "search-plus"],
+  "plugins": ["disqus"],
   "links": {
     "sidebar": {}
   },
