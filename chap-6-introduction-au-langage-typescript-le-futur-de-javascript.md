@@ -304,7 +304,20 @@ let politiciens_U50 = politiciens.filter((politicien) => politicien.age <= 50 );
 
 #### Reduce
 
-Si la fonction map permet de créer un nouveau tableau en transformant chaque élément d'un tableau
+Si la fonction **map** permet de créer un nouveau tableau en transformant chaque élément d'un tableau, et si **filter** permet quant à lui de créer un nouveau tableau en supprimer des éléments selon une condition determinée, la méthode **reduce** permet de prendre tous les éléments du tableau pour les "réduire" à une unique valeur.
+
+Considérons le tableau de politiciens de moins de 50 ans précécent. On aimerait cette fois calculer la moyenne d'âge de ces _"jeunes"_ faiseurs de lois.
+
+```js
+let moyenne_age = politiciens_U50.reduce(function (previous, current, index) {
+    return (previous + current.age);
+}, 0)/politiciens_U50.length;
+
+// previous est la valeur de l'âge à un moment t dans la boucle. Cette valeur est initialié à 0.
+// current est la valeur actuelle de l'élement de la boucle, ex: {prenom: "Emmanuel", nom: "Macron", age: 40}
+
+// moyenne_age : 45.75
+```
 
 ## Les conditions
 
@@ -517,8 +530,6 @@ export class MaPageModal {
   }
 }
 ```
-
-
 
 ## Annexes
 
