@@ -110,7 +110,7 @@ Un code qui demande à être un peu commenté :
 
 ### Declarations
 
-C'est un tableau des composants qui seront utilisés dans l'application. 
+C'est un tableau des composants qui seront utilisés dans l'application.
 
 ```
 declarations: [
@@ -125,9 +125,11 @@ C'est un tableau des différents modules de l'application. C'est dans cette sect
 
 ### Providers
 
-cd
+C'est ici que seront déclarés tous les services utilisés dans l'application.
 
+### Bootstrap
 
+On déclare ici le composant principal de l'application
 
 ## Persistance de données
 
