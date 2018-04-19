@@ -107,7 +107,6 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
 ```
 
 S'il fallait faire un comparatif avec un véhicule, les composants seraient des élements comme le pare-brise, les retroviseurs, les roues, ...tandis que le module Root serait le moteur, sans lequel le véhicule, même le plus beau au monde \(avec les plus beaux composants\), ne pourrait démarrer.
@@ -223,7 +222,7 @@ import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-const apiUrl='https://duckcoin.charlesen.fr'
+const apiUrl='https://duckcoin.charlesen.fr';
 
 @Component({
   selector: 'app-transaction',
@@ -251,9 +250,30 @@ export class TransactionComponent implements OnInit {
 
 Vous avez planté normalement. Savez-vous pourquoi ?
 
-Grâce à l'utilisation du module http, vous avez pu récupérer des données directement depuis le site hébergeant notre blockchain.
+```
+No provider for HttpClient!
+```
 
-Vous retrouverez les sources des exercices de ce TP à l'adresse:
+Dans le fichier **src/app/app.module.ts** ajoutez les lignes suivantes :
+
+```js
+import { HttpClientModule } from '@angular/common/http';
+// ...
+imports: [
+    BrowserModule,
+    HttpClientModule,
+    // ...
+    IonicModule.forRoot(MyApp, {
+      // tabsPlacement: 'top',
+      backButtonText: 'Retour'
+    })
+  ],
+...
+```
+
+Grâce à l'utilisation du module http, vous pourrons récupérer des données directement depuis le site hébergeant notre blockchain.
+
+Vous retrouverez les sources, ainsi que les corrections des exercices de ce TP à l'adresse:
 
 [https://github.com/charlesen/ionic-book/tree/master/examples/duckweb](https://github.com/charlesen/ionic-book/tree/master/examples/duckweb)
 

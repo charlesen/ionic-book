@@ -23,7 +23,9 @@ $ ionic g component monComposant
 [OK] Generated a component named monComposant!
 ```
 
-Il faut ensuite rajouter ce nouveau composant à la section **"declaration"** du fichier **src/app/app.module.ts**.
+Il faut ensuite déclarer ce nouveau composant dans le module principal **src/app/app.module.ts **de la manière suivante :
+
+
 
 ## Modules
 
