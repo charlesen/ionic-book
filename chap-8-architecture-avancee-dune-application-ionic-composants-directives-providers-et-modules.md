@@ -75,6 +75,23 @@ A présent vous pouvez appeler votre composant sous forme de tag dans n'importe 
 
 ## Directives
 
+Une directive est un élement qui va nous permettre d'étendre des fonctionnalité html. Il en existe différents types :
+
+* **Directive de type attribut** : vous en avez déjà vu, elles permettent de modifier du html. Citons par exemple _**text-center**_, une directive qui permet de centrer le contenu d'un élement, ou encore la directive _**padding**_, qui permet d'ajouter un padding à l'élement qui l'invoque.
+* **Directive de type composant** : oui au risque de vous embrouiller un peu, un composant est en réalité une directive, mais dotée d'un template html. La directive est en quelque sorte l'atome, le composant la molécule.
+* **Directive de type structure** : Ce type de directive sont faite pour la manipulation du DOM et commencent toujours par un **"\*"**. On peut citer parmi celles que nous avons déjà utilisé les directives **\*ngIf** et **\*ngFor**.
+
+la création d'une directive se fait simplement en saisissant la commande suivante :
+
+```bash
+$ ionic g directive maDirective
+
+[OK] Generated a directive named maDirective!
+
+```
+
+Créons par exemple une directive
+
 ## Providers
 
 ## Services
@@ -138,4 +155,8 @@ On déclare ici le composant principal de l'application
 1\) Créez un nouveau composant nommé "transaction" qui affichera la liste des dernières transactions de la blockchain. Cette liste est à récupérer à l'adresse : [https://duckcoin.charlesen.fr/transactions](https://duckcoin.charlesen.fr/transactions).
 
 2\) Appelez ce nouveau composant dans l'onglet Portefeuille
+
+3\) 
+
+4\) Créez une directive que vous nommérez "bigger". Celle-ci permettra d'augmenter la taille de l'élement qui l'invoquera.
 
