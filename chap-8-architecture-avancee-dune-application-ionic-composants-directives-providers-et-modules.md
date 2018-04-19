@@ -1,4 +1,4 @@
-# Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et Stockage en base de données
+# Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et persistance de données
 
 ## Composants
 
@@ -21,11 +21,35 @@ La création d'un nouveau composant se fait simplement en saisissant la commande
 ```bash
 $ ionic g component monComposant
 [OK] Generated a component named monComposant!
+
+
+src/components/moncomposant.css
+src/components/moncomposant.html
+src/components/moncomposant.spec.ts
+src/components/moncomposant.ts
+src/components/components.module.ts
 ```
 
-Il faut ensuite déclarer ce nouveau composant dans le module principal **src/app/app.module.ts **de la manière suivante :
+On voit ici qu'un module \(components.module.ts\) a aussi été créé. Rappelons que les modules sont chargés du bootstrapping \(démarrage\) d'un composant. C'est donc ce module qu'il faudra déclarer dans le module principal **src/app/app.module.ts **:
 
+```js
+// Modules
+import { ComponentsModule } from '../components/components.module';
 
+// ...
+
+imports: [
+    BrowserModule,
+    HttpClientModule,
+    ComponentsModule, // Importer le module ici 
+    IonicModule.forRoot(MyApp, {
+      // tabsPlacement: 'top',
+      backButtonText: 'Retour'
+    })
+],
+
+// ...
+```
 
 ## Modules
 
@@ -37,7 +61,9 @@ Il faut ensuite déclarer ce nouveau composant dans le module principal **src/ap
 
 ## Pipes
 
-## Base de données
+## Persistance de données
+
+
 
 
 
