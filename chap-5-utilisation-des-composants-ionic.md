@@ -42,3 +42,11 @@ La liste de toutes les icônes disponibles se trouve à l'adresse  [https://ioni
 
 5\) Améliorez les onglets Profil et More \(page Settings créé dans le TP précédent\) avec différents aux composants. Dans l'onglet Setting on pourra par exemple avoir la possibilité de choisir plusieurs devises différentes et d'en cocher une par défaut, ou encore de choisir la langue par défaut,...laissez libre cours à votre imagination ;-\)
 
+
+
+## Annexes
+
+* Liste des composants Ionic et Documentation : [https://ionicframework.com/docs/components/](https://ionicframework.com/docs/components/)
+
+
+
