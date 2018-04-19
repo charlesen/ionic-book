@@ -51,6 +51,28 @@ imports: [
 // ...
 ```
 
+Il faut également modifiez le fichier **src/components/components.module.ts** comme ceci  :
+
+```js
+import { NgModule } from '@angular/core';
+import { IonicModule } from "ionic-angular"; // On rajoute cette ligne
+import { MonComposantComponent } from './components/components';
+@NgModule({
+    declarations: [MonComposantComponent],
+    imports: [IonicModule], // ...Et celle-ci
+    exports: [MonComposantComponent]
+})
+export class ComponentsModule {}
+```
+
+Je vous rassure, vous n'aurez pas à faire tout cela à chaque création de composant, en fait l'intérêt de regrouper tout cela dans un module permet de créer de nouveaux composants, sans devoir les redéclarer dans toute l'application.
+
+A présent vous pouvez appeler votre composant sous forme de tag dans n'importe quel fichier html de l'application.
+
+```
+<moncomposant></moncomposant>
+```
+
 ## Modules
 
 ## Directives
@@ -64,4 +86,8 @@ imports: [
 ## Persistance de données
 
 
+
+Exercez-vous
+
+1\) Créez un nouveau composant nommé "transaction" qui affichera la liste des dernières transactions de la blockchain. Cette liste est à récupérer à l'adresse : https://duckcoin.charlesen.fr/transactions.
 
