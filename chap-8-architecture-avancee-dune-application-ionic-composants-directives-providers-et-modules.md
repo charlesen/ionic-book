@@ -262,8 +262,6 @@ Lorsqu'il est exécuté dans un contexte d'application native, Ionic Storage vé
 
 Si SQLite n'est pas disponible, c'est le cas par exemple lorsque l'on utilise notre application depuis un navigateur, Ionic Storage utilisera dans l'ordre IndexedDB, WebSQL et  localstorage :
 
-
-
 **SQLite ==&gt; IndexedDB ==&gt; WebSQL ==&gt; localstorage**
 
 ## Installation
@@ -272,6 +270,10 @@ Nous allons tout d'abord installer le plugin SQLite :
 
 ```bash
 $ ionic cordova plugin add cordova-sqlite-storage
+
+Adding cordova-sqlite-storage to package.json
+
+Saved plugin info for "cordova-sqlite-storage" to config.xml
 ```
 
 Ensuite, il nous suffit d'installer Ionic Storage
@@ -282,25 +284,63 @@ $ npm install --save @ionic/storage
 
 On déclare ce nouvel élément dans le module Root, pour qu'il puisse être appelé depuis n'importe quelle page :
 
+**src/app/app.module.ts**
 
+```js
+//Modules
+// ...
+import { IonicStorageModule } from '@ionic/storage';
+
+// ...
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    ComponentsModule,
+    DirectivesModule,
+    IonicModule.forRoot(DuckCoinApp,{
+        // tabsPlacement: 'top',
+        backButtonText: 'Retour'
+    }),
+    IonicStorageModule.forRoot({
+      name: '__duckcoindb',
+      driverOrder: ['indexeddb', 'sqlite', 'websql']
+    })
+  ],
+```
 
 ## Utilisation
+
+Il vous suffit simplement d'injecter Ionic Storage dans la classe où vous souhaitez l'utiliser :
+
+```js
+import { Storage } from '@ionic/storage';
+
+export class LoginPage {
+  constructor(private storage: Storage) { }
+
+  ...
+
+  // On sauvegarde le statut de connexion
+  storage.set('isConneted', true);
+
+  // On peut aussi récupérer cette valeur pour s'assurer que l'utilisateur a le droit d'afficher une page
+  storage.get('isConneted').then((val) => {
+    console.log('Suis-je connecté ?', val);
+  });
+}
+```
 
 
 
 ## Plugins natifs
 
-En plus de composants purement visuel qui vous permettent de mettre en forme votre application, Ionic propose également des plugins natifs cette fois-ci pour interagir avec le téléphone mobile. Ces plugins pour la plupart basés sur Cordova, sont disponibles en nombre à l'adresse : [https://ionicframework.com/docs/native/](https://ionicframework.com/docs/native/)
+En plus de composants purement visuel qui vous permettent de mettre en forme votre application, Ionic propose également des plugins natifs cette fois-ci pour interagir avec les fonctions dites natives de votre téléphone mobile. Ces plugins pour la plupart basés sur Cordova, sont disponibles en assez grand nombre à l'adresse : [https://ionicframework.com/docs/native/](https://ionicframework.com/docs/native/)
 
-
-
-Avant d'installer un plugin, il faut s'asurer que le package Ionic native est bien disponible, ce qui devrait être le cas dans une installation classique. Mais au besoin, il suffit de faire :
+Avant d'installer un plugin, il faut s'asurer que le package Ionic native est bien disponible, ce qui devrait être le cas dans une installation Ionic classique. Mais au besoin, il suffit de faire :
 
 ```
 $ npm install @ionic-native/core --save
 ```
-
- 
 
 ## Exercez-vous
 
@@ -310,7 +350,7 @@ $ npm install @ionic-native/core --save
 
 3\) Créez une directive que vous nommérez **"bigger"**. Celle-ci permettra d'augmenter la taille \(font-size\) de l'élement qui l'invoquerait.
 
-4\) Ajustons un peu notre page de login en enregistrant en base de données le login au clic sur le bouton de validation, et en l'affichant en page d'accueil de façon à ce que l'on ait ce message : 
+4\) Ajustons un peu notre page de login en enregistrant en base de données le login au clic sur le bouton de validation, et en l'affichant en page d'accueil de façon à ce que l'on ait ce message :
 
 ```
 Bonjour leLogin, 
