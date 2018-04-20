@@ -85,7 +85,7 @@ app.module.ts
 
 Une application a toujours au moins un module racine qui permet le lancement du projet \(à l'exemple d'un fichier index.html en racine d'un site web\). C'est ce module qui va amorcer le composant Root \(**AppComponent**\).
 
-Par convention, celui-ci s'appelle **AppModule** est définidans le fichier **src/app/app.module.ts**.
+Par convention, celui-ci s'appelle **AppModule** et est défini dans le fichier **src/app/app.module.ts**.
 
 ```js
 import { BrowserModule } from '@angular/platform-browser';
@@ -134,7 +134,7 @@ l'affichage de tous les éléments se fait simplement de la manière suivante :
 
 ### \*ngIf
 
-Comme vous pouvez le devinez,  \*ngIf est le _**"if...else"**_ adaptée aux templates.
+Comme vous pouvez le deviner,  \*ngIf est le _**"if...else"**_ adapté aux templates.
 
 ```js
 <span *ngIf="isConnected">Je suis connecté.</span>
@@ -142,7 +142,7 @@ Comme vous pouvez le devinez,  \*ngIf est le _**"if...else"**_ adaptée aux temp
 
 ### Pipe
 
-Comme dans la plupart des moteurs de templates, Angular permet l'utilisation de pipes qui permettent de modifier une variable ou un contenu avant qu'il soit affiché. Le framework proposent un certain nombre de pipes prêts à l'emploi, comme _titlecase_, _currency_,...Mais il est tout à fait possible de créer son propre pipe.
+Comme dans la plupart des moteurs de templates, Angular permet l'utilisation de pipes qui permettent de modifier une variable ou un contenu avant qu'il soit affiché. Le framework propose un certain nombre de pipes prêts à l'emploi, comme _titlecase_, _currency_,...Mais il est tout à fait possible de créer son propre pipe.
 
 ```js
 <div>
@@ -153,7 +153,7 @@ Comme dans la plupart des moteurs de templates, Angular permet l'utilisation de 
 **titlecase** permet de mettre en capitale les premières lettres de chaque mot. Ce qui donnera le résultat suivant :
 
 ```
-Charles EDOU NZE
+Charles Edou Nze
 ```
 
 ## Exercez-vous
