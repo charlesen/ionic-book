@@ -24,12 +24,6 @@ $ git commit -m "Mon Application V 0.0.1"
 $ git push origin master
 ```
 
-Si vous avez choisi au départ d'héberger votre application sur Github et que vous souhaitez désormais la lier à Ionic Cloud uniquement, vous pouvez faire :
-
-```
-$ ionic git remote
-```
-
 Url : [https://dashboard.ionicframework.com](https://dashboard.ionicframework.com)
 
 ## Ionic Lab
