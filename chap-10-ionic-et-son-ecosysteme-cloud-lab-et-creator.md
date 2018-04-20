@@ -24,10 +24,6 @@ $ git commit -m "Mon Application V 0.0.1"
 $ git push origin master
 ```
 
-
-
-
-
 Url : [https://dashboard.ionicframework.com](https://dashboard.ionicframework.com)
 
 ## Ionic Lab
@@ -44,7 +40,7 @@ Url : [https://dashboard.ionicframework.com](https://dashboard.ionicframework.co
 
 Une fois l'application téléchargée, il vous suffit de l'ouvrir, de vous connecter avec vos idenfiants Ionci PRO, pour voir s'afficher vos différentes applications :
 
-
+![](/assets/ionic_view_duck_1.png)
 
 Grâce au mecanisme de push avec Git, chaque mise à jour de code mettra aussi à jour votre application sur Ionic View.
 
