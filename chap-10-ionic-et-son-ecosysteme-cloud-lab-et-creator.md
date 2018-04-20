@@ -24,8 +24,6 @@ $ git commit -m "Mon Application V 0.0.1"
 $ git push origin master
 ```
 
-
-
 Si jamais vous souhaitez ne plus héberger votre application sur Github et tout rappatrier sur Ionic Cloud, il vous suffit de faire :
 
 ```bash
@@ -33,9 +31,9 @@ $ ionic link
 ? App ID 20e8461e is already set up with this app. Would you like to link it to a different app? Yes
 ```
 
-Choisir **"yes"** à la question _**"? App ID UNEAPPID is already set up with this app. Would you like to link it to a different app?"**_ 
+Choisir **"yes"** à la question _**"? App ID UNEAPPID is already set up with this app. Would you like to link it to a different app?"**_
 
-Choisissez ensuite Ionic Pro et l'outil s'occupera du reste.
+Choisissez ensuite Ionic Pro et l'outil s'occupera du reste. Puis dans votre espace Ionic, deconnectez votre application du service Git :![](/assets/ionic_pro_git.png)
 
 
 
