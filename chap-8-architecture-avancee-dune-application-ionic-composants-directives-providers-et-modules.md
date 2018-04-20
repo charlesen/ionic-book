@@ -1,4 +1,4 @@
-# Chap 8 - Architecture avancée d'une application Ionic : Composants, Directives, Providers, Services, Pipes, Modules et persistance de données
+# Chap 8 - Architecture avancée d'une application Ionic : Composants, Directives, Providers, Services, Pipes, Modules, persistance de données et plugins natifs
 
 ## Composants
 
@@ -138,7 +138,6 @@ export class BolderDirective {
   }
 
 }
-
 ```
 
 Il ne nous reste plus qu'à utiliser notre nouvelle directive sur du contenu en page d'accueil par exemple :
@@ -146,8 +145,6 @@ Il ne nous reste plus qu'à utiliser notre nouvelle directive sur du contenu en 
 ```js
 <span bolder>mon texte en gras</span>
 ```
-
-
 
 ## Services ou Providers
 
@@ -193,8 +190,17 @@ On en a déjà un peu parlé au chapitre. Les pipes permettent de modifier la fo
 * **currency** : permet de rajouter une devise avant la valeur sur laquelle on l'applique
 * **date** : formatage de date
 * **uppercase** : transforme du texte en majuscule
+* lowercase : transforme du texte en miniscule
 * **json** : affiche le contenu d'un objet ou d'un texte au format JSON
 * ...
+
+```js
+let maVariable = "Hello mmi";
+...
+<span>{{maVariable | uppercase}}</span>
+```
+
+Pour plus de détails : [https://www.tutorialspoint.com/angular4/angular4\_pipes.htm](https://www.tutorialspoint.com/angular4/angular4_pipes.htm)
 
 ## Modules
 
@@ -248,13 +254,69 @@ On déclare ici le composant principal de l'application
 
 ## Persistance de données
 
+Maintenant que notre application a bien évolué, et que l'on peut même passé de la page de Login à la page d'accueil, il serait peut être intéressant de sauvegarder quelques données notamment notre session utilisateur.
+
+Ionic propose un plugin de stockage de données facile à prendre en main. Le stockage se fait sous forme de paires clé / valeur et utilise une variété de moteurs de stockage différent, en choisissant le meilleur disponible en fonction de la plate-forme.
+
+Lorsqu'il est exécuté dans un contexte d'application native, Ionic Storage vérifie d'abord la présence d'un plugin SQLite, beaucoup plus intéressant quand il s'agit de stocker des données d'une application mobile.
+
+Si SQLite n'est pas disponible, c'est le cas par exemple lorsque l'on utilise notre application depuis un navigateur, Ionic Storage utilisera dans l'ordre IndexedDB, WebSQL et  localstorage :
+
+
+
+**SQLite ==&gt; IndexedDB ==&gt; WebSQL ==&gt; localstorage**
+
+## Installation
+
+Nous allons tout d'abord installer le plugin SQLite :
+
+```bash
+$ ionic cordova plugin add cordova-sqlite-storage
+```
+
+Ensuite, il nous suffit d'installer Ionic Storage
+
+```bash
+$ npm install --save @ionic/storage
+```
+
+On déclare ce nouvel élément dans le module Root, pour qu'il puisse être appelé depuis n'importe quelle page :
+
+
+
+## Utilisation
+
+
+
+## Plugins natifs
+
+En plus de composants purement visuel qui vous permettent de mettre en forme votre application, Ionic propose également des plugins natifs cette fois-ci pour interagir avec le téléphone mobile. Ces plugins pour la plupart basés sur Cordova, sont disponibles en nombre à l'adresse : [https://ionicframework.com/docs/native/](https://ionicframework.com/docs/native/)
+
+
+
+Avant d'installer un plugin, il faut s'asurer que le package Ionic native est bien disponible, ce qui devrait être le cas dans une installation classique. Mais au besoin, il suffit de faire :
+
+```
+$ npm install @ionic-native/core --save
+```
+
+ 
+
 ## Exercez-vous
 
 1\) Créez un nouveau composant nommé "transaction" qui affichera la liste des dernières transactions de la blockchain. Cette liste est à récupérer à l'adresse : [https://duckcoin.charlesen.fr/transactions](https://duckcoin.charlesen.fr/transactions).
 
 2\) Appelez ce nouveau composant dans l'onglet Portefeuille
 
-3\)
+3\) Créez une directive que vous nommérez **"bigger"**. Celle-ci permettra d'augmenter la taille \(font-size\) de l'élement qui l'invoquerait.
 
-4\) Créez une directive que vous nommérez **"bigger"**. Celle-ci permettra d'augmenter la taille \(font-size\) de l'élement qui l'invoquerait.
+4\) Ajustons un peu notre page de login en enregistrant en base de données le login au clic sur le bouton de validation, et en l'affichant en page d'accueil de façon à ce que l'on ait ce message : 
+
+```
+Bonjour leLogin, 
+Duckcoin, c'est la monnaie qui rend aimable, redonne le sourire et change la face du monde.
+Elle a été faite pour des gens sympas, juste comme toi.
+```
+
+5\) Nous avons introduit les composants natifs proposé par Ionic [https://ionicframework.com/docs/native/](https://ionicframework.com/docs/native/). Utilisez un maximum d'entre eux et ajoutez-les à votre projet.
 
