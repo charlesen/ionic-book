@@ -89,7 +89,7 @@ $ ionic g directive maDirective
 [OK] Generated a directive named maDirective!
 ```
 
-Créons par exemple une directive que nous appelerons bigger et qui permettra de doubler le font-size de l'éléments qui l'appele.
+Créons par exemple une directive que nous appelerons **bolder** et qui permettra de mettre en gras l'élément qui l'appelerait.
 
 ```bash
 $ ionic g directive bolder
@@ -120,7 +120,34 @@ import { HttpClientModule } from '@angular/common/http';
   ],
 ```
 
-cd
+Puis, on édite notre directive pour qu'il fasse ce que l'on souhaite, à savoir mettre du contenu en gras :
+
+```js
+import { Directive, ElementRef } from '@angular/core';
+
+/**
+ *  Directives.
+ */
+@Directive({
+  selector: '[bolder]' // Attribute selector
+})
+export class BolderDirective {
+
+  constructor(Element: ElementRef) {
+    Element.nativeElement.style.fontWeight = 'bolder';
+  }
+
+}
+
+```
+
+Il ne nous reste plus qu'à utiliser notre nouvelle directive sur du contenu en page d'accueil par exemple :
+
+```js
+<span bolder>mon texte en gras</span>
+```
+
+
 
 ## Services ou Providers
 
@@ -128,20 +155,22 @@ Comme nous l'avons vu, un composant permettant d'afficher du contenu à plusieur
 
 Supposons que l'on souhaite récupérer la liste des dernières transactions sous forme de tableau comme c'est le cas dans la classe **TransactionComponent** :
 
-    export class TransactionComponent {
+```js
+export class TransactionComponent {
 
-      transactions: any[] = [];
+  transactions: any[] = [];
 
-      constructor(private http: HttpClient) {
-        this.http.get(`${apiUrl}/transactions`).subscribe(
-          data => {
-          this.transactions = data['transactions'];
-        }, err => {
-            console.log("Error occured.")
-        });
-      }
+  constructor(private http: HttpClient) {
+    this.http.get(`${apiUrl}/transactions`).subscribe(
+      data => {
+      this.transactions = data['transactions'];
+    }, err => {
+        console.log("Error occured.")
+    });
+  }
 
-    }
+}
+```
 
 Une première solution serait de copier le code de cette classe. Mais si une autre page souhaite également avoir accès à cette même liste, la copie alors apparait comme une mauvaise solution.
 
@@ -158,6 +187,14 @@ $ ionic g provider User
 Cette commande va créer un nouveau service **User**, dans lequel nous déclarerons un certain nombre de méthodes pour la gestion de l'authentification, la création de comptes utilisateur,...
 
 ## Pipes
+
+On en a déjà un peu parlé au chapitre. Les pipes permettent de modifier la forme d'un contenu avant son affichage. Citons quelques pipes intéressant :
+
+* **currency** : permet de rajouter une devise avant la valeur sur laquelle on l'applique
+* **date** : formatage de date
+* **uppercase** : transforme du texte en majuscule
+* **json** : affiche le contenu d'un objet ou d'un texte au format JSON
+* ...
 
 ## Modules
 
