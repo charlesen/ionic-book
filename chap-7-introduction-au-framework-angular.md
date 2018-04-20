@@ -271,7 +271,7 @@ imports: [
 ...
 ```
 
-Grâce à l'utilisation du module http, vous pourrons récupérer des données directement depuis le site hébergeant notre blockchain.
+Grâce à l'utilisation du module http, vous pouvez facilement récupérer des données directement depuis le site hébergeant la blockchain.
 
 Vous retrouverez les sources, ainsi que les corrections des exercices de ce TP à l'adresse:
 
