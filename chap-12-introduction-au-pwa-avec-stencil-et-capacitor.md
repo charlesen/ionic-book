@@ -1,7 +1,5 @@
 # Chap 12 - Introduction au PWA avec Stencil et Capacitor
 
-
-
 ## Une Progressive Web App c'est quoi ?
 
 C'est une application disponible à la fois sur le web et sur le mobile, et qui se comporte comme une application mobile native.
@@ -22,7 +20,7 @@ La société éditrice du Framework mobile n'a pas attendu pour s'attaquer à ce
 
 ![](/assets/ionic_capacitor.png)
 
-De ces deux outils, Capacitor est surement celui qui a le plus de potentiel et donc est susceptible de durer dans le temps. Mais les technologies mobiles évoluant tellement vite, seul l'avenir nous dira qui de ces deux technologies aura remporté le trophée de l'outil principal  de développement de PWA. 
+De ces deux outils, **Capacitor** est surement celui qui a le plus de potentiel et donc est susceptible de durer dans le temps. Mais les technologies mobiles évoluant tellement vite, seul l'avenir nous dira qui de ces deux technologies aura remporté le trophée de l'outil principal  de développement de PWA.
 
 Affaire à suivre donc.
 
