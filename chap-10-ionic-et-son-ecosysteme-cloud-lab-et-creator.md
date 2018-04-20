@@ -24,6 +24,12 @@ $ git commit -m "Mon Application V 0.0.1"
 $ git push origin master
 ```
 
+Si vous avez choisi au départ d'héberger votre application sur Github et que vous souhaitez désormais la lier à Ionic Cloud uniquement, vous pouvez faire :
+
+```
+$ ionic git remote
+```
+
 Url : [https://dashboard.ionicframework.com](https://dashboard.ionicframework.com)
 
 ## Ionic Lab
@@ -44,8 +50,6 @@ Une fois l'application téléchargée, il vous suffit de l'ouvrir, de vous conne
 
 Grâce au mecanisme de push avec Git, chaque mise à jour de code mettra aussi à jour votre application sur Ionic View.
 
-
-
 L'onglet suivant vous permet de visualiser une application à partir de son identifiant ou de son QR Code :
 
 ![](/assets/ionic_view_duck_4.png)
@@ -56,7 +60,7 @@ Et le suivant permet la gestion de ses paramètres utilisateurs
 
 ## Ionic Creator
 
-Creator est le logiciel _Wysiwyg_ qui va vous permettre de créer votre application, sans saisir de code. Un editeur en ligne vous est proposé, pour produire maquette, voir appli de production en quelques minutes. 
+Creator est le logiciel _Wysiwyg_ qui va vous permettre de créer votre application, sans saisir de code. Un editeur en ligne vous est proposé, pour produire maquette, voir appli de production en quelques minutes.
 
 ![](/assets/screen_creator.png)
 
