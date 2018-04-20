@@ -21,9 +21,16 @@ Pour information :
 
 Ionic View est une application mobile qui vous permettra de visualiser vos projets Ionic après les avoir "pushé" sur le cloud à partir de votre compte Ionic PRO. Nous y reviendrons plus en détails au [chapitre 10](/chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md).
 
-L'application Ionic View n'existe actuellement que pour Android et iOS[^1]. Pour commencer à utiliser Ionic View, il vous suffit de le télécharger sur un des stores
+L'application Ionic View n'existe actuellement que pour Android et iOS[^1]. Pour commencer à utiliser Ionic View, il vous suffit de le télécharger sur un des stores :
+
+* Google Play Store : [https://play.google.com/store/apps/details?id=com.ionicframework.view](https://play.google.com/store/apps/details?id=com.ionicframework.view)
+* Apple Store : [https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931](https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931)
 
 ### Depuis l'emulateur
+
+```
+$ ionic cordova run android
+```
 
 ## Debogages
 
@@ -71,7 +78,19 @@ if (maVariable) {
 }
 ```
 
-c
+
+
+### Logs de la console + Gestionnaire d'erreurs Ionic
+
+Ces deux élément, assez vous indique souvent d'où vient le problème et surtout comment le résoudre. Il est parfois nécessaire de redémarrer votre projet depuis la console pour la recompilation permette un retour de bug plus explicite, voir, dans de rares cas, corrige le bug.
+
+![](/assets/bug_ionic.png)
+
+![](/assets/ionic_bug_2.png)
+
+## Exercez-vous
+
+1\) Traquez tous les méchants de votre application, en utilisant une ou plusieurs des méthodes citées précédemment.
 
 [^1]: L'application Ionic View pour iOS est à l'heure où j'écris ces quelques lignes indisponible sur l'Apple Store, ayant été désactivé par la plateforme qui lui propose le fait d'être une application permettant d'executer d'autres applications. Selon Apple, chaque application doit disposer de son propre contexte d'execution et ce que fait Ionic View enfreindrait sa politique interne.
 

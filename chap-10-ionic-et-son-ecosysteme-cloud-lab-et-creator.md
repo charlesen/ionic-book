@@ -1,4 +1,47 @@
 # Chap 10 - Ionic et son écosystème : Cloud, Lab, View et Creator
 
+## Ionic Cloud \(PRO\)
 
+Nous avons déjà parlé et avons même créé un compte au [chapitre 3](/chap-3-installation-de-ionic-et-premieres-prises-en-main.md).
+
+Ionic Cloud va vous permette de compiler votre projet sans devoir vous inquieter de l'installation des packages nécessaires pour chaque plateforme cible \(Androi, iOS\).
+
+
+
+Pour pusher votre application sur le cloud, il vous suffit de faire :
+
+```
+$ 
+$ git push ionic master
+```
+
+Il vous sera peut être demandé de vous authentifier si ce n'est déjà fait. 
+
+Url : [https://dashboard.ionicframework.com](https://dashboard.ionicframework.com)
+
+## Ionic Lab
+
+Il s'agit d'une vue spéciale de votre application sur un navigateur suite au lancement du projet depuis votre console. Vous avez la possibilité de tester le rendu de votre application pour iOS, Android et Windows Phone :
+
+![](/assets/ionic_lab.png)
+
+## Ionic View
+
+C'est l'application qui vous permettra de tester d'autres applications. On peut aussi la configurer depuis Ionic PRO.
+
+Url : [https://dashboard.ionicframework.com](https://dashboard.ionicframework.com)
+
+## Ionic Creator
+
+Creator est le logiciel Wysiwyg qui va vous permettre de créer votre application, sans saisir de code. Un editeur en ligne vous est proposé, pour produire maquette, voir appli de production en quelques minutes. Une fois votre travail effectué, il est possible d'exporter le projet.
+
+Certaines fonctionnalités ne sont pas disponibles pour la version gratuite.
+
+Url : [https://creator.ionic.io](https://creator.ionic.io)
+
+## Ionic market
+
+Le market place de Ionic propose des plugins, templates ou du tout en un prêt à l'emploi. Pratique quand on a peu ou pas d'inspiration, ou quand ne souhaite juste pas réinventer la roue.
+
+Url  : [https://market.ionicframework.com/](https://market.ionicframework.com/)
 
