@@ -18,11 +18,26 @@ Il vous sera peut être demandé de vous authentifier si ce n'est déjà fait.
 
 Si par contre vous aviez choisi d'héberger votre projet sur Github, vous devrez simplement pusher vers votre branche **origin** :
 
-```js
+```bash
 $ git add .
 $ git commit -m "Mon Application V 0.0.1"
 $ git push origin master
 ```
+
+
+
+Si jamais vous souhaitez ne plus héberger votre application sur Github et tout rappatrier sur Ionic Cloud, il vous suffit de faire :
+
+```bash
+$ ionic link
+? App ID 20e8461e is already set up with this app. Would you like to link it to a different app? Yes
+```
+
+Choisir **"yes"** à la question _**"? App ID UNEAPPID is already set up with this app. Would you like to link it to a different app?"**_ 
+
+Choisissez ensuite Ionic Pro et l'outil s'occupera du reste.
+
+
 
 Url : [https://dashboard.ionicframework.com](https://dashboard.ionicframework.com)
 
