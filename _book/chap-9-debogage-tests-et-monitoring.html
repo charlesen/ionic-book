@@ -251,7 +251,7 @@
                 <a href="chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.html">
             
                     
-                    Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et persistance de données
+                    Chap 8 - Architecture avancée d'une application Ionic : Composants, Directives, Providers, Services, Pipes, Modules, persistance de données et plugins natifs
             
                 </a>
             
@@ -360,9 +360,14 @@
 </ul>
 <h3 id="depuis-ionic-view">Depuis Ionic View</h3>
 <p>Ionic View est une application mobile qui vous permettra de visualiser vos projets Ionic apr&#xE8;s les avoir &quot;push&#xE9;&quot; sur le cloud &#xE0; partir de votre compte Ionic PRO. Nous y reviendrons plus en d&#xE9;tails au <a href="chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.html">chapitre 10</a>.</p>
-<p>L&apos;application Ionic View n&apos;existe actuellement que pour Android et iOS<sup><a href="#fn_1" id="reffn_1">1</a></sup>. Pour commencer &#xE0; utiliser Ionic View, il vous suffit de le t&#xE9;l&#xE9;charger sur un des stores</p>
+<p>L&apos;application Ionic View n&apos;existe actuellement que pour Android et iOS<sup><a href="#fn_1" id="reffn_1">1</a></sup>. Pour commencer &#xE0; utiliser Ionic View, il vous suffit de le t&#xE9;l&#xE9;charger sur un des stores :</p>
+<ul>
+<li>Google Play Store : <a href="https://play.google.com/store/apps/details?id=com.ionicframework.view" target="_blank">https://play.google.com/store/apps/details?id=com.ionicframework.view</a></li>
+<li>Apple Store : <a href="https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931" target="_blank">https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931</a></li>
+</ul>
 <h3 id="depuis-lemulateur">Depuis l&apos;emulateur</h3>
-<h2 id="debogages">Debogages</h2>
+<pre><code>$ ionic cordova run android
+</code></pre><h2 id="debogages">Debogages</h2>
 <p>C&apos;est surement la partie la moins dr&#xF4;le quand on d&#xE9;veloppe en g&#xE9;n&#xE9;ral, mais fort heureusement avec Ionic et Angular les choses sont un peu moins douloureuse, la plupart des bugs &#xE9;tant explicites et dans certains cas on indique m&#xEA;me ce qu&apos;il faut faire.</p>
 <p>Faisons le tour de quelques m&#xE9;thodes qui vont vous aider &#xE0; debugger efficacement votre application mobile.</p>
 <h3 id="lind&#xE9;tronable-consolelog-et-consoleinfo">L&apos;ind&#xE9;tronable console.log() et console.info()</h3>
@@ -388,7 +393,12 @@
   alert(maVariable)
 }
 </code></pre>
-<p>c</p>
+<h3 id="logs-de-la-console--gestionnaire-derreurs-ionic">Logs de la console + Gestionnaire d&apos;erreurs Ionic</h3>
+<p>Ces deux &#xE9;l&#xE9;ment, assez vous indique souvent d&apos;o&#xF9; vient le probl&#xE8;me et surtout comment le r&#xE9;soudre. Il est parfois n&#xE9;cessaire de red&#xE9;marrer votre projet depuis la console pour la recompilation permette un retour de bug plus explicite, voir, dans de rares cas, corrige le bug.</p>
+<p><img src="assets/bug_ionic.png" alt=""></p>
+<p><img src="assets/ionic_bug_2.png" alt=""></p>
+<h2 id="exercez-vous">Exercez-vous</h2>
+<p>1) Traquez tous les m&#xE9;chants de votre application, en utilisant une ou plusieurs des m&#xE9;thodes cit&#xE9;es pr&#xE9;c&#xE9;demment.</p>
 <blockquote id="fn_1">
 <sup>1</sup>. L&apos;application Ionic View pour iOS est &#xE0; l&apos;heure o&#xF9; j&apos;&#xE9;cris ces quelques lignes indisponible sur l&apos;Apple Store, ayant &#xE9;t&#xE9; d&#xE9;sactiv&#xE9; par la plateforme qui lui propose le fait d&apos;&#xEA;tre une application permettant d&apos;executer d&apos;autres applications. Selon Apple, chaque application doit disposer de son propre contexte d&apos;execution et ce que fait Ionic View enfreindrait sa politique interne.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
 </blockquote>
@@ -403,7 +413,7 @@
 
             
                 
-                <a href="chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.html" class="navigation navigation-prev " aria-label="Previous page: Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et persistance de données">
+                <a href="chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.html" class="navigation navigation-prev " aria-label="Previous page: Chap 8 - Architecture avancée d'une application Ionic : Composants, Directives, Providers, Services, Pipes, Modules, persistance de données et plugins natifs">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -419,7 +429,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Chap 9 - Tests et débogages avancés","level":"1.14","depth":1,"next":{"title":"Chap 10 - Ionic et son écosystème : Cloud, Lab, View et Creator","level":"1.15","depth":1,"path":"chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md","ref":"chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md","articles":[]},"previous":{"title":"Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et persistance de données","level":"1.13","depth":1,"path":"chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md","ref":"chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ionic-edounze-com"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{}},"gitbook":"*"},"file":{"path":"chap-9-debogage-tests-et-monitoring.md","mtime":"2018-04-19T10:20:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-19T12:59:17.750Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Chap 9 - Tests et débogages avancés","level":"1.14","depth":1,"next":{"title":"Chap 10 - Ionic et son écosystème : Cloud, Lab, View et Creator","level":"1.15","depth":1,"path":"chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md","ref":"chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md","articles":[]},"previous":{"title":"Chap 8 - Architecture avancée d'une application Ionic : Composants, Directives, Providers, Services, Pipes, Modules, persistance de données et plugins natifs","level":"1.13","depth":1,"path":"chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md","ref":"chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ionic-edounze-com"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{}},"gitbook":"*"},"file":{"path":"chap-9-debogage-tests-et-monitoring.md","mtime":"2018-04-20T05:16:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-20T07:03:07.723Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

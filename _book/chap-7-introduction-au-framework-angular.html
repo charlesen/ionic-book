@@ -251,7 +251,7 @@
                 <a href="chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.html">
             
                     
-                    Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et persistance de données
+                    Chap 8 - Architecture avancée d'une application Ionic : Composants, Directives, Providers, Services, Pipes, Modules, persistance de données et plugins natifs
             
                 </a>
             
@@ -413,7 +413,7 @@ app.component.spec.ts
 app.component.ts
 app.module.ts
 </code></pre><p>Une application a toujours au moins un module racine qui permet le lancement du projet (&#xE0; l&apos;exemple d&apos;un fichier index.html en racine d&apos;un site web). C&apos;est ce module qui va amorcer le composant Root (<strong>AppComponent</strong>).</p>
-<p>Par convention, celui-ci s&apos;appelle <strong>AppModule</strong> est d&#xE9;finidans le fichier <strong>src/app/app.module.ts</strong>.</p>
+<p>Par convention, celui-ci s&apos;appelle <strong>AppModule</strong> et est d&#xE9;fini dans le fichier <strong>src/app/app.module.ts</strong>.</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> { BrowserModule } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@angular/platform-browser&apos;</span>;
 <span class="hljs-keyword">import</span> { NgModule } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@angular/core&apos;</span>;
 
@@ -448,17 +448,17 @@ app.module.ts
 &lt;/div&gt;
 </code></pre>
 <h3 id="ngif">*ngIf</h3>
-<p>Comme vous pouvez le devinez,  *ngIf est le <em><strong>&quot;if...else&quot;</strong></em> adapt&#xE9;e aux templates.</p>
+<p>Comme vous pouvez le deviner,  *ngIf est le <em><strong>&quot;if...else&quot;</strong></em> adapt&#xE9; aux templates.</p>
 <pre><code class="lang-js">&lt;span *ngIf=&quot;isConnected&quot;&gt;Je suis connect&#xE9;.&lt;/span&gt;
 </code></pre>
 <h3 id="pipe">Pipe</h3>
-<p>Comme dans la plupart des moteurs de templates, Angular permet l&apos;utilisation de pipes qui permettent de modifier une variable ou un contenu avant qu&apos;il soit affich&#xE9;. Le framework proposent un certain nombre de pipes pr&#xEA;ts &#xE0; l&apos;emploi, comme <em>titlecase</em>, <em>currency</em>,...Mais il est tout &#xE0; fait possible de cr&#xE9;er son propre pipe.</p>
+<p>Comme dans la plupart des moteurs de templates, Angular permet l&apos;utilisation de pipes qui permettent de modifier une variable ou un contenu avant qu&apos;il soit affich&#xE9;. Le framework propose un certain nombre de pipes pr&#xEA;ts &#xE0; l&apos;emploi, comme <em>titlecase</em>, <em>currency</em>,...Mais il est tout &#xE0; fait possible de cr&#xE9;er son propre pipe.</p>
 <pre><code class="lang-js">&lt;div&gt;
    &lt;h2&gt;{{ &apos;charles edou nze&apos; | titlecase }}&lt;/h2&gt;
 &lt;/div&gt;
 </code></pre>
 <p><strong>titlecase</strong> permet de mettre en capitale les premi&#xE8;res lettres de chaque mot. Ce qui donnera le r&#xE9;sultat suivant :</p>
-<pre><code>Charles EDOU NZE
+<pre><code>Charles Edou Nze
 </code></pre><h2 id="exercez-vous">Exercez-vous</h2>
 <p>1) Cr&#xE9;ez un nouveau projet comme expliqu&#xE9; pr&#xE9;c&#xE9;demment</p>
 <p>2) Que pouvez-vous remarquer dans l&apos;arborescence de fichiers d&apos;Angular...vis-&#xE0;-vis de Ionic</p>
@@ -545,7 +545,7 @@ imports: [
   ],
 ...
 </code></pre>
-<p>Gr&#xE2;ce &#xE0; l&apos;utilisation du module http, vous pourrons r&#xE9;cup&#xE9;rer des donn&#xE9;es directement depuis le site h&#xE9;bergeant notre blockchain.</p>
+<p>Gr&#xE2;ce &#xE0; l&apos;utilisation du module http, vous pouvez facilement r&#xE9;cup&#xE9;rer des donn&#xE9;es directement depuis le site h&#xE9;bergeant la blockchain.</p>
 <p>Vous retrouverez les sources, ainsi que les corrections des exercices de ce TP &#xE0; l&apos;adresse:</p>
 <p><a href="https://github.com/charlesen/ionic-book/tree/master/examples/duckweb" target="_blank">https://github.com/charlesen/ionic-book/tree/master/examples/duckweb</a></p>
 <h2 id="annexes">Annexes</h2>
@@ -573,7 +573,7 @@ imports: [
                 </a>
                 
                 
-                <a href="chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.html" class="navigation navigation-next " aria-label="Next page: Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et persistance de données">
+                <a href="chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.html" class="navigation navigation-next " aria-label="Next page: Chap 8 - Architecture avancée d'une application Ionic : Composants, Directives, Providers, Services, Pipes, Modules, persistance de données et plugins natifs">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -584,7 +584,7 @@ imports: [
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Chap 7 - Introduction au framework Angular","level":"1.12","depth":1,"next":{"title":"Chap 8 - Architecture avancée d'une application Ionic : Composants, Modules, Directives, Providers, Services, Pipes et persistance de données","level":"1.13","depth":1,"path":"chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md","ref":"chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md","articles":[]},"previous":{"title":"Chap 6 - Introduction au langage TypeScript, le futur de JavaScript","level":"1.11","depth":1,"path":"chap-6-introduction-au-langage-typescript-le-futur-de-javascript.md","ref":"chap-6-introduction-au-langage-typescript-le-futur-de-javascript.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ionic-edounze-com"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{}},"gitbook":"*"},"file":{"path":"chap-7-introduction-au-framework-angular.md","mtime":"2018-04-19T10:20:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-19T12:59:17.750Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Chap 7 - Introduction au framework Angular","level":"1.12","depth":1,"next":{"title":"Chap 8 - Architecture avancée d'une application Ionic : Composants, Directives, Providers, Services, Pipes, Modules, persistance de données et plugins natifs","level":"1.13","depth":1,"path":"chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md","ref":"chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md","articles":[]},"previous":{"title":"Chap 6 - Introduction au langage TypeScript, le futur de JavaScript","level":"1.11","depth":1,"path":"chap-6-introduction-au-langage-typescript-le-futur-de-javascript.md","ref":"chap-6-introduction-au-langage-typescript-le-futur-de-javascript.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","-lunr","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ionic-edounze-com"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{}},"gitbook":"*"},"file":{"path":"chap-7-introduction-au-framework-angular.md","mtime":"2018-04-20T07:01:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-20T07:03:07.723Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
