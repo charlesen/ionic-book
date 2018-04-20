@@ -40,13 +40,29 @@ Url : [https://dashboard.ionicframework.com](https://dashboard.ionicframework.co
 
 Une fois l'application téléchargée, il vous suffit de l'ouvrir, de vous connecter avec vos idenfiants Ionci PRO, pour voir s'afficher vos différentes applications :
 
-![](/assets/ionic_view_duck_1.png)
+![](/assets/ionic_view_duck_1.png)![](/assets/ionic_view_duck_2.png)
 
 Grâce au mecanisme de push avec Git, chaque mise à jour de code mettra aussi à jour votre application sur Ionic View.
 
+
+
+L'onglet suivant vous permet de visualiser une application à partir de son identifiant ou de son QR Code :
+
+![](/assets/ionic_view_duck_4.png)
+
+Et le suivant permet la gestion de ses paramètres utilisateurs
+
+![](/assets/ionic_view_duck_5.png)
+
 ## Ionic Creator
 
-Creator est le logiciel Wysiwyg qui va vous permettre de créer votre application, sans saisir de code. Un editeur en ligne vous est proposé, pour produire maquette, voir appli de production en quelques minutes. Une fois votre travail effectué, il est possible d'exporter le projet.
+Creator est le logiciel _Wysiwyg_ qui va vous permettre de créer votre application, sans saisir de code. Un editeur en ligne vous est proposé, pour produire maquette, voir appli de production en quelques minutes. 
+
+![](/assets/screen_creator.png)
+
+Une fois votre travail effectué, il est possible d'exporter le projet.
+
+![](/assets/ionic_creator_3.png)
 
 Certaines fonctionnalités ne sont pas disponibles pour la version gratuite.
 
