@@ -1,8 +1,0 @@
-{
-  "https://duckcoin.charlesen.fr": {
-    "target": "http://localhost:4200/",
-    "secure": false,
-    "logLevel": "debug",
-    "changeOrigin": true
-  }
-}
