@@ -330,8 +330,6 @@ export class LoginPage {
 }
 ```
 
-
-
 ## Plugins natifs
 
 En plus de composants purement visuel qui vous permettent de mettre en forme votre application, Ionic propose également des plugins natifs cette fois-ci pour interagir avec les fonctions dites natives de votre téléphone mobile. Ces plugins pour la plupart basés sur Cordova, sont disponibles en assez grand nombre à l'adresse : [https://ionicframework.com/docs/native/](https://ionicframework.com/docs/native/)
@@ -357,6 +355,8 @@ Bonjour leLogin,
 Duckcoin, c'est la monnaie qui rend aimable, redonne le sourire et change la face du monde.
 Elle a été faite pour des gens sympas, juste comme toi.
 ```
+
+**P.S. :** vous aurez peut être surement de ça ;-\) : [https://ionicframework.com/docs/developer-resources/forms/](https://ionicframework.com/docs/developer-resources/forms/)
 
 5\) Nous avons introduit les composants natifs proposé par Ionic [https://ionicframework.com/docs/native/](https://ionicframework.com/docs/native/). Utilisez un maximum d'entre eux et ajoutez-les à votre projet.
 
