@@ -6,16 +6,27 @@ Nous avons déjà parlé et avons même créé un compte au [chapitre 3](/chap-3
 
 Ionic Cloud va vous permette de compiler votre projet sans devoir vous inquieter de l'installation des packages nécessaires pour chaque plateforme cible \(Androi, iOS\).
 
+Pour pusher votre application sur le cloud, et si vous aviez choisi à la création du projet de l'héberger sur Ionic Pro, il vous suffira de faire :
 
-
-Pour pusher votre application sur le cloud, il vous suffit de faire :
-
-```
-$ 
+```bash
+$ git add .
+$ git commit -m "Mon Application V 0.0.1"
 $ git push ionic master
 ```
 
-Il vous sera peut être demandé de vous authentifier si ce n'est déjà fait. 
+Il vous sera peut être demandé de vous authentifier si ce n'est déjà fait.
+
+Si par contre vous aviez choisi d'héberger votre projet sur Github, vous devrez simplement pusher vers votre branche **origin** :
+
+```js
+$ git add .
+$ git commit -m "Mon Application V 0.0.1"
+$ git push origin master
+```
+
+
+
+
 
 Url : [https://dashboard.ionicframework.com](https://dashboard.ionicframework.com)
 
@@ -30,6 +41,12 @@ Il s'agit d'une vue spéciale de votre application sur un navigateur suite au la
 C'est l'application qui vous permettra de tester d'autres applications. On peut aussi la configurer depuis Ionic PRO.
 
 Url : [https://dashboard.ionicframework.com](https://dashboard.ionicframework.com)
+
+Une fois l'application téléchargée, il vous suffit de l'ouvrir, de vous connecter avec vos idenfiants Ionci PRO, pour voir s'afficher vos différentes applications :
+
+
+
+Grâce au mecanisme de push avec Git, chaque mise à jour de code mettra aussi à jour votre application sur Ionic View.
 
 ## Ionic Creator
 
