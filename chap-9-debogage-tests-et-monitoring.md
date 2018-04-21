@@ -67,7 +67,7 @@ Il est également possible d'ajouter des points d'arrêts dans votre code source
 Vous avez le choix d'ajouter ce point d'arrêt depuis votre navigateur ou alors depuis votre code source à l'aide du mot clé **"debugger"** :
 
 ```js
-let maVariable = "Je suis un variable";
+let maVariable = "Je suis une variable";
 ....
 
 // L'execution du code prendra fin ici...Pour avancer, faites F10 sur Chrome
@@ -77,8 +77,6 @@ if (maVariable) {
   alert(maVariable)
 }
 ```
-
-
 
 ### Logs de la console + Gestionnaire d'erreurs Ionic
 
@@ -90,7 +88,7 @@ Ces deux élément, assez vous indique souvent d'où vient le problème et surto
 
 ## Exercez-vous
 
-1\) Traquez tous les méchants de votre application, en utilisant une ou plusieurs des méthodes citées précédemment.
+1\) Traquez tous les méchants bugs de votre application en utilisant une ou plusieurs des méthodes citées précédemment.
 
-[^1]: L'application Ionic View pour iOS est à l'heure où j'écris ces quelques lignes indisponible sur l'Apple Store, ayant été désactivé par la plateforme qui lui propose le fait d'être une application permettant d'executer d'autres applications. Selon Apple, chaque application doit disposer de son propre contexte d'execution et ce que fait Ionic View enfreindrait sa politique interne.
+[^1]: L'application Ionic View pour iOS est à l'heure où j'écris ces quelques lignes indisponible sur l'Apple Store, ayant été désactivée par la plateforme qui lui reproche le fait d'être une application permettant d'executer d'autres applications. Selon Apple, chaque application doit disposer de son propre contexte d'execution et ce que fait Ionic View enfreindrait sa politique interne. Voir l'article de l'un des co-fondateurs [Update on Ionic View for iOS](https://blog.ionicframework.com/update-on-ionic-view-for-ios/) : https://blog.ionicframework.com/update-on-ionic-view-for-ios/
 

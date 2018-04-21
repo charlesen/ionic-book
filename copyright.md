@@ -6,9 +6,7 @@ De plus, les exemples cités dans cet ouvrage sont présentés à titre d'illust
 
 Cet ouvrage existe également en version PDF avec les mêmes droits cités précédemment.
 
-
-
-Pour tout renseignement, merci de contacter l'auteur directement depuis son site internet ou via les réseaux sociaux :
+Pour tout renseignement, merci de contacter l'auteur directement depuis son site internet \(menu contact\) ou via les réseaux sociaux :
 
 * **Site internet** : [https://charlesen.fr](https://charlesen.fr)
 * **Twitter** : [https://twitter.com/charlesen7](https://twitter.com/charlesen7)
