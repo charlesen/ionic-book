@@ -4,9 +4,9 @@
 
 C'est une application disponible à la fois sur le web et sur le mobile, et qui se comporte comme une application mobile native.
 
-Une étude a montré que bon nombre d'utilisateurs, autour de 20%, se désintéressait d'une application du fait de sa relative complexité d'installation sur mobile. De plus, de nombreux utilisateurs sont hésitants à l'idée d'installer une application qui prendrait à la longue beaucoup trop de place du au cache, aux fichiers statiques,...
+Une étude a montré que bon nombre d'utilisateurs, autour de 20%, se désintéressaient d'une application du fait de sa relative complexité d'installation sur mobile. De plus, de nombreux utilisateurs sont hésitants à l'idée d'installer une application qui prendrait à la longue beaucoup trop de place sur leur téléphone à cause du cache, des fichiers statiques,...
 
-le PWA vient en quelque sorte corriger ses problèmes rencontrés dans l'univer du mobile
+Le PWA vient en quelque sorte corriger ces problèmes et bien d'autres, rencontrés dans l'univers du mobile.
 
 ## Ionic à l'assaut du PWA
 
