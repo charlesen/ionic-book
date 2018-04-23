@@ -8,6 +8,32 @@ Chaque composant à son propre API. Ce qui permet de l'exploiter au maximum. Etu
 
 Liste des composants : [https://ionicframework.com/docs/components/](https://ionicframework.com/docs/components/)
 
+Faisons le tour de quelques composants intéressants.
+
+## Bouton
+
+Pour ajouter un comosant de type bouton à votre application mobile, il suffit simplement de faire \(attention, grand moment\) :
+
+```js
+<button ion-button>Mon bouton</button>
+```
+
+Tada ! Ce n'est pas plus compliqué que ça.
+
+On peut aussi customiser un peu ce bouton grâce à des [directives, concepte abordé au chapitre 8](/chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md). Ajustons par exemple la couleur des différents boutons :
+
+```js
+<button ion-button color="light">Mon bouton clair</button>
+<button ion-button>Mon bouton par défaut (primary)</button>
+<button ion-button color="secondary">Mon bouton avec couleur secondaire</button>
+<button ion-button color="danger">Mon bouton rouge</button>
+<button ion-button color="dark">Mon bouton noir</button>
+```
+
+![](/assets/composant_boutons_1.png)
+
+cd
+
 ## Exercez-vous
 
 Dans cette série d'exercices, nous allons pouvoir améliorer un peu notre application. On va s'inspirer du design d'une application mobile nommée Electroneum.
@@ -22,7 +48,7 @@ Dans ce TP, nous allons, à l'aide des composants tenter de nous rapprocher le p
 
 Faites que cette page soit la page par défaut, en modifiant le fichier **src/app/app.component.ts**
 
-2\) Utilisez les composants Ionic pour rapprocher cette page le plus proche possible du screen ci-dessous, en adaptant au passage le style et le texte. 
+2\) Utilisez les composants Ionic pour rapprocher cette page le plus proche possible du screen ci-dessous, en adaptant au passage le style et le texte.
 
 ![](/assets/login_img.jpg)
 
