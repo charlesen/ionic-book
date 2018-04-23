@@ -1,3 +1,7 @@
+---
+disqus: false
+---
+
 # Copyright
 
 Le présent ouvrage sous sa version numérique est placé sous licence MIT. Cette licence donne à toute personne recevant cet e-Book le droit illimité de l'utiliser, le copier, le modifier, le fusionner, le publier, le distribuer, le vendre et de changer sa licence. La seule obligation est de mettre le nom du ou des auteurs avec la notice de copyright.
@@ -10,6 +14,3 @@ Pour tout renseignement, merci de contacter l'auteur directement depuis son site
 
 * **Site internet** : [https://charlesen.fr](https://charlesen.fr)
 * **Twitter** : [https://twitter.com/charlesen7](https://twitter.com/charlesen7)
-
-
-
