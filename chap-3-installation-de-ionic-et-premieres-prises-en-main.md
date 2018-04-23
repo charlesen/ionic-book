@@ -541,6 +541,32 @@ Que se passe-t-il dans la console ? Dans votre navigateur ? Quelles solutions pr
 
 10\) Ajustez le style CSS de la page d'accueil pour rendre le contenu de l'onglet un peu plus joli : **src/pages/home/home.scss**. N'hésitez pas utiliser l'inspecteur de votre navigateur \(F12\).
 
+11\) Nous allons à présent lier notre application au service Ionic PRO. Dans votre invite de commandes, faites :
+
+```
+$ ionic link 
+✔ Looking up your apps - done!
+
+? Which app would you like to link (Use arrow keys)
+❯ Create a new app 
+  Duckcoin-starter (94d675be) 
+  Duckcoin (20e8461e) 
+
+```
+
+Dans la liste qui vous est proposée, choisir l'application que vous avez créée depuis votre espace Ionic PRO.
+
+Il vous sera également proposé d'héberger votre application soit sur Github, soit sur le cloud Ionic. Pour les raisons de ce TP nous utiliserons Ionic PRO, mais vous pouvez très bien aussi utilisé github \(votre code source sera alors public\).
+
+```
+> ionic git remote
+> git remote add ionic git@git.ionicjs.com:charlesen/duckcoin-starter.git
+[OK] Added remote ionic.
+[OK] Project linked with app 94d675be!
+```
+
+Editez ensuite le fichier **ionic.config.json**. Que remarquez-vous ?
+
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
 [^2]: _How to prevent permission errors_ : [https://docs.npmjs.com/getting-started/fixing-npm-permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
