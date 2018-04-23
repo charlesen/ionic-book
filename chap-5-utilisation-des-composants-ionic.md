@@ -50,12 +50,11 @@ on peut également retirer le background pour n'afficher que la bordure dans la 
   <button ion-button color="danger" outline>Mon bouton rouge</button>
   <button ion-button color="dark" outline>Mon bouton noir</button>
 </ion-content>
-
 ```
 
 ![](/assets/composant_boutons_3.png)
 
-Ou encore retirer les bordures du boutons avec la directive **clear** : 
+Ou encore retirer les bordures du boutons avec la directive **clear** :
 
 ```js
 <ion-header>
@@ -73,28 +72,139 @@ Ou encore retirer les bordures du boutons avec la directive **clear** :
   <button ion-button color="danger" clear>Mon bouton rouge</button>
   <button ion-button color="dark" clear>Mon bouton noir</button>
 </ion-content>
-
 ```
 
 ![](/assets/composant_boutons_2.png)
 
-
-
 Documentation : [https://ionicframework.com/docs/components/\#buttons](https://ionicframework.com/docs/components/#buttons)
-
-
 
 ### Composant Liste
 
 Comme son nom peut le suggérer, ce composant va nous permettre d'ajouter une liste d'éléments à notre application
 
-
-
-Documentation : 
+Documentation :
 
 ### Composant Select
 
 Le composant va nous permettre d'ajouter
+
+
+
+### Composant Cards
+
+Les cartes sont un bon moyen d'afficher des informations importantes à destination des utilisateurs. Ce pattern s'inspire des carte de visite que nous utilisons dans la vie courante.
+
+```js
+<ion-header>
+
+  <ion-navbar color="duckcoin">
+    <ion-title>Ma Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+
+    <ion-card-header>
+      Charles EDOU NZE
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>Profession : Ingénieur informatique</p>
+      <p>Localisation : Troyes</p>
+      <p>Site internet : https://charlesen.fr</p>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
+
+```
+
+![](/assets/composant_cards_1.png)
+
+Il est également possible de combiner carte et liste d'éléments comme ceci :
+
+```js
+<ion-header>
+  <ion-navbar color="duckcoin">
+    <ion-title>Ma Page</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-card-header text-center>
+      Formations en cours
+    </ion-card-header>
+    <ion-list>
+      <button ion-item>
+         <ion-icon name="logo-android" item-start></ion-icon>
+         Développer pour Android
+      </button>
+      <button ion-item>
+         <ion-icon name="logo-apple" item-start></ion-icon>
+         Développer pour iOS
+      </button>
+      <button ion-item>
+         <ion-icon name="logo-angular" item-start></ion-icon>
+         Développer avec Angular
+      </button>
+      <button ion-item>
+         <ion-icon name="bug" item-start></ion-icon>
+         Déboggage avancé en JS
+      </button>
+    </ion-list>
+  </ion-card>
+</ion-content>
+```
+
+![](/assets/composant_cards_2.png)
+
+
+
+Ou tout simplement reproduire un design assez proche de celui d'instagram :
+
+```js
+<ion-header>
+  <ion-navbar color="duckcoin">
+    <ion-title>Ma Page</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>  
+  <ion-card>
+    <img src="assets/imgs/duckcoin-mini.png" />
+    <ion-card-content>
+      <ion-card-title>
+        DuckCoin
+      </ion-card-title>
+      <p>
+        C'est la monnaie qui rend aimable, redonne le sourire et change la face du monde. Elle a été faite pour des gens sympas, juste comme toi.
+      </p>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="duckcoin" icon-start>
+          J'aime <ion-icon name='heart'></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="duckcoin" icon-start>
+          <ion-icon name='text'></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="duckcoin" icon-start>
+          Partager <ion-icon name='share-alt'></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>
+
+```
+
+Documentation : https://ionicframework.com/docs/components/\#cards
 
 ## Exercez-vous
 
