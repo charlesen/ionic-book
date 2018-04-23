@@ -4,9 +4,9 @@ Le présent ouvrage sous sa version numérique est placé sous licence MIT. Cett
 
 De plus, les exemples cités dans cet ouvrage sont présentés à titre d'illustration et l'auteur ne recommande pas leur utilisation dans le cadre d'applications destinées à un usage publique ou professionnel.
 
-Cet ouvrage existe également en [version PDF](/assets/ionic-book.pdf) avec les mêmes droits cités précédemment.
+Cet ouvrage existe également en [version PDF](https://tools.charlesen.fr/static/ionic-book.pdf) avec les mêmes droits cités précédemment.
 
-[![](/assets/pdf-icon.png)](/assets/ionic-book.pdf "Télécharger au format pdf")
+[![](/assets/pdf-icon.png)](https://tools.charlesen.fr/static/ionic-book.pdf)
 
 Pour tout renseignement, merci de contacter l'auteur directement depuis son site internet \(menu contact\) ou via les réseaux sociaux :
 
