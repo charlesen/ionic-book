@@ -10,7 +10,12 @@ De plus, les exemples cités dans cet ouvrage sont présentés à titre d'illust
 
 Cet ouvrage existe également en [version PDF](https://tools.charlesen.fr/static/ionic-book.pdf) avec les mêmes droits cités précédemment.
 
+[![](/assets/pdf-icon.png)](https://tools.charlesen.fr/static/ionic-book.pdf)
+
 Pour tout renseignement, merci de contacter l'auteur directement depuis son site internet \(menu contact\) ou via les réseaux sociaux :
 
 * **Site internet** : [https://charlesen.fr](https://charlesen.fr)
 * **Twitter** : [https://twitter.com/charlesen7](https://twitter.com/charlesen7)
+
+
+
