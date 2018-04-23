@@ -381,7 +381,7 @@ Comme nous l'avons vu, il est possible de créer une application mobile à parti
 Ouvrez donc votre terminal et saisissez les commandes suivantes :
 
 ```
-$ ionic start duckcoin https://github.com/charlesen/duckcoin
+$ ionic start duckcoin https://github.com/charlesen/duckcoin-starter
 ```
 
 ![](/assets/ionic_screen_2.png)
@@ -455,11 +455,18 @@ Dans le [chapitre suivant](/chap-4-templates-et-customisation.md), nous allons a
 
 ## Exercez-vous
 
-0\) Faites le tour de l'application pour découvrir un petit peu son architecture
+1\) Créez, si ce n'est déjà fait, l'application duckcoin comme expliqué précédemment
+
+```
+$ ionic start duckcoin https://github.com/charlesen/duckcoin-starter
+$ cd duckcoin
+```
+
+2\) Faites le tour de l'application pour découvrir un petit peu son architecture
 
 ![](/assets/archi_duckcoin.png)
 
-1\) Renommer les différents onglets :
+3\) Renommer les différents onglets :
 
 * Home en _**Accueil**_
 
@@ -469,7 +476,7 @@ Dans le [chapitre suivant](/chap-4-templates-et-customisation.md), nous allons a
 
   * Que se passe t-il dans la console à chaque enregistrement ?
 
-2\) Faites les modifications suivantes dans les onglets
+4\) Faites les modifications suivantes dans les onglets
 
 * **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr). Et renommer la page, de **Home** à _**Duckcoin**_. \(**src/pages/home/home.html\). **Les images sont à placer dans le dossier **src/assets/imgs**.
 
@@ -477,7 +484,7 @@ Dans le [chapitre suivant](/chap-4-templates-et-customisation.md), nous allons a
 
 * **Portefeuille** : Changer l'intitulé de la page en _**Portefeuille**_.
 
-3\) Editez le fichier **theme/variables.scss** et modifier le contenu de la façon suivante :
+5\) Editez le fichier **theme/variables.scss** et modifier le contenu de la façon suivante :
 
 ```js
 // Named Color Variables
@@ -516,9 +523,9 @@ Que s'est-il passé ?
 
 Faites la même chose pour l'ensemble des onglets.
 
-4\) Adaptez le code hexadécimal de la couleur duckcoin pour qu'il soit le plus proche de vos goûts. Le meilleur code couleur sera utilisé dans la suite du projet :-\)
+6\) Adaptez le code hexadécimal de la couleur duckcoin pour qu'il soit le plus proche de vos goûts. Le meilleur code couleur sera utilisé dans la suite du projet :-\)
 
-5\) Renommez les fichiers **about.html** en **mining.html**, **about.scss** en **mining.scss**, **about.scss** en **mining.scss**, **about.ts** en **mining.ts**. Puis, renommer le dossier **about** \(src/pages/about\) en **mining** \(src/pages/mining\).
+7\) Renommez les fichiers **about.html** en **mining.html**, **about.scss** en **mining.scss**, **about.scss** en **mining.scss**, **about.ts** en **mining.ts**. Puis, renommer le dossier **about** \(src/pages/about\) en **mining** \(src/pages/mining\).
 
 Dans le fichier **mining.ts**, remplacez **AboutPage** par **MiningPage**.
 
@@ -526,13 +533,13 @@ Que se passe-t-il dans la console ? Dans votre navigateur ? Quelles solutions pr
 
 ![](/assets/ionic_error2.png)
 
-6\) Editer le fichier **src/app/app.module.ts** de manière à corriger le maximum d'erreurs.
+8\) Editer le fichier **src/app/app.module.ts** de manière à corriger le maximum d'erreurs.
 
-7\) Effectuez les actions précédentes pour l'onglet Portefeuille \(renommage + resolutions de bugs\) : **contact.html** en **wallet.html**, **contact.scss** en **wallet.scss**, **contact.scss** en **wallet.scss**, **contact.ts** en **wallet.ts**.
+9\) Effectuez les actions précédentes pour l'onglet Portefeuille \(renommage + resolutions de bugs\) : **contact.html** en **wallet.html**, **contact.scss** en **wallet.scss**, **contact.scss** en **wallet.scss**, **contact.ts** en **wallet.ts**.
 
 ![](/assets/screen_duck_2.png)
 
-8\) Ajustez le style CSS de la page d'accueil pour rendre le contenu de l'onglet un peu plus joli : **src/pages/home/home.scss**. N'hésitez pas utiliser l'inspecteur de votre navigateur \(F12\).
+10\) Ajustez le style CSS de la page d'accueil pour rendre le contenu de l'onglet un peu plus joli : **src/pages/home/home.scss**. N'hésitez pas utiliser l'inspecteur de votre navigateur \(F12\).
 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
