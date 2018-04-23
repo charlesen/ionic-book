@@ -393,7 +393,7 @@ $ cd duckcoin
 $ ionic serve -lc
 ```
 
-![](/assets/ionic_duckcoin_starter.png)
+![](/assets/screen_app1.png)
 
 ### Struction du projet
 
