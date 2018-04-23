@@ -10,7 +10,7 @@ Vous vouliez afficher du contenu issu d’une API \(rien à voir avec le dieu é
 
 Si vous aviez le malheur de vouloir visualiser vos articles de blog et ceux de vos pages préférés depuis votre iPhone 3G en passant par un flux RSS créés par vos soins, il vous fallait absolument connaître l’Objective-C. Sinon, à moins d'avoir un gros budget et embaucher un développeur mobile, vous seriez contraint de passer votre chemin et plus vite que ça !
 
-Avec le temps, de nombreux projets ont vu le jour pour permettre à tout le monde de se lancer dans l'univers impoyable du développement d'applications mobiles avec des technologies classiques du web \(html, css, javascript\). Beaucoup sont morts-nés, d'autres ont dominé un temps avant de s'éffrondrer. D'autres encore, d'abord tapis dans l'ombre, ont su se démarquer, se réinventer, s'adapter jusqu'à atteindre leur plein potentiel.
+Avec le temps, de nombreux projets ont vu le jour pour permettre à tout le monde de se lancer dans l'univers impitoyable du développement d'applications mobiles, avec des technologies classiques du web \(html, css, javascript\). Beaucoup sont morts-nés, d'autres ont dominé le monde un temps avant de s'éffrondrer. D'autres encore, d'abord tapis dans l'ombre, ont su se démarquer, se réinventer, s'adapter jusqu'à atteindre leur plein potentiel.
 
 ### Une méthode pour les gouverner tous
 
@@ -18,7 +18,7 @@ Il existe différentes façon de développer un produit à destination des mobin
 
 #### Applications web mobiles
 
-Une application web mobile est une version allégée d'un site internet, optimisée pour les écrans de petites tailles \(smartphone, tablette, TV connectée,...\). On parle la plupart du temps de site responsive, car il s'adapte aux caractériques de l'écran du navigateur web.
+Une application web mobile est une version allégée d'un site internet, optimisée pour les écrans de petites tailles \(smartphone, tablette, TV connectée,...\). On parle la plupart du temps de site responsive, car il s'adapte aux caractériques de l'écran du navigateur web. Avec le [PWA, concept abordé au chapitre 12](/chap-12-introduction-au-pwa-avec-stencil-et-capacitor.md), les applications web mobiles sont en passe de dominer le traffic issus des appareils mobiles.
 
 #### Applications natives
 
@@ -33,11 +33,11 @@ Une application mobile est dite native, si le développement effectué pour la c
 
 #### Applications hybrides
 
-Vous vous rappelez du seigneur des anneaux ? Oui ? Et bien les technologies dites _"hybrides"_ sont au mobile, ce que l'anneau de Sauron est à l'univers imaginée par Tolkien[^1].
+Vous vous rappelez du seigneur des anneaux ? Oui ? Et bien les technologies dites _**"hybrides"**_ sont au mobile, ce que l'anneau de Sauron est à l'univers imaginée par Tolkien[^1].
 
 Une application est dite _**hybride**_ si elle est développée pour les smartphones avec les outils classiques du web.
 
-Les applications mobiles hybrides permettent aux développeurs de réutiliser leurs compétences existantes en développement web. Car, c'est bien connu, les développeurs n'aiment pas être bloqués par des contraintes \(maitriser Java, avoir un Mac,...\) imposées par des plates-formes propriétaires.
+Les applications mobiles hybrides permettent aux développeurs de réutiliser leurs compétences existantes en développement web. Car, c'est bien connu, les développeurs n'aiment pas être bloqués par des contraintes \(maitriser Java, avoir absolument un Mac ou un PC windows,...\) imposées par des plates-formes propriétaires.
 
 Le développement d'applications mobiles hybrides est aujoud'hui la méthode la plus attrayante pour la rentabilité d'une organisation. Pourquoi embaucher un développeur pour chaque plate-forme lorsque vous pouvez embaucher un développeur et les cibler toutes grâce à des technologies aussi connues que HTML, CSS et JavaScript?.
 
@@ -61,7 +61,7 @@ Une application hybride est avant tout une application native. Elle est téléch
 
 Une application hybride s'exécute dans un genre de navigateur en plein écran, appelé _**WebView**_, invisible pour l'utilisateur. Grâce à des plugins natifs personnalisables, elle peut accéder aux fonctionnalités natives de périphériques mobiles spécifiques \(caméra, contacts, agenda,...\), sans que le code principal ne soit lié à cet appareil.
 
-Cela signifie que les applications hybrides peuvent fonctionner sur n'importe quelle plate-forme ou périphérique, tous à partir d'une base de code unique, tout en offrant un aspect et une convivialité natifs.
+Cela signifie que les applications hybrides peuvent fonctionner sur n'importe quelle plate-forme ou périphérique, tout cela à partir d'une base de code unique, tout en offrant un aspect et une convivialité natifs.
 
 Le schema en couche ci-dessous permet une meilleure comparaison de ce qu'une application hybride est vis-à-vis du natif et du web mobile :![](/assets/webview_schema.jpg)
 
@@ -92,31 +92,35 @@ Préparez-vous de toute façon, si votre choix se porte sur le natif, à parler 
 
 Si vous souhaitez distribuer votre application via une boutique d'applications mobiles, vous devrez alors créer soit une application hybride, soit une native. Vous aurez dans tous les cas besoin d'un site internet qui servira de plateforme à vos utilisateurs au cas où ils rencontreraient des problèmes avec votre application mobile.
 
+Sinon, là aussi une application web mobile ou [PWA](/chap-12-introduction-au-pwa-avec-stencil-et-capacitor.md) devrait suffire.
+
 #### Vous cherchez à utiliser des fonctionnalités clés de l'appareil mobile?
 
-Grâce aux PWA \(Progressive Web Apps\), on peut faire énormément de choses depuis un site mobile et utiliser des fonctionnalités qui dans le passé n'étaient accessible qu'en développement natif ou hybride. Je consacre un chapitre entier à cette technologie à la fin de ce livre.
+Grâce aux PWA \(Progressive Web Apps\), on peut faire énormément de choses depuis un site mobile et utiliser des fonctionnalités qui dans le passé n'étaient accessibles qu'en développement natif ou hybride. Je consacre un chapitre entier à cette technologie à la [fin de ce livre](/chap-12-introduction-au-pwa-avec-stencil-et-capacitor.md).
 
 Mais si les fonctions que vous ciblez dépassent le cadre du PWA, là aussi pas le choix, vous devrez passer par l'Hybride ou le natif. Et si vous souhaitez être irréprochable niveau interface utilisateur et performance, alors le natif devra être votre premier choix.
 
 #### Quelles sont vos capacités techniques et/ou celle de votre équipe de développement ?
 
-Grande question encore et loin d'être la moins importante. Si vous avez une grosse équipe de développement, vous êtes alors à l'abri de nombreux soucis. Vous aurez le choix d'utiliser l'une ou autre des trois méthodes précédentes. Vous êtes riche et donc vous le valez bien.
+Grande question encore et loin d'être la moins importante. Si vous avez une grosse équipe de développement, vous êtes alors à l'abri de nombreux soucis. Vous aurez le choix d'utiliser l'une ou autre des trois méthodes précédentes. Vous êtes riche et vous le valez bien.
 
 Vous aurez besoin, pour créer une application native, de développeurs expérimentés, maîtrisant à la fois les SDK \(outils de développement\)  et les langages de programmation de chaque plate-forme que vous souhaitez cibler.
 
-Mais si vous souhaitez ne pas mettre profit autant de compétences techniques pour un miniscule projet qui ne vous rapportera pas plus de 1% de votre chiffre d'affaires, alors cela vaudra peut être la peine de réfléchir à l'option Hybride qui pourrait vous faire économiser énormément de temps et d'argent.
+Mais si vous souhaitez ne pas mettre à profit autant de compétences techniques pour un miniscule projet qui ne vous rapportera pas plus de 1% de votre chiffre d'affaires, alors cela vaudrait peut être la peine de réfléchir à l'option Hybride qui pourrait vous faire économiser énormément de temps et d'argent. Payez ensuite des vacances à vos collaborateurs avec l'argent économisé via une prime d'intéressement ou exceptionnelle par exemple.
 
-Ça tombe bien, Ionic permet la création d'applications hybrides et ce livre est là pour vous aider à décoller de la meilleure des façons.
+
+
+Dans la plupart des cas, développer en mode hybride offre le meilleur rapport qualité/prix, surtout si vous démarrez une première version de votre application. Ça tombe bien, Ionic permet la création d'applications hybrides et ce livre est là pour vous aider à décoller de la meilleure façon qui soit.
 
 ## Pourquoi choisir Ionic ?
 
 ### Open Source et 100% gratuit
 
-Un avantage non considérable, surtout si l'on souhaite customiser un peu son travail, l'adapter à son contexte professionnel,...Gratuit, mais pas bradé pour autant. En effet, l'inconvénient d'un outil Open Source à parfois été son absence d'évolution et d'adaptation aux défis technologiques. Ce n'est pas le cas de Ionic, qui est par exemple passé d'une version 1 déjà révolutionnaire, à une version 3 extrêmement riche. Au moment de la rédaction de ce livre, une version 4 s'apprete à être lancé publiquement.
+Un avantage non considérable, surtout si l'on souhaite customiser un peu son travail, l'adapter à son contexte professionnel,...Gratuit, mais pas bradé pour autant. En effet, l'inconvénient d'un outil Open Source à parfois été son absence d'évolution et d'adaptation aux défis technologiques toujours plus important dans le temps. Ce n'est pas le cas de Ionic, qui est par exemple passé d'une version 1 déjà révolutionnaire, à une version 3 extrêmement riche. Au moment de la rédaction de ce livre, une version 4 \(en phase alpha\) s'apprete à être lancé publiquement.
 
 ### Une large communauté
 
-Qui n'a jamais connu la frustration de ne pas recevoir de réponse à sa question sur un forum destiné à vous accompagner dans l'utilisation de votre logiciel préféré ? Avec Ionic, il y a quasiment peu de chance que cela vous arrive. En plus d'une documentation déjà tres riche et simple à prendre en main, le Framework fèdère une très large communauté de développeurs enthousiaste près à vous aider en cas de pepin.
+Qui n'a jamais connu la frustration de ne pas recevoir de réponse à sa question sur un forum destiné à vous accompagner dans l'utilisation de votre logiciel préféré ? Avec Ionic, il y a quasiment peu de chance que cela vous arrive. En plus d'une documentation déjà tres riche et simple à prendre en main, le Framework fèdère une très large communauté de développeurs enthousiastes près à vous aider en cas de pepin.
 
 Rien que sur Stackoverflow en ce moment, le tag  ["ionic framework"](https://stackoverflow.com/tags/ionic-framework/info) est associé à plus de 31700 questions, c'est quasiment autant de réponses données sur ce site d'entraide.
 
@@ -132,26 +136,26 @@ Et oui, c'est surement l'un des plus gros avantages de Ionic : la possibilité d
 
 ![](/assets/Ionic-Framework-Training1.png)
 
-Alors que la plupart des outils de développement d'applications mobiles hybrides sont difficiles d'accès, parfois peu ou mal documentés, Ionic propose une architecture beaucoup plus simple utiliser et une documentation claire, concise.
+Alors que la plupart des outils de développement d'applications mobiles hybrides sont difficiles d'accès, parfois peu ou mal documentés, Ionic propose une architecture beaucoup plus simple utiliser et une documentation claire et concise.
 
 ### Des composants logiciels élégants
 
-Le framework proposent de nombreux composants et templates qui vous faciliteront énormément la vie. Pas besoin d'être un expert UX pour commencer à créer des applications élégante et ergonomiques : quelques clics et quelques lignes de codes suffisent.
+Le framework proposent de nombreux composants et templates qui vous faciliteront énormément la vie. Pas besoin d'être un expert UX pour commencer à créer des applications mobiles élégantes et ergonomiques : quelques clics et quelques lignes de codes suffisent.
 
 ![](/assets/screenshot_6_tiny.png)![](/assets/screenshot_4_tiny.png)
 
 ### Tests et debogage simples
 
-Tester une application mobile n'aura jamais été aussi simple. Ionic vous laisse le choix de tester votre application mobile soit directement depuis votre navigateur préféré, depuis un emulateur, votre téléphone connecté en USB ou alors via les applications Ionic App Dev et Ionic View \(qui vous permet en autre de faire tester votre application à distance sans passer par un app store\).
+Tester une application mobile n'aura jamais été aussi simple. Ionic vous laisse le choix de tester votre application mobile soit directement depuis votre navigateur préféré, depuis un emulateur, votre téléphone connecté en USB ou alors via les applications [Ionic App Dev](https://ionicframework.com/docs/pro/devapp/) et [Ionic View](https://ionicframework.com/pro/view) \(qui vous permet en autre de faire tester votre application à distance sans passer par un app store\).
 
 ### Un ecosystème riche
 
 Une autre force de Ionic est très certainement son large panel de produits à la disposition des développeurs. On peut citer par exemple :
 
-* [**Les outils de déboggages**](https://ionicframework.com/pro/view) : Ionic view et Ionic Dev app
-* [**Ionic Cloud**](https://ionicframework.com/pro/deploy) : pour la gestion de son code, le build, la publication sur les app stores et le monitoring \(bug, logs, statistiques,...\)
+* [**Les outils de déboggages**](https://ionicframework.com/pro/view) : Ionic view et Ionic Dev app, comme vu précédemment.
+* [**Ionic Cloud**](https://ionicframework.com/pro/deploy) : pour l'hébergement de son code \(à la github\), la compilation, la publication sur les app stores et le monitoring \(bug, logs, statistiques,...\)
 * [**Ionic creator**](https://ionicframework.com/pro/creator) : pour créer une application sans saisir une seule ligne de code. Pratique quand on débute.
-* [**Ionic Market**](https://market.ionicframework.com/) : pour trouver des templates, des kits, des plugins, gratuits et prêts à l'emploie. Pour mettre à la vente vos propres réalisations ou pour tout simplement trouver l'inspirations
+* [**Ionic Market**](https://market.ionicframework.com/) : pour trouver l'inspiration grâce à des templates, des kits, des plugins,... gratuits et prêts à l'emploi. Vous pouvez aussi utiliser cette plateforme pour mettre à la vente vos propres réalisations
 
 [^1]: John Ronald Reuel Tolkien, plus connu sous la forme J. R. R. Tolkien, est un écrivain, poète, philologue, essayiste et professeur d’université anglais. Il est principalement connu pour ses romans _Le Hobbit_ et Le Seigneur des anneaux. \(Sources : [wikipédia](https://fr.wikipedia.org/wiki/J._R._R._Tolkien)\). 
 
