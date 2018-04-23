@@ -1,15 +1,11 @@
 {
-  "plugins": ["disqus", "-lunr", "-search", "download-pdf-link"],
+  "plugins": ["disqus", "-lunr", "-search"],
   "links": {
     "sidebar": {}
   },
   "pluginsConfig": {
     "disqus": {
       "shortName": "ionic-edounze-com"
-    },
-    "download-pdf-link": {
-      "base": "https://www.gitbook.com/book/charlesen1/developpez-des-applications-avec-ionic/",
-      "label":"Télécharger le PDF"
     }
   }
 }
