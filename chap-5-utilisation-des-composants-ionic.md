@@ -80,15 +80,104 @@ Documentation : [https://ionicframework.com/docs/components/\#buttons](https://i
 
 ### Composant Liste
 
-Comme son nom peut le suggérer, ce composant va nous permettre d'ajouter une liste d'éléments à notre application
+Comme son nom peut le suggérer, ce composant va nous permettre d'ajouter une liste d'éléments à notre application. Affichons par exemple la liste des principales cryptomonnaies en avril 2018 :
 
-Documentation :
+**src/pages/mapage/mapage.html**
+
+```js
+<ion-header>
+  <ion-navbar color="duckcoin">
+    <ion-title>Ma Page</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-list-header text-center>
+      TOP 10 des cryptos en Avril 2018
+    </ion-list-header>
+    <ion-item *ngFor="let crypto of cryptos">
+      <strong>{{ crypto.name }}</strong> vaut environ {{ crypto.price}}
+    </ion-item>
+  </ion-list>
+</ion-content>
+```
+
+src/pages/mapage/mapage.ts
+
+```js
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+@IonicPage()
+@Component({
+  selector: 'page-mapage',
+  templateUrl: 'mapage.html',
+})
+export class MaPagePage {
+  cryptos: any = [];
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.cryptos = [
+      { 'name': 'Bitcoin', 'price': '$8883,45' },
+      { 'name': 'Ethereum', 'price': '$$635,25' },
+      { 'name': 'Ripple', 'price': '$0,873466' },
+      { 'name': 'Bitcoin Cash', 'price': '$1 392,80' },
+      { 'name': 'EOS', 'price': '$11,57' },
+      { 'name': 'Litecoin', 'price': '$150,95' },
+      { 'name': 'Cardano', 'price': '$0,288146' },
+      { 'name': 'Stellar', 'price': '$0,373197' },
+      { 'name': 'IOTA', 'price': '$2,12' },
+      { 'name': 'NEO', 'price': '$76,89' }
+    ];
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad SettingPage');
+  }
+
+}
+
+```
+
+Qui donne :
+
+![](/assets/composant_liste_2.png)
+
+Documentation : [https://ionicframework.com/docs/components/\#lists](https://ionicframework.com/docs/components/#lists)
 
 ### Composant Select
 
-Le composant va nous permettre d'ajouter
+Le composant est similaire au tag htlml &lt;select&gt;&lt;/select&gt; et va donc nous permettre d'afficher une liste de choix. Affichons par exemple ici la liste des 5 premières cryptomonnaies par capitalisation boursière :
 
+```js
+<ion-header>
+  <ion-navbar color="duckcoin">
+    <ion-title>Ma Page</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-list-header text-center>
+    TOP 10 des cryptos en Avril 2018
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Choisir dans la liste</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="btc">Bitcoin</ion-option>
+        <ion-option value="xrp">Ethereum</ion-option>
+        <ion-option value="xrp">Ripple</ion-option>
+        <ion-option value="bch">Bitcoin Cash</ion-option>
+        <ion-option value="eos">EOS</ion-option>
+        <ion-option value="ltc">Litecoin</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>
 
+```
+
+![](/assets/composant_select.png)
+
+Documentation : [https://ionicframework.com/docs/components/\#select](https://ionicframework.com/docs/components/#select)
 
 ### Composant Cards
 
@@ -119,7 +208,6 @@ Les cartes sont un bon moyen d'afficher des informations importantes à destinat
 
   </ion-card>
 </ion-content>
-
 ```
 
 ![](/assets/composant_cards_1.png)
@@ -161,9 +249,7 @@ Il est également possible de combiner carte et liste d'éléments comme ceci :
 
 ![](/assets/composant_cards_2.png)
 
-
-
-Ou tout simplement reproduire un design assez proche de celui d'instagram :
+Ou tout simplement reproduire un design assez proche de réseaux sociaux comme Instagram :
 
 ```js
 <ion-header>
@@ -171,7 +257,7 @@ Ou tout simplement reproduire un design assez proche de celui d'instagram :
     <ion-title>Ma Page</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding>  
+<ion-content padding>
   <ion-card>
     <img src="assets/imgs/duckcoin-mini.png" />
     <ion-card-content>
@@ -184,27 +270,31 @@ Ou tout simplement reproduire un design assez proche de celui d'instagram :
     </ion-card-content>
     <ion-row no-padding>
       <ion-col>
-        <button ion-button clear small color="duckcoin" icon-start>
+        <button ion-button clear small color="duckcoin" icon-medium icon-start>
           J'aime <ion-icon name='heart'></ion-icon>
         </button>
       </ion-col>
-      <ion-col text-center>
-        <button ion-button clear small color="duckcoin" icon-start>
-          <ion-icon name='text'></ion-icon>
-        </button>
-      </ion-col>
       <ion-col text-right>
-        <button ion-button clear small color="duckcoin" icon-start>
+        <button ion-button clear small color="duckcoin" icon-medium icon-start>
           Partager <ion-icon name='share-alt'></ion-icon>
         </button>
       </ion-col>
     </ion-row>
   </ion-card>
 </ion-content>
-
 ```
 
-Documentation : https://ionicframework.com/docs/components/\#cards
+![](/assets/composant_card_3.png)
+
+Documentation : [https://ionicframework.com/docs/components/\#cards](https://ionicframework.com/docs/components/#cards)
+
+
+
+### Composant Fab
+
+
+
+
 
 ## Exercez-vous
 
