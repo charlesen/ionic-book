@@ -9,10 +9,7 @@
     },
     "download-pdf-link": {
       "base": "https://www.gitbook.com/book/charlesen1/developpez-des-applications-avec-ionic/",
-      "label": {
-          "en": "Download PDF",
-          "fr": "Télécharger le PDF"
-      }
+      "label":"Télécharger le PDF"
     }
   }
 }
