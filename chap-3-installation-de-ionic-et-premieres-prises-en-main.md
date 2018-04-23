@@ -34,25 +34,23 @@ De plus, NodeJS, à l'instar de Ionic, est Open Source, gratuit et disponible po
 
 ![](/assets/npm.png)
 
-Comme son nom peut le suggérer, NPM est le gestionnaire de packet de NodeJS, qui étant très modulaire, voit son ecosystème  constamment enrichie par des modules développés par les membres de sa large communauté.
+Comme son nom peut le suggérer, NPM est le gestionnaire de packet de NodeJS, qui étant très modulaire, voit son ecosystème  constamment enrichi par des modules développés par les membres de sa large communauté.
 
 ### Installation
 
-#### Windows
+#### Windows et Mac OS
 
-Pour installer NodeJS, il suffit simplement d'aller à l'adresse : [https://nodejs.org/en/download/](https://nodejs.org/en/download/), de télécharger le gestionnaire d'installation au format **.msi** et se laisser guider. Le gestionnaire installera également NPM.
+Pour installer NodeJS, il suffit simplement d'aller à l'adresse : [https://nodejs.org/en/download/](https://nodejs.org/en/download/), de télécharger le gestionnaire d'installation au format **.msi** pour windows et **.pkg** pour Mac OS. Laissez-vous ensuite simplement guider. Le gestionnaire installera également NPM.
 
-Ouvrez un invite de commande en saisissant Windows + R, puis cmd, et depuis cet invite, saisir :
+![](/assets/screen_install_nodejs_1.png)
+
+Ouvrez un invite de commande et saisissez :
 
 ```
 node -v
 ```
 
 Vous devriez voir s'afficher la version actuelle de NodeJs.
-
-#### Mac OS
-
-L'installation sous Mac OS est à peu près la même que sous Windows car il vous suffit de cliquer sur la version Node correspondant à cet OS. D'ailleurs en visitant simplement le site [https://nodejs.org/en/download/](https://nodejs.org/en/download/), une version adaptée à votre  système d'exploitation vous sera proposée automatiquement.
 
 #### Linux \(Ubuntu\)
 
@@ -80,15 +78,15 @@ v8.11.1
 
 ## Ionic CLI et Cordova
 
-Une fois Node et NPM installés, le reste se passera en ligne de commande. Ouvrez donc votre terminal préféré et saisissez les commandes suivantes pour installer Ionic et Cordova :
+Une fois Node et NPM installés, le reste se passera en ligne de commandes. Ouvrez donc votre terminal préféré et saisissez les commandes suivantes pour installer Ionic et Cordova :
 
 ```
 $ sudo npm install -g ionic cordova
 ```
 
-Le paramètre _"-g"_ permet une installation global de ces outils. De cette manière, vous n'aurez pas besoin d'être dans un repertoire particulier pour utiliser les commandes **ionic** ou **cordova**.
+Le paramètre _**"-g"**_ permet une installation globale de ces outils. De cette manière, vous n'aurez pas besoin d'être dans un repertoire particulier pour utiliser les commandes **ionic** ou **cordova, **sauf pour des actions comme la compilation qui requiert d'être à l'intérieur d'un projet.
 
-Ce paramètre implique aussi que vous devrez lancer les commandes précédentes en tant qu'Admin sous Windows \(clic-droit, démarrer l'invite de commande en tant qu'administrateur\) et que sous Linux, vous êtes obligé d'utiliser le _"sudo"_.
+Ce paramètre implique aussi que vous devrez lancer les commandes précédentes en tant qu'Admin sous Windows \(clic-droit, démarrer l'invite de commande en tant qu'administrateur\) et que sous Linux, vous êtes obligé d'utiliser le _"sudo"_. Il bien sûr possible de se passer d'un "sudo" en bricolant un peu sa config npm[^2], mais ceci dépasse l'objet de ce livre.
 
 Avant d'aller plus loin, il sera nécessaire d'installer d'autres logiciels comme le SDK de Java ou celui d'Android. Si ces logiciels sont déjà installé, vous pourrez directement passer à la suite, sinon, suivez le guide.
 
@@ -158,7 +156,7 @@ $ ios-sim –version # Pour vérifier que tout s'est bien passé
 
 ### Git
 
-Ionic utilise le gestionnaire de dépôt Git dans son workflow de développement actuel. Pour l'installer, rien de plus simple, il vous suffit d'aller sur la page de téléchargement suivante : [https://git-scm.com/downloads](https://git-scm.com/downloads) et choisir le paquet correspondant à votre OS.
+Ionic utilise le gestionnaire de dépôt Git dans son workflow de développement actuel. Pour l'installer, rien de plus simple, il vous suffit d'aller à la page de téléchargement suivante : [https://git-scm.com/downloads](https://git-scm.com/downloads) et choisir le paquet correspondant à votre OS.
 
 Sous Linux, il est également possible de l'installer en saisissant simplement la commande :
 
@@ -395,7 +393,7 @@ $ cd duckcoin
 $ ionic serve -lc
 ```
 
-![](/assets/screen_app1.png)
+![](/assets/ionic_duckcoin_starter.png)
 
 ### Struction du projet
 
@@ -537,4 +535,6 @@ Que se passe-t-il dans la console ? Dans votre navigateur ? Quelles solutions pr
 8\) Ajustez le style CSS de la page d'accueil pour rendre le contenu de l'onglet un peu plus joli : **src/pages/home/home.scss**. N'hésitez pas utiliser l'inspecteur de votre navigateur \(F12\).
 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
+
+[^2]: _How to prevent permission errors_ : [https://docs.npmjs.com/getting-started/fixing-npm-permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
 
