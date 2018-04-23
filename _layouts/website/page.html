@@ -27,7 +27,17 @@
 {% endblock %}
 
 {% block body %}
-<div class="book">
+<div class="book" itemprop="mainEntity" itemscope itemtype="http://schema.org/Book">
+    <meta itemprop="name" content="Développement d'applications mobiles avec Ionic">
+    <meta itemprop="bookFormat" content="http://schema.org/EBook">
+    <meta itemprop="author" content="Charles EDOU NZE">
+
+    <div itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <link itemprop="sameAs" href="https://charlesen.fr/" />
+      <meta itemprop="image" content="https://ionic.mobiletuto.com/assets/photo_profil_pvx_small.jpg">
+      <meta itemprop="name" content="Charles EDOU NZE">
+    </div>
+
     <div class="book-summary">
         {% block book_sidebar %}
             {% block search_input %}{% endblock %}
