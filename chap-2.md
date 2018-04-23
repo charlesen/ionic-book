@@ -6,7 +6,7 @@ Après réflexion, et aimant surfer sur les tendances technologiques du moment, 
 
 Un site internet a été créé pour l'occasion. Vous pourrez le visiter, vous inscrire et tester notre cryptomonnaie solidaire : [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr)![](/assets/duckcoin.png)
 
-De plus, les sources finales de ce projet sont disponibles librement à l'adresse : https://github.com/charlesen/duckcoin.
+De plus, le code source de ce projet est librement disponible à l'adresse : [https://github.com/charlesen/duckcoin](https://github.com/charlesen/duckcoin).
 
 ## Cryptomonnaies et blockchain
 
