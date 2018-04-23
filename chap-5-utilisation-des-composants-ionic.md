@@ -298,7 +298,6 @@ Ce composant est issu du Material Design, un ensemble de règles de design propo
     <button ion-fab><ion-icon name="send"></ion-icon></button>
   </ion-fab-list>
 </ion-fab>
-
 ```
 
 On peut choisir d'afficher notre fab sur une tout au position que en bas à droite \(**bottom right**\). Affichons-le par exemple en haut à gauche
@@ -311,7 +310,6 @@ On peut choisir d'afficher notre fab sur une tout au position que en bas à droi
     <button ion-fab><ion-icon name="send"></ion-icon></button>
   </ion-fab-list>
 </ion-fab>
-
 ```
 
 ![](/assets/composant_fab_2.png)
@@ -336,8 +334,9 @@ De plus, pour modifier la direction d'affichage de la liste d'action, il suffit 
     <button ion-fab><ion-icon name="send"></ion-icon></button>
   </ion-fab-list>
 </ion-fab>
-
 ```
+
+![](/assets/composant_fab_3.png)
 
 Documentation : [https://ionicframework.com/docs/api/components/fab/FabButton/](https://ionicframework.com/docs/api/components/fab/FabButton/)
 
