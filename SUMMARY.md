@@ -1,7 +1,6 @@
 # Summary
 
 * [Couverture](README.md)
-* [Tables matières](tables-matieres.md)
 * [Copyright](copyright.md)
 * [A propos de l'auteur](a-propos-de-lauteur.md)
 * [Introduction](introduction.md)

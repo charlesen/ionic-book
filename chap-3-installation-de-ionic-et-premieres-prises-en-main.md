@@ -34,25 +34,23 @@ De plus, NodeJS, à l'instar de Ionic, est Open Source, gratuit et disponible po
 
 ![](/assets/npm.png)
 
-Comme son nom peut le suggérer, NPM est le gestionnaire de packet de NodeJS, qui étant très modulaire, voit son ecosystème  constamment enrichie par des modules développés par les membres de sa large communauté.
+Comme son nom peut le suggérer, NPM est le gestionnaire de packet de NodeJS, qui étant très modulaire, voit son ecosystème  constamment enrichi par des modules développés par les membres de sa large communauté.
 
 ### Installation
 
-#### Windows
+#### Windows et Mac OS
 
-Pour installer NodeJS, il suffit simplement d'aller à l'adresse : [https://nodejs.org/en/download/](https://nodejs.org/en/download/), de télécharger le gestionnaire d'installation au format **.msi** et se laisser guider. Le gestionnaire installera également NPM.
+Pour installer NodeJS, il suffit simplement d'aller à l'adresse : [https://nodejs.org/en/download/](https://nodejs.org/en/download/), de télécharger le gestionnaire d'installation au format **.msi** pour windows et **.pkg** pour Mac OS. Laissez-vous ensuite simplement guider. Le gestionnaire installera également NPM.
 
-Ouvrez un invite de commande en saisissant Windows + R, puis cmd, et depuis cet invite, saisir :
+![](/assets/screen_install_nodejs_1.png)
+
+Ouvrez un invite de commande et saisissez :
 
 ```
 node -v
 ```
 
 Vous devriez voir s'afficher la version actuelle de NodeJs.
-
-#### Mac OS
-
-L'installation sous Mac OS est à peu près la même que sous Windows car il vous suffit de cliquer sur la version Node correspondant à cet OS. D'ailleurs en visitant simplement le site [https://nodejs.org/en/download/](https://nodejs.org/en/download/), une version adaptée à votre  système d'exploitation vous sera proposée automatiquement.
 
 #### Linux \(Ubuntu\)
 
@@ -80,15 +78,15 @@ v8.11.1
 
 ## Ionic CLI et Cordova
 
-Une fois Node et NPM installés, le reste se passera en ligne de commande. Ouvrez donc votre terminal préféré et saisissez les commandes suivantes pour installer Ionic et Cordova :
+Une fois Node et NPM installés, le reste se passera en ligne de commandes. Ouvrez donc votre terminal préféré et saisissez les commandes suivantes pour installer Ionic et Cordova :
 
 ```
 $ sudo npm install -g ionic cordova
 ```
 
-Le paramètre _"-g"_ permet une installation global de ces outils. De cette manière, vous n'aurez pas besoin d'être dans un repertoire particulier pour utiliser les commandes **ionic** ou **cordova**.
+Le paramètre _**"-g"**_ permet une installation globale de ces outils. De cette manière, vous n'aurez pas besoin d'être dans un repertoire particulier pour utiliser les commandes **ionic** ou **cordova, **sauf pour des actions comme la compilation qui requiert d'être à l'intérieur d'un projet.
 
-Ce paramètre implique aussi que vous devrez lancer les commandes précédentes en tant qu'Admin sous Windows \(clic-droit, démarrer l'invite de commande en tant qu'administrateur\) et que sous Linux, vous êtes obligé d'utiliser le _"sudo"_.
+Ce paramètre implique aussi que vous devrez lancer les commandes précédentes en tant qu'Admin sous Windows \(clic-droit, démarrer l'invite de commande en tant qu'administrateur\) et que sous Linux, vous êtes obligé d'utiliser le _"sudo"_. Il bien sûr possible de se passer d'un "sudo" en bricolant un peu sa config npm[^2], mais ceci dépasse l'objet de ce livre.
 
 Avant d'aller plus loin, il sera nécessaire d'installer d'autres logiciels comme le SDK de Java ou celui d'Android. Si ces logiciels sont déjà installé, vous pourrez directement passer à la suite, sinon, suivez le guide.
 
@@ -158,7 +156,7 @@ $ ios-sim –version # Pour vérifier que tout s'est bien passé
 
 ### Git
 
-Ionic utilise le gestionnaire de dépôt Git dans son workflow de développement actuel. Pour l'installer, rien de plus simple, il vous suffit d'aller sur la page de téléchargement suivante : [https://git-scm.com/downloads](https://git-scm.com/downloads) et choisir le paquet correspondant à votre OS.
+Ionic utilise le gestionnaire de dépôt Git dans son workflow de développement actuel. Pour l'installer, rien de plus simple, il vous suffit d'aller à la page de téléchargement suivante : [https://git-scm.com/downloads](https://git-scm.com/downloads) et choisir le paquet correspondant à votre OS.
 
 Sous Linux, il est également possible de l'installer en saisissant simplement la commande :
 
@@ -383,7 +381,7 @@ Comme nous l'avons vu, il est possible de créer une application mobile à parti
 Ouvrez donc votre terminal et saisissez les commandes suivantes :
 
 ```
-$ ionic start duckcoin https://github.com/charlesen/duckcoin
+$ ionic start duckcoin https://github.com/charlesen/duckcoin-starter
 ```
 
 ![](/assets/ionic_screen_2.png)
@@ -457,11 +455,18 @@ Dans le [chapitre suivant](/chap-4-templates-et-customisation.md), nous allons a
 
 ## Exercez-vous
 
-0\) Faites le tour de l'application pour découvrir un petit peu son architecture
+1\) Créez, si ce n'est déjà fait, l'application duckcoin comme expliqué précédemment
+
+```
+$ ionic start duckcoin https://github.com/charlesen/duckcoin-starter
+$ cd duckcoin
+```
+
+2\) Faites le tour de l'application pour découvrir un petit peu son architecture
 
 ![](/assets/archi_duckcoin.png)
 
-1\) Renommer les différents onglets :
+3\) Renommer les différents onglets :
 
 * Home en _**Accueil**_
 
@@ -471,7 +476,7 @@ Dans le [chapitre suivant](/chap-4-templates-et-customisation.md), nous allons a
 
   * Que se passe t-il dans la console à chaque enregistrement ?
 
-2\) Faites les modifications suivantes dans les onglets
+4\) Faites les modifications suivantes dans les onglets
 
 * **Accueil** : changez le contenu de l'onglet par le contenu de la page d'accueil du site [https://duckcoin.charlesen.fr](https://duckcoin.charlesen.fr). Et renommer la page, de **Home** à _**Duckcoin**_. \(**src/pages/home/home.html\). **Les images sont à placer dans le dossier **src/assets/imgs**.
 
@@ -479,7 +484,7 @@ Dans le [chapitre suivant](/chap-4-templates-et-customisation.md), nous allons a
 
 * **Portefeuille** : Changer l'intitulé de la page en _**Portefeuille**_.
 
-3\) Editez le fichier **theme/variables.scss** et modifier le contenu de la façon suivante :
+5\) Editez le fichier **theme/variables.scss** et modifier le contenu de la façon suivante :
 
 ```js
 // Named Color Variables
@@ -518,9 +523,9 @@ Que s'est-il passé ?
 
 Faites la même chose pour l'ensemble des onglets.
 
-4\) Adaptez le code hexadécimal de la couleur duckcoin pour qu'il soit le plus proche de vos goûts. Le meilleur code couleur sera utilisé dans la suite du projet :-\)
+6\) Adaptez le code hexadécimal de la couleur duckcoin pour qu'il soit le plus proche de vos goûts. Le meilleur code couleur sera utilisé dans la suite du projet :-\)
 
-5\) Renommez les fichiers **about.html** en **mining.html**, **about.scss** en **mining.scss**, **about.scss** en **mining.scss**, **about.ts** en **mining.ts**. Puis, renommer le dossier **about** \(src/pages/about\) en **mining** \(src/pages/mining\).
+7\) Renommez les fichiers **about.html** en **mining.html**, **about.scss** en **mining.scss**, **about.scss** en **mining.scss**, **about.ts** en **mining.ts**. Puis, renommer le dossier **about** \(src/pages/about\) en **mining** \(src/pages/mining\).
 
 Dans le fichier **mining.ts**, remplacez **AboutPage** par **MiningPage**.
 
@@ -528,13 +533,41 @@ Que se passe-t-il dans la console ? Dans votre navigateur ? Quelles solutions pr
 
 ![](/assets/ionic_error2.png)
 
-6\) Editer le fichier **src/app/app.module.ts** de manière à corriger le maximum d'erreurs.
+8\) Editer le fichier **src/app/app.module.ts** de manière à corriger le maximum d'erreurs.
 
-7\) Effectuez les actions précédentes pour l'onglet Portefeuille \(renommage + resolutions de bugs\) : **contact.html** en **wallet.html**, **contact.scss** en **wallet.scss**, **contact.scss** en **wallet.scss**, **contact.ts** en **wallet.ts**.
+9\) Effectuez les actions précédentes pour l'onglet Portefeuille \(renommage + resolutions de bugs\) : **contact.html** en **wallet.html**, **contact.scss** en **wallet.scss**, **contact.scss** en **wallet.scss**, **contact.ts** en **wallet.ts**.
 
 ![](/assets/screen_duck_2.png)
 
-8\) Ajustez le style CSS de la page d'accueil pour rendre le contenu de l'onglet un peu plus joli : **src/pages/home/home.scss**. N'hésitez pas utiliser l'inspecteur de votre navigateur \(F12\).
+10\) Ajustez le style CSS de la page d'accueil pour rendre le contenu de l'onglet un peu plus joli : **src/pages/home/home.scss**. N'hésitez pas utiliser l'inspecteur de votre navigateur \(F12\).
+
+11\) Nous allons à présent lier notre application au service Ionic PRO. Dans votre invite de commandes, faites :
+
+```
+$ ionic link 
+✔ Looking up your apps - done!
+
+? Which app would you like to link (Use arrow keys)
+❯ Create a new app 
+  Duckcoin-starter (94d675be) 
+  Duckcoin (20e8461e) 
+
+```
+
+Dans la liste qui vous est proposée, choisir l'application que vous avez créée depuis votre espace Ionic PRO.
+
+Il vous sera également proposé d'héberger votre application soit sur Github, soit sur le cloud Ionic. Pour les raisons de ce TP nous utiliserons Ionic PRO, mais vous pouvez très bien aussi utilisé github \(votre code source sera alors public\).
+
+```
+> ionic git remote
+> git remote add ionic git@git.ionicjs.com:charlesen/duckcoin-starter.git
+[OK] Added remote ionic.
+[OK] Project linked with app 94d675be!
+```
+
+Editez ensuite le fichier **ionic.config.json**. Que remarquez-vous ?
 
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
+
+[^2]: _How to prevent permission errors_ : [https://docs.npmjs.com/getting-started/fixing-npm-permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
 

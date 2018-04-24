@@ -1,13 +1,14 @@
-<!DOCTYPE HTML>
-<html lang="{{ config.language }}" {% if page.dir == "rtl" %}dir="rtl"{% endif %}>
+<!doctype html>
+<html amp lang="fr" {% if page.dir == "rtl" %}dir="rtl"{% endif %}>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>{% block title %}{{ config.title|d("Développement d'applications mobiles avec Ionic", true) }}{% endblock %}</title>
+        <link rel="canonical" href="{{file.path}}">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="{% block description %}{% endblock %}">
         <meta name="generator" content="GitBook {{ gitbook.version }}">
-          <meta name="author" content="Charles EDOU NZE">
+        <meta name="author" content="Charles EDOU NZE">
         {% if config.author %}<meta name="author" content="{{ config.author }}">{% endif %}
         {% if config.isbn %}<meta name="identifier" content="{{ config.isbn }}" scheme="ISBN">{% endif %}
         {% block style %}
@@ -21,8 +22,16 @@
         {% endblock %}
         {% block head %}{% endblock %}
     </head>
-    <body>
+    <body itemscope itemtype="http://schema.org/WebPage">
         {% block body %}{% endblock %}
         {% block javascript %}{% endblock %}
     </body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7688142-15"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-7688142-15');
+    </script>
 </html>
