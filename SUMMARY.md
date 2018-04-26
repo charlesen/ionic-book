@@ -4,7 +4,7 @@
 * [Copyright](copyright.md)
 * [A propos de l'auteur](a-propos-de-lauteur.md)
 * [Introduction](introduction.md)
-* [Chap 1 - Une brêve histoire du mobile](chapter1.md)
+* [Chap 1 - Une brève histoire du mobile](chapter1.md)
 * [Chap 2 - Cas pratique : DuckCoin, la cryptomonnaie sur mobile](chap-2.md)
 * [Chap 3 - Installation de Ionic et première prise en main](chap-3-installation-de-ionic-et-premieres-prises-en-main.md)
 * [Chap 4 - Templates et Customisation](chap-4-templates-et-customisation.md)
