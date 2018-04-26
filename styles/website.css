@@ -10,8 +10,20 @@ h1, h2, h3 {
   letter-spacing: 2px;
 }
 
-a, a:hover, a:focus, a:active {
-  color: #57ad68;
+.markdown-section h1 {
+  border-left: 5px solid #fefefe;
+  padding: 5px 5px 5px 40px;
+  border-radius: 5px;
+  background-color: #7390c1;
+  color: #fff;
+}
+
+.markdown-section h2 {
+  border-bottom: 4px solid #333;
+}
+
+.book-summary ul.summary li.active>a, a, a:hover, a:focus, a:active {
+  color: #7390c1;
 }
 
 img {
