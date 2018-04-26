@@ -23,17 +23,27 @@ img {
 
 /* Mobile ----------- */
 
-@media only screen and (max-width: 640px) {
-  .btn.screen-md, .screen-md,
-  #disqus_thread {
+@media only screen and (max-width: 1023px) {
+  .btn.screen-md, .screen-md, #disqus_thread {
     display: none;
+  }
+  .page-wrapper {
+    padding-top: 50px;
+  }
+  .book-header {
+    position: fixed;
+    background: #fff;
+    width: 100%;
   }
 }
 
 /* Desktops and laptops ----------- */
 
 @media only screen and (min-width: 1024px) {
-  .btn.screen-xs, .fa.screen-xs,.screen-xs {
+  .btn.screen-xs, .fa.screen-xs, .screen-xs {
     display: none;
+  }
+  .book-body {
+    padding-bottom: 500px;
   }
 }
