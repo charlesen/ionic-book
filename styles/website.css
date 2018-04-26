@@ -24,7 +24,8 @@ img {
 /* Mobile ----------- */
 
 @media only screen and (max-width: 640px) {
-  .btn.screen-md, .screen-md {
+  .btn.screen-md, .screen-md,
+  #disqus_thread {
     display: none;
   }
 }
