@@ -18,6 +18,24 @@ h1, h2, h3 {
   color: #fff;
 }
 
+@media only screen and (max-width: 1023px) {
+  .markdown-section h1 {
+    font-size: 2rem;
+  }
+  .markdown-section h2 {
+    font-size: 1.8rem;
+  }
+  .markdown-section h3 {
+    font-size: 1.7rem;
+  }
+  .markdown-section h4 {
+    font-size: 1.6rem;
+  }
+  .markdown-section h5 {
+    font-size: 1.5rem;
+  }
+}
+
 .markdown-section h2 {
   border-bottom: 4px solid #333;
 }
