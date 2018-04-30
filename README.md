@@ -4,7 +4,7 @@ disqus: false
 
 # Développement d'applications mobiles avec Ionic
 
-![](/assets/ionic_logo_2.png)
+![](/assets/ionic_logo_3.png)
 
 _Par **Charles EDOU NZE **_
 
