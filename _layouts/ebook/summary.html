@@ -1,6 +1,6 @@
 {% extends "./page.html" %}
 
-{% block title %}{{ "SUMMARY GERO"|t }}{% endblock %}
+{% block title %}{{ "SUMMARY"|t }}{% endblock %}
 
 {% macro articles(_articles) %}
     {% for article in _articles %}
@@ -30,7 +30,7 @@
 
 {% block page %}
 <div class="section toc">
-    <h1>{{ "SUMMARY NIMO"|t }}</h1>
+    <h1>{{ "SUMMARY"|t }}</h1>
     <ol>
         {% for part in summary.parts %}
             {% if part.title %}
