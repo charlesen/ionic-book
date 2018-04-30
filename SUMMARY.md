@@ -1,6 +1,6 @@
 # Summary
 
-* [Développement d'applications mobiles avec Ionic](README.md)
+* [Couverture](README.md)
 * [Copyright](copyright.md)
 * [A propos de l'auteur](a-propos-de-lauteur.md)
 * [Introduction](introduction.md)
