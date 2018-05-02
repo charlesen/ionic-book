@@ -1,6 +1,6 @@
 theme: jekyll-theme-tactile
 title: Développement d'applications mobiles avec le Framework Ionic
-description : Maîtrisez enfin l'un des outils de développement d'applications mobiles les plus efficaces du moment
+description : Créez rapidement des applications mobiles multiplateformes, robustes et intuitives
 paginate: 5
 
 plugins:
@@ -8,7 +8,7 @@ plugins:
    - jemoji
    - jekyll-redirect-from
    - jekyll-sitemap
-   - jekyll-feed  
+   - jekyll-feed
    - jekyll-seo-tag
    - jekyll-sitemap
    - jekyll-avatar
