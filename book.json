@@ -8,7 +8,14 @@
       "shortName": "ionic-edounze-com"
     }
   },
-  "isbn":"9781980971207",
-  "title":"Développement d'applications mobiles avec Ionic",
-  "language":"fr"
+  "isbn": "9781980971207",
+  "title": "Développement d'applications mobiles avec Ionic",
+  "language": "fr",
+  "styles": {
+    "website": "styles/website.css",
+    "ebook": "styles/ebook.css",
+    "pdf": "styles/pdf.css",
+    "mobi": "styles/mobi.css",
+    "epub": "styles/epub.css"
+  }
 }
