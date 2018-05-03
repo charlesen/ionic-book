@@ -78,10 +78,6 @@ Avant de vous engager dans un développement mobile, il est important de bien é
 
 N'hésitez pas à noter ces questions, à y répondre, puis à les poser aux personnes pour ou avec qui vous prévoyez de travailler.
 
-```page-break
-
-```
-
 Voilà plus en détail ce que ces différentes questions peuvent impliquer.
 
 #### Quelles plates-formes mobiles souhaitez-vous cibler ?
