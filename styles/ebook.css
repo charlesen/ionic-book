@@ -77,3 +77,23 @@ img {
     padding-bottom: 500px;
   }
 }
+
+/*Page break*/
+
+pre, .markdown-section pre {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+pre>code {
+  visibility: visible;
+  padding: .85em 1em;
+  margin-bottom: 1.275em;
+  background-color: #f7f7f7;
+}
+
+pre>code.lang-page-break {
+  page-break-after: always;
+  white-space: normal;
+}
