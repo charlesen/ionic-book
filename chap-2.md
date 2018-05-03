@@ -76,7 +76,7 @@ Avec la blockchain, ces tiers de confiance peuvent s'en aller en paix, la confia
 
 DuckCoin sera comme nous l'avons déjà dit une crypto-monnaie basée sur une blockchain publique. L'application mobile que nous allons développer tout au long de ce livre portera le même nom.
 
-De plus, la monnaie fonctionnera à peu près sur le même principe que le Bitcoin, en tout cas en ce qui concerne son architecture.
+De plus, la monnaie fonctionnera à peu près sur le même principe que le Bitcoin[^2], en tout cas en ce qui concerne son architecture.
 
 Ce livre n'étant pas consacré à la Blockchain et aux cryptomonnaies, vous n'êtes pas obligé de lire la suite de ce chapitre et pouvez directement passer à la suite. Mais si vous êtes un tant soit peu curieux, alors restez, vous ne serez pas dessus je pense.
 
@@ -355,4 +355,6 @@ Notre cryptomonnaie qui est disponible à l'adresse : [https://duckcoin.charlese
 Maintenant que notre outil est en place, nous pouvons seirenement nous lancer dans la création de l'application mobile qui nous permettra d'interagir avec la Blockchain, gérer notre portefeuille, envoyer ou recevoir de l'argent sous forme de tokens **DCK**.
 
 [^1]: Le timestamp \(unix\) désigne le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC précise
+
+[^2]: Vous pouvez lire le Livre blanc \(Whitepaper\) du Bitcoin traduit en Français à cette adresse : [https://pascalpares.gitbooks.io/bitcoin/content/](https://pascalpares.gitbooks.io/bitcoin/content/)
 
