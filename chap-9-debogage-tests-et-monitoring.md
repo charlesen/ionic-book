@@ -34,6 +34,8 @@ Pour lancer votre application depuis un émulateur, il suffit de lancer la comma
 $ ionic cordova run android
 ```
 
+La commande va d'abord vérifier si un appareil mobile est connecté à l'ordinateur \(voir partie suivante\), avant de lancer l'émulateur par défaut.
+
 ### Depuis votre appareil mobile
 
 Commencez par brancher votre appareil mobile à l'aide d'un cable usb. Il faut ensuite modifier un peu la configuration de votre smartphone pour qu'il puisse communiquer avec votre ordinateur.
@@ -57,6 +59,14 @@ Puis, activez le débogage USB.
 ![](/assets/screen_debogage_usb.png)
 
 J'ai effectué ces modifications depuis un Samsung Galaxy A5, mais les noms de menus restent à peu près les mêmes.
+
+Il vous suffit ensuite de lancer la commande suivante et d'attendre bien patiemment le lancement \(quelques secondes\) :
+
+```
+$ ionic cordova run android
+```
+
+cd
 
 ## Debogage de l'application
 
