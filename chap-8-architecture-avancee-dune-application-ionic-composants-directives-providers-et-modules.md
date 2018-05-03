@@ -497,8 +497,6 @@ Etant donné qu'il s'agit d'une fonction native, si vous cliquez sur le bouton *
 
 ![](/assets/scree_photo_camera.png)
 
-
-
 #### Geolocation
 
 **Documentation** : [https://ionicframework.com/docs/native/geolocation/](https://ionicframework.com/docs/native/geolocation/)
@@ -507,14 +505,14 @@ Ce plugin permet de récupérer des informations liées à la géolocalisation d
 
 ##### Installation
 
-Il suffit de lancer les commandes suivantes : 
+Il suffit de lancer les commandes suivantes :
 
 ```
 $ ionic cordova plugin add cordova-plugin-geolocation --variable GEOLOCATION_USAGE_DESCRIPTION="Cette application a besoin de votre accord pour vous localiser"
 $ npm install --save @ionic-native/geolocation
 ```
 
-Il faut également, à cause d'iOS, modifier le fichier **config.xml** comme-ci : 
+Il faut également, à cause d'iOS, modifier le fichier **config.xml** comme-ci :
 
 ```js
 <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
@@ -553,13 +551,87 @@ watch.subscribe((data) => {
 
 **Documentation** : [https://ionicframework.com/docs/native/network/](https://ionicframework.com/docs/native/network/)
 
+Ce plugin permet d'intéragir avec le réseau sur lequel le téléphone est connecté.
 
+##### Installation
+
+```
+$ ionic cordova plugin add cordova-plugin-network-information
+$ npm install --save @ionic-native/network
+```
+
+##### Utilisation
+
+```js
+import { Network } from '@ionic-native/network';
+
+constructor(private network: Network) { }
+
+...
+
+// On se branche à l'évènement onDisconnect pour effectuer une ou plusieurs action en cas de 
+// déconnexion au réseau (wifi, 4g,...)
+let disconnectSubscription = this.network.onDisconnect().subscribe(() => {
+  console.log('network was disconnected :-(');
+});
+
+// Arrête la surveillance du réseau
+disconnectSubscription.unsubscribe();
+
+
+// On se branche à l'évènement onConnect pour effectuer une ou plusieurs actions en cas de 
+// connexion réussie au réseau (wifi, 4g,...)
+let connectSubscription = this.network.onConnect().subscribe(() => {
+  console.log('network connected!');
+  // Connexion réussie ! Le setTimeout est une astuce pour récupérer correctement le statut de connexion
+  setTimeout(() => {
+    if (this.network.type === 'wifi') {
+      console.log('Nous sommes connectés en Wifi');
+    }
+  }, 3000);
+});
+
+// On arrete la surveillance
+connectSubscription.unsubscribe();
+```
+
+L'objet **network.type** peut prendre les valeurs suivantes  : **unknown, ethernet, wifi, 2g, 3g, 4g, cellular, none.**
 
 #### Device
 
 **Documentation** : [https://ionicframework.com/docs/native/device/](https://ionicframework.com/docs/native/device/)
 
+Ce plugin renvoie tout un ensemble d'informations liées au téléphone portable.
 
+##### Installation
+
+```
+$ ionic cordova plugin add cordova-plugin-device
+$ npm install --save @ionic-native/device
+```
+
+##### Utilisation
+
+```
+import { Device } from '@ionic-native/device';
+
+constructor(private device: Device) { }
+
+...
+
+console.log('UUID du téléphone : ' + this.device.uuid);
+```
+
+Le plugin permet de récupérer les valeurs suivantes :
+
+* **this.device.cordova** : la version de Cordova
+* **this.device.model** : renvoie le nom du modèle ou du produit de l'appareil. La valeur est définie par le fabricant du périphérique et peut être différente d'une version à l'autre du même produit.
+* **this.device.platform** : retourne le système d'exploitation du téléphone \(android, ios,..\)
+* **this.device.uuid** : retourne l'identifiant unique du téléphone, sorte d'adresse mac.
+* **this.device.version** : renvoie la version du système d'exploitation
+* **this.device.manufacturer** : retourne le nom du fabricant de l'appareil mobile
+* **this.device.isVirtual** : methode permettant de savoir si l'application est utilisé depuis un émulateur de smartphone \(voir [Chapitre 9](/chap-9-debogage-tests-et-monitoring.md)\)
+* **this.device.serial** : renvoie le numéro de série de l'appareil
 
 ## Exercez-vous
 
