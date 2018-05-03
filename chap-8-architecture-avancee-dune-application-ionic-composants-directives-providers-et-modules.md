@@ -453,7 +453,7 @@ export class ProfilePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfilePage');
   }
-  
+
   // ...
 
   getPicture() {
@@ -491,14 +491,73 @@ On peut ensuite appeler cette fonction depuis le fichier **src/pages/profile/pro
 
 <button ion-button (click)="getPicture()">Photo</button>
 </ion-content>
-
 ```
 
 Etant donné qu'il s'agit d'une fonction native, si vous cliquez sur le bouton **"Photo"** depuis votre navigateur, il ne se passera rien. Nous verrons au chapitre 9 comment tester votre application depuis l'application Ionic view ou à directement partir de votre téléphone.
 
 ![](/assets/scree_photo_camera.png)
 
+
+
+#### Geolocation
+
+**Documentation** : [https://ionicframework.com/docs/native/geolocation/](https://ionicframework.com/docs/native/geolocation/)
+
+Ce plugin permet de récupérer des informations liées à la géolocalisation de l'appareil \(latitude et longitude\). Les technologies utilisés par le plugin pour effectuer cette géolocalisation sont le GPS, la La radio-identification \(RFID\), les adresses MAC des bornes WiFi et Bluetooth, ainsi que les identifiants de cellule GSM / CDMA.
+
+##### Installation
+
+Il suffit de lancer les commandes suivantes : 
+
+```
+$ ionic cordova plugin add cordova-plugin-geolocation --variable GEOLOCATION_USAGE_DESCRIPTION="Cette application a besoin de votre accord pour vous localiser"
+$ npm install --save @ionic-native/geolocation
+```
+
+Il faut également, à cause d'iOS, modifier le fichier **config.xml** comme-ci : 
+
+```js
+<edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
+    <string>Cette application a besoin de votre accord pour vous localiser</string>
+</edit-config>
+```
+
+Avec les nouvelles réglementations, il faut en effet permettre de manière claire à l'utilisateur de choisir d'être géolocalisé ou non.
+
+##### Utilisation
+
+```js
+import { Geolocation } from '@ionic-native/geolocation';
+
+...
+
+constructor(private geolocation: Geolocation) {}
+
+...
+
+this.geolocation.getCurrentPosition().then((resp) => {
+ // resp.coords.latitude : contient la valeur de la latitude
+ // resp.coords.longitude : : contient la valeur de la longitude
+}).catch((error) => {
+  console.log('Il y a une erreur', error);
+});
+
+let watch = this.geolocation.watchPosition();
+watch.subscribe((data) => {
+ // data.coords.latitude
+ // data.coords.longitude
+});
+```
+
+#### Network
+
+**Documentation** : [https://ionicframework.com/docs/native/network/](https://ionicframework.com/docs/native/network/)
+
+
+
 #### Device
+
+**Documentation** : [https://ionicframework.com/docs/native/device/](https://ionicframework.com/docs/native/device/)
 
 
 
