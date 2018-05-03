@@ -63,6 +63,10 @@ Pas de panique, ce code écrit en JavaScript n'aura bientôt plus beaucoup de se
 
 Une application hybride est avant tout une application native. Elle est téléchargée à partir d'un app store ou d'une tout autre place de marché. Elle a les mêmes fonctionnalités natives et à peu près les mêmes performances que toute application construite avec un SDK natif.
 
+```page-break
+
+```
+
 Une application hybride s'exécute dans un genre de navigateur en plein écran, appelé _**WebView**_, invisible pour l'utilisateur. Grâce à des plugins natifs personnalisables, elle peut accéder aux fonctionnalités natives de périphériques mobiles spécifiques \(caméra, contacts, agenda,...\), sans que le code principal ne soit lié à cet appareil.
 
 Cela signifie que les applications hybrides peuvent fonctionner sur n'importe quelle plate-forme ou périphérique, tout cela à partir d'une base de code unique, tout en offrant un aspect et une convivialité natifs.
@@ -77,6 +81,10 @@ Avant de vous engager dans un développement mobile, il est important de bien é
 * Quelles sont vos capacités techniques et/ou celle de votre équipe de développement ?
 
 N'hésitez pas à noter ces questions, à y répondre, puis à les poser aux personnes pour ou avec qui vous prévoyez de travailler.
+
+```page-break
+
+```
 
 Voilà plus en détail ce que ces différentes questions peuvent impliquer.
 
@@ -110,6 +118,10 @@ Grande question encore et loin d'être la moins importante. Si vous avez une gro
 
 Vous aurez besoin, pour créer une application native, de développeurs expérimentés, maîtrisant à la fois les SDK \(outils de développement\)  et les langages de programmation de chaque plate-forme que vous souhaitez cibler.
 
+```page-break
+
+```
+
 Mais si vous souhaitez ne pas mettre à profit autant de compétences techniques pour un miniscule projet qui ne vous rapportera pas plus de 1% de votre chiffre d'affaires, alors cela vaudrait peut être la peine de réfléchir à l'option Hybride qui pourrait vous faire économiser énormément de temps et d'argent. Payez ensuite des vacances à vos collaborateurs avec l'argent économisé via une prime d'intéressement ou exceptionnelle par exemple.
 
 Dans la plupart des cas, développer en mode hybride offre le meilleur rapport qualité/prix, surtout si vous démarrez une première version de votre application. Ça tombe bien, Ionic permet la création d'applications hybrides et ce livre est là pour vous aider à décoller de la meilleure façon qui soit.
@@ -131,6 +143,10 @@ Rien que sur Stackoverflow en ce moment, le tag  ["ionic framework"](https://sta
 Ionic c'est d'abord Apache Cordova et ses nombreux plugins natifs, Angular de Google, NodeJS et bien d'autres technologies Open Source qui ont fait leur preuve depuis des années et ne cessent de croître à vitesse grand V.
 
 ![](/assets/cordova-ng-ionic.png)
+
+```page-break
+
+```
 
 ### Coder une fois, déployer partout
 
