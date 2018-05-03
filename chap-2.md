@@ -12,6 +12,10 @@ De plus, le code source de ce projet est librement disponible à l'adresse : [ht
 
 C’est à la une de quasiment tous les journaux d’information. Par une seule semaine sans que l’on vous parle ci et là du Bitcoin, de Ripple ou d’une autre crypto-monnaie en vogue.
 
+```page-break
+
+```
+
 Une crypto-monnaie est selon Wikipédia :
 
 > Une monnaie virtuelle utilisable sur un réseau informatique décentralisé, de pair à pair
@@ -43,6 +47,10 @@ Ethereum est une devise virtuelle développée sur une plateforme logicielle ouv
 À l’instar de Bitcoin, Ethereum est un réseau de blockchain publique. Bien qu’il existe des différences techniques considérables entre les deux, la distinction la plus importante est que Bitcoin et Ethereum diffèrent considérablement en termes d’objectifs et de capacités.Tandis que la blockchain bitcoin est utilisée pour suivre la propriété d’une devise virtuelle \(Bitcoins\), la blockchain Ethereum se concentre sur l’exécution du code de programmation de toute application décentralisée.
 
 **1 Ethereum = €300,78**
+
+```page-break
+
+```
 
 ### La Blockchain pour les nuls
 
