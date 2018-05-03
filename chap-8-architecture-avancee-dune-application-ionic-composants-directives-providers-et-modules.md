@@ -627,7 +627,7 @@ Le plugin permet de récupérer les valeurs suivantes :
 * **this.device.cordova** : la version de Cordova
 * **this.device.model** : renvoie le nom du modèle ou du produit de l'appareil. La valeur est définie par le fabricant du périphérique et peut être différente d'une version à l'autre du même produit.
 * **this.device.platform** : retourne le système d'exploitation du téléphone \(android, ios,..\)
-* **this.device.uuid** : retourne l'identifiant unique du téléphone, sorte d'adresse mac.
+* **this.device.uuid** : retourne l'identifiant unique du téléphone.
 * **this.device.version** : renvoie la version du système d'exploitation
 * **this.device.manufacturer** : retourne le nom du fabricant de l'appareil mobile
 * **this.device.isVirtual** : methode permettant de savoir si l'application est utilisé depuis un émulateur de smartphone \(voir [Chapitre 9](/chap-9-debogage-tests-et-monitoring.md)\)
