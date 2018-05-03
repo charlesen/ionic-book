@@ -400,7 +400,7 @@ Ce plugin permet de prendre une photo ou d'enregistrer une vidéo en utilisant l
 
 Pour l'installation, il suffit simplement de lancer les commandes suivantes  :
 
-```js
+```bash
 $ ionic cordova plugin add cordova-plugin-camera
 $ npm install --save @ionic-native/camera
 ```
@@ -507,7 +507,7 @@ Ce plugin permet de récupérer des informations liées à la géolocalisation d
 
 Il suffit de lancer les commandes suivantes :
 
-```
+```bash
 $ ionic cordova plugin add cordova-plugin-geolocation --variable GEOLOCATION_USAGE_DESCRIPTION="Cette application a besoin de votre accord pour vous localiser"
 $ npm install --save @ionic-native/geolocation
 ```
@@ -555,7 +555,7 @@ Ce plugin permet d'intéragir avec le réseau sur lequel le téléphone est conn
 
 ##### Installation
 
-```
+```bash
 $ ionic cordova plugin add cordova-plugin-network-information
 $ npm install --save @ionic-native/network
 ```
@@ -605,14 +605,14 @@ Ce plugin renvoie tout un ensemble d'informations liées au téléphone portable
 
 ##### Installation
 
-```
+```bash
 $ ionic cordova plugin add cordova-plugin-device
 $ npm install --save @ionic-native/device
 ```
 
 ##### Utilisation
 
-```
+```js
 import { Device } from '@ionic-native/device';
 
 constructor(private device: Device) { }
