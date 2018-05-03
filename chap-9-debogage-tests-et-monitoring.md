@@ -28,9 +28,37 @@ L'application Ionic View n'existe actuellement que pour Android et iOS[^1]. Pour
 
 ### Depuis l'emulateur
 
+Pour lancer votre application depuis un émulateur, il suffit de lancer la commande suivante
+
 ```
 $ ionic cordova run android
 ```
+
+
+
+### Depuis votre appareil mobile
+
+Commencez par brancher votre appareil mobile à l'aide d'un cable usb. Puis, il faut modifier un peu la configuration de votre smartphone qu'il puisse communiquer avec votre ordinateur.
+
+Sur Android, il faut tout d'abord passer votre appareil en mode développeur. Pour ce faire, rien de plus simple il suffit d'aller dans :  
+
+```markdown
+**Paramètres** > **A propos du téléphone** > **Informations sur le logiciel**. 
+```
+
+Appuyez ensuite plusieurs fois sur le Numéro de version jusqu'à ce qu'un message vous indique que vous êtes désormais en mode développeur.
+
+Une fois le mode développeur activé, il vous suffit d'aller dans :
+
+```markdown
+**Paramètres** > **Options de développement** > **Débogage USB**. 
+```
+
+Puis, activez le débogage USB.
+
+![](/assets/screen_debogage_usb.png)
+
+J'ai effectué ces modifications depuis un Samsung Galaxy A5, mais les noms de menus restent à peu près les mêmes.
 
 ## Debogages
 
@@ -89,6 +117,4 @@ Ces deux élément, assez vous indique souvent d'où vient le problème et surto
 ## Exercez-vous
 
 1\) Traquez tous les méchants bugs de votre application en utilisant une ou plusieurs des méthodes citées précédemment.
-
-[^1]: L'application Ionic View pour iOS est à l'heure où j'écris ces quelques lignes indisponible sur l'Apple Store, ayant été désactivée par la plateforme qui lui reproche le fait d'être une application permettant d'executer d'autres applications. Selon Apple, chaque application doit disposer de son propre contexte d'execution et ce que fait Ionic View enfreindrait sa politique interne. Voir l'article du CEO et co-fondateur Max Lynch [Update on Ionic View for iOS](https://blog.ionicframework.com/update-on-ionic-view-for-ios/) : [https://blog.ionicframework.com/update-on-ionic-view-for-ios/](https://blog.ionicframework.com/update-on-ionic-view-for-ios/)
 
