@@ -24,6 +24,10 @@ Une application web mobile est une version allégée d'un site internet, optimis
 
 Une application mobile est dite native, si le développement effectué pour la créer \(et donc le langage de programmation\) est spécifique à la plateforme cible.
 
+```
+
+```
+
 | Plateforme cible | Langage de Programmation |
 | :--- | :--- |
 | Android \(Google\) | Java, Kotlin |
