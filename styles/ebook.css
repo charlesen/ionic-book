@@ -50,7 +50,7 @@ h1, h2, h3 {
   float: right;
 }
 
-.markdown-section img:nth-child(2):after {
+.markdown-section img:nth-child(2)::after {
   clear: both;
   content: ' ';
   display: table;
