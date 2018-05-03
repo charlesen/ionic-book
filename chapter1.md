@@ -20,13 +20,13 @@ Il existe différentes façon de développer un produit à destination des mobin
 
 Une application web mobile est une version allégée d'un site internet, optimisée pour les écrans de petites tailles \(smartphone, tablette, TV connectée,...\). On parle la plupart du temps de site responsive, car il s'adapte aux caractériques de l'écran du navigateur web. Avec le [PWA, concept abordé au chapitre 12](/chap-12-introduction-au-pwa-avec-stencil-et-capacitor.md), les applications web mobiles sont en passe de dominer le traffic issus des appareils mobiles.
 
-#### Applications natives
-
-Une application mobile est dite native, si le développement effectué pour la créer \(et donc le langage de programmation\) est spécifique à la plateforme cible.
-
 ```page-break
 
 ```
+
+#### Applications natives
+
+Une application mobile est dite native, si le développement effectué pour la créer \(et donc le langage de programmation\) est spécifique à la plateforme cible.
 
 | Plateforme cible | Langage de Programmation |
 | :--- | :--- |
