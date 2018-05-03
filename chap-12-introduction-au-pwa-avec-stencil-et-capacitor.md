@@ -12,7 +12,7 @@ Le PWA vient en quelque sorte corriger ces problèmes et bien d'autres, rencontr
 
 La société éditrice du Framework mobile n'a pas attendu pour s'attaquer à ce qui pourrait s'appararenter au futur du web et du mobile. Elle a créé en l'espace d'un an deux projets pour faciliter la création de PWA : Stencil et Capacitor.
 
-### Stencil 
+### Stencil
 
 **Site internet :** [https://stenciljs.com/](https://stenciljs.com/)
 
@@ -21,8 +21,6 @@ La société éditrice du Framework mobile n'a pas attendu pour s'attaquer à ce
 Les créateurs de ce projet le définissent comme _**"un outil pour construire des composants web modernes et des progressive web apps \(PWA\)"**_.
 
 Stencil veut tirer parti des principales nouvelles fonctionnalités disponibles dans les navigateurs telles que les **"Web Components"**[^1], une nouvelle spécification du W3C[^2] permettant la création de composants compatibles avec tous les frameworks. Ceux-ci fonctionnent aussi bien dans Angular, React, Ember, que Vue, il fonctionne aussi avec jQuery ou même sans framework du tout, car le coeur de Stencil est la création de simples éléments HTML.
-
-
 
 Exemple de composant web, ici qui affichera le drapeau du pays précisé dans l'attribut "country".
 
@@ -49,10 +47,8 @@ Vérification de la connectivité... fait.
 
 $ cd mon_app_stencil
 $ git remote rm origin
-$ npm install    
+$ npm install
 ```
-
-
 
 Vous aurez besoin d'installer le plugin sass à l'intérieur du projet :
 
@@ -81,11 +77,9 @@ $ npm start
 
 ![](/assets/stencil_app_1.png)
 
-
-
 #### Création de composants
 
-Les composants créés avec Stencil sont simplement des classes écrites en TypeScript avec des décorateurs un peu spéciaux. La création d'un nouveau composant se fait à partir d'un fichier ayant l'extension .tsx. 
+Les composants créés avec Stencil sont simplement des classes écrites en TypeScript avec des décorateurs un peu spéciaux. La création d'un nouveau composant se fait à partir d'un fichier ayant l'extension .tsx.
 
 Dans le dossier **src/components**, créons le fichier **moncomposant.tsx **avec le contenu suivant :
 
@@ -114,10 +108,11 @@ export class MonComposant {
     );
   }
 }
-
 ```
 
+Dans ce composant, nous déclarons un certains nombre d'attributs \(propriétés\) à l'aide du décorateur **Prop**.
 
+La méthode render\(\) permet de générer le contenu html.
 
 Créons aussi le fichier scss associé :
 
@@ -132,7 +127,6 @@ mon-composant {
   display: block;
   color: #fff;
 }
-
 ```
 
 Puis dans n'importe qu'elle fichier html, vous pourrez appeler ce composant comme n'importe quel autre tag html :
@@ -141,9 +135,7 @@ Puis dans n'importe qu'elle fichier html, vous pourrez appeler ce composant comm
 <mon-composant prenom="Charles" nom="EDOU NZE"></mon-composant>
 ```
 
-
-
-Ajoutons par exemple ce tag en page d'accueil : 
+Ajoutons par exemple ce tag en page d'accueil :
 
 **src/components/app-home/app-home.tsx**
 
@@ -174,14 +166,11 @@ export class AppHome {
     );
   }
 }
-
 ```
 
 ce qui donne ceci :
 
 ![](/assets/stencil_2.png)
-
-
 
 On peut aussi tout simplement rajouter ce composant au fichier index.html de l'application, après com :
 
@@ -191,8 +180,6 @@ $ vi src/index.html # Choisissez votre éditeur préféré
 ```
 
 ```
-
-
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
@@ -225,18 +212,13 @@ $ vi src/index.html # Choisissez votre éditeur préféré
   </style>
 </body>
 </html>
-
 ```
 
-On n'affichera plus que le composant : 
+On n'affichera plus que le composant :
 
 ![](/assets/stencil_4.png)
 
-
-
 L'idée est de pouvoir réutiliser des composants créés dans d'autres projets, les partager ou faire évoluer ceux des autres. C'est toute la philosophie des Web Components.
-
-
 
 ### Capacitor : [https://capacitor.ionicframework.com/](https://capacitor.ionicframework.com/)
 
