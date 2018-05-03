@@ -34,16 +34,14 @@ Pour lancer votre application depuis un émulateur, il suffit de lancer la comma
 $ ionic cordova run android
 ```
 
-
-
 ### Depuis votre appareil mobile
 
-Commencez par brancher votre appareil mobile à l'aide d'un cable usb. Puis, il faut modifier un peu la configuration de votre smartphone qu'il puisse communiquer avec votre ordinateur.
+Commencez par brancher votre appareil mobile à l'aide d'un cable usb. Il faut ensuite modifier un peu la configuration de votre smartphone pour qu'il puisse communiquer avec votre ordinateur.
 
-Sur Android, il faut tout d'abord passer votre appareil en mode développeur. Pour ce faire, rien de plus simple il suffit d'aller dans :  
+Sur Android, il faut tout d'abord passer votre appareil en mode développeur. Pour ce faire, rien de plus simple il suffit d'aller dans :
 
 ```markdown
-**Paramètres** > **A propos du téléphone** > **Informations sur le logiciel**. 
+**Paramètres** > **A propos du téléphone** > **Informations sur le logiciel**.
 ```
 
 Appuyez ensuite plusieurs fois sur le Numéro de version jusqu'à ce qu'un message vous indique que vous êtes désormais en mode développeur.
@@ -51,7 +49,7 @@ Appuyez ensuite plusieurs fois sur le Numéro de version jusqu'à ce qu'un messa
 Une fois le mode développeur activé, il vous suffit d'aller dans :
 
 ```markdown
-**Paramètres** > **Options de développement** > **Débogage USB**. 
+**Paramètres** > **Options de développement** > **Débogage USB**.
 ```
 
 Puis, activez le débogage USB.
