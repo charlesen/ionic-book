@@ -364,11 +364,51 @@ Chaque plugin possèdant sa propre documentation il est recommandé de suivre le
 
 Une fois le plugin installé, il faut le déclarer dans le module principal de l'application :
 
-**src/app/app.module.ts \(Exemple du plugin Camera\)**
+**src/app/app.module.ts **
 
 ```js
 ...
-# On déclare le plugin Camera arpès l'avoir installé
+
+import { MonPlugin } from '@ionic-native/mon_plugin';
+
+...
+
+@NgModule({
+  ...
+
+  providers: [
+    ...
+    MonPlugin
+    ...
+  ]
+  ...
+})
+export class AppModule { }
+```
+
+### Utilisation de quelques plugins
+
+Ionic proposant un nombre assez vaste de composant, je vous propose de n'en étudier que quelques-uns parmi les plus intéressants.
+
+#### Camera
+
+**Documentation** : [https://ionicframework.com/docs/native/camera/](https://ionicframework.com/docs/native/camera/)
+
+Ce plugin permet de prendre une photo ou d'enregistrer une vidéo en utilisant l'objet **navigator.camera **introduit par l'HTML5.
+
+##### Installation
+
+Pour l'installation, il suffit simplement de lancer les commandes suivantes  :
+
+```js
+$ ionic cordova plugin add cordova-plugin-camera
+$ npm install --save @ionic-native/camera
+```
+
+On le déclare ensuite dans NgModule :
+
+```js
+...
 
 import { Camera } from '@ionic-native/camera';
 
@@ -387,15 +427,78 @@ import { Camera } from '@ionic-native/camera';
 export class AppModule { }
 ```
 
-### Utilisation de quelques plugins
+##### Utilisation
 
-Ionic proposant un nombre assez vaste de composant, je vous propose de n'en étudier que quelques-uns parmi les plus intéressants.
+Nous allons appeler ce plugin depuis la page de profil de notre application DuckCoin. Il suffit d'éditer le fichier **src/pages/profile/profile.ts** comme ceci :
 
-#### Camera
+```js
+// ...
+// Plugins
+import { Camera, CameraOptions } from '@ionic-native/camera';
 
-**Documentation** : [https://ionicframework.com/docs/native/camera/](https://ionicframework.com/docs/native/camera/)
+// TabsPage
 
-Ce plugin permet de prendre une photo ou d'enregistrer une vidéo.
+@IonicPage()
+@Component({
+  selector: 'page-profile',
+  templateUrl: 'profile.html',
+})
+export class ProfilePage {
+  image : any;
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
+    private camera: Camera) { // On déclare l'objet camera ici
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad ProfilePage');
+  }
+  
+  // ...
+
+  getPicture() {
+    const options: CameraOptions = {
+      quality: 100,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE
+    }
+
+    this.camera.getPicture(options).then((imageData) => {
+      // imageData contient une image en Base64:
+      this.image = 'data:image/jpeg;base64,' + imageData;
+    }, (err) => {
+      // Handle error
+    });
+  }
+
+}
+```
+
+On peut ensuite appeler cette fonction depuis le fichier **src/pages/profile/profile.html**
+
+```js
+<ion-header>
+
+  <ion-navbar color="duckcoin">
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  ...
+
+<button ion-button (click)="getPicture()">Photo</button>
+</ion-content>
+
+```
+
+Etant donné qu'il s'agit d'une fonction native, si vous cliquez sur le bouton **"Photo"** depuis votre navigateur, il ne se passera rien. Nous verrons au chapitre 9 comment tester votre application depuis l'application Ionic view ou à directement partir de votre téléphone.
+
+![](/assets/scree_photo_camera.png)
+
+#### Device
 
 
 
