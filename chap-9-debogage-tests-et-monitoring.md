@@ -58,7 +58,7 @@ Puis, activez le débogage USB.
 
 J'ai effectué ces modifications depuis un Samsung Galaxy A5, mais les noms de menus restent à peu près les mêmes.
 
-## Debogages
+## Debogage de l'application
 
 C'est surement la partie la moins drôle quand on développe en général, mais fort heureusement avec Ionic et Angular les choses sont un peu moins douloureuse, la plupart des bugs étant explicites et dans certains cas on indique même ce qu'il faut faire.
 
