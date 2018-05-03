@@ -12,10 +12,6 @@ De plus, le code source de ce projet est librement disponible à l'adresse : [ht
 
 C’est à la une de quasiment tous les journaux d’information. Par une seule semaine sans que l’on vous parle ci et là du Bitcoin, de Ripple ou d’une autre crypto-monnaie en vogue.
 
-```page-break
-
-```
-
 Une crypto-monnaie est selon Wikipédia :
 
 > Une monnaie virtuelle utilisable sur un réseau informatique décentralisé, de pair à pair
