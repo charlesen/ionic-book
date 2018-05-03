@@ -112,7 +112,7 @@ export class MonComposant {
 
 Dans ce composant, nous déclarons un certains nombre d'attributs \(propriétés\) à l'aide du décorateur **Prop**.
 
-La méthode render\(\) permet de générer le contenu html.
+La méthode **render\(\)** permet de générer le contenu html. Ici on renverra simplement un paragraphe avec des valeurs des attributs **prenom** et **nom** du composant.
 
 Créons aussi le fichier scss associé :
 
@@ -219,6 +219,8 @@ On n'affichera plus que le composant :
 ![](/assets/stencil_4.png)
 
 L'idée est de pouvoir réutiliser des composants créés dans d'autres projets, les partager ou faire évoluer ceux des autres. C'est toute la philosophie des Web Components.
+
+Arc
 
 ### Capacitor : [https://capacitor.ionicframework.com/](https://capacitor.ionicframework.com/)
 

@@ -264,7 +264,7 @@ Si SQLite n'est pas disponible, c'est le cas par exemple lorsque l'on utilise no
 
 **SQLite ==&gt; IndexedDB ==&gt; WebSQL ==&gt; localstorage**
 
-## Installation
+### Installation
 
 Nous allons tout d'abord installer le plugin SQLite :
 
@@ -308,7 +308,7 @@ import { IonicStorageModule } from '@ionic/storage';
   ],
 ```
 
-## Utilisation
+### Utilisation
 
 Il vous suffit simplement d'injecter Ionic Storage dans la classe où vous souhaitez l'utiliser :
 
@@ -332,13 +332,45 @@ export class LoginPage {
 
 ## Plugins natifs
 
-En plus de composants purement visuel qui vous permettent de mettre en forme votre application, Ionic propose également des plugins natifs cette fois-ci pour interagir avec les fonctions dites natives de votre téléphone mobile. Ces plugins pour la plupart basés sur Cordova, sont disponibles en assez grand nombre à l'adresse : [https://ionicframework.com/docs/native/](https://ionicframework.com/docs/native/)
+En plus de composants purement visuel qui vous permettent de mettre en forme votre application, Ionic propose également des plugins natifs cette fois-ci pour interagir avec les fonctions dites natives de votre téléphone mobile. Ces plugins Ionic sont en réalité des wrappers des plugins Cordova/Phonegap. 
+
+La liste de tous les plugins Ionic disponibles actuellement se trouve à l'adresse : [https://ionicframework.com/docs/native/](https://ionicframework.com/docs/native/)
 
 Avant d'installer un plugin, il faut s'asurer que le package Ionic native est bien disponible, ce qui devrait être le cas dans une installation Ionic classique. Mais au besoin, il suffit de faire :
 
-```
+```bash
 $ npm install @ionic-native/core --save
 ```
+
+C'est à l'intérieur de ce package \(dossier\) que seront installés les autres plugins Ionic.
+
+### Installation d'un plugin
+
+Les plugins Ionic étant comme nous l'avons vu des versions remasterisées de plugins Cordova/Phonegap, l'installation se fera en deux étapes : installation de la version Ionic et installation de la version Cordova/Phonegap sur laquelle se base la précédente.
+
+Pour installer la version "Ionic" du plugin il suffit de lancer une commande similaire à celle-ci :
+
+```bash
+$ npm install @ionic-native/mon_plugin_ionic --save
+```
+
+Puis, il ne reste plus qu'à installer le plugin Cordova/Phonegap correspondant :
+
+```bash
+$ ionic cordova plugin add mon_plugin_cordova
+```
+
+Chaque plugin possèdant sa propre documentation il est recommandé de suivre les instructions d'installation à partir de la documentation de chaque plugin, car certains plugins nécessitent des étapes supplémentaires pour une installation complète.
+
+### Utilisation de quelques plugins
+
+Ionic proposant un nombre assez vaste de composant, je vous propose de n'en étudier que quelques-uns parmi les plus intéressants. 
+
+#### Camera
+
+**Documentation** : https://ionicframework.com/docs/native/camera/
+
+Ce plugin permet de prendre une photo ou d'enregistrer une vidéo.
 
 ## Exercez-vous
 
