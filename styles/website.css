@@ -44,11 +44,28 @@ h1, h2, h3 {
   color: #3b8c7b;
 }
 
-img {
+/*Image responsive*/
+
+.markdown-section img:nth-child(2) {
+  float: right;
+}
+
+.markdown-section img:nth-child(2):after {
+  clear: both;
+  content: ' ';
+  display: table;
+}
+
+.markdown-section>img {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
   display: block;
+  padding: 0 4px;
+}
+
+.markdown-section p {
+  clear: both;
 }
 
 /* Mobile ----------- */
