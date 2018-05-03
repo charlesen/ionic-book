@@ -332,7 +332,7 @@ export class LoginPage {
 
 ## Plugins natifs
 
-En plus de composants purement visuel qui vous permettent de mettre en forme votre application, Ionic propose également des plugins natifs cette fois-ci pour interagir avec les fonctions dites natives de votre téléphone mobile. Ces plugins Ionic sont en réalité des wrappers des plugins Cordova/Phonegap. 
+En plus de composants purement visuel qui vous permettent de mettre en forme votre application, Ionic propose également des plugins natifs cette fois-ci pour interagir avec les fonctions dites natives de votre téléphone mobile. Ces plugins Ionic sont en réalité des wrappers des plugins Cordova/Phonegap.
 
 La liste de tous les plugins Ionic disponibles actuellement se trouve à l'adresse : [https://ionicframework.com/docs/native/](https://ionicframework.com/docs/native/)
 
@@ -362,15 +362,42 @@ $ ionic cordova plugin add mon_plugin_cordova
 
 Chaque plugin possèdant sa propre documentation il est recommandé de suivre les instructions d'installation à partir de la documentation de chaque plugin, car certains plugins nécessitent des étapes supplémentaires pour une installation complète.
 
+Une fois le plugin installé, il faut le déclarer dans le module principal de l'application :
+
+**src/app/app.module.ts \(Exemple du plugin Camera\)**
+
+```js
+...
+# On déclare le plugin Camera arpès l'avoir installé
+
+import { Camera } from '@ionic-native/camera';
+
+...
+
+@NgModule({
+  ...
+
+  providers: [
+    ...
+    Camera
+    ...
+  ]
+  ...
+})
+export class AppModule { }
+```
+
 ### Utilisation de quelques plugins
 
-Ionic proposant un nombre assez vaste de composant, je vous propose de n'en étudier que quelques-uns parmi les plus intéressants. 
+Ionic proposant un nombre assez vaste de composant, je vous propose de n'en étudier que quelques-uns parmi les plus intéressants.
 
 #### Camera
 
-**Documentation** : https://ionicframework.com/docs/native/camera/
+**Documentation** : [https://ionicframework.com/docs/native/camera/](https://ionicframework.com/docs/native/camera/)
 
 Ce plugin permet de prendre une photo ou d'enregistrer une vidéo.
+
+
 
 ## Exercez-vous
 
