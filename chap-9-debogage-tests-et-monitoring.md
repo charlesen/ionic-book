@@ -26,6 +26,26 @@ L'application Ionic View n'existe actuellement que pour Android et iOS[^1]. Pour
 * Google Play Store : [https://play.google.com/store/apps/details?id=com.ionicframework.view](https://play.google.com/store/apps/details?id=com.ionicframework.view)
 * Apple Store : [https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931](https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931)
 
+Pour visualiser votre application, vous devez donc lancer la commande suivante :
+
+```bash
+$ git push ionic master
+```
+
+Une fois le push effectué, ouvrez Ionic View et testez votre application
+
+### Depuis Ionic Dev App
+
+* Google Play Store : [https://play.google.com/store/apps/details?id=com.ionicframework.view](https://play.google.com/store/apps/details?id=io.ionic.devapp&hl=en)
+
+* Apple Store : [https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931](https://itunes.apple.com/us/app/ionic-devapp/id1233447133?ls=1&mt=8)
+
+C'est surement l'une de mes méthodes favorites. Grâce à cette application vous allez pouvoir tester votre application en temps réel. En effet, en lançant simplement la commande **ionic serve -c**, l'application Ionic Dev App vous permet  ensuite de visualiser votre propre application, et tester ainsi tout un ensemble de composants natifs.
+
+Seule condition, il faut que votre ordinateur soit connecté au même réseau que votre smartphone.
+
+L'avantage de cette application par rapport à Ionic view est que vous n'avez pas besoin de pusher vos développement sur Ionic PRO. Il vous suffit simplement de rédemarrer votre instance en local pour voir les changements s'appliquer sur Ionic Dev app.
+
 ### Depuis l'emulateur
 
 Pour lancer votre application depuis un émulateur, il suffit de lancer la commande suivante
@@ -65,8 +85,6 @@ Il vous suffit ensuite de lancer la commande suivante et d'attendre bien patiemm
 ```
 $ ionic cordova run android
 ```
-
-cd
 
 ## Debogage de l'application
 
