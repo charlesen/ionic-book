@@ -102,8 +102,6 @@ La procédure est un peu moins évidente que sur Android et vous conseille la do
 
 * Procédure de déploiement d'une application sur les Store : [https://ionicframework.com/docs/intro/deploying/](https://ionicframework.com/docs/intro/deploying/)
 
-
-
 ## Publication automatisée avec Fastlane
 
 Fastlane est un outil qui va nous permettre d'automatiser la plupart des actions que nous avons effectuées précédemment : création de profils et de certificats pour iOS, upload et signature de l'application,...De quoi gagner énormément de temps et pourquoi de l'argent.
@@ -112,7 +110,7 @@ Fastlane est un outil qui va nous permettre d'automatiser la plupart des actions
 
 Sous iOS uniquement, assurez-vous de disposer de la dernière version du **Xcode command line tools** en faisant ceci depuis un terminal :
 
-```
+```bash
 $ xcode-select --install
 ```
 
@@ -120,19 +118,22 @@ Fastlane dépendant du langage Ruby, il faut s'assurer qu'il est correctement in
 
 Sous Ubuntu, il se peut que vous ayez des soucis de version Ruby, dans ce cas, faites ceci pour mettre à jour le langage :
 
-    $ sudo apt-get install ruby`ruby -e 'puts RUBY_VERSION[/\d+\.\d+/]'`-dev
-
-Il ne vous reste plus qu'à installer fastlane de la manière suivante : 
-
+```bash
+$ sudo apt-get install ruby`ruby -e 'puts RUBY_VERSION[/\d+\.\d+/]'`-dev
 ```
+
+Il ne vous reste plus qu'à installer fastlane de la manière suivante :
+
+```bash
 $ sudo gem install fastlane --verbose
+$ gem install bundler # on installe quelques packages ruby dans notre OS
 ```
 
 Pour plus d'informations sur l'installation, vous pouvez vous référer à la documentation officielle : [https://docs.fastlane.tools/getting-started/android/setup/](https://docs.fastlane.tools/getting-started/android/setup/)
 
 Avant de lancer l'outil, on s'assure que l'on a bien ajouté les plateformes iOS et Android à notre projet :
 
-```
+```bash
 $ ionic cordova platform add ios
 $ ionic cordova platform add android
 ```
@@ -144,6 +145,11 @@ $ fastlane init
 ```
 
 
+
+**Plus d'informations sur Fastlane :**
+
+* Automatic Ionic 2 Builds For iOS Using Fastlane : [https://devdactic.com/automatic-ionic-builds-fastlane/](https://devdactic.com/automatic-ionic-builds-fastlane/)
+* Documentation Fastlane : [https://docs.fastlane.tools/](https://docs.fastlane.tools/)
 
 
 
