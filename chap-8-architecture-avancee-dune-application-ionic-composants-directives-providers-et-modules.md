@@ -499,14 +499,13 @@ On peut ensuite appeler cette fonction depuis le fichier **src/pages/profile/pro
     </ion-card-content>
   </ion-card>
 </ion-content>
-
 ```
 
 Etant donné qu'il s'agit d'une fonction native, si vous cliquez sur le bouton **"Photo"** depuis votre navigateur, il ne se passera rien. Nous verrons au chapitre 9 comment tester votre application depuis l'application Ionic view ou à directement partir de votre téléphone.
 
-![](/assets/screen_camera_1.png)![](/assets/screen_camera_2.png)
+![](/assets/screen_camera_1.png)![](/assets/screen_camera_2.png)![](/assets/screen_camera_3.png)
 
-![](/assets/screen_camera_3.png)
+
 
 #### Geolocation
 
