@@ -84,6 +84,10 @@ Puis, activez le débogage USB.
 
 ![](/assets/screen_debogage_usb.png)
 
+
+
+Un message s'affichera pour vous demander de valider cette autorisation. Appuyez sur **OK** pour confirmer cette action.
+
 J'ai effectué ces modifications depuis un Samsung Galaxy A5, mais les noms de menus restent à peu près les mêmes.
 
 Il vous suffit ensuite de lancer la commande suivante et d'attendre bien patiemment le lancement \(quelques secondes\) :
@@ -93,7 +97,7 @@ $ ionic cordova run android
 
 
 Built the following apk(s): 
-	./platforms/android/app/build/outputs/apk/debug/app-debug.apk
+    ./platforms/android/app/build/outputs/apk/debug/app-debug.apk
 
 ANDROID_HOME=/opt/android-sdk
 JAVA_HOME=/usr/lib/jvm/default-java
@@ -103,7 +107,7 @@ none
 Skipping build...
 
 Built the following apk(s): 
-	./platforms/android/app/build/outputs/apk/debug/app-debug.apk
+    ./platforms/android/app/build/outputs/apk/debug/app-debug.apk
 
 Using apk: ./platforms/android/app/build/outputs/apk/debug/app-debug.apk
 
@@ -113,8 +117,6 @@ LAUNCH SUCCESS
 
 [OK] Your app has been deployed.
      Did you know you can live-reload changes from your app with --livereload?
-
-
 ```
 
 Une fois que vous avez démarré votre, il est possible de la visualiser en même temps depuis votre navigateur Google Chrome. Pratique lorsque l'on se rend compte qu'un bug, qui n'apparaissait pas durant les tests sur le web, apparait subitement lorsque l'on passe sur mobile. On est pas toujours à l'abri de ce genre d'écart en les tests en local et ceux effectués sur une machine réelle.
@@ -127,11 +129,17 @@ Selectionnez votre appareil mobile et cliquez sur **Inspect** pour visualiser vo
 
 ![](/assets/screen_debug_android_1.png)![](/assets/screen_debug_android_2.png)
 
-cd
-
 #### iOS
 
+Il est également possible de tester votre application depuis votre smarphone iOS. Il faut tout d'abord, comme avec Android, préparer notre appareil mobile.
 
+Dans **Réglages &gt; Safari &gt; Avancé** , activez l'**Inspecteur Web**.
+
+Puis dans Safari, allez dans **Préférences &gt; Avancées** et sélectionnez **« Afficher le menu Développement dans la barre des menus »**.
+
+Connectez ensuite votre smartphone en USB.
+
+Depuis Safari de nouveau, dans le menu Développement, puis votre apparail mobile, vous pourrez cliquez sur votre application mobile.
 
 ## Debogage de l'application
 
