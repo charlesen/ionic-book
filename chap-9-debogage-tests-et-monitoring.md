@@ -32,7 +32,9 @@ Pour visualiser votre application, vous devez donc lancer la commande suivante :
 $ git push ionic master
 ```
 
-Une fois le push effectué, ouvrez Ionic View et testez votre application
+Une fois le push effectué, ouvrez Ionic View et testez votre application.
+
+![](/assets/ionic_view_screen_1.png)
 
 ### Depuis Ionic Dev App
 
@@ -45,6 +47,8 @@ C'est surement l'une de mes méthodes favorites. Grâce à cette application vou
 Seule condition, il faut que votre ordinateur soit connecté au même réseau que votre smartphone.
 
 L'avantage de cette application par rapport à Ionic view est que vous n'avez pas besoin de pusher vos développement sur Ionic PRO. Il vous suffit simplement de rédemarrer votre instance en local pour voir les changements s'appliquer sur Ionic Dev app.
+
+![](/assets/ionic_dev_app.png)
 
 ### Depuis l'emulateur
 
