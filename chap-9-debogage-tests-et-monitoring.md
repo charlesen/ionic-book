@@ -64,6 +64,8 @@ La commande va d'abord vérifier si un appareil mobile est connecté à l'ordina
 
 Commencez par brancher votre appareil mobile à l'aide d'un cable usb. Il faut ensuite modifier un peu la configuration de votre smartphone pour qu'il puisse communiquer avec votre ordinateur.
 
+#### Android
+
 Sur Android, il faut tout d'abord passer votre appareil en mode développeur. Pour ce faire, rien de plus simple il suffit d'aller dans :
 
 ```markdown
@@ -88,7 +90,48 @@ Il vous suffit ensuite de lancer la commande suivante et d'attendre bien patiemm
 
 ```
 $ ionic cordova run android
+
+
+Built the following apk(s): 
+	./platforms/android/app/build/outputs/apk/debug/app-debug.apk
+
+ANDROID_HOME=/opt/android-sdk
+JAVA_HOME=/usr/lib/jvm/default-java
+No target specified, deploying to device '330045dab57053bf'.
+
+none
+Skipping build...
+
+Built the following apk(s): 
+	./platforms/android/app/build/outputs/apk/debug/app-debug.apk
+
+Using apk: ./platforms/android/app/build/outputs/apk/debug/app-debug.apk
+
+Package name: fr.duckcoin.mobile
+
+LAUNCH SUCCESS
+
+[OK] Your app has been deployed.
+     Did you know you can live-reload changes from your app with --livereload?
+
+
 ```
+
+Une fois que vous avez démarré votre, il est possible de la visualiser en même temps depuis votre navigateur Google Chrome. Pratique lorsque l'on se rend compte qu'un bug, qui n'apparaissait pas durant les tests sur le web, apparait subitement lorsque l'on passe sur mobile. On est pas toujours à l'abri de ce genre d'écart en les tests en local et ceux effectués sur une machine réelle.
+
+Dans Chrome, ouvrez l'inspecteur \(F12\), puis cliquez sur le menu avec les trois petits point verticaux en haut à droite \(voir image ci-dessous\) et allez dans **More tools &gt; Remote devices**
+
+![](/assets/screen_debug_remote_android.png)
+
+Selectionnez votre appareil mobile et cliquez sur **Inspect** pour visualiser votre application
+
+![](/assets/screen_debug_android_1.png)![](/assets/screen_debug_android_2.png)
+
+cd
+
+#### iOS
+
+
 
 ## Debogage de l'application
 
