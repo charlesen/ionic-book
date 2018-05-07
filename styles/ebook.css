@@ -97,7 +97,7 @@ h1, h2, h3 {
 
 /*Page break*/
 
-pre, .markdown-section pre {
+/*pre, .markdown-section pre {
   visibility: hidden;
   margin: 0;
   padding: 0;
@@ -113,4 +113,4 @@ pre>code {
 pre>code.lang-page-break {
   page-break-after: always;
   white-space: normal;
-}
+}*/
