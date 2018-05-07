@@ -1,11 +1,14 @@
 {
-  "plugins": ["disqus", "styles-sass-fix"],
+  "plugins": ["disqus", "styles-sass-fix", "sitemap"],
   "links": {
     "sidebar": {}
   },
   "pluginsConfig": {
     "disqus": {
       "shortName": "ionic-edounze-com"
+    },
+    "sitemap": {
+      "hostname": "https://ionic.mobiletuto.com"
     }
   },
   "isbn": "9781980971207",
