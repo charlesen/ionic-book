@@ -1,5 +1,5 @@
 {
-  "plugins": ["disqus"],
+  "plugins": ["disqus", "styles-sass-fix"],
   "links": {
     "sidebar": {}
   },
@@ -12,8 +12,8 @@
   "title": "Développement d'applications mobiles avec Ionic",
   "language": "fr",
   "styles": {
-    "website": "styles/website.css",
-    "pdf": "styles/pdf.css",
-    "ebook": "styles/ebook.css"
+    "website": "./styles/website.css",
+    "pdf": "./styles/pdf.scss",
+    "ebook": "./styles/ebook.css"
   }
 }
