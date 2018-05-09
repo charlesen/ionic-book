@@ -1,0 +1,10 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": ["dom","es6","es2017"]
+  },
+  "exclude": [
+    "duckweb/*"
+  ]
+}
