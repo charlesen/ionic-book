@@ -1,7 +1,6 @@
 # Summary
 
-* [Couverture](README.md)
-* [Copyright](copyright.md)
+* [Copyright](README.md)
 * [A propos de l'auteur](a-propos-de-lauteur.md)
 * [Introduction](introduction.md)
 * [Chap 1](chap1/README.md)

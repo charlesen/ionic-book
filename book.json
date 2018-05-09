@@ -1,11 +1,22 @@
 {
-  "plugins": ["disqus", "-lunr", "-search"],
+  "plugins": ["disqus", "styles-sass-fix", "sitemap"],
   "links": {
     "sidebar": {}
   },
   "pluginsConfig": {
     "disqus": {
       "shortName": "ionic-edounze-com"
+    },
+    "sitemap": {
+      "hostname": "https://ionic.mobiletuto.com"
     }
+  },
+  "isbn": "9781980971207",
+  "title": "Développement d'applications mobiles avec Ionic",
+  "language": "fr",
+  "styles": {
+    "website": "./styles/website.css",
+    "pdf": "./styles/pdf.scss",
+    "ebook": "./styles/ebook.css"
   }
 }

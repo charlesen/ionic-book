@@ -1,4 +1,4 @@
-# Chap 1 - Une brêve histoire du mobile
+# Chap 1 - Une brève histoire du mobile
 
 ## Il était une fois...
 
@@ -19,6 +19,10 @@ Il existe différentes façon de développer un produit à destination des mobin
 #### Applications web mobiles
 
 Une application web mobile est une version allégée d'un site internet, optimisée pour les écrans de petites tailles \(smartphone, tablette, TV connectée,...\). On parle la plupart du temps de site responsive, car il s'adapte aux caractériques de l'écran du navigateur web. Avec le [PWA, concept abordé au chapitre 12](/chap-12-introduction-au-pwa-avec-stencil-et-capacitor.md), les applications web mobiles sont en passe de dominer le traffic issus des appareils mobiles.
+
+```page-break
+
+```
 
 #### Applications natives
 
@@ -108,8 +112,6 @@ Vous aurez besoin, pour créer une application native, de développeurs expérim
 
 Mais si vous souhaitez ne pas mettre à profit autant de compétences techniques pour un miniscule projet qui ne vous rapportera pas plus de 1% de votre chiffre d'affaires, alors cela vaudrait peut être la peine de réfléchir à l'option Hybride qui pourrait vous faire économiser énormément de temps et d'argent. Payez ensuite des vacances à vos collaborateurs avec l'argent économisé via une prime d'intéressement ou exceptionnelle par exemple.
 
-
-
 Dans la plupart des cas, développer en mode hybride offre le meilleur rapport qualité/prix, surtout si vous démarrez une première version de votre application. Ça tombe bien, Ionic permet la création d'applications hybrides et ce livre est là pour vous aider à décoller de la meilleure façon qui soit.
 
 ## Pourquoi choisir Ionic ?
@@ -129,6 +131,10 @@ Rien que sur Stackoverflow en ce moment, le tag  ["ionic framework"](https://sta
 Ionic c'est d'abord Apache Cordova et ses nombreux plugins natifs, Angular de Google, NodeJS et bien d'autres technologies Open Source qui ont fait leur preuve depuis des années et ne cessent de croître à vitesse grand V.
 
 ![](/assets/cordova-ng-ionic.png)
+
+```page-break
+
+```
 
 ### Coder une fois, déployer partout
 

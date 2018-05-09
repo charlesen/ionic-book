@@ -78,7 +78,7 @@ Ou encore retirer les bordures du boutons avec la directive **clear** :
 
 Documentation : [https://ionicframework.com/docs/components/\#buttons](https://ionicframework.com/docs/components/#buttons)
 
-### Composant Liste
+## Composant Liste
 
 Comme son nom peut le suggérer, ce composant va nous permettre d'ajouter une liste d'éléments à notre application. Affichons par exemple la liste des principales cryptomonnaies en avril 2018 :
 
@@ -143,7 +143,7 @@ Qui donne :
 
 Documentation : [https://ionicframework.com/docs/components/\#lists](https://ionicframework.com/docs/components/#lists)
 
-### Composant Select
+## Composant Select
 
 Le composant est similaire au tag htlml &lt;select&gt;&lt;/select&gt; et va donc nous permettre d'afficher une liste de choix. Affichons par exemple ici la liste des 5 premières cryptomonnaies par capitalisation boursière :
 
@@ -177,7 +177,7 @@ Le composant est similaire au tag htlml &lt;select&gt;&lt;/select&gt; et va donc
 
 Documentation : [https://ionicframework.com/docs/components/\#select](https://ionicframework.com/docs/components/#select)
 
-### Composant Cards
+## Composant Cards
 
 Les cartes sont un bon moyen d'afficher des informations importantes à destination des utilisateurs. Ce pattern s'inspire des carte de visite que nous utilisons dans la vie courante.
 
@@ -286,7 +286,7 @@ Ou tout simplement reproduire un design assez proche de réseaux sociaux comme I
 
 Documentation : [https://ionicframework.com/docs/components/\#cards](https://ionicframework.com/docs/components/#cards)
 
-### Composant Fab \(Floating Action Buttons\)
+## Composant Fab \(Floating Action Buttons\)
 
 Ce composant est issu du Material Design, un ensemble de règles de design proposées par Google et qui est utilisé notamment à partir de la version 5.0 du système d'exploitation Android. Il s'agit d'un élément en forme de cercle qui permet, au clic, d'afficher d'autres éléments actionnables eux aussi par clic.
 

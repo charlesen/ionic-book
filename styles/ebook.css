@@ -1,0 +1,116 @@
+body {
+  font-family: Georgia, 'Nimbus Roman No9 L', 'Century Schoolbook L', serif;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel', Georgia, serif;
+  font-weight: 700;
+  margin: 1rem 0;
+  letter-spacing: 2px;
+}
+
+.markdown-section h1 {
+  border-left: 5px solid #fefefe;
+  padding: 5px 5px 5px 40px;
+  border-radius: 5px;
+  background-color: #3b8c7b;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1023px) {
+  .markdown-section h1 {
+    font-size: 2rem;
+  }
+  .markdown-section h2 {
+    font-size: 1.8rem;
+  }
+  .markdown-section h3 {
+    font-size: 1.7rem;
+  }
+  .markdown-section h4 {
+    font-size: 1.6rem;
+  }
+  .markdown-section h5 {
+    font-size: 1.5rem;
+  }
+}
+
+.markdown-section h2 {
+  border-bottom: 4px solid #333;
+}
+
+.book-summary ul.summary li.active>a, a, a:hover, a:focus, a:active, .markdown-section a {
+  color: #3b8c7b;
+}
+
+/*Image responsive*/
+
+.markdown-section img:nth-child(2) {
+  float: right;
+}
+
+.markdown-section img:nth-child(2)::after {
+  clear: both;
+  content: ' ';
+  display: table;
+}
+
+.markdown-section>img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  display: block;
+  padding: 0 4px;
+}
+
+.markdown-section p {
+  clear: both;
+}
+
+/* Mobile ----------- */
+
+@media only screen and (max-width: 1023px) {
+  .btn.screen-md, .screen-md, #disqus_thread {
+    display: none;
+  }
+  .page-wrapper {
+    padding-top: 50px;
+  }
+  .book-header {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1024px) {
+  .btn.screen-xs, .fa.screen-xs, .screen-xs {
+    display: none;
+  }
+  .book-body {
+    padding-bottom: 500px;
+  }
+}
+
+/*Page break*/
+
+/*pre, .markdown-section pre {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+pre>code {
+  visibility: visible;
+  padding: .85em 1em;
+  margin-bottom: 1.275em;
+  background-color: #f7f7f7;
+}
+
+pre>code.lang-page-break {
+  page-break-after: always;
+  white-space: normal;
+}*/
