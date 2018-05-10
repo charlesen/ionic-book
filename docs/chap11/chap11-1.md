@@ -5,8 +5,6 @@
 * [Java SDK](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html)
 * [Android Studio](https://developer.android.com/studio/index.html)
 
-###
-
 ### Création d'un Keystore
 
 le keystore est utilisé pour signer une application Android et donc certifier qu'elle a bien été emise par nous. Nous allons utiliser un outil nommé **keytool** inclut dans le SDK de Java.
