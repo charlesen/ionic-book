@@ -2,35 +2,7 @@
 
 Une fois développée, votre application mobile ne sera pérenne dans le temps que grâce à des tests poussés et une bonne gestion des bugs. Il se peut qu'un certain nombre de petites anomalies soit présentes à votre insu apres que vous ayez de développer, mais ce n'est pas bien grave si le gros des soucis est corriger en amont : vos utilisateurs cibles vous diront merci, et surtout, vous ne décevrez pas.
 
-## Tester son application mobile
 
-### Depuis votre navigateur
-
-C'est la manière la plus simple pour tester votre application et comme nous l'avons il suffit de saisir la commande "serve" pour lancer votre application mobile dans un navigateur :
-
-```bash
-$ ionic start -lc
-```
-
-Pour information :
-
-* **l :** ce paramètre permet d'afficher votre application dans le mode lab, avec la possibilité de switcher entre les vues Android, iOS ou d'avoir les deux en même temps
-* **c :** permet d'afficher les logs depuis la console \(terminal\)
-
-### Depuis Ionic View
-
-Ionic View est une application mobile qui vous permettra de visualiser vos projets Ionic après les avoir "pushé" sur le cloud à partir de votre compte Ionic PRO. Nous y reviendrons plus en détails au [chapitre 10](/chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md).
-
-L'application Ionic View n'existe actuellement que pour Android et iOS[^1]. Pour commencer à utiliser Ionic View, il vous suffit de le télécharger sur un des stores :
-
-* Google Play Store : [https://play.google.com/store/apps/details?id=com.ionicframework.view](https://play.google.com/store/apps/details?id=com.ionicframework.view)
-* Apple Store : [https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931](https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931)
-
-### Depuis l'emulateur
-
-```
-$ ionic cordova run android
-```
 
 ## Debogages
 
@@ -91,4 +63,3 @@ Ces deux élément, assez vous indique souvent d'où vient le problème et surto
 1\) Traquez tous les méchants bugs de votre application en utilisant une ou plusieurs des méthodes citées précédemment.
 
 [^1]: L'application Ionic View pour iOS est à l'heure où j'écris ces quelques lignes indisponible sur l'Apple Store, ayant été désactivée par la plateforme qui lui reproche le fait d'être une application permettant d'executer d'autres applications. Selon Apple, chaque application doit disposer de son propre contexte d'execution et ce que fait Ionic View enfreindrait sa politique interne. Voir l'article du CEO et co-fondateur Max Lynch [Update on Ionic View for iOS](https://blog.ionicframework.com/update-on-ionic-view-for-ios/) : [https://blog.ionicframework.com/update-on-ionic-view-for-ios/](https://blog.ionicframework.com/update-on-ionic-view-for-ios/)
-

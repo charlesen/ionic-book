@@ -11,16 +11,3 @@ Le PWA vient en quelque sorte corriger ces problèmes et bien d'autres, rencontr
 ## Ionic à l'assaut du PWA
 
 La société éditrice du Framework mobile n'a pas attendu pour s'attaquer à ce qui pourrait s'appararenter au futur du web et du mobile. Elle a créé en l'espace d'un an deux projets pour faciliter la création de PWA : Stencil et Capacitor.
-
-### Stencil : [https://stenciljs.com/](https://stenciljs.com/)
-
-![](/assets/stencil_1.png)
-
-### Capacitor : [https://capacitor.ionicframework.com/](https://capacitor.ionicframework.com/)
-
-![](/assets/ionic_capacitor.png)
-
-De ces deux outils, **Capacitor** est surement celui qui a le plus de potentiel et donc est susceptible de durer dans le temps. Mais les technologies mobiles évoluant tellement vite, seul l'avenir nous dira qui de ces deux technologies aura remporté le trophée de l'outil principal  de développement de PWA.
-
-Affaire à suivre donc.
-
