@@ -1,12 +1,12 @@
-# Une méthode pour les gouverner tous
+## Une méthode pour les gouverner tous
 
 Il existe différentes façon de développer un produit à destination des mobinautes : le web mobile, le natif et l'hybride.
 
-## Applications web mobiles
+### Applications web mobiles
 
 Une application web mobile est une version allégée d'un site internet, optimisée pour les écrans de petites tailles \(smartphone, tablette, TV connectée,...\). On parle la plupart du temps de site responsive, car il s'adapte aux caractériques de l'écran du navigateur web. Avec le [PWA, concept abordé au chapitre 12](/chap-12-introduction-au-pwa-avec-stencil-et-capacitor.md), les applications web mobiles sont en passe de dominer le traffic issus des appareils mobiles.
 
-## Applications natives
+### Applications natives
 
 Une application mobile est dite native, si le développement effectué pour la créer \(et donc le langage de programmation\) est spécifique à la plateforme cible.
 
@@ -17,7 +17,7 @@ Une application mobile est dite native, si le développement effectué pour la c
 | Windows Phone \(Microsoft\) | C-Sharp \(C\#\) |
 | ...etc |  |
 
-## Applications hybrides
+### Applications hybrides
 
 Vous vous rappelez du seigneur des anneaux ? Oui ? Et bien les technologies dites _**"hybrides"**_ sont au mobile, ce que l'anneau de Sauron est à l'univers imaginée par Tolkien[^1].
 

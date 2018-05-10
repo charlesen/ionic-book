@@ -1,14 +1,14 @@
-# Autres utilitaires
+## Autres utilitaires
 
-## Java SDK
+### Java SDK
 
-### Windows et Mac OS
+#### Windows et Mac OS
 
 Pour installer le SDK de Java sous Windows et Mac, il vous suffit de visiter le site : [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) et de choisir le fichier adapté à votre machine \(32 ou 64 bits\)
 
-### Linux
+#### Linux
 
-#### Mise à jour des dépôts
+##### Mise à jour des dépôts
 
 ```
 $ sudo add-apt-repository ppa:openjdk-r/ppa
@@ -21,17 +21,17 @@ Installation d'OpenJDK
 sudo apt-get install openjdk-8-jdk
 ```
 
-## Android SDK
+### Android SDK
 
 La meilleur façon d'installer le SDK d'Android est encore d'installer Android Studio. Pour ce faire, rien de plus simple, il suffit de visiter le site [https://developer.android.com/studio/index.html\#downloads](https://developer.android.com/studio/index.html#downloads) et de télécharger le paquet associé à votre OS.
 
-### Windows
+#### Windows
 
 Une fois le téléchargement effectué, vous n'aurez plus qu'à lancer l'installation en cliquant sur le fichier au format **.exe **et suivre le setup. L'installation du SDK se fera en même temps.
 
 Voilà, c'est tout.
 
-### Mac OS
+#### Mac OS
 
 1. Lancer l'installation en cliquant sur le fichier au format **.dmg** téléchargé précédemment.
 2. Glisser-déposer \(Drag-n-drop\) ensuite Android Studio dans le dossier Applications
@@ -39,7 +39,7 @@ Voilà, c'est tout.
 
 Voilà.
 
-### Linux
+#### Linux
 
 1. Décompresser le fichier **.zip** téléchargé précédemment dans un dossier approprié. Je vous propose le dossier **/opt/** de manière à le partager entre les différents acteurs de votre OS.
 2. Ouvrez un invite de commandes \(CTRL + ALT + T\) et executer le fichier **/opt/android-studio/bin/studio.sh**.
@@ -51,7 +51,7 @@ Si votre OS est une machine 64-bit, vous aller devoir installer quelques dépend
 $ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 ```
 
-## Xcode et ios-sim \(Mac OS uniquement\)
+### Xcode et ios-sim \(Mac OS uniquement\)
 
 Pour installer **Xcode**, il vous suffit de visiter l'url suivante [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) et de cliquer sur **"Download"**.
 
@@ -62,7 +62,7 @@ $ sudo npm install -g ios-sim
 $ ios-sim –version # Pour vérifier que tout s'est bien passé
 ```
 
-## Git
+### Git
 
 Ionic utilise le gestionnaire de dépôt Git dans son workflow de développement actuel. Pour l'installer, rien de plus simple, il vous suffit d'aller à la page de téléchargement suivante : [https://git-scm.com/downloads](https://git-scm.com/downloads) et choisir le paquet correspondant à votre OS.
 
@@ -72,7 +72,7 @@ Sous Linux, il est également possible de l'installer en saisissant simplement l
 $ apt install git
 ```
 
-## Installation via un script Bash \(Ubuntu\)
+### Installation via un script Bash \(Ubuntu\)
 
 Un script trouvé sur github[^1] , et que j'ai un peu adapté, fait assez bien le travail, car il vous permet d'installer tous ces utilitaires via un seul fichier bash.
 

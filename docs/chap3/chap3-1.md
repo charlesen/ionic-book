@@ -1,6 +1,6 @@
-# NodeJS et NPM
+## NodeJS et NPM
 
-## NodeJS en bref
+### NodeJS en bref
 
 ![](/assets/1200px-Node.js_logo.svg.png)
 
@@ -8,15 +8,15 @@ Depuis son commencement, JavaScript, a été, comme vous le savez très certaine
 
 De plus, NodeJS, à l'instar de Ionic, est Open Source, gratuit et disponible pour différentes plateformes \(Windows, Linux, Unix, Mac OS,...\)
 
-## NPM : Node Package Manager
+### NPM : Node Package Manager
 
 ![](/assets/npm.png)
 
 Comme son nom peut le suggérer, NPM est le gestionnaire de packet de NodeJS, qui étant très modulaire, voit son ecosystème  constamment enrichi par des modules développés par les membres de sa large communauté.
 
-## Installation
+### Installation
 
-### Windows et Mac OS
+#### Windows et Mac OS
 
 Pour installer NodeJS, il suffit simplement d'aller à l'adresse : [https://nodejs.org/en/download/](https://nodejs.org/en/download/), de télécharger le gestionnaire d'installation au format **.msi** pour windows et **.pkg** pour Mac OS. Laissez-vous ensuite simplement guider. Le gestionnaire installera également NPM.
 
@@ -30,7 +30,7 @@ node -v
 
 Vous devriez voir s'afficher la version actuelle de NodeJs.
 
-### Linux \(Ubuntu\)
+#### Linux \(Ubuntu\)
 
 sous linux et en particulier Ubuntu, il vous suffit de saisir les commandes suivantes depuis un invite de commandes :
 

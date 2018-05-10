@@ -1,4 +1,4 @@
-# Duckcoin : principes de fonctionnement
+## Duckcoin : principes de fonctionnement
 
 DuckCoin sera comme nous l'avons déjà dit une crypto-monnaie basée sur une blockchain publique. L'application mobile que nous allons développer tout au long de ce livre portera le même nom.
 
@@ -6,7 +6,7 @@ De plus, la monnaie fonctionnera à peu près sur le même principe que le Bitco
 
 Ce livre n'étant pas consacré à la Blockchain et aux cryptomonnaies, vous n'êtes pas obligé de lire la suite de ce chapitre et pouvez directement passer à la suite. Mais si vous êtes un tant soit peu curieux, alors restez, vous ne serez pas dessus je pense.
 
-## Construction de la Blockchain
+### Construction de la Blockchain
 
 Pour développer la blockchain sur laquelle sera construite notre cryptomonnaie, nous allons utiliser le langage de programmation Python, qui est assez simple à maîtriser.
 
@@ -62,7 +62,7 @@ Ici, le premier bloc ne possède pas de hash pour le bloc précédent \(_previou
 
 A présent rentrons plus en détail sur le fonctionnement des méthodes de la classe BlockChain.
 
-## Gestions des transactions
+### Gestions des transactions
 
 La méthode **new\_transaction** est en charge de l'ajout de nouvelles transactions au sein d'un bloc.
 
@@ -90,7 +90,7 @@ class Blockchain(object):
 
 Chaque fois qu'un utilisateur souhaitera envoyer de l'argent à un autre, c'est cette méthode qui sera appelée.  Le tout \(la transaction\) sera stockée dans le prochain bloc à miner \(notion que nous aborderons plus loin\).
 
-## Gestion des blocs
+### Gestion des blocs
 
 A la création de la blockchain, nous allons devoir créer un bloc initial, qui stockera les toutes premières transactions de la blockchain. C'est à l'intérieur de ce bloc par exemple que l'on pourra stocker les transactions permettant d'envoyer de l'argent aux 20 premiers utilisateurs de notre cryptomonnaie. Et oui, avoir de l'argent en stock c'est bien, mais si personne ne s'en sert, elle n'a aucune valeur.
 
@@ -166,7 +166,7 @@ class Blockchain(object):
         return sha256(block_string).hexdigest()
 ```
 
-## La Preuve de travail, Proof of Work \(pow\)
+### La Preuve de travail, Proof of Work \(pow\)
 
 La preuve de travail est la méthode qui permet de créer ou miner un nouveau bloc de la blockchain. Il s'agit d'un algorithm permettant, comme le rappel Wikipédia :
 
@@ -266,7 +266,7 @@ Pour rappel, la preuve de travail du Bitcoin, qui ressemble à peu près à cell
 
 ![](/assets/block_screen.png)
 
-## Interaction avec la Blockchain DuckCoin
+### Interaction avec la Blockchain DuckCoin
 
 Pour l'affichage et les interactions avec la blockchain, nous utiliserons un framework Python nommé Flask, robuste et très simple à prendre en main. Si vous souhaitez en savoir plus sur Flask, n'hésitez pas à lire l'excellente documentation en ligne : [http://flask.pocoo.org/](http://flask.pocoo.org/)
 
@@ -281,4 +281,3 @@ Notre cryptomonnaie qui est disponible à l'adresse : [https://duckcoin.charlese
 Maintenant que notre outil est en place, nous pouvons seirenement nous lancer dans la création de l'application mobile qui nous permettra d'interagir avec la Blockchain, gérer notre portefeuille, envoyer ou recevoir de l'argent sous forme de tokens **DCK**.
 
 [^1]: Le timestamp \(unix\) désigne le nombre de secondes écoulées depuis le 1er janvier 1970 à minuit UTC précise
-

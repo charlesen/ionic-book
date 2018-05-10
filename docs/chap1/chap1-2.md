@@ -1,4 +1,4 @@
-# Quand faire le choix d'un développement Hybride
+## Quand faire le choix d'un développement Hybride
 
 Une application hybride est avant tout une application native. Elle est téléchargée à partir d'un app store ou d'une tout autre place de marché. Elle a les mêmes fonctionnalités natives et à peu près les mêmes performances que toute application construite avec un SDK natif.
 
@@ -19,7 +19,7 @@ N'hésitez pas à noter ces questions, à y répondre, puis à les poser aux per
 
 Voilà plus en détail ce que ces différentes questions peuvent impliquer.
 
-## Quelles plates-formes mobiles souhaitez-vous cibler ?
+### Quelles plates-formes mobiles souhaitez-vous cibler ?
 
 Si vous souhaitez cibler plus d'une plate-forme mobile, vous avez alors plusieurs choix possibles. Cela va de soi.
 
@@ -31,19 +31,19 @@ Si ce que vous souhaitez proposer ne requiert pas d'avoir de très grosses perfo
 
 Préparez-vous de toute façon, si votre choix se porte sur le natif, à parler couramment l'Objective-C ou le Swift pour iOS, Java ou Kotlin pour Android, et C-Sharp \(C \#\) pour Windows Phone, pour ne citer que ces trois plateformes.
 
-## Voulez-vous distribuer votre application via un app Store ?
+### Voulez-vous distribuer votre application via un app Store ?
 
 Si vous souhaitez distribuer votre application via une boutique d'applications mobiles, vous devrez alors créer soit une application hybride, soit une native. Vous aurez dans tous les cas besoin d'un site internet qui servira de plateforme à vos utilisateurs au cas où ils rencontreraient des problèmes avec votre application mobile.
 
 Sinon, là aussi une application web mobile ou [PWA](/chap-12-introduction-au-pwa-avec-stencil-et-capacitor.md) devrait suffire.
 
-## Vous cherchez à utiliser des fonctionnalités clés de l'appareil mobile?
+### Vous cherchez à utiliser des fonctionnalités clés de l'appareil mobile?
 
 Grâce aux PWA \(Progressive Web Apps\), on peut faire énormément de choses depuis un site mobile et utiliser des fonctionnalités qui dans le passé n'étaient accessibles qu'en développement natif ou hybride. Je consacre un chapitre entier à cette technologie à la [fin de ce livre](/chap-12-introduction-au-pwa-avec-stencil-et-capacitor.md).
 
 Mais si les fonctions que vous ciblez dépassent le cadre du PWA, là aussi pas le choix, vous devrez passer par l'Hybride ou le natif. Et si vous souhaitez être irréprochable niveau interface utilisateur et performance, alors le natif devra être votre premier choix.
 
-## Quelles sont vos capacités techniques et/ou celle de votre équipe de développement ?
+### Quelles sont vos capacités techniques et/ou celle de votre équipe de développement ?
 
 Grande question encore et loin d'être la moins importante. Si vous avez une grosse équipe de développement, vous êtes alors à l'abri de nombreux soucis. Vous aurez le choix d'utiliser l'une ou autre des trois méthodes précédentes. Vous êtes riche et vous le valez bien.
 
@@ -52,4 +52,3 @@ Vous aurez besoin, pour créer une application native, de développeurs expérim
 Mais si vous souhaitez ne pas mettre à profit autant de compétences techniques pour un miniscule projet qui ne vous rapportera pas plus de 1% de votre chiffre d'affaires, alors cela vaudrait peut être la peine de réfléchir à l'option Hybride qui pourrait vous faire économiser énormément de temps et d'argent. Payez ensuite des vacances à vos collaborateurs avec l'argent économisé via une prime d'intéressement ou exceptionnelle par exemple.
 
 Dans la plupart des cas, développer en mode hybride offre le meilleur rapport qualité/prix, surtout si vous démarrez une première version de votre application. Ça tombe bien, Ionic permet la création d'applications hybrides et ce livre est là pour vous aider à décoller de la meilleure façon qui soit.
-

@@ -1,4 +1,4 @@
-# Cryptomonnaies et blockchain
+## Cryptomonnaies et blockchain
 
 C’est à la une de quasiment tous les journaux d’information. Par une seule semaine sans que l’on vous parle ci et là du Bitcoin, de Ripple ou d’une autre crypto-monnaie en vogue.
 
@@ -10,15 +10,15 @@ Dit autrement, c’est comme remplacer ses euros, ses dollars ou ses francs CFA 
 
 Quelques années plus tard, on dénombre plus de 1000 crypto-monnaies selon le site internet [CoinMarketCap](https://coinmarketcap.com/) pour une capitalisation boursière \(valeur au prix du marché de l’ensemble des crypto-monnaies en circulation\) de plus de 740 milliards de dollars. C’est juste énorme et ce n’est rien comparé au potentiel de ce nouveau marché.
 
-## Principales crypto-monnaies
+### Principales crypto-monnaies
 
-### Bitcoin
+#### Bitcoin
 
 Bitcoin est une devise virtuelle pair-à-pair décentralisée qui fonctionne grâce à ses utilisateurs, sans autorité centrale ni intermédiaire. Elle vaut à l’heure où j’écris ces quelques lignes autour de 6 616,51 dollars, soit environ 5 405,71 euros, soit plus de 3,5 millions de Franc CFA. C’est juste énorme.
 
 **1 Bitcoin = €5 405,71**
 
-### Ripple
+#### Ripple
 
 Ripple est un système de règlement brut en temps réel, un marché des changes et un réseau de transfert de fonds. Également appelé le Ripple Transaction Protocol ou Protocole Ripple, il est construit sur un protocole Internet distribué et open source, un registre de consensus et une monnaie native appelée XRP. Lancé en 2012, le réseau Ripple a pour objectif de permettre des transactions financières mondiales sécurisées, instantanées et presque gratuites, de toute taille sans rejets de débit.
 
@@ -26,7 +26,7 @@ Ripple et Bitcoin utilisent une méthode différente pour parvenir à un consens
 
 **1 Ripple = €0,382906**
 
-### Ethereum
+#### Ethereum
 
 Ethereum est une devise virtuelle développée sur une plateforme logicielle ouverte basée sur la technologie blockchain qui permet aux développeurs de créer et déployer des applications décentralisées qui exécutent des contrats intelligents \(_**« smart contracts »**_\). C’est fin 2013 que Vitalik Buterin, un chercheur et développeur en crypto-monnaie, propose Ethereum.
 
@@ -34,7 +34,7 @@ Ethereum est une devise virtuelle développée sur une plateforme logicielle ouv
 
 **1 Ethereum = €300,78**
 
-## La Blockchain pour les nuls
+### La Blockchain pour les nuls
 
 Selon Wikipédia :
 
@@ -61,4 +61,3 @@ Les applications de la Blockchain sont multiples car elle permet d'éliminer les
 Si l'euro a de la valeur aujourd'hui c'est d'abord parce que cette valeur nous la lui accordons et que les banques et les Etats européens veillent à ce que cela soit toujours le cas en limitant sa quantité et sa provenance \(BCE\), en punissant pénalement la création de fausses monnaies,...
 
 Avec la blockchain, ces tiers de confiance peuvent s'en aller en paix, la confiance étant répartie entre les différents acteurs du réseau blockchain. Rien ne nous empêche alors de créer notre propre monnaie, la distribuer et de la valoriser auprès d'un large panel de développeurs d'applications mobiles enthousiastes. C'est ce que nous allons faire tout au long des chapitres avec la cryptomonnaie **DuckCoin**.
-

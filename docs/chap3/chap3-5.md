@@ -1,4 +1,4 @@
-# Première application Ionic
+## Première application Ionic
 
 Pour créer votre première application, rien de plus simple :
 
@@ -59,7 +59,7 @@ $ ionic serve -lc
 
 Ionic devrait ensuite ouvrir votre application depuis votre navigateur préféré.
 
-## Création du projet Duckcoin
+### Création du projet Duckcoin
 
 Comme nous l'avons vu, il est possible de créer une application mobile à partir d'un dépôt git. C'est ce que nous allons faire pour l'application DuckCoin.
 
@@ -80,11 +80,11 @@ $ ionic serve -lc
 
 ![](/assets/screen_app1.png)
 
-## Struction du projet
+### Struction du projet
 
 Faisons un peu le tour de l'anatomie d'un projet type sous Ionic.
 
-## ./src/index.html
+### ./src/index.html
 
 > C'est l'entrée principale du projet. Il faut se rappeler q'une application Hybride utilisation la technologie WebView du téléphonequi se comporte comme un mini-navigateur à l'intérieur duquel on peut afficher un site web, qui est votre projet.
 
