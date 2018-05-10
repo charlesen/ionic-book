@@ -15,8 +15,8 @@
 * [Chapitre 5](chap5/README.md)
 * [Chapitre 6](chap6/README.md)
 * [Chapitre 8](chap8/README.md)
-* [Chap 9](chap9/README.md)
-* [Chap 10](chap10/README.md)
-* [Chap 11](chap11/README.md)
-* [Chap 12](chap12/README.md)
+* [Chapitre 9](chap9/README.md)
+* [Chapitre 10](chap10/README.md)
+* [Chapitre 11](chap11/README.md)
+* [Chapitre 12](chap12/README.md)
 
