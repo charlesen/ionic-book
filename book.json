@@ -18,5 +18,6 @@
     "website": "./styles/website.css",
     "pdf": "./styles/pdf.scss",
     "ebook": "./styles/ebook.css"
-  }
+  },
+  "root":"docs"
 }
