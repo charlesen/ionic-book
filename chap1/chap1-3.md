@@ -1,4 +1,4 @@
-# Pourquoi choisir Ionic ?
+# Pourquoi choisir Ionic
 
 ## Open Source et 100% gratuit
 
@@ -44,3 +44,4 @@ Une autre force de Ionic est très certainement son large panel de produits à l
 * [**Ionic Market**](https://market.ionicframework.com/) : pour trouver l'inspiration grâce à des templates, des kits, des plugins,... gratuits et prêts à l'emploi. Vous pouvez aussi utiliser cette plateforme pour mettre à la vente vos propres réalisations
 
 [^1]: John Ronald Reuel Tolkien, plus connu sous la forme J. R. R. Tolkien, est un écrivain, poète, philologue, essayiste et professeur d’université anglais. Il est principalement connu pour ses romans _Le Hobbit_ et Le Seigneur des anneaux. \(Sources : [wikipédia](https://fr.wikipedia.org/wiki/J._R._R._Tolkien)\).
+

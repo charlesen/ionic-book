@@ -5,8 +5,8 @@
 * [Introduction](introduction.md)
 * [Chap 1](chap1/README.md)
   * [Une méthode pour les gouverner tous](chap1/chap1-1.md)
-  * [Une méthode pour les gouverner tous](chap1/chap1-2.md)
-  * [Une méthode pour les gouverner tous](chap1/chap1-3.md)
+  * [Quand faire le choix d'un développement Hybride](chap1/chap1-2.md)
+  * [Pourquoi choisir Ionic](chap1/chap1-3.md)
 * [Chap 2](chap2/README.md)
 * [Chap 3](chap3/README.md)
 * [Chap 4](chap4/README.md)
@@ -18,3 +18,4 @@
 * [Chap 10](chap10/README.md)
 * [Chap 11](chap11/README.md)
 * [Chap 12](chap12/README.md)
+
