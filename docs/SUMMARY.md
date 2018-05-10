@@ -5,18 +5,18 @@
 * [Introduction](introduction.md)
 ----
 
-* [Chapitre 1](chap1/README.md)
+1. [Chapitre 1](chap1/README.md)
   * [Une méthode pour les gouverner tous](chap1/chap1-1.md)
   * [Quand faire le choix d'un développement Hybride](chap1/chap1-2.md)
   * [Pourquoi choisir Ionic](chap1/chap1-3.md)
 ----
 
-* [Chapitre 2](chap2/README.md)
+2. [Chapitre 2](chap2/README.md)
   * [Cryptomonnaies et blockchain](chap2/chap2-1.md)
   * [Duckcoin : principes de fonctionnement](chap2/chap2-2.md)
 ----
 
-* [Chapitre 3](chap3/README.md)
+3. [Chapitre 3](chap3/README.md)
   * [NodeJS et NPM](chap3/chap3-1.md)
   * [Ionic CLI et Cordova](chap3/chap3-2.md)
   * [Autres utilitaires](chap3/chap3-3.md)
@@ -25,13 +25,13 @@
   * [Exercez-vous](chap3/chap3-6.md)
 ----
 
-* [Chapitre 4](chap4/README.md)
+4. [Chapitre 4](chap4/README.md)
   * [Customisation](chap4/chap4-1.md)
   * [Templates et création de nouvelles pages](chap4/chap4-2.md)
   * [Exercez-vous](chap4/chap4-3.md)
 ----
 
-* [Chapitre 5](chap5/README.md)
+5. [Chapitre 5](chap5/README.md)
   * [Composant Bouton](chap5/chap5-1.md)
   * [Composant Liste](chap5/chap5-2.md)
   * [Composant Select](chap5/chap5-3.md)
@@ -40,7 +40,7 @@
   * [Exercez-vous](chap5/chap5-6.md)
 ----
 
-* [Chapitre 6](chap6/README.md)
+6. [Chapitre 6](chap6/README.md)
   * [Installation et premier script](chap6/chap6-1.md)
   * [Types de base](chap6/chap6-2.md)
   * [Les Classes et les méthodes](chap6/chap6-3.md)
@@ -50,14 +50,14 @@
   * [Exercez-vous](chap6/chap6-7.md)
 ----
 
-* [Chapitre 7](chap7/README.md)
+7. [Chapitre 7](chap7/README.md)
   * [Installation d'Angular CLI et Création d'un nouveau projet](chap7/chap7-1.md)
   * [Structure et architecture d'un projet Angular](chap7/chap7-2.md)
   * [Angular dans les templates](chap7/chap7-3.md)
   * [Exercez-vous](chap7/chap7-4.md)
 ----
 
-* [Chapitre 8](chap8/README.md)
+8. [Chapitre 8](chap8/README.md)
   * [Composants](chap8/chap8-1.md)
   * [Directives](chap8/chap8-2.md)
   * [Services ou Providers](chap8/chap8-3.md)
@@ -68,13 +68,13 @@
   * [Exercez-vous](chap8/chap8-8.md)
 ----
 
-* [Chapitre 9](chap9/README.md)
+9. [Chapitre 9](chap9/README.md)
   * [Tester son application mobile](chap9/chap9-1.md)
   * [Debogage de l'application](chap9/chap9-2.md)
   * [Exercez-vous](chap9/chap9-3.md)
 ----
 
-* [Chapitre 10](chap10/README.md)
+10. [Chapitre 10](chap10/README.md)
   * [Ionic Cloud \(PRO\)](chap10/chap10-1.md)
   * [Ionic Lab](chap10/chap10-2.md)
   * [Ionic View](chap10/chap10-3.md)
@@ -82,12 +82,12 @@
   * [Ionic market](chap10/chap10-5.md)
 ----
 
-* [Chapitre 11](chap11/README.md)
+11. [Chapitre 11](chap11/README.md)
   * [Publication sur le Google Play Store](chap11/chap11-1.md)
   * [Publication sur l'Apple Store](chap11/chap11-2.md)
 ----
 
-* [Chapitre 12](chap12/README.md)
+12. [Chapitre 12](chap12/README.md)
   * [Stencil](chap12/chap12-1.md)
   * [Capacitor](chap12/chap12-2.md)
 ----

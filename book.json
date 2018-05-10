@@ -16,7 +16,7 @@
   "language": "fr",
   "styles": {
     "website": "./styles/website.css",
-    "pdf": "./styles/pdf.scss",
+    "pdf": "./styles/pdf.css",
     "ebook": "./styles/ebook.css"
   },
   "root":"docs"
