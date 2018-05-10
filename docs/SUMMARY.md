@@ -18,14 +18,13 @@
   * [Première application Ionic](chap3/chap3-5.md)
   * [Exercez-vous](chap3/chap3-6.md)
 * [Chapitre 4](chap4/README.md)
-  * [Chap 4-1](chap4/chap4-1.md)
-  * [Chap 4-2](chap4/chap4-2.md)
-  * [Chap 4-3](chap4/chap4-3.md)
+  * [Customisation](chap4/chap4-1.md)
+  * [Templates et création de nouvelles pages](chap4/chap4-2.md)
+  * [Exercez-vous](chap4/chap4-3.md)
 * [Chapitre 5](chap5/README.md)
   * [Chap 5-1](chap5/chap5-1.md)
   * [Chap 5-2](chap5/chap5-2.md)
   * [Chap 5-3](chap5/chap5-3.md)
-
 * [Chapitre 6](chap6/README.md)
   * [Chap 6-1](chap6/chap6-1.md)
   * [Chap 6-2](chap6/chap6-2.md)
@@ -56,3 +55,4 @@
   * [Chap 12-3](chap12/chap12-3.md)
 * [Annexes](annexe/README.md)
   * [Annexe 1 : Bugs courants et solutions](annexe/annexe1-1.md)
+
