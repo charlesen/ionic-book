@@ -72,7 +72,7 @@ $ ionic serve -c
 
 Connectez ensuite votre téléphone au même réseau wifi que votre ordinateur, puis lancez Ionic Dev App pour voir apparaitre Votre application DuckCoin.
 
-![](/assets/ionic_devapp_2.png)
+| ![](/assets/ionic_devapp_2.png) |
 
 Nous pouvons à présent tester quelques plugins natifs.
 
