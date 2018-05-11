@@ -65,6 +65,7 @@ Une license délivrant le droit de publier sur le Google PlayStore coute 25 doll
 |  |  |
 
 Remplissez le formulaire qui vous est proposé et ajoutez des captures d'écran dans les formats recommandés, puis validez le tout :
+
 | ![](/assets/playstore_3.png) | ![](/assets/playstore_4.png) |
 | :--- | :--- |
 |  |  |
