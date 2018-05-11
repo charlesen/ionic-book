@@ -72,7 +72,7 @@ $ ionic serve -c
 
 Connectez ensuite votre téléphone au même réseau wifi que votre ordinateur, puis lancez Ionic Dev App pour voir apparaitre Votre application DuckCoin.
 
- ![](/assets/ionic_devapp_2.png)
+![](/assets/ionic_devapp_2.png)
 
 Nous pouvons à présent tester quelques plugins natifs.
 
@@ -190,8 +190,8 @@ On peut ensuite appeler cette fonction depuis le fichier **src/pages/profile/pro
 Il ne vous reste plus qu'à cliquer sur le bouton PHOTO et accepter l'autorisation d'accéder aux photos.
 
 | ![](/assets/screen_camera_1.png) | ![](/assets/screen_camera_2.png) |
-| :--- | :--- |
-| ![](/assets/screen_camera_3.png) | c |
+| :---: | :---: |
+| ![](/assets/screen_camera_3.png) |  |
 
 #### Geolocation
 
@@ -328,3 +328,6 @@ Le plugin permet de récupérer les valeurs suivantes :
 * **this.device.manufacturer** : retourne le nom du fabricant de l'appareil mobile
 * **this.device.isVirtual** : methode permettant de savoir si l'application est utilisé depuis un émulateur de smartphone \(voir [Chapitre 9](/chap9)\)
 * **this.device.serial** : renvoie le numéro de série de l'appareil
+
+
+
