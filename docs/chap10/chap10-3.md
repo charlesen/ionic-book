@@ -6,19 +6,15 @@ Url : [https://dashboard.ionicframework.com](https://dashboard.ionicframework.co
 
 Une fois l'application téléchargée, il vous suffit de l'ouvrir, de vous connecter avec vos idenfiants Ionci PRO, pour voir s'afficher vos différentes applications :
 
-| a | b |
+| ![](/assets/ionic_view_duck_1.png) | ![](/assets/ionic_view_duck_2.png) |
 | :--- | :--- |
-| c | d |
+| Vue des applis | Démarrage |
 
-![](/assets/ionic_view_duck_1.png)![](/assets/ionic_view_duck_2.png)
 
 Grâce au mecanisme de push avec Git, chaque mise à jour de code mettra aussi à jour votre application sur Ionic View.
 
-L'onglet suivant vous permet de visualiser une application à partir de son identifiant ou de son QR Code :
+L'onglet suivant (oeil) vous permet de visualiser une application à partir de son identifiant ou de son QR Code  (voir image de gauche), tandis que le dernier permet la gestion de ses paramètres utilisateurs (voir image de droite)
 
-![](/assets/ionic_view_duck_4.png)
-
-Et le suivant permet la gestion de ses paramètres utilisateurs
-
-![](/assets/ionic_view_duck_5.png)
-
+| ![](/assets/ionic_view_duck_4.png) | ![](/assets/ionic_view_duck_5.png) |
+| :--- | :--- |
+| Onglet visualisation | Paramétrage |
