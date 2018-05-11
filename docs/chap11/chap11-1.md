@@ -60,19 +60,15 @@ Voilà. C'est ce fichier **monProjetMini.apk** que nous allons pouvons publier s
 
 Une license délivrant le droit de publier sur le Google PlayStore coute 25 dollars pour un compte à vie. Pour se connecter il suffit simplement d'aller à cette adresse : [https://play.google.com/apps/publish/](https://play.google.com/apps/publish/). Cliquez ensuite sur le bouton "Créer une application" en haut en à droite :
 
-| a | b |
+| ![](/assets/google_playstore.png) | ![](/assets/playstore_2.png) |
 | :--- | :--- |
-| c | d |
+|  |  |
 
-![](/assets/google_playstore.png)![](/assets/playstore_2.png)
-
-Remplissez le formulaire qui vous est proposé :![](/assets/playstore_3.png)
-
-Ajoutez des captures d'écran dans les formats recommandés et validez :
-
-![](/assets/playstore_4.png)
+Remplissez le formulaire qui vous est proposé et ajoutez des captures d'écran dans les formats recommandés, puis validez le tout :
+| ![](/assets/playstore_3.png) | ![](/assets/playstore_4.png) |
+| :--- | :--- |
+|  |  |
 
 Il faut ensuite aller dans l'onglet **"Versions de l'application"** et cliquez sur **"Gérer la production" &gt; "Créer une version"**. C'est ici que l'on va pouvoir uploader notre APK avant de le publier :
 
 ![](/assets/playstore_6.png)
-
