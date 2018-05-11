@@ -189,6 +189,10 @@ On peut ensuite appeler cette fonction depuis le fichier **src/pages/profile/pro
 
 Il ne vous reste plus qu'à cliquer sur le bouton PHOTO et accepter l'autorisation d'accéder aux photos.
 
+| c | c |
+| :--- | :--- |
+|  |  |
+
 ![](/assets/screen_camera_1.png)![](/assets/screen_camera_2.png)![](/assets/screen_camera_3.png)
 
 #### Geolocation
