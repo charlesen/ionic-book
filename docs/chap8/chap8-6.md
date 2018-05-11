@@ -189,11 +189,9 @@ On peut ensuite appeler cette fonction depuis le fichier **src/pages/profile/pro
 
 Il ne vous reste plus qu'à cliquer sur le bouton PHOTO et accepter l'autorisation d'accéder aux photos.
 
-| c | c |
+| ![](/assets/screen_camera_1.png) | ![](/assets/screen_camera_2.png) |
 | :--- | :--- |
-| c | c |
-
-![](/assets/screen_camera_1.png)![](/assets/screen_camera_2.png)![](/assets/screen_camera_3.png)
+| ![](/assets/screen_camera_3.png) | c |
 
 #### Geolocation
 
@@ -330,6 +328,3 @@ Le plugin permet de récupérer les valeurs suivantes :
 * **this.device.manufacturer** : retourne le nom du fabricant de l'appareil mobile
 * **this.device.isVirtual** : methode permettant de savoir si l'application est utilisé depuis un émulateur de smartphone \(voir [Chapitre 9](/chap-9-debogage-tests-et-monitoring.md)\)
 * **this.device.serial** : renvoie le numéro de série de l'appareil
-
-
-
