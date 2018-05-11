@@ -187,7 +187,7 @@ On peut ensuite appeler cette fonction depuis le fichier **src/pages/profile/pro
 </ion-content>
 ```
 
-Etant donné qu'il s'agit d'une fonction native, si vous cliquez sur le bouton **"Photo"** depuis votre navigateur, il ne se passera rien. Nous verrons au chapitre 9 comment tester votre application depuis l'application Ionic view ou à directement partir de votre téléphone.
+Il ne vous reste plus qu'à cliquer sur le bouton PHOTO et accepter l'autorisation d'accéder aux photos.
 
 ![](/assets/screen_camera_1.png)![](/assets/screen_camera_2.png)![](/assets/screen_camera_3.png)
 
