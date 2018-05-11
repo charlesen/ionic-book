@@ -315,7 +315,8 @@ Profil utilisateur
 ```
 
 Qui donne le résultat suivant :
+| ![](/assets/screen_profile_3.png) | ![](/assets/screen_profile_4.png) |
+| :--- | :--- |
+| Profil 1 | Profil 2 |
 
-![](/assets/screen_profile_3.png) ![](/assets/screen_profile_4.png)
-
-L'élement button fait partie des composants que propose Ionic. Dans le [chapitre suivant](/chap-5-utilisation-des-composants-ionic.md), nous ferons le tour de ces principaux composants et apprendrons à la customiser.
+L'élement button fait partie des composants que propose Ionic. Dans le [chapitre suivant](/chap5/), nous ferons le tour de ces principaux composants et apprendrons à la customiser.
