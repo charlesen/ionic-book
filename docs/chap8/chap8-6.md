@@ -56,7 +56,27 @@ export class AppModule { }
 
 ### Utilisation de quelques plugins
 
-Ionic proposant un nombre assez vaste de composant, je vous propose de n'en étudier que quelques-uns parmi les plus intéressants.
+Ionic proposant un nombre assez vaste de composant, je vous propose de n'en étudier que quelques-uns parmi les plus intéressants. Et pour les tester de manière optimale, nous allons utiliser l'application Ionic Dev App, dont nous parlons plus en détails au chapitre 10.
+
+L'application existe pour Android et iOS : 
+
+* Google Play Store : [https://play.google.com/store/apps/details?id=com.ionicframework.view](https://play.google.com/store/apps/details?id=io.ionic.devapp&hl=en)
+
+* Apple Store : [https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931](https://itunes.apple.com/us/app/ionic-devapp/id1233447133?ls=1&mt=8)
+
+
+
+Une fois l'application installée, vous devrez vous connecter avec vos identifiants Ionic PRO, et démarrer votre projet mobile :
+
+```bash
+$ ionic serve -c
+```
+
+Connectez ensuite votre téléphone au même réseau wifi que votre ordinateur, puis lancez Ionic Dev App pour voir apparaitre Votre application DuckCoin.
+
+![](/assets/ionic_devapp_2.png)
+
+Nous pouvons à présent tester quelques plugins natifs.
 
 #### Camera
 
@@ -172,8 +192,6 @@ On peut ensuite appeler cette fonction depuis le fichier **src/pages/profile/pro
 Etant donné qu'il s'agit d'une fonction native, si vous cliquez sur le bouton **"Photo"** depuis votre navigateur, il ne se passera rien. Nous verrons au chapitre 9 comment tester votre application depuis l'application Ionic view ou à directement partir de votre téléphone.
 
 ![](/assets/screen_camera_1.png)![](/assets/screen_camera_2.png)![](/assets/screen_camera_3.png)
-
-
 
 #### Geolocation
 
@@ -310,3 +328,6 @@ Le plugin permet de récupérer les valeurs suivantes :
 * **this.device.manufacturer** : retourne le nom du fabricant de l'appareil mobile
 * **this.device.isVirtual** : methode permettant de savoir si l'application est utilisé depuis un émulateur de smartphone \(voir [Chapitre 9](/chap-9-debogage-tests-et-monitoring.md)\)
 * **this.device.serial** : renvoie le numéro de série de l'appareil
+
+
+
