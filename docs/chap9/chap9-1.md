@@ -15,7 +15,7 @@ Pour information :
 
 ### Depuis Ionic View
 
-Ionic View est une application mobile qui vous permettra de visualiser vos projets Ionic après les avoir "pushé" sur le cloud à partir de votre compte Ionic PRO. Nous y reviendrons plus en détails au [chapitre 10](/chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md).
+Ionic View est une application mobile qui vous permettra de visualiser vos projets Ionic après les avoir "pushé" sur le cloud à partir de votre compte Ionic PRO. Nous y reviendrons plus en détails au [chapitre 10](/chap10).
 
 L'application Ionic View n'existe actuellement que pour Android et iOS[^1]. Pour commencer à utiliser Ionic View, il vous suffit de le télécharger sur un des stores :
 
@@ -136,4 +136,3 @@ Puis dans Safari, allez dans **Préférences &gt; Avancées** et sélectionnez *
 Connectez ensuite votre smartphone en USB.
 
 Depuis Safari de nouveau, dans le menu Développement, puis votre apparail mobile, vous pourrez cliquez sur votre application mobile.
-

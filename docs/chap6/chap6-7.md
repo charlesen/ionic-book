@@ -101,7 +101,7 @@ En vous basant sur ce qui a été fait précédemment avec la liste des cryptomo
 
 ![](/assets/transaction_list_1.png)
 
-3\) Le signe dollar \($\) de la liste est ajouté automatiquement grâce à un pipe Angular \(concept abordé au [chapitre 7](/chap-7-introduction-au-framework-angular.md)\). Comment d'après la documentation suivante, est-il possible de remplacer le $ en € ? Puis € en DRT ? [https://angular.io/api/common/CurrencyPipe](https://angular.io/api/common/CurrencyPipe).
+3\) Le signe dollar \($\) de la liste est ajouté automatiquement grâce à un pipe Angular \(concept abordé au [chapitre 7](/chap7)\). Comment d'après la documentation suivante, est-il possible de remplacer le $ en € ? Puis € en DRT ? [https://angular.io/api/common/CurrencyPipe](https://angular.io/api/common/CurrencyPipe).
 
 ![](/assets/transact_2.png)
 

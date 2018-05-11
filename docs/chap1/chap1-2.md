@@ -35,11 +35,11 @@ Préparez-vous de toute façon, si votre choix se porte sur le natif, à parler 
 
 Si vous souhaitez distribuer votre application via une boutique d'applications mobiles, vous devrez alors créer soit une application hybride, soit une native. Vous aurez dans tous les cas besoin d'un site internet qui servira de plateforme à vos utilisateurs au cas où ils rencontreraient des problèmes avec votre application mobile.
 
-Sinon, là aussi une application web mobile ou [PWA](/chap-12-introduction-au-pwa-avec-stencil-et-capacitor.md) devrait suffire.
+Sinon, là aussi une application web mobile ou [PWA](/chap12) devrait suffire.
 
 ### Vous cherchez à utiliser des fonctionnalités clés de l'appareil mobile?
 
-Grâce aux PWA \(Progressive Web Apps\), on peut faire énormément de choses depuis un site mobile et utiliser des fonctionnalités qui dans le passé n'étaient accessibles qu'en développement natif ou hybride. Je consacre un chapitre entier à cette technologie à la [fin de ce livre](/chap-12-introduction-au-pwa-avec-stencil-et-capacitor.md).
+Grâce aux PWA \(Progressive Web Apps\), on peut faire énormément de choses depuis un site mobile et utiliser des fonctionnalités qui dans le passé n'étaient accessibles qu'en développement natif ou hybride. Je consacre un chapitre entier à cette technologie à la [fin de ce livre](/chap12).
 
 Mais si les fonctions que vous ciblez dépassent le cadre du PWA, là aussi pas le choix, vous devrez passer par l'Hybride ou le natif. Et si vous souhaitez être irréprochable niveau interface utilisateur et performance, alors le natif devra être votre premier choix.
 

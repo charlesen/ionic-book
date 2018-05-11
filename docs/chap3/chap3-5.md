@@ -115,7 +115,7 @@ On retrouve également du code javascript, généré par Ionic et qu'il ne sera 
 
 C'est à l'intérieur que l'on retrouve le code de l'application à proprement. Lorsque l'on voudra rajouter de nouveaux écrans, de la logique métier,...c'est ici que cela se passera.
 
-On retrouve du code écrit en TypeScript \(nous en reparlerons en détails au [chapitre 6](/chap-6-introduction-au-langage-typescript-le-futur-de-javascript.md)\) dont l'extension de fichiers est **.ts**.
+On retrouve du code écrit en TypeScript \(nous en reparlerons en détails au [chapitre 6](/chap6)\) dont l'extension de fichiers est **.ts**.
 
 On retrouve aussi du htlm, du css,...
 
@@ -134,6 +134,6 @@ le fichier **src/app/app.module.ts** est le point d'entrée métier de notre app
 export class AppModule {}
 ```
 
-C'est dans ce fichier que l'on décide quelle composant \(ici MyApp\) sera le composant principal. On expliquera ces notions de composants dans le [chapitre 8](/chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md).
+C'est dans ce fichier que l'on décide quelle composant \(ici MyApp\) sera le composant principal. On expliquera ces notions de composants dans le [chapitre 8](/chap8).
 
-Dans le [chapitre suivant](/chap-4-templates-et-customisation.md), nous allons apprendre à customiser notre application pour qu'elle soit un peu plus à notre image.Mais en attendant, exerçons-vous un peu.
+Dans le [chapitre suivant](/chap4), nous allons apprendre à customiser notre application pour qu'elle soit un peu plus à notre image.Mais en attendant, exerçons-vous un peu.

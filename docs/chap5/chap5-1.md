@@ -8,7 +8,7 @@ Pour ajouter un comosant de type bouton à votre application mobile, il suffit s
 
 Tada ! Ce n'est pas plus compliqué que ça.
 
-On peut aussi customiser un peu ce bouton grâce à des [directives, concepte abordé au chapitre 8](/chap-8-architecture-avancee-dune-application-ionic-composants-directives-providers-et-modules.md). Ajustons par exemple la couleur des différents boutons :
+On peut aussi customiser un peu ce bouton grâce à des [directives, concepte abordé au chapitre 8](/chap8). Ajustons par exemple la couleur des différents boutons :
 
 ```js
 <button ion-button color="light">Mon bouton clair</button>

@@ -1,6 +1,6 @@
 ## Création d'un compte Ionic PRO
 
-Cette étape va nous permettre de disposer d'un compte sur le cloud de Ionic. On en parle en détails au [Chapitre 10](/chap-10-ionic-et-son-ecosysteme-cloud-lab-et-creator.md), mais globalement, Ionic Cloud permet de :
+Cette étape va nous permettre de disposer d'un compte sur le cloud de Ionic. On en parle en détails au [Chapitre 10](/chap10), mais globalement, Ionic Cloud permet de :
 
 * Compiler une application sans devoir installer sur son local toutes les dépendances nécessaires à cette compilation.
 * Faire tester votre application en avant-première via l'application Ionic View

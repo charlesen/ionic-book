@@ -1,6 +1,6 @@
 ## Ionic Cloud \(PRO\)
 
-Nous avons déjà parlé et avons même créé un compte au [chapitre 3](/chap-3-installation-de-ionic-et-premieres-prises-en-main.md).
+Nous avons déjà parlé et avons même créé un compte au [chapitre 3](/chap3).
 
 Ionic Cloud va vous permette de compiler votre projet sans devoir vous inquieter de l'installation des packages nécessaires pour chaque plateforme cible \(Androi, iOS\).
 
