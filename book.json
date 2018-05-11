@@ -19,5 +19,6 @@
     "pdf": "./styles/pdf.css",
     "ebook": "./styles/ebook.css"
   },
+  "structure.readme":"./docs/README.md",
   "root":"docs"
 }
