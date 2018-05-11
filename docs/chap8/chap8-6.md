@@ -72,7 +72,7 @@ $ ionic serve -c
 
 Connectez ensuite votre téléphone au même réseau wifi que votre ordinateur, puis lancez Ionic Dev App pour voir apparaitre Votre application DuckCoin.
 
-| ![](/assets/ionic_devapp_2.png) |
+ ![](/assets/ionic_devapp_2.png) 
 
 Nous pouvons à présent tester quelques plugins natifs.
 
@@ -328,3 +328,6 @@ Le plugin permet de récupérer les valeurs suivantes :
 * **this.device.manufacturer** : retourne le nom du fabricant de l'appareil mobile
 * **this.device.isVirtual** : methode permettant de savoir si l'application est utilisé depuis un émulateur de smartphone \(voir [Chapitre 9](/chap-9-debogage-tests-et-monitoring.md)\)
 * **this.device.serial** : renvoie le numéro de série de l'appareil
+
+
+
