@@ -191,7 +191,7 @@ Il ne vous reste plus qu'à cliquer sur le bouton PHOTO et accepter l'autorisati
 
 | c | c |
 | :--- | :--- |
-|  |  |
+| c | c |
 
 ![](/assets/screen_camera_1.png)![](/assets/screen_camera_2.png)![](/assets/screen_camera_3.png)
 
