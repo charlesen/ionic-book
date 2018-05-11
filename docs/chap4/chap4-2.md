@@ -65,6 +65,10 @@ export class MyApp {
 
 Ce qui ferait que par défaut, lorsque votre application se lancera on aura par défaut cette page de Minage au lieu de la page affichant des onglets.
 
+| a | b |
+| :--- | :--- |
+| Onglet Minage | Page de minage simple |
+
 ![](/assets/screen_duck_2.png)![](/assets/duck_screen_min1.png)
 
 ### Création d'une nouvelle page
@@ -317,3 +321,4 @@ Qui donne le résultat suivant :
 ![](/assets/screen_profile_3.png) ![](/assets/screen_profile_4.png)
 
 L'élement button fait partie des composants que propose Ionic. Dans le [chapitre suivant](/chap-5-utilisation-des-composants-ionic.md), nous ferons le tour de ces principaux composants et apprendrons à la customiser.
+
