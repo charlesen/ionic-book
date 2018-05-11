@@ -56,15 +56,13 @@ export class AppModule { }
 
 ### Utilisation de quelques plugins
 
-Ionic proposant un nombre assez vaste de composant, je vous propose de n'en étudier que quelques-uns parmi les plus intéressants. Et pour les tester de manière optimale, nous allons utiliser l'application Ionic Dev App, dont nous parlons plus en détails au chapitre 10.
+Ionic proposant un nombre assez vaste de composant, je vous propose de n'en étudier que quelques-uns parmi les plus intéressants. Et pour les tester de manière optimale, nous allons utiliser l'application Ionic Dev App, dont nous parlons plus en détails au [chapitre 10](/chap10/README.md).
 
-L'application existe pour Android et iOS : 
+L'application existe pour Android et iOS :
 
 * Google Play Store : [https://play.google.com/store/apps/details?id=com.ionicframework.view](https://play.google.com/store/apps/details?id=io.ionic.devapp&hl=en)
 
 * Apple Store : [https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931](https://itunes.apple.com/us/app/ionic-devapp/id1233447133?ls=1&mt=8)
-
-
 
 Une fois l'application installée, vous devrez vous connecter avec vos identifiants Ionic PRO, et démarrer votre projet mobile :
 
