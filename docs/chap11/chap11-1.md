@@ -64,11 +64,14 @@ Une license délivrant le droit de publier sur le Google PlayStore coute 25 doll
 | :--- | :--- |
 |  |  |
 
-Remplissez le formulaire qui vous est proposé et ajoutez des captures d'écran dans les formats recommandés, puis validez le tout :
+Remplissez le formulaire qui vous est proposé
 
-| ![](/assets/playstore_3.png) | ![](/assets/playstore_4.png) |
-| :--- | :--- |
-|  |  |
+![](/assets/playstore_3.png)
+
+et ajoutez des captures d'écran dans les formats recommandés, avant de valider le tout
+
+![](/assets/playstore_4.png)
+
 
 Il faut ensuite aller dans l'onglet **"Versions de l'application"** et cliquez sur **"Gérer la production" &gt; "Créer une version"**. C'est ici que l'on va pouvoir uploader notre APK avant de le publier :
 
