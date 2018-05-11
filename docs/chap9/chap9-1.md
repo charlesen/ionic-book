@@ -44,7 +44,9 @@ Seule condition, il faut que votre ordinateur soit connecté au même réseau qu
 
 L'avantage de cette application par rapport à Ionic view est que vous n'avez pas besoin de pusher vos développement sur Ionic PRO. Il vous suffit simplement de rédemarrer votre instance en local pour voir les changements s'appliquer sur Ionic Dev app.
 
-![](/assets/ionic_dev_app.png)
+| ![](/docs/assets/ionic_dev_app.png) | ![](/assets/ionic_devapp_2.png) |
+| :--- | :--- |
+| Ionic Dev App au chargement | Une fois l'application détectée |
 
 ### Depuis l'emulateur
 
@@ -79,8 +81,6 @@ Une fois le mode développeur activé, il vous suffit d'aller dans :
 Puis, activez le débogage USB.
 
 ![](/assets/screen_debogage_usb.png)
-
-
 
 Un message s'affichera pour vous demander de valider cette autorisation. Appuyez sur **OK** pour confirmer cette action.
 
@@ -131,8 +131,9 @@ Il est également possible de tester votre application depuis votre smarphone iO
 
 Dans **Réglages &gt; Safari &gt; Avancé** , activez l'**Inspecteur Web**.
 
-Puis dans Safari, allez dans **Préférences &gt; Avancées** et sélectionnez **« Afficher le menu Développement dans la barre des menus »**.
+Puis dans Safari, allez dans **Préférences &gt; Avancées** et sélectionnez **« Afficher le menu Développement dans la barre des menus »**.
 
 Connectez ensuite votre smartphone en USB.
 
 Depuis Safari de nouveau, dans le menu Développement, puis votre apparail mobile, vous pourrez cliquez sur votre application mobile.
+
