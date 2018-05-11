@@ -28,6 +28,10 @@ Alors que la plupart des outils de développement d'applications mobiles hybride
 
 Le framework proposent de nombreux composants et templates qui vous faciliteront énormément la vie. Pas besoin d'être un expert UX pour commencer à créer des applications mobiles élégantes et ergonomiques : quelques clics et quelques lignes de codes suffisent.
 
+| a | b |
+| :--- | :--- |
+|  |  |
+
 ![](/assets/screenshot_6_tiny.png)![](/assets/screenshot_4_tiny.png)
 
 ### Tests et debogage simples
@@ -44,3 +48,4 @@ Une autre force de Ionic est très certainement son large panel de produits à l
 * [**Ionic Market**](https://market.ionicframework.com/) : pour trouver l'inspiration grâce à des templates, des kits, des plugins,... gratuits et prêts à l'emploi. Vous pouvez aussi utiliser cette plateforme pour mettre à la vente vos propres réalisations
 
 [^1]: John Ronald Reuel Tolkien, plus connu sous la forme J. R. R. Tolkien, est un écrivain, poète, philologue, essayiste et professeur d’université anglais. Il est principalement connu pour ses romans _Le Hobbit_ et Le Seigneur des anneaux. \(Sources : [wikipédia](https://fr.wikipedia.org/wiki/J._R._R._Tolkien)\).
+
