@@ -30,7 +30,7 @@ Le framework proposent de nombreux composants et templates qui vous faciliteront
 
 | ![](/assets/screenshot_6_tiny.png) | ![](/assets/screenshot_4_tiny.png) |
 | :--- | :--- |
-|  |  |
+| Vue d'une page de connexion | Affichage des détails d'un item avec un bouton de retour |
 
 
 
