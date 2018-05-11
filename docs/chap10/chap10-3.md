@@ -6,6 +6,10 @@ Url : [https://dashboard.ionicframework.com](https://dashboard.ionicframework.co
 
 Une fois l'application téléchargée, il vous suffit de l'ouvrir, de vous connecter avec vos idenfiants Ionci PRO, pour voir s'afficher vos différentes applications :
 
+| a | b |
+| :--- | :--- |
+| c | d |
+
 ![](/assets/ionic_view_duck_1.png)![](/assets/ionic_view_duck_2.png)
 
 Grâce au mecanisme de push avec Git, chaque mise à jour de code mettra aussi à jour votre application sur Ionic View.
@@ -17,3 +21,4 @@ L'onglet suivant vous permet de visualiser une application à partir de son iden
 Et le suivant permet la gestion de ses paramètres utilisateurs
 
 ![](/assets/ionic_view_duck_5.png)
+

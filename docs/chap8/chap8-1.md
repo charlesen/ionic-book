@@ -70,3 +70,6 @@ A présent vous pouvez appeler votre composant sous forme de tag dans n'importe 
 ```js
 <moncomposant></moncomposant>
 ```
+
+
+

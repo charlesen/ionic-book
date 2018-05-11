@@ -1,4 +1,4 @@
-## Services ou Providers
+## Services/Providers
 
 Comme nous l'avons vu, un composant permettant d'afficher du contenu à plusieurs endroits à partir d'un code unique. C'est le cas par exemple du composant **&lt;transaction&gt;&lt;/transaction&gt;** que l'on peut appeler dans n'importe qu'elle template html de notre application.
 
@@ -34,3 +34,4 @@ $ ionic g provider User
 ```
 
 Cette commande va créer un nouveau service **User**, dans lequel nous déclarerons un certain nombre de méthodes pour la gestion de l'authentification, la création de comptes utilisateur,...
+
