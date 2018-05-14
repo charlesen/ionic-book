@@ -1,6 +1,6 @@
 ## Composant Cards
 
-Les cartes sont un bon moyen d'afficher des informations importantes à destination des utilisateurs. Ce pattern s'inspire des carte de visite que nous utilisons dans la vie courante.
+Les cartes sont un bon moyen d'afficher des informations importantes à destination des utilisateurs. Ce pattern s'inspire des cartes de visite personnelles ou professionnelles que nous utilisons dans la vie courante.
 
 ```js
 <ion-header>
@@ -106,3 +106,4 @@ Ou tout simplement reproduire un design assez proche de réseaux sociaux comme I
 ![](/assets/composant_card_3.png)
 
 Documentation : [https://ionicframework.com/docs/components/\#cards](https://ionicframework.com/docs/components/#cards)
+

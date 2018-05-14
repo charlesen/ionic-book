@@ -1,6 +1,6 @@
 ## Composant Select
 
-Le composant est similaire au tag htlml &lt;select&gt;&lt;/select&gt; et va donc nous permettre d'afficher une liste de choix. Affichons par exemple ici la liste des 5 premières cryptomonnaies par capitalisation boursière :
+Ce composant permet un rendu du tag html **&lt;select&gt;&lt;/select&gt;** et va donc nous permettre d'afficher une liste de choix. Affichons par exemple ici la liste des 5 premières cryptomonnaies par capitalisation boursière :
 
 ```js
 <ion-header>
@@ -31,3 +31,4 @@ Le composant est similaire au tag htlml &lt;select&gt;&lt;/select&gt; et va donc
 ![](/assets/composant_select.png)
 
 Documentation : [https://ionicframework.com/docs/components/\#select](https://ionicframework.com/docs/components/#select)
+

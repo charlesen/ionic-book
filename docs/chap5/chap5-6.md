@@ -1,12 +1,12 @@
 ## Exercez-vous
 
-Dans cette série d'exercices, nous allons pouvoir améliorer un peu notre application. On va s'inspirer du design d'une application mobile nommée Electroneum.
+Dans cette série d'exercices, nous allons pouvoir améliorer un peu notre application en nous inspirant du design d'une application mobile nommée Electroneum.
 
 Electroneum est une cryptomonnaie dédiée au secteur du mobile. Une application de la cryptomonnaie existe et est disponible pour Android et prochainement pour iOS.
 
 * Version Android : [ https://play.google.com/store/apps/details?id=com.electroneum.mobile](https://play.google.com/store/apps/details?id=com.electroneum.mobile)
 
-Dans ce TP, nous allons, à l'aide des composants tenter de nous rapprocher le plus possible de l'application \(voir screen en pièce jointe\)
+Dans ce TP, nous allons, à l'aide des composants que nous avons étudié et bien d'autres, tenter de nous rapprocher le plus possible de l'application \(voir les captures d'écran ci-dessous\)
 
 1\) Créez une nouvelle page que vous nommérez Login. Ce sera notre page de connexion et d'inscription.
 
@@ -30,6 +30,10 @@ P.S. : Ionic propose un ensemble d'icônes que l'on peut intégrer facilement da
 
 La liste de toutes les icônes disponibles se trouve à l'adresse  [https://ionicframework.com/docs/ionicons/](https://ionicframework.com/docs/ionicons/)
 
+| a | b |
+| :--- | :--- |
+| c | d |
+
 ![](/assets/miner_img.jpg)![](/assets/wallet_img.jpg)
 
 5\) Améliorez les onglets Profil et More \(page Settings créé dans le TP précédent\) avec différents autres composants. Dans l'onglet Setting on pourra par exemple avoir la possibilité de choisir plusieurs devises différentes et d'en cocher une par défaut, ou encore de choisir la langue par défaut,...laissez libre cours à votre imagination ;-\)
@@ -37,3 +41,6 @@ La liste de toutes les icônes disponibles se trouve à l'adresse  [https://ioni
 ## Annexes
 
 * Liste des composants Ionic et Documentation : [https://ionicframework.com/docs/components/](https://ionicframework.com/docs/components/)
+
+
+

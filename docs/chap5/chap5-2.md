@@ -1,6 +1,6 @@
 ## Composant Liste
 
-Comme son nom peut le suggérer, ce composant va nous permettre d'ajouter une liste d'éléments à notre application. Affichons par exemple la liste des principales cryptomonnaies en avril 2018 :
+Comme son nom peut le suggérer, ce composant va nous permettre d'ajouter une liste d'éléments à notre application. Affichons par exemple la liste des principales cryptomonnaies selon leur capitalisation en avril 2018 :
 
 **src/pages/mapage/mapage.html**
 
@@ -22,7 +22,7 @@ Comme son nom peut le suggérer, ce composant va nous permettre d'ajouter une li
 </ion-content>
 ```
 
-src/pages/mapage/mapage.ts
+**src/pages/mapage/mapage.ts**
 
 ```js
 import { Component } from '@angular/core';
@@ -62,3 +62,4 @@ Qui donne :
 ![](/assets/composant_liste_2.png)
 
 Documentation : [https://ionicframework.com/docs/components/\#lists](https://ionicframework.com/docs/components/#lists)
+
