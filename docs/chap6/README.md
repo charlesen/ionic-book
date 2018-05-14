@@ -1,13 +1,12 @@
 # Chap 6 - Introduction au langage TypeScript, le futur de JavaScript
 
-TypeScript est un langage de programmation libre et open source développé par Microsoft qui a pour but d'améliorer et de sécuriser la production de code JavaScript. Sortie en 2012, Il est vu par beaucoup comme le futur du Javascript, car se basant en sur la norme ECMAScript 6, celle déjà intégré au moteur JavaScript de la plupart des navigateurs et qui fera foi dans les prochaines années.
+TypeScript est un langage de programmation libre et open source développé par Microsoft qui a pour but d'améliorer et de sécuriser la production de code JavaScript. Sortie en 2012, Il est vu par beaucoup comme le futur du Javascript, car se basant sur la norme ECMAScript 6, celle déjà intégré au moteur JavaScript de la plupart des navigateurs et qui fera foi dans les prochaines années.
 
-TypeScript c'est donc du JavaScript, avec de supers pouvoirs, utilisé par la plupart des Frameworks JavaScript du moment.
+TypeScript c'est donc du JavaScript, avec de supers pouvoirs, utilisé d'ailleur par la plupart des Frameworks JavaScript du moment :  React, Angular, Express, VueJS,...
 
 ![](/assets/typescript_framework_1.png)![](/assets/typescript_framework_2.png)
 
 Les fichiers définis dans ce langage ont pour extension **.ts**. Les navigateurs web ne sachant pas encore interprété du code en TypeScript pur, il est nécessaire de le compiler en JavaScript : on parle alors de transtypage.
-
 
 ## Comment TypeScript s'intègre à Ionic
 
@@ -33,3 +32,4 @@ export class HomePage {
 ```
 
 Voyons à présent plus en détails comment fonctionne le langage de programmation.
+

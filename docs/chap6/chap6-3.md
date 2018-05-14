@@ -23,3 +23,6 @@ class classeMmi {
 let classeLPMim = new classeMmi("charles", ['etudiant1','etudiant_n']);
 classeLPMim.getIntervenant() // Retourne L'intervenant actuel s'appelle charles
 ```
+
+
+

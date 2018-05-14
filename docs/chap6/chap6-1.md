@@ -43,6 +43,3 @@ document.body.innerHTML = ditBonjour(user);
 
 Bien évidemment le contenu du fichier **demo\_typescript.js **est strictement le même que celui du fichier **.ts**, car ce code est relativement simple.
 
-Mais tout l'intérêt de TypeScript est surtout de pouvoir ajouter à JavaScript des notions de classes, d'interface, d'héritage ou de Polymorphisme,...
-
-Créons une classe Licence et ajoutons-y des paramètres et quelques méthodes au passage.
