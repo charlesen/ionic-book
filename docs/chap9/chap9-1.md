@@ -44,7 +44,7 @@ Seule condition, il faut que votre ordinateur soit connecté au même réseau qu
 
 L'avantage de cette application par rapport à Ionic view est que vous n'avez pas besoin de pusher vos développement sur Ionic PRO. Il vous suffit simplement de rédemarrer votre instance en local pour voir les changements s'appliquer sur Ionic Dev app.
 
-| ![](/docs/assets/ionic_dev_app.png) | ![](/assets/ionic_devapp_2.png) |
+| ![](/assets/ionic_dev_app.png) | ![](/assets/ionic_devapp_2.png) |
 | :--- | :--- |
 | Ionic Dev App au chargement | Une fois l'application détectée |
 
@@ -136,3 +136,4 @@ Puis dans Safari, allez dans **Préférences &gt; Avancées** et sélectionnez *
 Connectez ensuite votre smartphone en USB.
 
 Depuis Safari de nouveau, dans le menu Développement, puis votre apparail mobile, vous pourrez cliquez sur votre application mobile.
+
