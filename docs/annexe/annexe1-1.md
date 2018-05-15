@@ -12,7 +12,7 @@ Vous trouverez dans cet annexe tout un ensemble de bugs couramment rencontrés, 
 
 ### **Solution**
 
-**\(**[**https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3**](https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3)**\)    
+**\(**[**https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3**](https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3)**\)      
 **
 
 dans le fichier index.html, ajouter le fichier **build/vendor.js**:
@@ -53,15 +53,15 @@ $ npm install @ionic/app-scripts@latest --save-dev
 
 ## **Problème : Error: ENOENT**
 
-**no such file or directory, open \*www/build/0.main.js.map in undefined at line undefined, col undefined, pos undefined at BuildError.Error \(native\)    
+**no such file or directory, open \*www/build/0.main.js.map in undefined at line undefined, col undefined, pos undefined at BuildError.Error \(native\)      
 **
 
-**Solution :    
+**Solution :      
 **Ce bug apparait quand vous souhaitez livrer votre application en prod avec la commande ionic package build…
 
 Le problème vient de source MAP, utile en developpement, mais qu’il faut désactiver lorsque l’on souhaite passer en prod
 
-Dans le fichier **package.json**, il faut supprimer la clé : **ionic\_generate\_source\_map    
+Dans le fichier **package.json**, il faut supprimer la clé : **ionic\_generate\_source\_map      
 **
 
 ## **2.4. Problème : TypeError: Cannot read property 'substr' of undefined**
@@ -126,7 +126,7 @@ please update the directory permissions.
 
 ### **Solution**
 
-Le problème apparait lorsque vous souhaitez créer votre paquet Android avec Ionic update. Pour le résoudre, passer à une version inférieur d’Android ou supérieur. La plupart il s’agit de passer à une version inférieur \(Modifier les fichiers **package.json** et **config.xml**\). Ex : 6.2.3 vers 6.2.0.**    
+Le problème apparait lorsque vous souhaitez créer votre paquet Android avec Ionic update. Pour le résoudre, passer à une version inférieur d’Android ou supérieur. La plupart il s’agit de passer à une version inférieur \(Modifier les fichiers **package.json** et **config.xml**\). Ex : 6.2.3 vers 6.2.0.**      
 **
 
 ## **Superposition de la barre d’état avec l'entête de l’application**
@@ -163,15 +163,11 @@ Voir la solution détaillée ici : [**https://ionicframework.com/docs/native/sta
 
 * Repasser à l’ancien WebView
 
-
-
 Voir la solution détaillée ici :
 
 * [**https://blog.ionicframework.com/wkwebview-for-all-a-new-webview-for-ionic/**](https://blog.ionicframework.com/wkwebview-for-all-a-new-webview-for-ionic/)
 
 * [**https://ionicframework.com/docs/wkwebview/**](https://ionicframework.com/docs/wkwebview/)
-
-**  **
 
 ## **Failed to find Build Tools revision XX.X.X**
 
@@ -190,5 +186,39 @@ $ android update sdk -a -u -t NUMERO_PRECEDENT
 $ $ANDROID_HOME/tools/bin/sdkmanager "build-tools;26.X.X""platforms;android-26"
 ```
 
+## Ionic Native HTTP : plugin\_not\_installed
 
+```bash
+plugin_not_installed
+at Monitoring.log (http://localhost:60000/build/vendor.js:60552:23188)
+at Api.webpackJsonp.31.Api.logging (http://localhost:60000/build/main.js:2536:77)
+at ? (http://localhost:60000/build/main.js:3113:27)
+at t.invoke (http://localhost:60000/build/polyfills.js:3:14976)
+at Object.onInvoke (http://localhost:60000/build/vendor.js:4484:37)
+at t.invoke (http://localhost:60000/build/polyfills.js:3:14916)
+at r.run (http://localhost:60000/build/polyfills.js:3:10143)
+at ? (http://localhost:60000/build/polyfills.js:3:20242)
+at t.invokeTask (http://localhost:60000/build/polyfills.js:3:15660)
+at Object.onInvokeTask (http://localhost:60000/build/vendor.js:4475:37)
+```
+
+Ce bug apparait dans Ionic view lorsque vous effectuez des requetes http à l'aide du plugin natif HTTP. Deux solutions peuvent résoudre ce problème, mais il en existe surement d'autres.
+
+### Solution 1 : utiliser le module HTTP d'AngularJS
+
+C'est la solution simple.  Il vous suffit donc de redefinir vos requetes http en vous basant sur l'objet http d'angular
+
+### Solution 2 :  réinstallation "propre" du plugin HTT
+
+C'est un peu la solution nettoyage de printemps. On va supprimer tous les vieux plugins http, et les répertoires node\_modules, **platforms**, **plugins** et **www**, puis réinstaller les plugins définit dans le fichier **package.json**, ainsi que les différentes plateformes mobiles.
+
+```bash
+$ ionic cordova platform rm android
+$ rm -rf node_modules/ platforms/ plugins/ www/
+$ npm install
+$ ionic cordova platform add android
+$ ionic cordova platform add ios
+```
+
+cd
 
