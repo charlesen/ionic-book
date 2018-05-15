@@ -12,7 +12,7 @@ Vous trouverez dans cet annexe tout un ensemble de bugs couramment rencontrés, 
 
 ### **Solution**
 
-**\(**[**https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3**](https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3)**\)        
+**\(**[**https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3**](https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3)**\)          
 **
 
 dans le fichier index.html, ajouter le fichier **build/vendor.js**:
@@ -53,15 +53,15 @@ $ npm install @ionic/app-scripts@latest --save-dev
 
 ## **Problème : Error: ENOENT**
 
-**no such file or directory, open \*www/build/0.main.js.map in undefined at line undefined, col undefined, pos undefined at BuildError.Error \(native\)        
+**no such file or directory, open \*www/build/0.main.js.map in undefined at line undefined, col undefined, pos undefined at BuildError.Error \(native\)          
 **
 
-**Solution :        
+**Solution :          
 **Ce bug apparait quand vous souhaitez livrer votre application en prod avec la commande ionic package build…
 
 Le problème vient de source MAP, utile en developpement, mais qu’il faut désactiver lorsque l’on souhaite passer en prod
 
-Dans le fichier **package.json**, il faut supprimer la clé : **ionic\_generate\_source\_map        
+Dans le fichier **package.json**, il faut supprimer la clé : **ionic\_generate\_source\_map          
 **
 
 ## **2.4. Problème : TypeError: Cannot read property 'substr' of undefined**
@@ -126,7 +126,7 @@ please update the directory permissions.
 
 ### **Solution**
 
-Le problème apparait lorsque vous souhaitez créer votre paquet Android avec Ionic update. Pour le résoudre, passer à une version inférieur d’Android ou supérieur. La plupart il s’agit de passer à une version inférieur \(Modifier les fichiers **package.json** et **config.xml**\). Ex : 6.2.3 vers 6.2.0.**        
+Le problème apparait lorsque vous souhaitez créer votre paquet Android avec Ionic update. Pour le résoudre, passer à une version inférieur d’Android ou supérieur. La plupart il s’agit de passer à une version inférieur \(Modifier les fichiers **package.json** et **config.xml**\). Ex : 6.2.3 vers 6.2.0.**          
 **
 
 ## **Superposition de la barre d’état avec l'entête de l’application**
@@ -204,5 +204,84 @@ at Object.onInvokeTask (http://localhost:60000/build/vendor.js:4475:37)
 
 Ce bug apparait dans Ionic view lorsque vous effectuez des requetes http à l'aide du plugin natif HTTP. En effet, l'application Ionic View permet de tester d'autres applications en créeant un environnement de test où sont installés un certain nombre de plugins natifs. Problème, Ionic Native HTTP n'étant pas développé par l'équipe Ionic, ce plugin n'est pas présent dans la liste de plugins qui s'installent lorsque vous pushez votre application sur Ionic view. Pour donc tester que vos requetes http fonctionnent vous n'avez pas d'autres choix \(pour le moment\) que de compiler votre application vous-même, puis de la tester depuis votre mobile ou depuis un émulateur comme expliqué au [chapitre 9](/chap9/README.md).
 
+Liste de plugins actuellement \(Mai 2018\) supporté dans Ionic View :
 
+```bash
+card.io.cordova.mobilesdk 2.1.0 "CardIO"
+com-intel-security-cordova-plugin 2.0.3 "APP Security API"
+com.darktalker.cordova.screenshot 0.1.5 "Screenshot"
+com.paypal.cordova.mobilesdk 3.5.0 "PayPalMobile"
+cordova-admob-sdk 0.8.0 "AdMob SDK"
+cordova-base64-to-gallery 4.1.2 "base64ToGallery"
+cordova-instagram-plugin 0.5.5 "Instagram"
+cordova-launch-review 2.0.0 "Launch Review"
+cordova-plugin-3dtouch 1.3.5 "3D Touch"
+cordova-plugin-actionsheet 2.3.3 "ActionSheet"
+cordova-plugin-add-swift-support 1.6.2 "AddSwiftSupport"
+cordova-plugin-admob-free 0.10.0 "Cordova AdMob Plugin"
+cordova-plugin-advanced-http 1.8.1 "Advanced HTTP plugin"
+cordova-plugin-app-event 1.2.0 "Application Events"
+cordova-plugin-apprate 1.3.0 "AppRate"
+cordova-plugin-battery-status 1.2.4 "Battery"
+cordova-plugin-ble-central 1.1.4 "BLE"
+cordova-plugin-bluetooth-serial 0.4.7 "Bluetooth Serial"
+cordova-plugin-brightness 0.1.5 "Brightness"
+cordova-plugin-calendar 4.6.0 "Calendar"
+cordova-plugin-camera 2.4.1 "Camera"
+cordova-plugin-compat 1.1.0 "Compat"
+cordova-plugin-contacts 2.3.1 "Contacts"
+cordova-plugin-datepicker 0.9.3 "DatePicker"
+cordova-plugin-device 1.1.6 "Device"
+cordova-plugin-device-motion 1.2.5 "Device Motion"
+cordova-plugin-device-orientation 1.0.7 "Device Orientation"
+cordova-plugin-dialogs 1.3.3 "Notification"
+cordova-plugin-email-composer 0.8.7 "EmailComposer"
+cordova-plugin-geolocation 2.4.3 "Geolocation"
+cordova-plugin-globalization 1.0.7 "Globalization"
+cordova-plugin-google-analytics 1.8.3 "Google Universal Analytics Plugin"
+cordova-plugin-health 1.0.0 "Cordova Health"
+cordova-plugin-image-picker 1.1.1 "ImagePicker"
+cordova-plugin-inappbrowser 1.6.1 "InAppBrowser"
+cordova-plugin-insomnia 4.3.0 "Insomnia (prevent screen sleep)"
+cordova-plugin-ionic 1.1.8 "IonicCordova"
+cordova-plugin-ios-keychain 3.0.1 "KeyChain Plugin for Cordova iOS"
+cordova-plugin-media 3.0.1 "Media"
+cordova-plugin-mixpanel 3.1.0 "Mixpanel"
+cordova-plugin-music-controls 2.0.0 "MusicControls"
+cordova-plugin-nativeaudio 3.0.9 "Cordova Native Audio"
+cordova-plugin-nativestorage 2.2.2 "NativeStorage"
+cordova-plugin-network-information 1.3.3 "Network Information"
+cordova-plugin-request-location-accuracy 2.2.1 "Request Location Accuracy"
+cordova-plugin-safariviewcontroller 1.4.7 "SafariViewController"
+cordova-plugin-screen-orientation 2.0.1 "Screen Orientation"
+cordova-plugin-secure-storage 2.6.8 "SecureStorage"
+cordova-plugin-shake 0.6.0 "Shake Gesture Detection"
+cordova-plugin-sim 1.3.3 "SIM"
+cordova-plugin-splashscreen 4.0.3 "Splashscreen"
+cordova-plugin-statusbar 2.2.4-dev "StatusBar"
+cordova-plugin-stripe 1.5.3 "cordova-plugin-stripe"
+cordova-plugin-taptic-engine 2.1.0 "Taptic Engine"
+cordova-plugin-themeablebrowser 0.2.17 "ThemeableBrowser"
+cordova-plugin-touch-id 3.2.0 "Touch ID"
+cordova-plugin-tts 0.2.3 "TTS"
+cordova-plugin-vibration 2.1.5 "Vibration"
+cordova-plugin-whitelist 1.3.2 "Whitelist"
+cordova-plugin-x-socialsharing 5.1.8 "SocialSharing"
+cordova-plugin-x-toast 2.6.0 "Toast"
+cordova-plugin-zip 3.1.0 "cordova-plugin-zip"
+cordova-promise-polyfill 0.0.2 "cordova-promise-polyfill"
+cordova-sms-plugin 0.1.11 "Cordova SMS Plugin"
+cordova-sqlite-storage 2.0.4 "Cordova sqlite storage plugin"
+cordova-universal-clipboard 0.1.0 "Clipboard"
+de.appplant.cordova.plugin.local-notification 0.8.5 "LocalNotification"
+de.appplant.cordova.plugin.printer 0.7.1 "Printer"
+ionic-plugin-keyboard 2.2.1 "Keyboard"
+phonegap-plugin-barcodescanner 6.0.7 "BarcodeScanner"
+phonegap-plugin-mobile-accessibility 1.0.5-dev "Mobile Accessibility"
+uk.co.workingedge.phonegap.plugin.launchnavigator 4.0.4 "Launch Navigator"
+```
+
+Source : [https://ionicframework.com/docs/pro/view.html\#plugin-support](https://ionicframework.com/docs/pro/view.html#plugin-support)
+
+cd
 
