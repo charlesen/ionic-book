@@ -75,7 +75,7 @@ Appuyez ensuite plusieurs fois sur le Numéro de version jusqu'à ce qu'un messa
 Une fois le mode développeur activé, il vous suffit d'aller dans :
 
 ```markdown
-Paramètres > Options de développement > Débogage USB
+**Paramètres > Options de développement > Débogage USB**
 ```
 
 Puis, activez le débogage USB.
