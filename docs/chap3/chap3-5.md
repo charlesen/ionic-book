@@ -67,7 +67,7 @@ C'est le fichier de configuration de Node. A la création d'un projet, Ionic lan
 
 ### ./platforms
 
-Ce dossier contient les versions "natives" de l'application. Un dossier a été ajouté pour chaque plateforme cible. Pour afficher la liste des plateformes actuellement supportées, il suffit de faire : 
+Ce dossier contient les versions "natives" de l'application. Un dossier a été ajouté pour chaque plateforme cible. Pour afficher la liste des plateformes actuellement supportées, il suffit de faire :
 
 ```bash
 $ ionic cordova platform list
@@ -82,7 +82,6 @@ Available platforms:
   osx ~4.0.1
   windows ~5.0.0
   www ^3.12.0
-
 ```
 
 ### ./plugins
@@ -91,7 +90,75 @@ Le dossier contient tous les plugins Cordova utilisés par l'application. Pour r
 
 ### ./resources
 
-Ce dossier contient les différentes icônes de l'application et le splashscreen \(image au chargement de l'application\). 
+Ce dossier contient les différentes icônes de l'application et le splashscreen \(image au chargement de l'application\). La commande ionic cordova resources permet la génération des icônes pour différents types de format d'écran.
+
+```bash
+$ ionic cordova resources
+✔ Collecting resource configuration and source images - done!
+✔ Filtering out image resources that do not need regeneration - done!
+✔ Uploading source images to prepare for transformations - done!
+✔ Generating platform resources: 50 / 50 complete - done!
+✔ Modifying config.xml to add new image resources - done!
+
+
+$ git status
+Sur la branche master
+Modifications qui ne seront pas validées :
+  (utilisez "git add <fichier>..." pour mettre à jour ce qui sera validé)
+  (utilisez "git checkout -- <fichier>..." pour annuler les modifications dans la copie de travail)
+
+	modifié :         resources/android/icon/drawable-hdpi-icon.png
+	modifié :         resources/android/icon/drawable-ldpi-icon.png
+	modifié :         resources/android/icon/drawable-mdpi-icon.png
+	modifié :         resources/android/icon/drawable-xhdpi-icon.png
+	modifié :         resources/android/icon/drawable-xxhdpi-icon.png
+	modifié :         resources/android/icon/drawable-xxxhdpi-icon.png
+	modifié :         resources/android/splash/drawable-land-hdpi-screen.png
+	modifié :         resources/android/splash/drawable-land-ldpi-screen.png
+	modifié :         resources/android/splash/drawable-land-mdpi-screen.png
+	modifié :         resources/android/splash/drawable-land-xhdpi-screen.png
+	modifié :         resources/android/splash/drawable-land-xxhdpi-screen.png
+	modifié :         resources/android/splash/drawable-land-xxxhdpi-screen.png
+	modifié :         resources/android/splash/drawable-port-hdpi-screen.png
+	modifié :         resources/android/splash/drawable-port-ldpi-screen.png
+	modifié :         resources/android/splash/drawable-port-mdpi-screen.png
+	modifié :         resources/android/splash/drawable-port-xhdpi-screen.png
+	modifié :         resources/android/splash/drawable-port-xxhdpi-screen.png
+	modifié :         resources/android/splash/drawable-port-xxxhdpi-screen.png
+	modifié :         resources/ios/icon/icon-1024.png
+	modifié :         resources/ios/icon/icon-40.png
+	modifié :         resources/ios/icon/icon-40@2x.png
+	modifié :         resources/ios/icon/icon-40@3x.png
+	modifié :         resources/ios/icon/icon-50.png
+	modifié :         resources/ios/icon/icon-50@2x.png
+	modifié :         resources/ios/icon/icon-60.png
+	modifié :         resources/ios/icon/icon-60@2x.png
+	modifié :         resources/ios/icon/icon-60@3x.png
+	modifié :         resources/ios/icon/icon-72.png
+	modifié :         resources/ios/icon/icon-72@2x.png
+	modifié :         resources/ios/icon/icon-76.png
+	modifié :         resources/ios/icon/icon-76@2x.png
+	modifié :         resources/ios/icon/icon-83.5@2x.png
+	modifié :         resources/ios/icon/icon-small.png
+	modifié :         resources/ios/icon/icon-small@2x.png
+	modifié :         resources/ios/icon/icon-small@3x.png
+	modifié :         resources/ios/icon/icon.png
+	modifié :         resources/ios/icon/icon@2x.png
+	modifié :         resources/ios/splash/Default-568h@2x~iphone.png
+	modifié :         resources/ios/splash/Default-667h.png
+	modifié :         resources/ios/splash/Default-736h.png
+	modifié :         resources/ios/splash/Default-Landscape-736h.png
+	modifié :         resources/ios/splash/Default-Landscape@2x~ipad.png
+	modifié :         resources/ios/splash/Default-Landscape@~ipadpro.png
+	modifié :         resources/ios/splash/Default-Landscape~ipad.png
+	modifié :         resources/ios/splash/Default-Portrait@2x~ipad.png
+	modifié :         resources/ios/splash/Default-Portrait@~ipadpro.png
+	modifié :         resources/ios/splash/Default-Portrait~ipad.png
+	modifié :         resources/ios/splash/Default@2x~iphone.png
+	modifié :         resources/ios/splash/Default@2x~universal~anyany.png
+	modifié :         resources/ios/splash/Default~iphone.png
+
+```
 
 ### ./src/
 
@@ -146,8 +213,6 @@ On retrouve également du code javascript, généré par Ionic et qu'il ne sera 
 <!-- The main bundle js is generated during the build process -->
 <script src="build/main.js"></script>
 ```
-
-
 
 ### tsconfig.json et tslint.json
 
