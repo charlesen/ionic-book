@@ -10,6 +10,7 @@
   * [Une méthode pour les gouverner tous](chap1/chap1-1.md)
   * [Quand faire le choix d'un développement Hybride](chap1/chap1-2.md)
   * [Pourquoi choisir Ionic](chap1/chap1-3.md)
+  * [Première application Ionic](chap1/chap1-4.md)
 
 ---
 
@@ -24,7 +25,7 @@
   * [Ionic CLI et Cordova](chap3/chap3-2.md)
   * [Autres utilitaires](chap3/chap3-3.md)
   * [Création d'un compte Ionic PRO](chap3/chap3-4.md)
-  * [Première application Ionic](chap3/chap3-5.md)
+  * [Démarrage de l'application DuckCoin](chap3/chap3-5.md)
   * [Exercez-vous](chap3/chap3-6.md)
 
 ---
