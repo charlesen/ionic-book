@@ -38,7 +38,7 @@ Une fois le push effectué, ouvrez Ionic View et testez votre application.
 
 * Apple Store : [https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931](https://itunes.apple.com/us/app/ionic-devapp/id1233447133?ls=1&mt=8)
 
-C'est surement l'une de mes méthodes favorites. Grâce à cette application vous allez pouvoir tester votre application en temps réel. En effet, en lançant simplement la commande **ionic serve -c**, l'application Ionic Dev App vous permet  ensuite de visualiser votre propre application, et tester ainsi tout un ensemble de composants natifs.
+C'est surement l'une de mes méthodes préférées. Grâce à cette application vous allez pouvoir tester votre application en temps réel. En effet, en lançant simplement la commande **ionic serve -c**, l'application Ionic Dev App vous permet  ensuite de visualiser votre propre application, et tester ainsi tout un ensemble de composants natifs.
 
 Seule condition, il faut que votre ordinateur soit connecté au même réseau que votre smartphone.
 
