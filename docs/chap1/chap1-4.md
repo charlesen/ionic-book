@@ -3,7 +3,7 @@
 Pour créer votre première application, rien de plus simple, saisissez la commande suivante depuis votre invite de commandes :
 
 ```
-$ ionic start monAppli tabs
+$ ionic start monAppli blank
 ✔ Creating directory ./monAppli - done!
 ✔ Downloading and extracting tabs starter - done!
 
@@ -18,7 +18,9 @@ Vous allez devoir entrez vos identifiants et générer une paire clé privé/pub
 
 Suivez ensuite le setup et garder les valeurs par défaut \(choisir **"Y"** à chaque fois\).
 
-La syntaxe générique d'une création d'application est la suivante :
+La commande va créer une application la plus "vide" possible \(blank\). Mais il également possible de créer une application avec des onglet, un menu latéral et bien d'autres encore \(voir la commande **ionic start --list** décrite dans la suite\)
+
+La syntaxe générique de création d'une application est la suivante :
 
 ```
 $ ionic start [<name>] [<template>]
@@ -59,7 +61,7 @@ $ ionic serve -lc
 
 Ionic devrait ensuite ouvrir votre application depuis votre navigateur préféré.
 
-![](/assets/screen_app1.png)  
+![](/assets/ionic_mon_appli_1.png)  
 Félicitations, vous avez créé votre première application mobile !
 
 Dans la suite du livre nous allons progressivement aborder des notions plus complexe du Framework en partant d'un exemple concret : la création d'une application mobile pour la gestion d'une cryptomonnaie nommé **DuckCoin**.
