@@ -59,5 +59,8 @@ $ ionic serve -lc
 
 Ionic devrait ensuite ouvrir votre application depuis votre navigateur préféré.
 
-![](/assets/screen_app1.png)
-Félicitations, vous avez créé votre première application mobile et dans la suite du livre nous allons progressivement aborder des notions plus complexe du Framework. Pour ce faire, nous partirons d'un exemple concret : la création d'une application mobile pour la gestion d'une cryptomonnaie.
+![](/assets/screen_app1.png)  
+Félicitations, vous avez créé votre première application mobile !
+
+Dans la suite du livre nous allons progressivement aborder des notions plus complexe du Framework en partant d'un exemple concret : la création d'une application mobile pour la gestion d'une cryptomonnaie nommé **DuckCoin**.
+
