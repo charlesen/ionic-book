@@ -21,6 +21,13 @@ $ ionic serve -lc
 
 ![](/assets/screen_app1.png)
 
+Ajoutons ensuite les plateformes Android et iOS à notre projet comme ceci :
+
+```
+$ ionic cordova platform add android
+$ ionic cordova platform add ios
+```
+
 ### Struction du projet
 
 Faisons un peu le tour de l'anatomie d'un projet type sous Ionic.
@@ -31,9 +38,60 @@ Ce fichier est utilisé pour gérer toute la configuration de la partie native d
 
 C'est aussi dans ce fichier que vous devriez renseigner le numéro de version de votre application, utile dans l'étape de publication sur les stores \(Google ou Apple Store par exemple\)
 
+```js
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>monAppli</name>
+    <description>Une application de test</description>
+    <author email="hello@charlesen.fr" href="http://ionicframework.com/">Charles EDOU NZE</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="ScrollEnabled" value="false" />
+    <preference name="android-minSdkVersion" value="19" />
+    ...
+```
+
+### ionic.config.json
+
+Ce fichier contient des informations de base sur votre application \(nom de l'application, App ID...\), et est utilisé notamment pour uploader votre application sur le cloud Ionic.
+
 ### package.json
 
-C'est le fichier de configuration de Node. 
+C'est le fichier de configuration de Node. A la création d'un projet, Ionic lance automatiquement la commande **npm install**, qui va installer un certain nombre de paquets en arrière-plan et stockés dans le dossier **node\_modules**. C'est grâce à ce fichier **package.json** que npm sait quel paquet installé dans le projet
+
+### ./platforms
+
+Ce dossier contient les versions "natives" de l'application. Un dossier a été ajouté pour chaque plateforme cible. Pour afficher la liste des plateformes actuellement supportées, il suffit de faire : 
+
+```bash
+$ ionic cordova platform list
+
+> cordova platform ls
+Installed platforms:
+  android 7.0.0
+  ios 4.5.4
+Available platforms: 
+  browser ~5.0.1
+  ios ~4.5.4
+  osx ~4.0.1
+  windows ~5.0.0
+  www ^3.12.0
+
+```
+
+### ./plugins
+
+Le dossier contient tous les plugins Cordova utilisés par l'application. Pour rappel, un plugin un conteneur faisant appel à des fonctions natives \(voir repertoire **platforms/\[NOM\_PLATEFORME\]/CordovaLib**\) à partir d'un code JavaScript.
+
+### ./resources
+
+Ce dossier contient les différentes icônes de l'application et le splashscreen \(image au chargement de l'application\). 
 
 ### ./src/
 
@@ -64,7 +122,7 @@ Dans le [chapitre suivant](/chap4), nous allons apprendre à customiser notre ap
 
 ### ./src/index.html
 
-> C'est l'entrée principale du projet. Il faut se rappeler q'une application Hybride utilisation la technologie WebView du téléphonequi se comporte comme un mini-navigateur à l'intérieur duquel on peut afficher un site web, qui est votre projet.
+> C'est l'entrée principale du projet. Il faut se rappeler q'une application Hybride utilise la technologie WebView du téléphone qui se comporte alors comme un mini-navigateur à l'intérieur duquel on peut afficher un site web, qui est votre projet.
 
 A l'intérieur  de ce fichier, Ionic va aller chercher le tag **&lt;ion-app&gt;** à l'intérieur duquel vos différents écrans seront chargés.
 
@@ -91,5 +149,11 @@ On retrouve également du code javascript, généré par Ionic et qu'il ne sera 
 
 
 
+### tsconfig.json et tslint.json
 
+Ces fichiers sont utilisé par TypeScript et décrivre notamment la manière dont celui-ci doit être compilé. Vous n'aurez pas nécessairement de les configurer vous-même, les valeurs par défaut étant suffisantes.
+
+### ./www
+
+Ce dossier, qui est auto-généré, contient la version web de votre application mobile. C'est grâce à ce dossier que vous pouvez visualer l'application depuis un navigateur.
 
