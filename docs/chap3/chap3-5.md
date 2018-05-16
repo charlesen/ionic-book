@@ -25,6 +25,43 @@ $ ionic serve -lc
 
 Faisons un peu le tour de l'anatomie d'un projet type sous Ionic.
 
+### config.xml
+
+Ce fichier est utilisé pour gérer toute la configuration de la partie native de l'application. C'est ici par exemple que vous rajouterez les autorisations nécessaires pour l'utilisation de la Camera dans votre application. Chaque plugin ajouté à votre application sera rajouté automatiquement à ce fichier.
+
+C'est aussi dans ce fichier que vous devriez renseigner le numéro de version de votre application, utile dans l'étape de publication sur les stores \(Google ou Apple Store par exemple\)
+
+### package.json
+
+C'est le fichier de configuration de Node. 
+
+### ./src/
+
+C'est à l'intérieur que l'on retrouve le code de l'application à proprement. Lorsque l'on voudra rajouter de nouveaux écrans, de la logique métier,...c'est ici que cela se passera.
+
+On retrouve du code écrit en TypeScript \(nous en reparlerons en détails au [chapitre 6](/chap6)\) dont l'extension de fichiers est **.ts**.
+
+On retrouve aussi du htlm, du css,...
+
+> **Ecran Mobile = 1 Fichier .ts + 1 Fichier .html + 1 Fichier .scss**
+
+le fichier **src/app/app.module.ts** est le point d'entrée métier de notre application.
+
+```js
+@NgModule({
+  declarations: [MyApp, ContactPage, HomePage],
+  imports: [BrowserModule, IonicModule.forRoot(MyApp)],
+  bootstrap: [IonicApp],
+  entryComponents: [MyApp, ContactPage, HomePage],
+  providers: []
+})
+export class AppModule {}
+```
+
+C'est dans ce fichier que l'on décide quelle composant \(ici MyApp\) sera le composant principal. On expliquera ces notions de composants dans le [chapitre 8](/chap8).
+
+Dans le [chapitre suivant](/chap4), nous allons apprendre à customiser notre application pour qu'elle soit un peu plus à notre image.Mais en attendant, exerçons-vous un peu.
+
 ### ./src/index.html
 
 > C'est l'entrée principale du projet. Il faut se rappeler q'une application Hybride utilisation la technologie WebView du téléphonequi se comporte comme un mini-navigateur à l'intérieur duquel on peut afficher un site web, qui est votre projet.
@@ -52,30 +89,7 @@ On retrouve également du code javascript, généré par Ionic et qu'il ne sera 
 <script src="build/main.js"></script>
 ```
 
-## ./src/
 
-C'est à l'intérieur que l'on retrouve le code de l'application à proprement. Lorsque l'on voudra rajouter de nouveaux écrans, de la logique métier,...c'est ici que cela se passera.
 
-On retrouve du code écrit en TypeScript \(nous en reparlerons en détails au [chapitre 6](/chap6)\) dont l'extension de fichiers est **.ts**.
 
-On retrouve aussi du htlm, du css,...
-
-> **Ecran Mobile = 1 Fichier .ts + 1 Fichier .html + 1 Fichier .scss**
-
-le fichier **src/app/app.module.ts** est le point d'entrée métier de notre application.
-
-```js
-@NgModule({
-  declarations: [MyApp, ContactPage, HomePage],
-  imports: [BrowserModule, IonicModule.forRoot(MyApp)],
-  bootstrap: [IonicApp],
-  entryComponents: [MyApp, ContactPage, HomePage],
-  providers: []
-})
-export class AppModule {}
-```
-
-C'est dans ce fichier que l'on décide quelle composant \(ici MyApp\) sera le composant principal. On expliquera ces notions de composants dans le [chapitre 8](/chap8).
-
-Dans le [chapitre suivant](/chap4), nous allons apprendre à customiser notre application pour qu'elle soit un peu plus à notre image.Mais en attendant, exerçons-vous un peu.
 
