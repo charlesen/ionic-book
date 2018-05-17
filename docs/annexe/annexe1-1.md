@@ -8,11 +8,11 @@ description: >-
 
 Vous trouverez dans cet annexe tout un ensemble de bugs couramment rencontrés, mais aussi leurs solutions. Cette liste n'est évidemment pas exhaustive, mais permet de cibler la plupart des exceptions bloquantes durant la phase de développement et de compilation.
 
-## **Problème : webpackJsonp not found**
+### **Problème : webpackJsonp not found**
 
-### **Solution**
+#### **Solution**
 
-**\(**[**https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3**](https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3)**\)                    
+**\(**[**https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3**](https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3)**\)                      
 **
 
 dans le fichier index.html, ajouter le fichier **build/vendor.js**:
@@ -41,9 +41,9 @@ Si l’erreur persiste, pensez à mettre à jour app-script \(la dernière versi
 $ npm install @ionic/app-scripts@latest --save-dev
 ```
 
-## **Problème : Build –prod enoent error**
+### **Problème : Build –prod enoent error**
 
-### **Solution**
+#### **Solution**
 
 **Mettre à jour @ionic/app-scripts**
 
@@ -51,22 +51,22 @@ $ npm install @ionic/app-scripts@latest --save-dev
 $ npm install @ionic/app-scripts@latest --save-dev
 ```
 
-## **Problème : Error: ENOENT**
+### **Problème : Error: ENOENT**
 
-**no such file or directory, open \*www/build/0.main.js.map in undefined at line undefined, col undefined, pos undefined at BuildError.Error \(native\)                    
+**no such file or directory, open \*www/build/0.main.js.map in undefined at line undefined, col undefined, pos undefined at BuildError.Error \(native\)                      
 **
 
-**Solution :                    
+**Solution :                      
 **Ce bug apparait quand vous souhaitez livrer votre application en prod avec la commande ionic package build…
 
 Le problème vient de source MAP, utile en developpement, mais qu’il faut désactiver lorsque l’on souhaite passer en prod
 
-Dans le fichier **package.json**, il faut supprimer la clé : **ionic\_generate\_source\_map                    
+Dans le fichier **package.json**, il faut supprimer la clé : **ionic\_generate\_source\_map                      
 **
 
-## **2.4. Problème : TypeError: Cannot read property 'substr' of undefined**
+### **Problème : TypeError: Cannot read property 'substr' of undefined**
 
-### **Détails **
+#### **Détails **
 
 Ce bug apparait généralement Lorsque vous essayez de livrer votre application ou simplement la compiler \(build\).
 
@@ -77,7 +77,7 @@ varcode=nextLine.substr(0,mapping.generatedColumn -
 TypeError:Cannotread property'substr'ofundefined
 ```
 
-### **Solution**
+#### **Solution**
 
 Le problème apparait surtout quand vous avez déclaré deux **composants/pages/module**s dans le même dossier \(Par exemple une page de Dialogue ou modal à l'intérieur d'une page classique\).
 
@@ -113,9 +113,9 @@ Vous devriez vous retrouver avec la nouvelle arborescence suivante :
 .src/pages/modal/modal/modal.html
 ```
 
-## **Problème : A problem occurred configuring root project 'android'**
+### **Problème : A problem occurred configuring root project 'android'**
 
-### **Details**
+#### **Details**
 
 ```bash
 Failed to install the following SDK components:
@@ -124,14 +124,14 @@ The SDK directory (/opt/android-sdk) is not writeable,
 please update the directory permissions.
 ```
 
-### **Solution**
+#### **Solution**
 
-Le problème apparait lorsque vous souhaitez créer votre paquet Android avec Ionic update. Pour le résoudre, passer à une version inférieur d’Android ou supérieur. La plupart il s’agit de passer à une version inférieur \(Modifier les fichiers **package.json** et **config.xml**\). Ex : 6.2.3 vers 6.2.0.**                    
+Le problème apparait lorsque vous souhaitez créer votre paquet Android avec Ionic update. Pour le résoudre, passer à une version inférieur d’Android ou supérieur. La plupart il s’agit de passer à une version inférieur \(Modifier les fichiers **package.json** et **config.xml**\). Ex : 6.2.3 vers 6.2.0.**                      
 **
 
-## **Superposition de la barre d’état avec l'entête de l’application**
+#### **Superposition de la barre d’état avec l'entête de l’application**
 
-### **Solution 1**
+#### **Solution 1**
 
 Dans le fichier **app.component.ts**, modifier la méthode **initializeApp** et ajouter la ligne suivante :
 
@@ -139,7 +139,7 @@ Dans le fichier **app.component.ts**, modifier la méthode **initializeApp** et 
 this.statusBar.overlaysWebView(false);
 ```
 
-### **Solution 2**
+#### **Solution 2**
 
 Editer le fichier **confix.xml **:
 
@@ -151,11 +151,9 @@ Editer le fichier **confix.xml **:
 
 Voir la solution détaillée ici : [**https://ionicframework.com/docs/native/status-bar/**](https://ionicframework.com/docs/native/status-bar/)
 
-## **Ionic WKWebView**
+### **Ionic WKWebView : Requetes HTTP ne passent pas**
 
-### **Requetes HTTP ne passent pas**
-
-### Solution
+#### Solution
 
 * Utiliser la version native Ionic de HTTP\(@ionic-native/http\) : [https://ionicframework.com/docs/native/http/](https://ionicframework.com/docs/native/http/)
 
@@ -169,9 +167,9 @@ Voir la solution détaillée ici :
 
 * [**https://ionicframework.com/docs/wkwebview/**](https://ionicframework.com/docs/wkwebview/)
 
-## **Failed to find Build Tools revision XX.X.X**
+### **Failed to find Build Tools revision XX.X.X**
 
-### **Solution 1 : **Mettre à jour Android Build Tools
+#### **Solution 1 : **Mettre à jour Android Build Tools
 
 ```bash
 $ android list sdk -a | grep "Android SDK Platform-tools"(Un numéro est à récupérer au début)
@@ -180,13 +178,13 @@ $ android update sdk -a -u -t NUMERO_PRECEDENT
 
 **Source :**[**https://stackoverflow.com/questions/36683726/failed-to-find-build-tools-revision-23-0-1**](https://stackoverflow.com/questions/36683726/failed-to-find-build-tools-revision-23-0-1)
 
-### Solution 2 : **Utiliser le SDK Manager**
+#### Solution 2 : **Utiliser le SDK Manager**
 
 ```bash
 $ $ANDROID_HOME/tools/bin/sdkmanager "build-tools;26.X.X""platforms;android-26"
 ```
 
-## Ionic Native HTTP : plugin\_not\_installed
+### Ionic Native HTTP : plugin\_not\_installed
 
 ```bash
 plugin_not_installed
@@ -204,7 +202,7 @@ at Object.onInvokeTask (http://localhost:60000/build/vendor.js:4475:37)
 
 Ce bug apparait dans Ionic view lorsque vous effectuez des requetes http à l'aide du plugin natif HTTP, depuis une version non encore pris en charge dans l'application Ionic View. En effet, comme [nous l'avons vu](/chap9/README.md), cette application permet de tester d'autres applications en créeant un environnement de test où sont installés un certain nombre de plugins natifs selon leur version \(voir listing ci-dessous\). Problème, Ionic Native HTTP n'est disponible \(Mai 2018\) que pour les versions supérieures ou égales à 1.8.1.
 
-### Solution
+#### Solution
 
 Vous devrez installer une version du plugin natif HTPP pris en charge dans Ionic View et faire un peu de nettoyage au passage.
 
@@ -316,7 +314,25 @@ uk.co.workingedge.phonegap.plugin.launchnavigator 4.0.4 "Launch Navigator"
 
 Source : [https://ionicframework.com/docs/pro/view.html\#plugin-support](https://ionicframework.com/docs/pro/view.html#plugin-support)
 
+### Error: Node Sass does not yet support your current environment: Linux 64-bit with Unsupported runtime \(59\)
+
+#### Détails
+
+Le bug peut apparaitre lorsque vous tenter simplement de visualiser votre application depuis votre navigateur en lançant la commande **ionic serve** depuis un ordinateur Linux 64-bit.
+
+#### Solution
+
+Pour résoudre le problème, il vous suffit de lancer la commande suivante.
+
+```bash
+$ npm rebuild node-sass
+```
+
+Vous pourrez à présent relancer la commande **ionic serve** qui devrait passer sans soucis.
 
 
-Annexes : Ionic Commons problems https://devdactic.com/10-ionic-problems/
+
+Annexes : Ionic Commons problems [https://devdactic.com/10-ionic-problems/](https://devdactic.com/10-ionic-problems/)
+
+
 
