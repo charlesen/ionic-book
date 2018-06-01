@@ -217,6 +217,7 @@ Si vous souhaitez partir sur un projet prêt à l'emploi pour votre prochain PWA
 * Un système de routage
 
 * Notifications Push
+
 * Affichage d'un toast quand une nouvelle version du PWA est disponible
 * Tests unitaires
 * Pré-rendu
@@ -257,6 +258,12 @@ Vous pouvez également tester la version de production depuis votre navigateur e
 
 ```
 $ http-server www
+
+Starting up http-server, serving www
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.2.146:8080
+Hit CTRL-C to stop the server
 ```
 
 
