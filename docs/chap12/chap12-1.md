@@ -219,6 +219,7 @@ Si vous souhaitez partir sur un projet prêt à l'emploi pour votre prochain PWA
 * Notifications Push
 
 * Affichage d'un toast quand une nouvelle version du PWA est disponible
+
 * Tests unitaires
 * Pré-rendu
 * Configuration pour l'optimisation du chargement des pages \(lazy loading\)
