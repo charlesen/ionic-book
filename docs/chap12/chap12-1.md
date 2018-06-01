@@ -223,6 +223,7 @@ Si vous souhaitez partir sur un projet prêt à l'emploi pour votre prochain PWA
 * Tests unitaires
 
 * Pré-rendu
+
 * Configuration pour l'optimisation du chargement des pages \(lazy loading\)
 * Configuration pour l'optimisation du code
 * Polyfills chargé de manière sélective en fonction du support du navigateur
