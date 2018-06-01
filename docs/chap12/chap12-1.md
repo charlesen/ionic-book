@@ -215,6 +215,7 @@ Si vous souhaitez partir sur un projet prêt à l'emploi pour votre prochain PWA
 * Le framework Ionic
 
 * Un système de routage
+
 * Notifications Push
 * Affichage d'un toast quand une nouvelle version du PWA est disponible
 * Tests unitaires
@@ -251,4 +252,12 @@ $ npm run build
 ```
 
 Il ne vous restera plus qu'à faire pointer nom de domaine sur le fichier **www/index.html**.
+
+Vous pouvez également tester la version de production depuis votre navigateur en utilisant par exemple le logiciel **http-server** \(_**npm install http-server -g**_\).
+
+```
+$ http-server www
+```
+
+
 
