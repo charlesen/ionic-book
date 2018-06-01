@@ -158,14 +158,14 @@ ce qui donne ceci :
 
 ![](/assets/stencil_2.png)
 
-On peut aussi tout simplement rajouter ce composant au fichier index.html de l'application, après com :
+On peut aussi tout simplement rajouter ce composant au fichier **index.html** de l'application, après com :
 
 ```bash
 $ npm run build
 $ vi src/index.html # Choisissez votre éditeur préféré
 ```
 
-```
+```js
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
@@ -206,8 +206,6 @@ On n'affichera plus que le composant :
 
 L'idée est de pouvoir réutiliser des composants créés dans d'autres projets, les partager ou faire évoluer ceux des autres. C'est toute la philosophie des Web Components.
 
-
-
 Kit de développement de PWA avec Ionic \(Ionic PWA Toolkit\)
 
 Si vous souhaitez partir sur un projet prêt à l'emploi pour votre prochain PWA, Ionic propose son propre kit, régulièrement mis à jour. Au moment où j'écris ces quelques lignes, le kit utilise la version 4 \(Alpha\) du framework Ionic et propose tout un tas de fonctionnalités intéressantes :
@@ -215,6 +213,7 @@ Si vous souhaitez partir sur un projet prêt à l'emploi pour votre prochain PWA
 * Le framework Stencil \(évidemment\), pour créer et charger facilement des composants Web standardisés
 
 * Le framework Ionic
+
 * Un système de routage
 * Notifications Push
 * Affichage d'un toast quand une nouvelle version du PWA est disponible
@@ -236,9 +235,9 @@ $ cd mon-pwa
 $ git remote rm origin
 ```
 
-Vous pourrez ensuite démarrer l'application : 
+Vous pourrez ensuite démarrer l'application :
 
-```
+```bash
 $ npm install
 $ npm start
 ```
@@ -247,7 +246,7 @@ $ npm start
 
 Pour compiler une version de production, il suffit de faire :
 
-```
+```bash
 $ npm run build
 ```
 
