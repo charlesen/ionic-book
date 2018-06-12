@@ -1,4 +1,4 @@
-# Introduction au framework Angular
+# Chap 7 - Introduction au framework Angular
 
 ![](/assets/logo_angular.png)
 

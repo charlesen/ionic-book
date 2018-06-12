@@ -1,4 +1,4 @@
-# Introduction au langage TypeScript, le futur de JavaScript
+# Chap 6 - Introduction au langage TypeScript, le futur de JavaScript
 
 TypeScript est un langage de programmation libre et open source développé par Microsoft qui a pour but d'améliorer et de sécuriser la production de code JavaScript. Sortie en 2012, Il est vu par beaucoup comme le futur du Javascript, car se basant sur la norme ECMAScript 6, celle déjà intégré au moteur JavaScript de la plupart des navigateurs et qui fera foi dans les prochaines années.
 

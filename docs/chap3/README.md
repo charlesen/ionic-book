@@ -1,4 +1,4 @@
-# Installation de Ionic et première prise en main
+# Chap 3 - Installation de Ionic et première prise en main
 
 Ionic utilise un certain nombre d'outils permettant de créer rapidement une application mobile. Pris séparement, ils sont plus ou moins efficace, voir indépendant, mais mis en ensemble, ils sont d'une redoutable efficacité.
 
