@@ -1,4 +1,4 @@
-# Introduction au PWA avec Stencil et Capacitor
+# Chap 12 - Introduction au PWA avec Stencil et Capacitor
 
 ## Une Progressive Web App c'est quoi ?
 
