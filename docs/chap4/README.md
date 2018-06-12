@@ -1,4 +1,4 @@
-# Templates et Customisation
+# Chap 4 - Templates et Customisation
 
 Dans le chapitre précédent nous avons installé Ionic et ses dépendances. Nous avons également pu créer notre application Duckcoin et nous nous sommes amusés à le modifier tant bien que mal.
 

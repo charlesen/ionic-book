@@ -1,4 +1,4 @@
-# Ionic et son écosystème : Cloud, Lab, View et Creator
+# Chap 10 - Ionic et son écosystème : Cloud, Lab, View et Creator
 
 Grâce à tout un ensemble de services prêts à l'emploi, Ionic vous aide à créer, déployer, tester et surveiller vos applications mobiles plus facilement que jamais.
 
