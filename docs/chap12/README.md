@@ -1,4 +1,4 @@
-# Chap 12 - Introduction au PWA avec Stencil et Capacitor
+# Introduction au PWA avec Stencil et Capacitor
 
 ## Une Progressive Web App c'est quoi ?
 
@@ -11,3 +11,4 @@ Le PWA vient en quelque sorte corriger ces problèmes et bien d'autres, rencontr
 ## Ionic à l'assaut du PWA
 
 La société éditrice du Framework mobile n'a pas attendu pour s'attaquer à ce qui pourrait s'appararenter au futur du web et du mobile. Elle a créé en l'espace d'un an deux projets pour faciliter la création de PWA : Stencil et Capacitor.
+

@@ -121,7 +121,12 @@ Vous retrouverez les sources, ainsi que les corrections des exercices de ce TP Ã
 
 ## Annexes
 
-* Angular Tutorial : [https://www.tutorialspoint.com/angular4/index.htm](https://www.tutorialspoint.com/angular4/index.htm)
+* Angular Tutorial :
+  *  [https://www.tutorialspoint.com/angular4/index.htm](https://www.tutorialspoint.com/angular4/index.htm)
+  * [https://angular-2-training-book.rangle.io/](https://angular-2-training-book.rangle.io/) 
 * Documentation officielle :
   * [https://angular.io/docs](https://angular.io/docs)
   * [https://cli.angular.io/](https://cli.angular.io/)
+
+
+
