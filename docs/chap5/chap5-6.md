@@ -1,4 +1,4 @@
-## Exercez-vous
+﻿## Exercez-vous
 
 Dans cette série d'exercices, nous allons pouvoir améliorer un peu notre application en nous inspirant du design d'une application mobile nommée Electroneum.
 
@@ -30,11 +30,10 @@ P.S. : Ionic propose un ensemble d'icônes que l'on peut intégrer facilement da
 
 La liste de toutes les icônes disponibles se trouve à l'adresse  [https://ionicframework.com/docs/ionicons/](https://ionicframework.com/docs/ionicons/)
 
-| ![](/assets/miner_img.jpg) | ![](/assets/wallet_img.jpg) |
-| :--- | :--- |
-| Onglet Minage | Onglet Portefeuille |
+[](/assets/miner_img.jpg)
+[](/assets/wallet_img.jpg)
 
-5\) Améliorez les onglets Profil et More \(page Settings créé dans le TP précédent\) avec différents autres composants. Dans l'onglet Setting on pourra par exemple avoir la possibilité de choisir plusieurs devises différentes et d'en cocher une par défaut, ou encore de choisir la langue par défaut,...laissez libre cours à votre imagination ;-\)
+ Améliorez les onglets Profil et More \(page Settings créé dans le TP précédent\) avec différents autres composants. Dans l'onglet Setting on pourra par exemple avoir la possibilité de choisir plusieurs devises différentes et d'en cocher une par défaut, ou encore de choisir la langue par défaut,...laissez libre cours à votre imagination ;-\)
 
 ## Annexes
 
