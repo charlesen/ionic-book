@@ -22,7 +22,7 @@ Le bloc de base d'une application Angular est le composant, qui peut être vu co
 
 * D'une **Vue** : du contenu HTML
 * D'un **Modèle** de données : les informations qui vont être affichées dans le contenu HTML
-* D'un **Contrôleur**, qui va se charger de la logique derriere l'affichage des données dans la vue.
+* D'un **Contrôleur**, qui va se charger de la logique derrière l'affichage des données dans la vue.
 
 Un composant peut être constitué d'autres composants. Par exemple :
 
@@ -34,7 +34,7 @@ Un composant peut être constitué d'autres composants. Par exemple :
         * ce contenu peut être soit une image \[Composant image\], soit du texte \[Composant texte\]
         * ce contenu est aussi fait de commentaires \[Composant Commentaire\]
 
-L'intérêt d'une architecture en composants est que si jamais on souhaite étendre une fonctionnalité particulière, plutot que de la redefinir, on va créer un composant qui pourra être appelé partout \(afficher des tweets en page d'accueil, sur son profil, dans les résultats de recherche,...\).
+L'intérêt d'une architecture en composants est que si jamais on souhaite étendre une fonctionnalité particulière, plutôt que de la redéfinir, on va créer un composant qui pourra être appelé partout \(afficher des tweets en page d'accueil, sur son profil, dans les résultats de recherche,...\).
 
 Le composant principal d'Angular est définit à l'intérieur du fichier **src/app/app.component.ts**, où l'on retrouve aussi d'autres fichiers qui forment le MVC du projet.
 
@@ -72,4 +72,5 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-S'il fallait faire un comparatif avec un véhicule, les composants seraient des élements comme le pare-brise, les retroviseurs, les roues, ...tandis que le module Root serait le moteur, sans lequel le véhicule, même le plus beau au monde \(avec les plus beaux composants\), ne pourrait démarrer.
+S'il fallait faire un comparatif avec un véhicule, les composants seraient des élements comme le pare-brise, les rétroviseurs, les roues, ...tandis que le module Root serait le moteur, sans lequel le véhicule, même le plus beau au monde \(avec les plus beaux composants\), ne pourrait démarrer.
+

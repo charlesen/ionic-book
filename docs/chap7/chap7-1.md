@@ -10,7 +10,7 @@ On va se mettre en dehors de notre projet DuckCoin, pour éviter de le polluer. 
 $ ng new duckweb # Cette commande va créer un nouveau dossier duckweb.
 ```
 
-Ca va mettre un peu de temps à se créer, mais pas de panique vous êtes sur la bonne voie ;-\).
+Ça va mettre un peu de temps à se créer, mais pas de panique vous êtes sur la bonne voie ;-\).
 
 ![](/assets/angular_create_screen1.png)
 
@@ -24,3 +24,4 @@ $ ng serve --open
 ![](/assets/angular_launch.png)
 
 En avant d'aller plus loin découvrons un peu la structure, puis l'architecture d'un projet Angular.
+
