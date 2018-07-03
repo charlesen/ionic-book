@@ -1,4 +1,4 @@
-\#\# Ionic View
+﻿\#\# Ionic View
 
 C'est l'application qui vous permettra de tester d'autres applications. On peut aussi la configurer depuis Ionic PRO.
 
@@ -20,9 +20,10 @@ Grâce au mécanisme de push avec Git, chaque mise à jour de code mettra aussi 
 
 L'onglet suivant \(œil\) vous permet de visualiser une application à partir de son identifiant ou de son QR Code  \(voir image de gauche\), tandis que le dernier permet la gestion de ses paramètres utilisateurs \(voir image de droite\)
 
-| ![](/assets/ionic_view_duck_4.png) | ![](/assets/ionic_view_duck_5.png) |
-| :--- | :--- |
-| Onglet de visualisation d'une application | Paramétrage de Ionic View |
 
 
+**Onglet de visualisation d'une application**
+![](/assets/ionic_view_duck_4.png)
 
+**Paramétrage de Ionic View**
+![](/assets/ionic_view_duck_5.png)
