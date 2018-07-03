@@ -51,11 +51,30 @@ Choisissez **"App store"** dans la partie Distribution, puis cliquez sur **"Cont
 
 Choisissez ensuite l'App ID créé précédemment, ainsi que le certificat.
 
-Donnez un nom à votre Profil, puis appuez sur Continuer. 
+Donnez un nom à votre Profil, puis appuez sur Continuer.
 
 Télécharger le fichier **.mobileprovision **et stocker le en lieu sûr.
 
+Il faut pour finir, le convertir le certificat **.cer** en fichier **.p12**.
 
+```bash
+$ openssl x509 -inform DER -outform PEM -in ios_distribution.cer -out ios_distribution.cer.pem
+$ openssl pkcs12 -export -inkey ios-prod.key -in ios_distribution.cer.pem -out certificates-prod.p12
+```
+
+Si vous souhaitez passer par le cloud Ionic \([https://dashboard.ionicframework.com](https://dashboard.ionicframework.com)\) pour compiler votre projet, vous aurez besoin des fichiers **certificates-prod.p12** et **.mobileprovision**. Cette étape est malheureusement payante dans la nouvelle version de Ionic PRO.
+
+Depuis le menu Settings &gt; Certificates, ajoutez un nouveau profil :
+
+![](/assets/ionic_cloud_certs.png)
+
+Puis éditez le formulaire qui s'affichera en ajoutant le fichier **.p12** dans la partie **App Development/Store Certificate**, le fichier **.mobileprovision** dans la partie **Provisioning Profile**.
+
+P.S. : il est également possible d'importer votre fichier **keystore** Android dans la section correspondante.
+
+Si vous disposez d'un ordinateur Mac, un **ionic cordova run ios --device** devrait vous permettre de tester que la configuration s'est bien passé avant d'exporter votre application au format IPA.
+
+Pour plus d'informations sur les étapes annexes, n'hésitez pas à visite la page suivante : [https://ionicframework.com/docs/pro/package/ios.html](https://ionicframework.com/docs/pro/package/ios.html)
 
 
 
