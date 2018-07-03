@@ -1,12 +1,12 @@
-## Debogage de l'application
+## Débogage de l'application
 
-C'est surement la partie la moins drôle quand on développe en général, mais fort heureusement avec Ionic et Angular les choses sont un peu moins douloureuse, la plupart des bugs étant explicites et dans certains cas on indique même ce qu'il faut faire.
+C'est sûrement la partie la moins drôle quand on développe en général, mais fort heureusement avec Ionic et Angular les choses sont un peu moins douloureuse, la plupart des bugs étant explicites et dans certains cas on indique même ce qu'il faut faire.
 
 Faisons le tour de quelques méthodes qui vont vous aider à debugger efficacement votre application mobile.
 
-### L'indétronable console.log\(\) et console.info\(\)
+### L’indétrônable console.log\(\) et console.info\(\)
 
-Vous avez surement du l'utiliser au moins une fois dans vos développements JavaScript.
+Vous avez du l'utiliser au moins une fois dans vos développements JavaScript.
 
 La méthode de logging de l'objet Console vous permet d'afficher le contenu d'une variable, du texte, un message...bref, à peu près tout, de votre code source vers le navigateur web.
 
@@ -36,7 +36,7 @@ Vous avez le choix d'ajouter ce point d'arrêt depuis votre navigateur ou alors 
 let maVariable = "Je suis une variable";
 ....
 
-// L'execution du code prendra fin ici...Pour avancer, faites F10 sur Chrome
+// L'exécution du code prendra fin ici...Pour avancer, faites F10 sur Chrome
 debugger;
 
 if (maVariable) {
@@ -51,3 +51,4 @@ Ces deux élément, assez vous indique souvent d'où vient le problème et surto
 ![](/assets/bug_ionic.png)
 
 ![](/assets/ionic_bug_2.png)
+
