@@ -49,10 +49,13 @@ let list_nombres_premiers: number[] = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31];
 
 ### Any
 
-On l'utilise quand on ne sait pas trop qu'elle type de données on aura à traiter. C'est souvent le cas quand on utilise un API proprietaire.
+On l'utilise quand on ne sait pas trop qu'elle type de données on aura à traiter. C'est souvent le cas quand on utilise un API propriétaire.
 
 ```
 let variableApi: any = 4;
 variableApi = "c'est une chaine de caractère";
-variableApi = false; // ou un booléan finalement
+variableApi = false; // ou un booléen finalement
 ```
+
+
+
