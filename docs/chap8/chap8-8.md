@@ -4,7 +4,7 @@
 
 2\) Appelez ce nouveau composant dans l'onglet Portefeuille
 
-3\) Créez une directive que vous nommérez **"bigger"**. Celle-ci permettra d'augmenter la taille \(font-size\) de l'élement qui l'invoquerait.
+3\) Créez une directive que vous nommerez **"bigger"**. Celle-ci permettra d'augmenter la taille \(font-size\) de l’élément qui l'invoquerait.
 
 4\) Ajustons un peu notre page de login en enregistrant en base de données le login au clic sur le bouton de validation, et en l'affichant en page d'accueil de façon à ce que l'on ait ce message :
 
@@ -14,6 +14,7 @@ Duckcoin, c'est la monnaie qui rend aimable, redonne le sourire et change la fac
 Elle a été faite pour des gens sympas, juste comme toi.
 ```
 
-**P.S. :** vous aurez peut être surement de ça ;-\) : [https://ionicframework.com/docs/developer-resources/forms/](https://ionicframework.com/docs/developer-resources/forms/)
+**P.S. :** vous aurez sûrement besoin de ça ;-\) : [https://ionicframework.com/docs/developer-resources/forms/](https://ionicframework.com/docs/developer-resources/forms/)
 
 5\) Nous avons introduit les composants natifs proposé par Ionic [https://ionicframework.com/docs/native/](https://ionicframework.com/docs/native/). Utilisez un maximum d'entre eux et ajoutez-les à votre projet.
+
