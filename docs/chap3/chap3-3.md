@@ -206,7 +206,7 @@ Vous pouvez bien évidemment utiliser l'éditeur de votre choix, mais s'il vous 
 
 ![](/assets/vs_code.png)
 
-Éditeur de code extensible développé par Microsoft pour Windows, Linux et OS X.
+Éditeur de code extensible développé par Microsoft pour Windows, Linux et OS X. C'est l'éditeur que je recommande le mieux, car il vous facilitera énormément la vie, grâce notamment à des composants proposés par la communauté des développeurs Ionic à installer directement dans l'éditeur.
 
 **Télécharger :** [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
@@ -214,9 +214,7 @@ Vous pouvez bien évidemment utiliser l'éditeur de votre choix, mais s'il vous 
 
 ![](/assets/atom-logo.png)
 
-Éditeur de texte libre pour OS X, GNU/Linux et Windows développé par GitHub
+Éditeur de texte libre pour OS X, GNU/Linux et Windows développé par GitHub.
 
 **Télécharger :** [https://atom.io/](https://atom.io/)
-
-
 
