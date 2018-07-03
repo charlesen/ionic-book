@@ -1,6 +1,6 @@
 ## Les conditions
 
-Comme en JavaScript. On retrouve les tradionnels "if..else" , "switch...case" :
+Comme en JavaScript. On retrouve les tradionnels "if..else"  et "switch...case" :
 
 ```js
 if(une_conditon) {  
@@ -28,3 +28,6 @@ switch(meteo) {
    }
 }
 ```
+
+
+
