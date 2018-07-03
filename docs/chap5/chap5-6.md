@@ -1,4 +1,4 @@
-\#\# Exercez-vous
+### Exercez-vous
 
 Dans cette série d'exercices, nous allons pouvoir améliorer un peu notre application en nous inspirant du design d'une application mobile nommée Electroneum.
 
@@ -33,8 +33,6 @@ La liste de toutes les icônes disponibles se trouve à l'adresse  [https://ioni
 **Minage**
 
 ![](/assets/miner_img.jpg)
-
-
 
 **Portefeuille**  
 ![](/assets/wallet_img.jpg)
