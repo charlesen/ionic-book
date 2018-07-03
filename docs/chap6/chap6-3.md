@@ -1,8 +1,8 @@
 ## Les Classes et les méthodes
 
-Un des gros avantages de TypeScript est la possibilité de créer des classes, ce qui n'était pas tout à fait \(au sens strict\) en JavaScript, même s'il était possible de créer un genre de classe avec l'attribut prototype.
+Un des gros avantages de TypeScript est la possibilité de créer des classes, ce qui n'est pas tout à fait le cas \(au sens strict\) en JavaScript, où l'on passe alors par l'attribut prototype.
 
-Les méthodes elles sont équivalentes aux fonctions JavaScript, mais le mot clé "function".
+Les méthodes de classe elles sont équivalentes aux fonctions JavaScript, mais sans le mot clé "function".
 
 ```js
 class classeMmi {
