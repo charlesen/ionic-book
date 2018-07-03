@@ -68,13 +68,17 @@ Depuis le menu Settings &gt; Certificates, ajoutez un nouveau profil :
 
 ![](/assets/ionic_cloud_certs.png)
 
-Puis éditez le formulaire qui s'affichera en ajoutant le fichier **.p12** dans la partie **App Development/Store Certificate**, le fichier **.mobileprovision** dans la partie **Provisioning Profile**.
+Puis éditez le formulaire qui s'affichera en ajoutant le fichier **.p12** dans la partie **App Development/Store Certificate**, le fichier **.mobileprovision** dans la partie **Provisioning Profile**. Saisissez un mot de passe, si vous l'avez fait en créant votre certificat en local.
 
-P.S. : il est également possible d'importer votre fichier **keystore** Android dans la section correspondante.
+> **P.S. :** il est également possible d'importer votre fichier **keystore** Android dans la section correspondante.
 
-Si vous disposez d'un ordinateur Mac, un **ionic cordova run ios --device** devrait vous permettre de tester que la configuration s'est bien passé avant d'exporter votre application au format IPA.
+
+
+Dans Ionic PRO, allez dans **Code &gt; Builds**, puis cliquer le bouton en forme de package à droite \(celui du milieu sur l'image ci-dessous\) pour compiler votre projet
+
+![](/assets/ionic_build.png)
+
+Si vous disposez d'un ordinateur Mac, un **ionic cordova run ios --device** devrait vous permettre de tester que la configuration s'est bien passée avant d'exporter votre application au format IPA.
 
 Pour plus d'informations sur les étapes annexes, n'hésitez pas à visite la page suivante : [https://ionicframework.com/docs/pro/package/ios.html](https://ionicframework.com/docs/pro/package/ios.html)
-
-
 
