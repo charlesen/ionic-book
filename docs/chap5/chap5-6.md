@@ -1,4 +1,4 @@
-### Exercez-vous
+## Exercez-vous
 
 Dans cette série d'exercices, nous allons pouvoir améliorer un peu notre application en nous inspirant du design d'une application mobile nommée Electroneum.
 
