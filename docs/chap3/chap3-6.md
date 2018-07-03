@@ -29,7 +29,7 @@ $ cd duckcoin
 
 * **Portefeuille** : Changer l'intitulé de la page en _**Portefeuille**_.
 
-5\) Editez le fichier **theme/variables.scss** et modifier le contenu de la façon suivante :
+5\) Éditez le fichier **theme/variables.scss** et modifier le contenu de la façon suivante :
 
 ```js
 // Named Color Variables
@@ -78,9 +78,9 @@ Que se passe-t-il dans la console ? Dans votre navigateur ? Quelles solutions pr
 
 ![](/assets/ionic_error2.png)
 
-8\) Editer le fichier **src/app/app.module.ts** de manière à corriger le maximum d'erreurs.
+8\) Éditer le fichier **src/app/app.module.ts** de manière à corriger le maximum d'erreurs.
 
-9\) Effectuez les actions précédentes pour l'onglet Portefeuille \(renommage + resolutions de bugs\) : **contact.html** en **wallet.html**, **contact.scss** en **wallet.scss**, **contact.scss** en **wallet.scss**, **contact.ts** en **wallet.ts**.
+9\) Effectuez les actions précédentes pour l'onglet Portefeuille \(renommage + résolutions de bugs\) : **contact.html** en **wallet.html**, **contact.scss** en **wallet.scss**, **contact.scss** en **wallet.scss**, **contact.ts** en **wallet.ts**.
 
 ![](/assets/screen_duck_2.png)
 
@@ -96,7 +96,6 @@ $ ionic link
 ❯ Create a new app
   Duckcoin-starter (94d675be)
   Duckcoin (20e8461e)
-
 ```
 
 Dans la liste qui vous est proposée, choisir l'application que vous avez créée depuis votre espace Ionic PRO.
@@ -115,3 +114,4 @@ Editez ensuite le fichier **ionic.config.json**. Que remarquez-vous ?
 [^1]: Ubuntu Ionic Installer : [https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu\_ionic\_installer.sh](https://github.com/nraboy/ubuntu-ionic-installer/blob/master/ubuntu_ionic_installer.sh)
 
 [^2]: _How to prevent permission errors_ : [https://docs.npmjs.com/getting-started/fixing-npm-permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
+
