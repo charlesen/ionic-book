@@ -1,21 +1,10 @@
 ## Une méthode pour les gouverner tous
 
-Il existe différentes façon de développer un produit à destination des mobinautes : le web mobile, le natif et l'hybride.
+Il existe différentes façon de développer un produit à destination des mobinautes : le web mobile, l'hybride et le natif.
 
 ### Applications web mobiles
 
 Une application web mobile est une version allégée d'un site internet, optimisée pour les écrans de petites tailles \(smartphone, tablette, TV connectée,...\). On parle la plupart du temps de site responsive, car il s'adapte aux caractériques de l'écran du navigateur web. Avec le [PWA, concept abordé au chapitre 12](/chap12), les applications web mobiles sont en passe de dominer le traffic issus des appareils mobiles.
-
-### Applications natives
-
-Une application mobile est dite native, si le développement effectué pour la créer \(et donc le langage de programmation\) est spécifique à la plateforme cible.
-
-| Plateforme cible | Langage de Programmation |
-| :--- | :--- |
-| Android \(Google\) | Java, Kotlin |
-| iOS \(Apple\) | Objective-C, Swift |
-| Windows Phone \(Microsoft\) | C-Sharp \(C\#\) |
-| ...etc |  |
 
 ### Applications hybrides
 
@@ -40,3 +29,17 @@ function capturePhoto() {
 ```
 
 Pas de panique, ce code écrit en JavaScript n'aura bientôt plus beaucoup de secrets pour vous.
+
+### Applications natives
+
+Une application mobile est dite native, si le développement effectué pour la créer \(et donc le langage de programmation\) est spécifique à la plateforme cible.
+
+| Plateforme cible | Langage de Programmation |
+| :--- | :--- |
+| Android \(Google\) | Java, Kotlin |
+| iOS \(Apple\) | Objective-C, Swift |
+| Windows Phone \(Microsoft\) | C-Sharp \(C\#\) |
+| ...etc |  |
+
+
+
