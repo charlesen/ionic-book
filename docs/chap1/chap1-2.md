@@ -23,13 +23,13 @@ Voilà plus en détail ce que ces différentes questions peuvent impliquer.
 
 Si vous souhaitez cibler plus d'une plate-forme mobile, vous avez alors plusieurs choix possibles. Cela va de soi.
 
-Et de toute évidence, le web mobile offre la solution la plus attrayante, surtout si vous possédez déjà une version web de ce que vous souhaitez développer pour les mobiles. Dans ce cas, un simple développement d'une version responsive de votre site peut être suffisant.
+Et de toute évidence, le web mobile offre la solution la plus attrayante, surtout si vous possédez déjà une version web de ce que vous souhaitez développer pour les mobiles. Dans ce cas, une version adapatée aux mobiles \(responsive\) de votre site peut être suffisante.
 
 Mais, un développement hybride peut être aussi une excellente alternative.
 
-Si ce que vous souhaitez proposer ne requiert pas d'avoir de très grosses performances logiciels, alors le natif n'est surement pas une bonne idée. Cependant, si vous ne voyez aucun inconvénient à recruter 3 développeurs différents ou à exploiter celui que vous avez déjà \(si ce n'est vous\), le priver de vacances jusqu'à ce que mort s'en suive, alors oui partez sur du natif. Bon j'exagère un peu, mais c'est à peu près ça.
+Si ce que vous souhaitez proposer ne requiert pas d'avoir de très très grosses performances logiciels, alors le natif n'est surement pas une bonne idée. Sauf si vous ne voyez aucun inconvénient à recruter 3 développeurs différents ou à exploiter celui que vous avez déjà \(si ce n'est vous\) et le priver de vacances jusqu'à ce que mort s'en suive. Bon j'exagère un peu, mais c'est à peu près ça.
 
-Préparez-vous de toute façon, si votre choix se porte sur le natif, à parler couramment l'Objective-C ou le Swift pour iOS, Java ou Kotlin pour Android, et C-Sharp \(C \#\) pour Windows Phone, pour ne citer que ces trois plateformes.
+Préparez-vous de toute façon, si votre choix se porte sur le natif, à parler couramment l'Objective-C ou le Swift pour iOS, Java ou Kotlin pour Android, et C-Sharp \(C \#\) pour Windows Phone \(actuellement Windows 10 Mobile\), pour ne citer que ces trois plateformes.
 
 ### Voulez-vous distribuer votre application via un app Store ?
 
