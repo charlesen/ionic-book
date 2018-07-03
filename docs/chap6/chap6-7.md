@@ -101,21 +101,21 @@ En vous basant sur ce qui a été fait précédemment avec la liste des cryptomo
 
 ![](/assets/transaction_list_1.png)
 
-3\) Le signe dollar \($\) de la liste est ajouté automatiquement grâce à un pipe Angular \(concept abordé au [chapitre 7](/chap7)\). Comment d'après la documentation suivante, est-il possible de remplacer le $ en € ? Puis € en DRT ? [https://angular.io/api/common/CurrencyPipe](https://angular.io/api/common/CurrencyPipe).
+2\) Le signe dollar \($\) de la liste est ajouté automatiquement grâce à un pipe Angular \(concept abordé au [chapitre 7](/chap7)\). Comment d'après la documentation suivante, est-il possible de remplacer le $ en € ? Puis € en DRT ? [https://angular.io/api/common/CurrencyPipe](https://angular.io/api/common/CurrencyPipe).
 
 ![](/assets/transact_2.png)
 
-2\) Faites qu'en cliquant sur une ligne de la transaction, on affiche une fenêtre modale, avec le résumé de la transaction :
+3\) Faites qu'en cliquant sur une ligne de la transaction, on affiche une fenêtre modale, avec le résumé de la transaction :
 
 [https://ionicframework.com/docs/components/\#modals](https://ionicframework.com/docs/components/#modals)
 
-**P.S :** il est possible de passer des paramètres à une fenetre modale, puis de les récupérer dans la fenetre concernée :
+**P.S :** il est possible de passer des paramètres à une fenêtre modale, puis de les récupérer dans la fenêtre concernée :
 
 Ouverture de la fenêtre avec passage de paramètres :
 
 ```
 import { ModalController } from 'ionic-angular';
-import { MaPageModal } from './modal/modal'; // la page modale est dans le meme dossier que la principale
+import { MaPageModal } from './modal/modal'; // la page modale est dans le même dossier que la principale
 
 export class MaPage {
   constructor(public modalCtrl: ModalController) {
@@ -153,3 +153,6 @@ export class MaPageModal {
 * Documentation sur les méthodes Map, filter et Reduce :
   * [https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-2620](https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209)
   * [https://scotch.io/tutorials/list-processing-with-map-filter-and-reduce](#)
+
+
+
