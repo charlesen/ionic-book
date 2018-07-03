@@ -65,7 +65,7 @@ for (let i of list) {
 
 #### Map
 
-Considerons la liste de politiciens suivante :
+Considérons la liste de politiciens suivante :
 
 ```js
 let politiciens = [{
@@ -134,15 +134,15 @@ let politiciens_noms = politiciens.map(function (politicien, index, array) {
 // (5) ["MACRON", "PHILIPPE", "LE MAIRE", "CALMELS", "JUPPÉ"]
 ```
 
-La méthode donne accès dans son callback à chaque item du tableau depuis la variable **politicien**, à sa position \(**index\)** à l'intiérieur du tableau, et enfin du tableau lui-même \(**array**\).
+La méthode donne accès dans son callback à chaque item du tableau depuis la variable **politicien**, à sa position \(**index\)** à l’intérieur du tableau, et enfin du tableau lui-même \(**array**\).
 
-Avec cette méthode, vous n'aurez pas à vous inquieter de l'index de la boucle ou d'utiliser la méthode push pour stocker vos éléments. De plus, la méthode renvoyant un Array, il est tout à fait possible de d'appliquer une autre méthode juste après la méthode map.
+Avec cette méthode, vous n'aurez pas à vous inquiéter de l'index de la boucle ou d'utiliser la méthode push pour stocker vos éléments. De plus, la méthode renvoyant un Array, il est tout à fait possible de d'appliquer une autre méthode juste après la méthode map.
 
 #### Filter
 
-Cette méthode fait exactement ce que nom semble suggérer : à partir d'un tableau reçu en entrée, il le filtre en éliminant les éléments non désiré selon une condition determinée.
+Cette méthode fait exactement ce que nom semble suggérer : à partir d'un tableau reçu en entrée, il le filtre en éliminant les éléments non désiré selon une condition déterminée.
 
-Reprenons notre liste de politiciens et ne retenons que ceux de moins de 50 ans. Grâce à la methode filter, il suffit de faire :
+Reprenons notre liste de politiciens et ne retenons que ceux de moins de 50 ans. Grâce à la méthode filter, il suffit de faire :
 
 ```js
 let politiciens_U50 = politiciens.filter((politicien) => politicien.age <= 50 );
@@ -158,7 +158,7 @@ let politiciens_U50 = politiciens.filter((politicien) => politicien.age <= 50 );
 
 #### Reduce
 
-Si la fonction **map** permet de créer un nouveau tableau en transformant chaque élément d'un tableau, et si **filter** permet quant à lui de créer un nouveau tableau en supprimer des éléments selon une condition determinée, la méthode **reduce** permet de prendre tous les éléments du tableau pour les "réduire" à une unique valeur.
+Si la fonction **map** permet de créer un nouveau tableau en transformant chaque élément d'un tableau, et si **filter** permet quant à lui de créer un nouveau tableau en supprimer des éléments selon une condition déterminée, la méthode **reduce** permet de prendre tous les éléments du tableau pour les "réduire" à une unique valeur.
 
 Considérons le tableau de politiciens de moins de 50 ans précécent. On aimerait cette fois calculer la moyenne d'âge de ces _"jeunes"_ faiseurs de lois.
 
@@ -184,3 +184,6 @@ politiciens.filter((politicien) => politicien.age <= 50 )
 
 // Renvoie bien : 45.75
 ```
+
+
+
