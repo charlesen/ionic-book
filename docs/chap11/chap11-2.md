@@ -4,13 +4,13 @@
 
 * Xcode 7 ou supérieur
 * iOS 9
-* Compte Developpeur Apple : [https://developer.apple.com/](https://developer.apple.com/).
+* Compte Développeur Apple : [https://developer.apple.com/](https://developer.apple.com/).
 
 Tout comme Android, Apple requiert un compte développeur pour pouvoir publier une application mobile.
 
 La procédure est un peu moins évidente et je vous conseille la documentation Ionic très imagée à l'adresse : [https://ionicframework.com/docs/intro/deploying/](https://ionicframework.com/docs/intro/deploying/)
 
-Il faut globalement un certain nombre d'étapespermettant la signature de votre application et son authentification en tant que produit apple.
+Il faut globalement un certain nombre d'étapes permettant la signature de votre application et son authentification en tant que produit apple.
 
 ### Création d'un package de production
 
@@ -86,11 +86,11 @@ Pour plus d'informations sur les étapes annexes, n'hésitez pas à visite la pa
 
 Url : [https://appstoreconnect.apple.com/](https://appstoreconnect.apple.com/)
 
-Dans la section "Mes apps", ajouter une nouvelle application en cliquant sur le bouton "+". Complétez le formulaire qui apparaît, en ajoutant le nom de l'ID du fichier config.xml dans l'item UGS.
+Dans la section **"Mes apps"**, ajouter une nouvelle application en cliquant sur le bouton "+". Complétez le formulaire qui apparaît, en ajoutant le nom de l'ID du fichier config.xml dans l'item UGS.
+
+![](/assets/itunes_connect_1.png)
 
 Complétez les informations liées à l'application \(nom, description,..\), puis dans la partie App version, ajoutez des images et surtout importez votre fichier compilé.
-
-
 
 N'hésitez surtout à visitez la page [https://ionic.mobiletuto.com/chap11/](https://ionic.mobiletuto.com/chap11/) et à y poser vos questions, si vous rencontrez des difficultés dans la publication
 
