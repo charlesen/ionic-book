@@ -2,7 +2,7 @@
 
 Nous avons déjà parlé et avons même créé un compte au [chapitre 3](/chap3).
 
-Ionic Cloud va vous permette de compiler votre projet sans devoir vous inquiéter de l'installation des packages nécessaires pour chaque plateforme cible \(Androi, iOS\).
+Ionic Cloud va vous permette de compiler votre projet sans devoir vous inquiéter de l'installation des packages nécessaires pour chaque plateforme cible \(Android, iOS\).
 
 Pour pusher votre application sur le cloud, et si vous aviez choisi à la création du projet de l'héberger sur Ionic Pro, il vous suffira de faire :
 
