@@ -90,3 +90,7 @@ Dans la section "Mes apps", ajouter une nouvelle application en cliquant sur le 
 
 Complétez les informations liées à l'application \(nom, description,..\), puis dans la partie App version, ajoutez des images et surtout importez votre fichier compilé.
 
+
+
+N'hésitez surtout à visitez la page [https://ionic.mobiletuto.com/chap11/](https://ionic.mobiletuto.com/chap11/) et à y poser vos questions, si vous rencontrez des difficultés dans la publication
+
