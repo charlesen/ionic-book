@@ -1,6 +1,6 @@
 ## Les constantes
 
-Une constante comme son nom l'indique est censée de ne pas être modifié ou redéfinie par la suite. On pourra par exemple y stocker l'URL d'une API :
+Une constante comme son nom l'indique est censée de ne pas être modifiée ou redéfinie par la suite. On pourra par exemple y stocker l'URL d'une API :
 
 ```js
 const apiUrl = 'https://duckcoin.charlesen.fr';
