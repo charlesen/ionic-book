@@ -237,7 +237,7 @@ Après enregistrement vous devriez voir ceci s'afficher à présent :
 
 ### Navigation entre différentes pages
 
-Pour passer d'une page, par exemple de la page de Profil, à la page d'accueil par exemple, on utilise ce que l'on appelle le controleur de navigation \(NavController\), que vous avez du voir apparaitre dans chaque page.
+Pour passer d'une page, par exemple de la page de Profil, à la page d'accueil par exemple, on utilise ce que l'on appelle le controleur de navigation \(NavController\), que vous avez du voir apparaître dans chaque page.
 
 **src/pages/profile/profile.ts**
 
@@ -297,7 +297,7 @@ export class ProfilePage {
 }
 ```
 
-Puis, modifions un peu le fichier **src/pages/profile/profile.ts **pour afficher un bouton qui nous permettra d'appeller cette action :
+Puis, modifions un peu le fichier **src/pages/profile/profile.ts **pour afficher un bouton qui nous permettra d’appeler cette action :
 
 ```
 <ion-header>
@@ -314,9 +314,9 @@ Profil utilisateur
 </ion-content>
 ```
 
-Qui donne le résultat suivant :
-| ![](/assets/screen_profile_3.png) | ![](/assets/screen_profile_4.png) |
-| :--- | :--- |
-| Profil 1 | Profil 2 |
+Qui donne le résultat suivant :  
+\| ![](/assets/screen_profile_3.png) \| ![](/assets/screen_profile_4.png) \|  
 
-L'élement button fait partie des composants que propose Ionic. Dans le [chapitre suivant](/chap5/), nous ferons le tour de ces principaux composants et apprendrons à la customiser.
+
+L'élément button fait partie des composants que propose Ionic. Dans le [chapitre suivant](/chap5/), nous ferons le tour de ces principaux composants et apprendrons à la customiser.
+
