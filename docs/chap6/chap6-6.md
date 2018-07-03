@@ -1,16 +1,16 @@
 ## Les constantes
 
-Une constante comme son nom l'indique est censée de ne pas être modifié ou redéfinie par la suite. On pourra par exemple y stocker l'URL d'une API : 
+Une constante comme son nom l'indique est censée de ne pas être modifié ou redéfinie par la suite. On pourra par exemple y stocker l'URL d'une API :
 
 ```js
 const apiUrl = 'https://duckcoin.charlesen.fr';
 ```
 
-Ou encore se créer un fichier de configuration pour notre application
+Ou encore se créer un fichier de configuration pour notre application :
 
-src/config/config.ts
+**src/config/config.ts**
 
-```
+```js
 const is_localhost = window.location.hostname == 'localhost';
 const is_production = false;
 
@@ -26,10 +26,9 @@ export const Config = {
   api_url: is_production ? url_prod : url_dev
   db_name:'nom_de_ma_base_de_donnees'
 };
-
 ```
 
-Que l'on peut appeler n'importe où , depuis la page d'accueil par exemple :
+Que l'on peut ensuite appeler n'importe où, depuis la page d'accueil par exemple :
 
 **src/pages/home/home.ts**
 
