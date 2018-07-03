@@ -8,7 +8,7 @@ Pour ajouter un composant de type bouton[^1] à votre application mobile, il suf
 
 Tada ! Ce n'est pas plus compliqué que ça.
 
-On peut aussi customiser un peu ce bouton grâce à des [directives, concepte abordé au chapitre 8](/chap8). Ajustons par exemple la couleur des différents boutons :
+On peut aussi customiser un peu ce bouton grâce à des [directives, concept abordé au chapitre 8](/chap8). Ajustons par exemple la couleur des différents boutons :
 
 ```js
 <button ion-button color="light">Mon bouton clair</button>

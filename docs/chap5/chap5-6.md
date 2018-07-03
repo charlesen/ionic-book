@@ -8,7 +8,7 @@ Electroneum est une cryptomonnaie dédiée au secteur du mobile. Une application
 
 Dans ce TP, nous allons, à l'aide des composants que nous avons étudié et bien d'autres, tenter de nous rapprocher le plus possible de l'application \(voir les captures d'écran ci-dessous\)
 
-1\) Créez une nouvelle page que vous nommérez Login. Ce sera notre page de connexion et d'inscription.
+1\) Créez une nouvelle page que vous nommerez Login. Ce sera notre page de connexion et d'inscription.
 
 Faites que cette page soit la page par défaut, en modifiant le fichier **src/app/app.component.ts**
 
@@ -22,7 +22,7 @@ De plus, vous rajouterez juste avant le bouton de login deux input pour saisir s
 
 4\) Sans modifier l'onglet Accueil, adaptez les autres onglets Minage, Portefeuille
 
-P.S. : Ionic propose un ensemble d'icônes que l'on peut intégrer facilement dans l'appli.
+P.S. : Ionic propose un ensemble d'icônes que l'on peut intégrer facilement dans l'application.
 
 ```js
 <ion-icon name="home"></ion-icon>
@@ -39,3 +39,6 @@ La liste de toutes les icônes disponibles se trouve à l'adresse  [https://ioni
 ## Annexes
 
 * Liste des composants Ionic et Documentation : [https://ionicframework.com/docs/components/](https://ionicframework.com/docs/components/)
+
+
+
