@@ -11,7 +11,7 @@ Ionic met à disposition un ensemble d'attributs utilitaires qui peuvent être u
 | text-start | text-align:start | Identique à text-left si la direction d'écriture va de gauche vers la droite et text-right si la direction est de droite vers la gauche. |
 | text-end | text-align:end | Identique à text-right si la direction d'écriture est de gauche vers la droite et de text-left si la direction est de droite vers la gauche. |
 | text-center | text-align:center | Centre le contenu |
-| text-justify | text-align:justify | Justfie le contenu |
+| text-justify | text-align:justify | Justifie le contenu |
 
 Une liste beaucoup plus exhaustive se trouve dans la documentation qui est extrêmement bien faite [https://ionicframework.com/docs/theming/css-utilities/](https://ionicframework.com/docs/theming/css-utilities/)
 
@@ -40,7 +40,7 @@ On va pouvoir utiliser ces attributs directement dans nos pages. Centrons par ex
 
 ### Grille CSS responsive
 
-Ionic propose également un système de grille css pour permettre une meilleur gestion de blocs de contenus. Il est assez similiare dans sa syntaxe à celui que propose Bootstrap.
+Ionic propose également un système de grille css pour permettre une meilleur gestion de blocs de contenus. Il est assez similaire dans sa syntaxe à celui que propose Bootstrap.
 
 ```js
 <h2>Profil utilisateur</h2>
@@ -147,11 +147,9 @@ page-profile {
 
 ![](/assets/screenprofile_1.png)
 
-
-
 De manière générale, les Variables Sass vous permettent de définir une valeur une fois, puis de l'utiliser à plusieurs endroits différents. Une variable commence toujours par un signe dollar \($\) et est initialisé comme une propriété CSS classique.
 
-Suppossons par exemple que l'on souhaiterait imposer une largeur maximale sur un certain nombre de composants de notre application \(des images, boutons,...\). On pourrait par exemple faire ceci dans le fichier variables.css :
+Supposons par exemple que l'on souhaite imposer une largeur maximale sur un certain nombre de composants de notre application \(des images, boutons,...\). On pourrait par exemple faire ceci dans le fichier variables.css :
 
 **src/theme/variables.scss**
 
@@ -174,3 +172,6 @@ img {
     width : $max-width/10;
 }
 ```
+
+
+
