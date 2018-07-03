@@ -1,16 +1,20 @@
-﻿## Ionic View
+\#\# Ionic View
 
 C'est l'application qui vous permettra de tester d'autres applications. On peut aussi la configurer depuis Ionic PRO.
 
 Url : [https://dashboard.ionicframework.com](https://dashboard.ionicframework.com)
 
-Une fois l'application téléchargée, il vous suffit de l'ouvrir, de vous connecter avec vos identifiants Ionci PRO, pour voir s'afficher vos différentes applications 
+Une fois l'application téléchargée, il vous suffit de l'ouvrir, de vous connecter avec vos identifiants Ionci PRO, pour voir s'afficher vos différentes applications
+
+**Vue de toutes les applications disponibles sur Ionic PRO**
 
 ![](/assets/ionic_view_duck_1.png)
 
-![](/assets/ionic_view_duck_2.png)
 
-Vue de toutes les applications disponibles sur Ionic PRO | Démarrage de l'application en cours |
+
+**Démarrage de l'application en cours**
+
+![](/assets/ionic_view_duck_2.png)
 
 Grâce au mécanisme de push avec Git, chaque mise à jour de code mettra aussi à jour votre application sur Ionic View.
 
