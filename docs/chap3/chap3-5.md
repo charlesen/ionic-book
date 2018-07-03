@@ -107,57 +107,56 @@ Modifications qui ne seront pas validées :
   (utilisez "git add <fichier>..." pour mettre à jour ce qui sera validé)
   (utilisez "git checkout -- <fichier>..." pour annuler les modifications dans la copie de travail)
 
-	modifié :         resources/android/icon/drawable-hdpi-icon.png
-	modifié :         resources/android/icon/drawable-ldpi-icon.png
-	modifié :         resources/android/icon/drawable-mdpi-icon.png
-	modifié :         resources/android/icon/drawable-xhdpi-icon.png
-	modifié :         resources/android/icon/drawable-xxhdpi-icon.png
-	modifié :         resources/android/icon/drawable-xxxhdpi-icon.png
-	modifié :         resources/android/splash/drawable-land-hdpi-screen.png
-	modifié :         resources/android/splash/drawable-land-ldpi-screen.png
-	modifié :         resources/android/splash/drawable-land-mdpi-screen.png
-	modifié :         resources/android/splash/drawable-land-xhdpi-screen.png
-	modifié :         resources/android/splash/drawable-land-xxhdpi-screen.png
-	modifié :         resources/android/splash/drawable-land-xxxhdpi-screen.png
-	modifié :         resources/android/splash/drawable-port-hdpi-screen.png
-	modifié :         resources/android/splash/drawable-port-ldpi-screen.png
-	modifié :         resources/android/splash/drawable-port-mdpi-screen.png
-	modifié :         resources/android/splash/drawable-port-xhdpi-screen.png
-	modifié :         resources/android/splash/drawable-port-xxhdpi-screen.png
-	modifié :         resources/android/splash/drawable-port-xxxhdpi-screen.png
-	modifié :         resources/ios/icon/icon-1024.png
-	modifié :         resources/ios/icon/icon-40.png
-	modifié :         resources/ios/icon/icon-40@2x.png
-	modifié :         resources/ios/icon/icon-40@3x.png
-	modifié :         resources/ios/icon/icon-50.png
-	modifié :         resources/ios/icon/icon-50@2x.png
-	modifié :         resources/ios/icon/icon-60.png
-	modifié :         resources/ios/icon/icon-60@2x.png
-	modifié :         resources/ios/icon/icon-60@3x.png
-	modifié :         resources/ios/icon/icon-72.png
-	modifié :         resources/ios/icon/icon-72@2x.png
-	modifié :         resources/ios/icon/icon-76.png
-	modifié :         resources/ios/icon/icon-76@2x.png
-	modifié :         resources/ios/icon/icon-83.5@2x.png
-	modifié :         resources/ios/icon/icon-small.png
-	modifié :         resources/ios/icon/icon-small@2x.png
-	modifié :         resources/ios/icon/icon-small@3x.png
-	modifié :         resources/ios/icon/icon.png
-	modifié :         resources/ios/icon/icon@2x.png
-	modifié :         resources/ios/splash/Default-568h@2x~iphone.png
-	modifié :         resources/ios/splash/Default-667h.png
-	modifié :         resources/ios/splash/Default-736h.png
-	modifié :         resources/ios/splash/Default-Landscape-736h.png
-	modifié :         resources/ios/splash/Default-Landscape@2x~ipad.png
-	modifié :         resources/ios/splash/Default-Landscape@~ipadpro.png
-	modifié :         resources/ios/splash/Default-Landscape~ipad.png
-	modifié :         resources/ios/splash/Default-Portrait@2x~ipad.png
-	modifié :         resources/ios/splash/Default-Portrait@~ipadpro.png
-	modifié :         resources/ios/splash/Default-Portrait~ipad.png
-	modifié :         resources/ios/splash/Default@2x~iphone.png
-	modifié :         resources/ios/splash/Default@2x~universal~anyany.png
-	modifié :         resources/ios/splash/Default~iphone.png
-
+    modifié :         resources/android/icon/drawable-hdpi-icon.png
+    modifié :         resources/android/icon/drawable-ldpi-icon.png
+    modifié :         resources/android/icon/drawable-mdpi-icon.png
+    modifié :         resources/android/icon/drawable-xhdpi-icon.png
+    modifié :         resources/android/icon/drawable-xxhdpi-icon.png
+    modifié :         resources/android/icon/drawable-xxxhdpi-icon.png
+    modifié :         resources/android/splash/drawable-land-hdpi-screen.png
+    modifié :         resources/android/splash/drawable-land-ldpi-screen.png
+    modifié :         resources/android/splash/drawable-land-mdpi-screen.png
+    modifié :         resources/android/splash/drawable-land-xhdpi-screen.png
+    modifié :         resources/android/splash/drawable-land-xxhdpi-screen.png
+    modifié :         resources/android/splash/drawable-land-xxxhdpi-screen.png
+    modifié :         resources/android/splash/drawable-port-hdpi-screen.png
+    modifié :         resources/android/splash/drawable-port-ldpi-screen.png
+    modifié :         resources/android/splash/drawable-port-mdpi-screen.png
+    modifié :         resources/android/splash/drawable-port-xhdpi-screen.png
+    modifié :         resources/android/splash/drawable-port-xxhdpi-screen.png
+    modifié :         resources/android/splash/drawable-port-xxxhdpi-screen.png
+    modifié :         resources/ios/icon/icon-1024.png
+    modifié :         resources/ios/icon/icon-40.png
+    modifié :         resources/ios/icon/icon-40@2x.png
+    modifié :         resources/ios/icon/icon-40@3x.png
+    modifié :         resources/ios/icon/icon-50.png
+    modifié :         resources/ios/icon/icon-50@2x.png
+    modifié :         resources/ios/icon/icon-60.png
+    modifié :         resources/ios/icon/icon-60@2x.png
+    modifié :         resources/ios/icon/icon-60@3x.png
+    modifié :         resources/ios/icon/icon-72.png
+    modifié :         resources/ios/icon/icon-72@2x.png
+    modifié :         resources/ios/icon/icon-76.png
+    modifié :         resources/ios/icon/icon-76@2x.png
+    modifié :         resources/ios/icon/icon-83.5@2x.png
+    modifié :         resources/ios/icon/icon-small.png
+    modifié :         resources/ios/icon/icon-small@2x.png
+    modifié :         resources/ios/icon/icon-small@3x.png
+    modifié :         resources/ios/icon/icon.png
+    modifié :         resources/ios/icon/icon@2x.png
+    modifié :         resources/ios/splash/Default-568h@2x~iphone.png
+    modifié :         resources/ios/splash/Default-667h.png
+    modifié :         resources/ios/splash/Default-736h.png
+    modifié :         resources/ios/splash/Default-Landscape-736h.png
+    modifié :         resources/ios/splash/Default-Landscape@2x~ipad.png
+    modifié :         resources/ios/splash/Default-Landscape@~ipadpro.png
+    modifié :         resources/ios/splash/Default-Landscape~ipad.png
+    modifié :         resources/ios/splash/Default-Portrait@2x~ipad.png
+    modifié :         resources/ios/splash/Default-Portrait@~ipadpro.png
+    modifié :         resources/ios/splash/Default-Portrait~ipad.png
+    modifié :         resources/ios/splash/Default@2x~iphone.png
+    modifié :         resources/ios/splash/Default@2x~universal~anyany.png
+    modifié :         resources/ios/splash/Default~iphone.png
 ```
 
 ### ./src/
@@ -166,9 +165,9 @@ C'est à l'intérieur que l'on retrouve le code de l'application à proprement. 
 
 On retrouve du code écrit en TypeScript \(nous en reparlerons en détails au [chapitre 6](/chap6)\) dont l'extension de fichiers est **.ts**.
 
-On retrouve aussi du htlm, du css,...
+On retrouve aussi du html, du css,...
 
-> **Ecran Mobile = 1 Fichier .ts + 1 Fichier .html + 1 Fichier .scss**
+> Écran** Mobile = 1 Fichier .ts + 1 Fichier .html + 1 Fichier .scss**
 
 le fichier **src/app/app.module.ts** est le point d'entrée métier de notre application.
 
@@ -189,7 +188,7 @@ Dans le [chapitre suivant](/chap4), nous allons apprendre à customiser notre ap
 
 ### ./src/index.html
 
-> C'est l'entrée principale du projet. Il faut se rappeler q'une application Hybride utilise la technologie WebView du téléphone qui se comporte alors comme un mini-navigateur à l'intérieur duquel on peut afficher un site web, qui est votre projet.
+> C'est l'entrée principale du projet. Il faut se rappeler qu'une application Hybride utilise la technologie WebView du téléphone qui se comporte alors comme un mini-navigateur à l'intérieur duquel on peut afficher un site web, qui est votre projet.
 
 A l'intérieur  de ce fichier, Ionic va aller chercher le tag **&lt;ion-app&gt;** à l'intérieur duquel vos différents écrans seront chargés.
 
@@ -197,7 +196,7 @@ A l'intérieur  de ce fichier, Ionic va aller chercher le tag **&lt;ion-app&gt;*
 <ion-app></ion-app>
 ```
 
-On retrouve également du code javascript, généré par Ionic et qu'il ne sera pas nécessaire de modifier :
+On retrouve également du code JavaScript, généré par Ionic et qu'il ne sera pas nécessaire de modifier :
 
 ```js
 <!-- Ionic's root component and where the app will load -->
@@ -220,5 +219,5 @@ Ces fichiers sont utilisé par TypeScript et décrivre notamment la manière don
 
 ### ./www
 
-Ce dossier, qui est auto-généré, contient la version web de votre application mobile. C'est grâce à ce dossier que vous pouvez visualer l'application depuis un navigateur.
+Ce dossier, qui est auto-généré, contient la version web de votre application mobile. C'est grâce à ce dossier que vous pouvez visualiser l'application depuis un navigateur.
 
