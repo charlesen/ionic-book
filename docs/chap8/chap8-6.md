@@ -4,7 +4,7 @@ En plus de composants purement visuel qui vous permettent de mettre en forme vot
 
 La liste de tous les plugins Ionic disponibles actuellement se trouve à l'adresse : [https://ionicframework.com/docs/native/](https://ionicframework.com/docs/native/)
 
-Avant d'installer un plugin, il faut s'asurer que le package Ionic native est bien disponible, ce qui devrait être le cas dans une installation Ionic classique. Mais au besoin, il suffit de faire :
+Avant d'installer un plugin, il faut s’assurer que le package Ionic native est bien disponible, ce qui devrait être le cas dans une installation Ionic classique. Mais au besoin, il suffit de faire :
 
 ```bash
 $ npm install @ionic-native/core --save
@@ -14,7 +14,7 @@ C'est à l'intérieur de ce package \(dossier\) que seront installés les autres
 
 ### Installation d'un plugin
 
-Les plugins Ionic étant comme nous l'avons vu des versions remasterisées de plugins Cordova/Phonegap, l'installation se fera en deux étapes : installation de la version Ionic et installation de la version Cordova/Phonegap sur laquelle se base la précédente.
+Les plugins Ionic étant comme nous l'avons vu des versions remastérisées de plugins Cordova/Phonegap, l'installation se fera en deux étapes : installation de la version Ionic et installation de la version Cordova/Phonegap sur laquelle se base la précédente.
 
 Pour installer la version "Ionic" du plugin il suffit de lancer une commande similaire à celle-ci :
 
@@ -28,7 +28,7 @@ Puis, il ne reste plus qu'à installer le plugin Cordova/Phonegap correspondant 
 $ ionic cordova plugin add mon_plugin_cordova
 ```
 
-Chaque plugin possèdant sa propre documentation il est recommandé de suivre les instructions d'installation à partir de la documentation de chaque plugin, car certains plugins nécessitent des étapes supplémentaires pour une installation complète.
+Chaque plugin possédant sa propre documentation il est recommandé de suivre les instructions d'installation à partir de la documentation de chaque plugin, car certains plugins nécessitent des étapes supplémentaires pour une installation complète.
 
 Une fois le plugin installé, il faut le déclarer dans le module principal de l'application :
 
@@ -70,7 +70,7 @@ Une fois l'application installée, vous devrez vous connecter avec vos identifia
 $ ionic serve -c
 ```
 
-Connectez ensuite votre téléphone au même réseau wifi que votre ordinateur, puis lancez Ionic Dev App pour voir apparaitre Votre application DuckCoin.
+Connectez ensuite votre téléphone au même réseau wi-fi que votre ordinateur, puis lancez Ionic Dev App pour voir apparaître Votre application DuckCoin.
 
 ![](/assets/ionic_devapp_2.png)
 
@@ -197,7 +197,7 @@ Il ne vous reste plus qu'à cliquer sur le bouton PHOTO et accepter l'autorisati
 
 **Documentation** : [https://ionicframework.com/docs/native/geolocation/](https://ionicframework.com/docs/native/geolocation/)
 
-Ce plugin permet de récupérer des informations liées à la géolocalisation de l'appareil \(latitude et longitude\). Les technologies utilisés par le plugin pour effectuer cette géolocalisation sont le GPS, la La radio-identification \(RFID\), les adresses MAC des bornes WiFi et Bluetooth, ainsi que les identifiants de cellule GSM / CDMA.
+Ce plugin permet de récupérer des informations liées à la géolocalisation de l'appareil \(latitude et longitude\). Les technologies utilisés par le plugin pour effectuer cette géolocalisation sont le GPS, la La radio-identification \(RFID\), les adresses MAC des bornes Wi-Fi et Bluetooth, ainsi que les identifiants de cellule GSM / CDMA.
 
 ##### Installation
 
@@ -247,7 +247,7 @@ watch.subscribe((data) => {
 
 **Documentation** : [https://ionicframework.com/docs/native/network/](https://ionicframework.com/docs/native/network/)
 
-Ce plugin permet d'intéragir avec le réseau sur lequel le téléphone est connecté.
+Ce plugin permet d’interagir avec le réseau sur lequel le téléphone est connecté.
 
 ##### Installation
 
@@ -265,7 +265,7 @@ constructor(private network: Network) { }
 
 ...
 
-// On se branche à l'évènement onDisconnect pour effectuer une ou plusieurs action en cas de
+// On se branche à l’événement onDisconnect pour effectuer une ou plusieurs action en cas de
 // déconnexion au réseau (wifi, 4g,...)
 let disconnectSubscription = this.network.onDisconnect().subscribe(() => {
   console.log('network was disconnected :-(');
@@ -287,7 +287,7 @@ let connectSubscription = this.network.onConnect().subscribe(() => {
   }, 3000);
 });
 
-// On arrete la surveillance
+// On arrête la surveillance
 connectSubscription.unsubscribe();
 ```
 
@@ -326,7 +326,7 @@ Le plugin permet de récupérer les valeurs suivantes :
 * **this.device.uuid** : retourne l'identifiant unique du téléphone.
 * **this.device.version** : renvoie la version du système d'exploitation
 * **this.device.manufacturer** : retourne le nom du fabricant de l'appareil mobile
-* **this.device.isVirtual** : methode permettant de savoir si l'application est utilisé depuis un émulateur de smartphone \(voir [Chapitre 9](/chap9)\)
+* **this.device.isVirtual** : méthode permettant de savoir si l'application est utilisé depuis un émulateur de smartphone \(voir [Chapitre 9](/chap9)\)
 * **this.device.serial** : renvoie le numéro de série de l'appareil
 
 

@@ -5,7 +5,7 @@ On en a déjà un peu parlé au chapitre. Les pipes permettent de modifier la fo
 * **currency** : permet de rajouter une devise avant la valeur sur laquelle on l'applique
 * **date** : formatage de date
 * **uppercase** : transforme du texte en majuscule
-* lowercase : transforme du texte en miniscule
+* lowercase : transforme du texte en minuscule
 * **json** : affiche le contenu d'un objet ou d'un texte au format JSON
 * ...
 
@@ -16,3 +16,4 @@ let maVariable = "Hello mmi";
 ```
 
 Pour plus de détails : [https://www.tutorialspoint.com/angular4/angular4\_pipes.htm](https://www.tutorialspoint.com/angular4/angular4_pipes.htm)
+
