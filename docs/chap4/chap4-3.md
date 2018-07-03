@@ -1,10 +1,10 @@
 ## Exercez-vous
 
-1\) Créez la page Profile précédente et configurez là pour quelle soit dans le thème de l'application. Corrigez les bugs eventuels.
+1\) Créez la page Profile précédente et configurez là pour quelle soit dans le thème de l'application. Corrigez les bugs éventuels.
 
 2\) Dan la fonction **gotoHome**, remplacez "push" par "pop" : this.navCtrl.pop. Que constatez-vous ?
 
-3\) Editez le fichier **app.module.ts **de la manière suivante :
+3\) Éditez le fichier **app.module.ts **de la manière suivante :
 
 ```js
 ...
@@ -58,4 +58,5 @@ export class HomePage {
 
 5\) Testez d'autres composants
 
-6\) Créez une page Setting et ajoutez à cette page un formulaire avec des elements simples : nom, prenom, adresse,...
+6\) Créez une page Setting et ajoutez à cette page un formulaire avec des éléments simples : nom, prénom, adresse,...
+
