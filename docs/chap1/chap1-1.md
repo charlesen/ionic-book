@@ -1,6 +1,6 @@
 ## Une méthode pour les gouverner tous
 
-Il existe différentes façon de développer un produit à destination des mobinautes : le web mobile, l'hybride et le natif.
+Il existe différentes façons de développer un produit à destination des mobinautes : le web mobile, l'hybride et le natif.
 
 ### Applications web mobiles
 

@@ -8,5 +8,5 @@ Vous vouliez afficher du contenu issu d’une API \(rien à voir avec le dieu é
 
 Si vous aviez le malheur de vouloir visualiser vos articles de blog et ceux de vos pages préférés depuis votre iPhone 3G en passant par un flux RSS créés par vos soins, il vous fallait absolument connaître l’Objective-C. Sinon, à moins d'avoir un budget suffisant pour embaucher un développeur mobile, vous seriez contraint de passer votre chemin et plus vite que ça !
 
-Avec le temps, de nombreux projets ont vu le jour pour permettre à tout le monde de se lancer dans l'univers impitoyable du développement d'applications mobiles en utilisant des technologies classiques du web \(html, css, javascript\). Beaucoup sont morts-nés, d'autres ont dominé le monde un temps avant de s'éffrondrer. D'autres encore, d'abord tapis dans l'ombre, ont su se démarquer, se réinventer, s'adapter jusqu'à atteindre leur plein potentiel.
+Avec le temps, de nombreux projets ont vu le jour pour permettre à tout le monde de se lancer dans l'univers impitoyable du développement d'applications mobiles en passant par des technologies classiques du web \(html, css, javascript\). Beaucoup sont morts-nés, d'autres ont dominé le monde un temps avant de s'éffrondrer. D'autres encore, d'abord tapis dans l'ombre, ont su se démarquer, se réinventer, s'adapter jusqu'à atteindre leur plein potentiel.
 
