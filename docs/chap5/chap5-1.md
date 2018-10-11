@@ -6,9 +6,9 @@ Pour ajouter un composant de type bouton[^1] à votre application mobile, il suf
 <button ion-button>Mon bouton</button>
 ```
 
-Tada ! Ce n'est pas plus compliqué que ça.
+Tada ! Ce n'est pas plus compliqué que ça. Il s'agit en fait d'un élément html button avec un attribut ionic **ion-button **qui permettent simple de rajouter du style css.
 
-On peut aussi customiser un peu ce bouton grâce à des [directives, concept abordé au chapitre 8](/chap8). Ajustons par exemple la couleur des différents boutons :
+On peut aussi customiser un peu ce bouton grâce à des [directives, concept abordé au chapitre 8](/chap8). Ajustons par exemple la couleur des différents boutons grâce à la directive **"color"**:
 
 ```js
 <button ion-button color="light">Mon bouton clair</button>
