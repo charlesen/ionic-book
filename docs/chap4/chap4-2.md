@@ -2,7 +2,7 @@
 
 ### Racine de toutes les pages
 
-Considérons le fichier **src/app/app.html**, c'est à partir de ce fichier que sera rendu toutes les autres pages.
+Considérons le fichier **src/app/app.html**, c'est à partir de ce fichier que seront "générées" toutes les autres pages.
 
 ```js
 <ion-nav [root]="rootPage"></ion-nav>
@@ -78,7 +78,9 @@ $ ionic g page Profile
 [OK] Generated a page named Profile!
 ```
 
-Dans cet exemple, j'ai créé une nouvelle page pour afficher un profil utilisateur. Cette commande m'a automatiquement générer le triplet : **fichier .ts + fichier .html + fichier .scss**.
+_**"g"**_ pour _**"generate"**_.
+
+Dans cet exemple, j'ai créé une nouvelle page qui va nous permettre d'afficher un profil utilisateur. Cette commande m'a automatiquement générer le triplet : **fichier .ts + fichier .html + fichier .scss**.
 
 ![](/assets/screen_22.png)
 
@@ -137,7 +139,7 @@ export class ProfilePage {
 
 **profile.scss**
 
-```
+```js
 page-profile {
 
 }
@@ -147,7 +149,7 @@ Ajoutons à présent cette nouvelle page à notre système d'onglet comme ceci :
 
 **src/pages/tabs/tabs.ts**
 
-```
+```js
 import { Component } from '@angular/core';
 
 import { MiningPage } from '../mining/mining';
@@ -265,7 +267,7 @@ export class ProfilePage {
 
 Dans ce fichier, ajoutez la fonction gotoHome suivante :
 
-```
+```js
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular'; // ICI
 
@@ -299,7 +301,7 @@ export class ProfilePage {
 
 Puis, modifions un peu le fichier **src/pages/profile/profile.ts **pour afficher un bouton qui nous permettra d’appeler cette action :
 
-```
+```js
 <ion-header>
 
   <ion-navbar color="duckcoin">
@@ -315,8 +317,7 @@ Profil utilisateur
 ```
 
 Qui donne le résultat suivant :  
-\| ![](/assets/screen_profile_3.png) \| ![](/assets/screen_profile_4.png) \|  
-
+\| ![](/assets/screen_profile_3.png) \| ![](/assets/screen_profile_4.png) \|
 
 L'élément button fait partie des composants que propose Ionic. Dans le [chapitre suivant](/chap5/), nous ferons le tour de ces principaux composants et apprendrons à la customiser.
 

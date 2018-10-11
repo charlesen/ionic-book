@@ -2,7 +2,11 @@
 
 ### Attributs de style
 
-Ionic met à disposition un ensemble d'attributs utilitaires qui peuvent être utilisés sur n'importe quel élément afin de modifier du texte, le centrer par exemple, ou encore gérer les marges. A la différence de Bootstrap où on fait usage de classes css \(row, col,...\), ici on utilisera plutôt des attributs.
+Ionic met à disposition un ensemble d'attributs qui peuvent être utilisés sur n'importe quel élément pour de modifier du texte, le centrer ou encore gérer les marges. À la différence de Bootstrap où on fait usage de classes css \(row, col,...\), ici on utilisera plutôt des attributs.
+
+```js
+<h2 text-center>Un texte centré</h2>
+```
 
 | Attribut | Style CSS correspondant | Description |
 | :--- | :--- | :--- |
@@ -13,7 +17,7 @@ Ionic met à disposition un ensemble d'attributs utilitaires qui peuvent être u
 | text-center | text-align:center | Centre le contenu |
 | text-justify | text-align:justify | Justifie le contenu |
 
-Une liste beaucoup plus exhaustive se trouve dans la documentation qui est extrêmement bien faite [https://ionicframework.com/docs/theming/css-utilities/](https://ionicframework.com/docs/theming/css-utilities/)
+Une liste beaucoup plus exhaustive se trouve dans la documentation, qui est extrêmement bien faite [https://ionicframework.com/docs/theming/css-utilities/](https://ionicframework.com/docs/theming/css-utilities/)
 
 On va pouvoir utiliser ces attributs directement dans nos pages. Centrons par exemple le h2 de la page d'accueil et justifions le contenu du texte qui le suit :
 
@@ -127,7 +131,7 @@ Il est également possible d'appeler des variables définis dans ce fichier **sr
 
 **src/pages/profile/profile.scss**
 
-```
+```js
 page-profile {
   button[ion-button] {
     background: color($colors, duckcoin, base);
@@ -137,7 +141,7 @@ page-profile {
 
 qui est l'équivalent css de :
 
-```
+```js
 page-profile {
   button[ion-button] {
     background: #df4932;
@@ -153,13 +157,13 @@ Supposons par exemple que l'on souhaite imposer une largeur maximale sur un cert
 
 **src/theme/variables.scss**
 
-```
+```js
 $max-width: 400px;
 ```
 
 Puis dans une ou plusieurs feuilles de style scss invoquer notre variable :
 
-```
+```js
 div {
     width:$max-width;
 }
@@ -167,7 +171,7 @@ div {
 
 On pourrait même faire des calculs sur la variable  :
 
-```
+```js
 img {
     width : $max-width/10;
 }

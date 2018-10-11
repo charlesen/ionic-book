@@ -1,8 +1,8 @@
 ## Exercez-vous
 
-1\) Créez la page Profile précédente et configurez là pour quelle soit dans le thème de l'application. Corrigez les bugs éventuels.
+1\) Créez la page **Profile** précédente et configurez là pour quelle soit dans le thème de l'application. Corrigez les bugs éventuels.\(C.f Exercez-vous du chapitre précédent\)
 
-2\) Dan la fonction **gotoHome**, remplacez "push" par "pop" : this.navCtrl.pop. Que constatez-vous ?
+2\) Dans la fonction **gotoHome**, remplacez **"push"** par **"setRoot" **: **this.navCtrl.setRoot\(UnePage\)**. Que constatez-vous ?
 
 3\) Éditez le fichier **app.module.ts **de la manière suivante :
 
