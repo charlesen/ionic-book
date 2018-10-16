@@ -4,7 +4,7 @@
 
 #### Windows et Mac OS
 
-Pour installer le SDK de Java sous Windows et Mac, il vous suffit de visiter le site : [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) et de choisir le fichier adapté à votre machine \(32 ou 64 bits\)
+Pour installer le SDK de Java sous Windows et Mac, il vous suffit de visiter le site de l'entreprise Oracle, qui détient et maintient le logiciel : [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) et de choisir le fichier adapté à votre machine \(32 ou 64 bits\)
 
 #### Linux
 
