@@ -56,8 +56,10 @@ Une fois votre application créée, accédez au dossier nouvellement créé, pui
 
 ```
 $ cd monappli
-$ ionic serve -lc
+$ ionic lab
 ```
+
+S'il vous ait demandé d'installer Ionic PRO, choisissez **"Y"**.
 
 Ionic devrait ensuite ouvrir votre application depuis votre navigateur préféré.
 
@@ -65,3 +67,4 @@ Ionic devrait ensuite ouvrir votre application depuis votre navigateur préfér�
 Félicitations, vous avez créé votre première application mobile !
 
 Dans la suite du livre nous allons progressivement aborder des notions plus complexe du Framework en partant d'un exemple concret : la création d'une application mobile pour la gestion d'une cryptomonnaie nommé **DuckCoin**.
+
