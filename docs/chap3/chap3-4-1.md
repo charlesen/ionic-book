@@ -1,6 +1,6 @@
 ## Première application Ionic
 
-Pour créer votre première application, rien de plus simple, il suffit d'installer un certain nombre d'outils que nous verrons au [chapitre 3](/chap3/README.md), puis saisir la commande suivante depuis votre invite de commandes :
+Pour créer votre première application, rien de plus simple, il suffit de saisir la commande suivante depuis votre invite de commandes :
 
 ```
 $ ionic start monAppli blank
@@ -65,4 +65,3 @@ Ionic devrait ensuite ouvrir votre application depuis votre navigateur préfér�
 Félicitations, vous avez créé votre première application mobile !
 
 Dans la suite du livre nous allons progressivement aborder des notions plus complexe du Framework en partant d'un exemple concret : la création d'une application mobile pour la gestion d'une cryptomonnaie nommé **DuckCoin**.
-
