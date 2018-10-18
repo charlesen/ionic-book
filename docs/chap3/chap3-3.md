@@ -4,7 +4,7 @@
 
 #### Windows et Mac OS
 
-Pour installer le SDK de Java sous Windows et Mac, il vous suffit de visiter le site de l'entreprise Oracle, qui détient et maintient le logiciel : [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) et de choisir le fichier adapté à votre machine \(32 ou 64 bits\)
+Pour installer le SDK de Java sous Windows et Mac, il vous suffit de visiter le site de l'entreprise Oracle, qui détient et maintient le logiciel : [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) et de choisir le fichier \(**.exe** pour Windows ou **.dmg** pour MacOS\) adapté à votre machine \(32 ou 64 bits\)
 
 #### Linux
 
@@ -53,7 +53,7 @@ $ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz
 
 ### Xcode et ios-sim \(Mac OS uniquement\)
 
-Pour installer **Xcode**, il vous suffit de visiter l'url suivante [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) et de cliquer sur **"Download"**.
+Pour installer **Xcode**, il vous suffit de visiter l'url suivante [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/), de choisir la version correspondant à votre Mac \(voir le lien suivant : [https://en.wikipedia.org/wiki/Xcode\#Version\_comparison\_table](https://en.wikipedia.org/wiki/Xcode#Version_comparison_table)\) et de cliquer sur **"Download"**.
 
 Pour l'émulateur **ios-sim**, depuis votre terminal, saisissez la commande suivante :
 
