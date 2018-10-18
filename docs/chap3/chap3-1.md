@@ -18,7 +18,7 @@ Pour installer NodeJS, il suffit simplement d'aller à l'adresse : [https://node
 
 ![](/assets/screen_install_nodejs_1.png)
 
-![](/assets/ionic-node-1.png)![](/assets/ionic-node-1.png)
+![](/assets/ionic-node-1.png)
 
 Ouvrez un invite de commande et saisissez :
 
