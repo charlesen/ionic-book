@@ -51,7 +51,7 @@ Si votre OS est une machine 64-bit, vous aller devoir installer quelques dépend
 $ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 ```
 
-### Xcode et ios-sim \(Mac OS uniquement\)
+### Xcode, ios-sim et ios-deploy \(Mac OS uniquement\)
 
 Pour installer **Xcode**, il vous suffit de visiter l'url suivante [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/), de choisir la version correspondant à votre Mac \(voir le lien suivant : [https://en.wikipedia.org/wiki/Xcode\#Version\_comparison\_table](https://en.wikipedia.org/wiki/Xcode#Version_comparison_table)\) et de cliquer sur **"Download"**.
 
@@ -60,6 +60,18 @@ Pour l'émulateur **ios-sim**, depuis votre terminal, saisissez la commande suiv
 ```bash
 $ sudo npm install -g ios-sim
 $ ios-sim –version # Pour vérifier que tout s'est bien passé
+```
+
+On installe ensuite ios-deploy nécessaire pour tester votre application à partir de votre ipHOne par exemple :
+
+```bash
+$ sudo npm install -g ios-deploy
+```
+
+Si vous êtes sur une version de MacOS supérieur ou égale à El Capitain, il vous faudra rajouter le paramètre **--unsafe-perm**, sinon la commande précédente renverra un bug :
+
+```bash
+$ sudo npm install -g ios-deploy --unsafe-perm=true
 ```
 
 ### Git
