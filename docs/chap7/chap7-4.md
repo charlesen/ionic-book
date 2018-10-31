@@ -121,8 +121,10 @@ Vous retrouverez les sources, ainsi que les corrections des exercices de ce TP Ã
 
 ## Annexes
 
+* _Build Your First Angular App_, de Dan Wahlin, DÃ©veloppeur Google 
+  * [https://scrimba.com/p/pQxesM/ce4baHb](https://scrimba.com/p/pQxesM/ce4baHb)
 * Angular Tutorial :
-  *  [https://www.tutorialspoint.com/angular4/index.htm](https://www.tutorialspoint.com/angular4/index.htm)
+  * [https://www.tutorialspoint.com/angular4/index.htm](https://www.tutorialspoint.com/angular4/index.htm)
   * [https://angular-2-training-book.rangle.io/](https://angular-2-training-book.rangle.io/) 
 * Documentation officielle :
   * [https://angular.io/docs](https://angular.io/docs)
