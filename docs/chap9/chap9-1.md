@@ -108,7 +108,9 @@ Sélectionnez votre appareil mobile et cliquez sur **Inspect** pour visualiser v
 
 #### iOS
 
-Il est également possible de tester votre application depuis votre smarphone iOS. Il vous suffit de lancer votre projet depuis Xcode de la manière suivante :
+Il est également possible de tester votre application depuis votre smarphone iOS. 
+
+Il vous suffit de lancer votre projet depuis Xcode de la manière suivante :
 
 ```
 $ open platforms/ios/Votre_Appli.xcodeproj
