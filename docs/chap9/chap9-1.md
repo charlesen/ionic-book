@@ -13,25 +13,6 @@ Pour information :
 * **l :** ce paramètre permet d'afficher votre application dans le mode lab, avec la possibilité de switcher entre les vues Android, iOS ou d'avoir les deux en même temps
 * **c :** permet d'afficher les logs depuis la console \(terminal\)
 
-### Depuis Ionic View
-
-Ionic View est une application mobile qui vous permettra de visualiser vos projets Ionic après les avoir "pushé" sur le cloud à partir de votre compte Ionic PRO. Nous y reviendrons plus en détails au [chapitre 10](/chap10).
-
-L'application Ionic View n'existe actuellement que pour Android et iOS[^1]. Pour commencer à utiliser Ionic View, il vous suffit de le télécharger sur un des stores :
-
-* Google Play Store : [https://play.google.com/store/apps/details?id=com.ionicframework.view](https://play.google.com/store/apps/details?id=com.ionicframework.view)
-* Apple Store : [https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931](https://itunes.apple.com/us/app/ionic-view-test-share-ionic-apps/id1271789931)
-
-Pour visualiser votre application, vous devez donc lancer la commande suivante :
-
-```bash
-$ git push ionic master
-```
-
-Une fois le push effectué, ouvrez Ionic View et testez votre application.
-
-![](/assets/ionic_view_screen_1.png)
-
 ### Depuis Ionic Dev App
 
 * Google Play Store : [https://play.google.com/store/apps/details?id=com.ionicframework.view](https://play.google.com/store/apps/details?id=io.ionic.devapp&hl=en)
@@ -127,13 +108,19 @@ Sélectionnez votre appareil mobile et cliquez sur **Inspect** pour visualiser v
 
 #### iOS
 
-Il est également possible de tester votre application depuis votre smarphone iOS. Il faut tout d'abord, comme avec Android, préparer notre appareil mobile.
+Il est également possible de tester votre application depuis votre smarphone iOS. Il vous suffit de lancer votre projet depuis Xcode de la manière suivante :
 
-Dans **Réglages &gt; Safari &gt; Avancé** , activez l'**Inspecteur Web**.
+```
+$ open platforms/ios/Votre_Appli.xcodeproj
+```
 
-Puis dans Safari, allez dans **Préférences &gt; Avancées** et sélectionnez **« Afficher le menu Développement dans la barre des menus »**.
+Si vous n'avez pas encore ajouté iOS comme plateforme cible, il n y aura pas de dossier platform/ios. Il vous suffira, pour l'avoir , de lancer la commane suivante :
 
-Connectez ensuite votre smartphone en USB.
+```
+$ ionic cordova platform add ios
+```
 
-Depuis Safari de nouveau, dans le menu Développement, puis votre apparail mobile, vous pourrez cliquez sur votre application mobile.
+Une fois votre projet ouvert dabs Xcode, connectez votre iPhone. Puis à droite du bouton play, choissiez à partir de quelle appareil votre application sera lancée. Par défaut, ce sont les simulateurs qui s'affichent, mais en cliquant sur la liste des devices, vous pourrez sélectionner votre appareil mobile fraichement connecté en USB.
+
+Une fois la connection effectué, il ne vous restera plus qu'à cliquer sur le bouton play pour démarrer vos tests.
 
