@@ -108,11 +108,11 @@ Sélectionnez votre appareil mobile et cliquez sur **Inspect** pour visualiser v
 
 #### iOS
 
-Il est également possible de tester votre application depuis votre smarphone iOS. 
+Il est également possible de tester votre application depuis votre smarphone iOS.
 
 Il vous suffit de lancer votre projet depuis Xcode de la manière suivante :
 
-```
+```bash
 $ open platforms/ios/Votre_Appli.xcodeproj
 ```
 
@@ -124,5 +124,11 @@ $ ionic cordova platform add ios
 
 Une fois votre projet ouvert dabs Xcode, connectez votre iPhone. Puis à droite du bouton play, choissiez à partir de quelle appareil votre application sera lancée. Par défaut, ce sont les simulateurs qui s'affichent, mais en cliquant sur la liste des devices, vous pourrez sélectionner votre appareil mobile fraichement connecté en USB.
 
-Une fois la connection effectué, il ne vous restera plus qu'à cliquer sur le bouton play pour démarrer vos tests.
+Une fois la connection effectué, il ne vous restera plus qu'à cliquer sur le bouton play pour démarrer vos tests ou alors de lancer la commande suivante : 
+
+```bash
+$ ionic cordova run ios --device
+```
+
+
 
