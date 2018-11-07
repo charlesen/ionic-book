@@ -18,9 +18,9 @@ let isConnected: boolean = false;
 
 ```js
 let valeur_decimal: number = 6;
-let valeur_hex: number = 0xf00d;
 let valeur_binary: number = 0b1010;
 let valeur_octal: number = 0o744;
+let valeur_hex: number = 0xf00d;
 ```
 
 ### String
