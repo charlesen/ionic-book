@@ -1,6 +1,6 @@
 ## Installation et premier script
 
-Ionic utilise une version _"interne"_ de TypeScript, mais pour nos tests nous allons devoir installer le package de manière globale.
+Ionic utilise une version _"interne"_ du compilateur TypeScript et pour nos tests nous allons devoir installer le package de manière globale.
 
 ```
 > npm install -g typescript
@@ -15,15 +15,15 @@ function ditBonjour(person) {
     return "Bonjour, " + person;
 }
 
-let user = "Raphael";
+let user = "Charles";
 
 document.body.innerHTML = ditBonjour(user);
 ```
 
-Il faut ensuite, compiler ce code pour générer un fichier .js interprétable par le navigateur.
+Il faut ensuite compiler ce code pour générer un fichier **.js** interprétable par le navigateur.
 
-```js
-$ tsc demo_typescript.ts
+```bash
+$ tsc demo_typescript.ts #compilation
 $ ls -l
 total 304
 -rw-rw-r--   1 charles charles   6180 avril 11 22:14 config.xml
@@ -37,7 +37,7 @@ total 304
 function ditBonjour(person) {
     return "Bonjour, " + person;
 }
-var user = "Raphael";
+var user = "Charles";
 document.body.innerHTML = ditBonjour(user);
 ```
 
