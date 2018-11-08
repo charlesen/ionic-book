@@ -51,16 +51,16 @@ Et un petit résumé de ce que renvoie l'une ou l'autre des deux boucles :
 let list = [4, 5, 6];
 let etudiant = {'nom':'Etudiant', 'num':1};
 
-
-for (let i in list) {
-   console.log(i); // "0", "1", "2",
+for (let val of list) {
+   console.log(val); // "4", "5", "6"
 }
 
-for (let i of list) {
-   console.log(i); // "4", "5", "6"
+for (let idx in list) {
+   console.log(idx); // "0", "1", "2",
 }
+
 for (let cle in etudiant) {
-    console.log(etudiant[cle].nom) // Renvoie Etudiant 001
+    console.log(etudiant[cle]) // Renvoie Etudiant 001
 }
 ```
 
