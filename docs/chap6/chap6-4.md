@@ -41,7 +41,7 @@ Mais le véritable intérêt pour moi de la boucle **for..in** est de pouvoir bo
 ```js
 let etudiant = {'nom':'Etudiant 001', 'ine':1};
 for (let idx in etudiant) {
-    console.log(idx + ' : ' + etudiant[idx]);
+    console.log(`${idx} : ${etudiant[idx]}`);
     // nom : Etudiant 001
     // ine : 1
 }
@@ -62,7 +62,7 @@ for (let idx in list) { // moyen mnémotechnique : "in" comme "in-dex"
 }
 
 for (let idx in etudiant) {
-    console.log(idx + ' : ' + etudiant[idx]); 
+    console.log(`${idx} : ${etudiant[idx]}`);
     // nom : Etudiant 001
     // ine : 1
 }
