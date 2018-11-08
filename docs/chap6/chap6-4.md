@@ -94,6 +94,34 @@ for (let chiffre of monObjSet) {
 }
 ```
 
+On peut également vérifier la présence d'une valeur dans notre liste avec la méthode _**has**_ :
+
+```js
+console.log(monObjSet.has(1)); // Renvoie "true", car la liste contient bien le chiffre 1
+```
+
+Il existe d'autres méthodes permettant de manipuler un ensemble : add, clear, delete, entries , foreach, values.
+
+```js
+console.log(monObjSet.add(7)); // Ajoute le chiffre 7
+console.log(monObjSet.clear(6)); // Supprimer le chiffre 6
+console.log(monObjSet.delete(7));
+console.log(monObjSet.entries());
+console.log(monObjSet.foreach(7));
+console.log(monObjSet.values(7));
+```
+
+Pour connaitre la taille d'un ensemble, on utilise la propriété size :
+
+```js
+const chiffrePairs = new Set();
+chiffrePairs.add(2);
+chiffrePairs.add(2);
+chiffrePairs.add(6);
+
+console.log(chiffrePairs.size); // Renvoie 2, car on supprime les doublons
+```
+
 L'objet Set a aussi la particularité de mixer objet et liste. On peut ainsi assigner une valeur de type objet à la variable monObjSet :
 
 ```js
