@@ -48,11 +48,11 @@ for (let cle in etudiant) {
 Et un petit résumé de ce que renvoie l'une ou l'autre des deux boucles :
 
 ```js
-let list = [4, 5, 6];
+let list = [3, 4, 5];
 let etudiant = {'nom':'Etudiant', 'num':1};
 
 for (let val of list) {
-   console.log(val); // "4", "5", "6"
+   console.log(val); // "3", "4", "5"
 }
 
 for (let idx in list) {
