@@ -4,11 +4,7 @@ Maintenant que notre application a bien évolué, et que l'on peut même passé 
 
 Ionic propose un plugin de stockage de données facile à prendre en main. Le stockage se fait sous forme de paires clé / valeur et utilise une variété de moteurs de stockage différent, en choisissant le meilleur disponible en fonction de la plate-forme.
 
-Lorsqu'il est exécuté dans un contexte d'application native, Ionic Storage vérifie d'abord la présence d'un plugin SQLite, beaucoup plus intéressant quand il s'agit de stocker des données d'une application mobile.
-
-Si SQLite n'est pas disponible, c'est le cas par exemple lorsque l'on utilise notre application depuis un navigateur, Ionic Storage utilisera dans l'ordre IndexedDB, WebSQL et  localstorage :
-
-**SQLite ==&gt; IndexedDB ==&gt; WebSQL ==&gt; localstorage**
+Par la suite nous étudierons Firebase, un outil 
 
 ## Utilisation de Ionic Storage
 
@@ -82,5 +78,5 @@ Il sera intéressant par la suite de créer un provider spécifique au plugin St
 
 ## Intégration de Firebase
 
-https://javebratt.com/ionic-firebase-tutorial-intro/
+[https://javebratt.com/ionic-firebase-tutorial-intro/](https://javebratt.com/ionic-firebase-tutorial-intro/)
 
