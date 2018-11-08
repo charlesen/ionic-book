@@ -108,7 +108,7 @@ console.log(monObjSet.add(7)); // Ajoute le chiffre 7
 console.log(monObjSet.delete(6)); // Supprime le chiffre 7 de la l'ensemble
 
 console.log(monObjSet.entries()); // renvoie un iterateur avec l'ensemble des entrées
-let iterator1 = monObjSet.values();
+let iterator1 = monObjSet.entries();
 console.log(iterator1.next().value); // renvoie [1, 1]
 console.log(iterator1.next().value); // renvoie [2, 2]
 // ...
