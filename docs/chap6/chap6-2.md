@@ -53,9 +53,9 @@ let list_nombres_premiers: number[] = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31];
 On l'utilise quand on ne sait pas trop qu'elle type de données on aura à traiter. C'est souvent le cas quand on utilise un API propriétaire.
 
 ```js
-let variableApi: any = 4;
-variableApi = "c'est une chaine de caractère";
-variableApi = false; // ou un booléen finalement
+let variableMystere: any = 4;
+variableMystere = "c'est une chaine de caractère";
+variableMystere = false; // ou un booléen finalement
 ```
 
 
