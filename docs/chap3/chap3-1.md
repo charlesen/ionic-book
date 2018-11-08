@@ -22,7 +22,7 @@ Pour installer NodeJS, il suffit simplement d'aller à l'adresse : [https://node
 
 Ouvrez un invite de commande et saisissez :
 
-```
+```bash
 node -v
 ```
 
@@ -32,24 +32,37 @@ Vous devriez voir s'afficher la version actuelle de NodeJs.
 
 sous linux et en particulier Ubuntu, il vous suffit de saisir les commandes suivantes depuis un invite de commandes :
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install nodejs npm
 ```
 
 une fois l'installation effective, il faut encore créer les liens symboliques suivants :
 
-```
+```bash
 $ sudo ln -s /usr/bin/nodejs /usr/local/bin/node
 $ sudo ln -s /usr/bin/npm /usr/local/bin/npm
 ```
 
 Pour vérifier que tout s'est bien passé, il vous suffit de saisir la commande suivante qui vous retournera la version actuelle de Node :
 
-```
+```bash
 $ node -v
 
 v8.11.1
+```
+
+Si vous voulez changer le répetoire d'installation des packages NPM et le mettre par exemple dans votre répertoire _**home**_ il vous suffit de faire :
+
+```bash
+$ mkdir ~/.npm-global
+$ npm config set prefix '~/.npm-global'
+```
+
+Cela vous évitera de saisir à chaque fois le mot clé **"**_**sudo"** _à chaque installation de paquet npm en mode global \(-g\) :
+
+```bash
+$ npm install -g ionic cordova
 ```
 
 
