@@ -22,6 +22,16 @@ for (let item of unArrayObjets) {
 }
 ```
 
+Une fois votre code transpilé en JavaScript \(commande _**tsc**_\), il ressemblera plus à ceci : 
+
+```js
+var unArray = [1, "deux", 'trois'];
+for (var idx = 0; idx < unArray.length; idx++) {
+    var valeur = unArray[_i];
+    console.log(valeur);
+}
+```
+
 #### Boucle for..in
 
 Reprenons le code précédent, mais en utilisant la boucle for..in
