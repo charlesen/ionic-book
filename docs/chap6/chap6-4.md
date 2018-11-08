@@ -108,6 +108,11 @@ console.log(monObjSet.add(7)); // Ajoute le chiffre 7
 console.log(monObjSet.delete(6)); // Supprime le chiffre 7 de la l'ensemble
 
 console.log(monObjSet.entries()); // renvoie un iterateur avec l'ensemble des entrées
+let iterator1 = monObjSet.values();
+console.log(iterator1.next().value); // renvoie [1, 1]
+console.log(iterator1.next().value); // renvoie [2, 2]
+// ...
+
 
 console.log(monObjSet.forEach(funct)); permet d'exécuter une fonction donnée pour chaque valeur de l'ensemble
 monObjSet.forEach(function(value1, value1, set){
@@ -115,9 +120,9 @@ monObjSet.forEach(function(value1, value1, set){
 })
 
 console.log(monObjSet.values()); // renvoie un iterateur avec les valeurs de chaque élément de l'ensemble
-let iterator1 = monObjSet.values();
-console.log(iterator1.next().value); // renvoie 1
-console.log(iterator1.next().value); // renvoie 2
+let iterator2 = monObjSet.values();
+console.log(iterator2.next().value); // renvoie 1
+console.log(iterator2.next().value); // renvoie 2
 // ...
 
 
