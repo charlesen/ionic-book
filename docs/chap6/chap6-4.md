@@ -41,7 +41,7 @@ Mais le véritable intérêt pour moi de la boucle **for..in** est de pouvoir bo
 ```js
 let etudiant = {'nom':'Etudiant 001', 'num':1};
 for (let cle in etudiant) {
-    console.log(etudiant[cle]) // Renvoie Etudiant 001
+    console.log(etudiant[cle].nom) // Renvoie Etudiant 001
 }
 ```
 
@@ -58,6 +58,9 @@ for (let i in list) {
 
 for (let i of list) {
    console.log(i); // "4", "5", "6"
+}
+for (let cle in etudiant) {
+    console.log(etudiant[cle].nom) // Renvoie Etudiant 001
 }
 ```
 
