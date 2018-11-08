@@ -10,7 +10,9 @@ Si SQLite n'est pas disponible, c'est le cas par exemple lorsque l'on utilise no
 
 **SQLite ==&gt; IndexedDB ==&gt; WebSQL ==&gt; localstorage**
 
-## Installation
+## Utilisation de Ionic Storage
+
+### Installation
 
 Nous allons tout d'abord installer le plugin SQLite :
 
@@ -54,7 +56,7 @@ import { IonicStorageModule } from '@ionic/storage';
   ],
 ```
 
-## Utilisation
+### Utilisation
 
 Il vous suffit simplement d'injecter Ionic Storage dans la classe où vous souhaitez l'utiliser :
 
@@ -75,3 +77,10 @@ export class LoginPage {
   });
 }
 ```
+
+Il sera intéressant par la suite de créer un provider spécifique au plugin Storage pour faciler nos transactions avec la base de données du téléphone.
+
+## Intégration de Firebase
+
+https://javebratt.com/ionic-firebase-tutorial-intro/
+
