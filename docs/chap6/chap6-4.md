@@ -84,10 +84,10 @@ for (let chiffre of monObjSet) {
 }
 ```
 
-L'objet Set a aussi la particularité de mixer objet et liste. On peut ainsi assigné une valeur de type objet à la variable monObjSet :
+L'objet Set a aussi la particularité de mixer objet et liste. On peut ainsi assigner une valeur de type objet à la variable monObjSet :
 
 ```js
-monObjSet['type'] = {'category':'Nombres entiers', root:'Nombres réels'};
+monObjSet['type'] = {category:'Nombres entiers', root:'Nombres réels'};
 ```
 
 ```js
