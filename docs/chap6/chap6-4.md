@@ -64,6 +64,34 @@ for (let cle in etudiant) {
 }
 ```
 
+### L'objet Set
+
+L'objet Set \(Ensemble en français\) permet de stocker des valeurs uniques, de n'importe quel type, que ce soit des valeurs d'un type primitif \(string, booléen,...\) ou des objets.
+
+```js
+const monObjSet = new Set([1, 2, 3, 4, 5, 5, 5, 6]); // Liste d'éléments
+```
+
+L'objet set supprimera les doublons, ainsi en bouclant sur la liste, on aura qu'une seule valeur pour le chiffre 5
+
+```js
+for (let chiffre of monObjSet) {
+  console.log(chiffre) // 1, 2, 3, 4, 5, 6
+}
+```
+
+L'objet Set a aussi la particularité de mixer objet et liste. On peut ainsi assigné une valeur de type objet à la variable monObjSet :
+
+```js
+monObjSet['type'] = {'category':'Nombres entiers', root:'Nombres réels'};
+```
+
+```js
+for (let type in monObjSet) {
+  console.log(monObjSet[type].category) // Nombres entiers
+}
+```
+
 ### Calculs et transformations sur les listes avec map, filter et reduce
 
 #### Map
