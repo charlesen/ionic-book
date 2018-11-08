@@ -81,5 +81,11 @@ Vous pouvez à présent tester qu'une installation globale ne renvoie pas d'erre
 $ npm install -g ionic cordova
 ```
 
+Vous pouvez également rajouter de l'autocomplétion dans l'installation de vos packages :
+
+```bash
+$ npm completion >> ~/.bashrc
+```
+
 
 
