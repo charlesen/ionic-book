@@ -1,6 +1,8 @@
 ## Exercez-vous
 
-1\) On veut afficher la liste des dernières transactions de la Blockchain sous forme de liste dans l'onglet Accueil, tout en bas du texte de bienvenue.On définit la liste de transactions ci-dessous :
+1\) On veut afficher la liste des dernières transactions de la Blockchain sous forme de liste dans l'onglet Accueil, tout en bas du texte de bienvenue. La liste complète est disponible à l'adresse [https://duckcoin.charlesen.fr/transactions](https://duckcoin.charlesen.fr/transactions)
+
+En voici une copie : 
 
 ```js
     this.transactions = [
@@ -28,80 +30,18 @@
         'sender': 'charles',
         'recipient': 'elise',
         'amount': 100,
-      },
-      {
-        'sender': 'charles',
-        'recipient': 'germain',
-        'amount': 100,
-      },
-      {
-        'sender': 'charles',
-        'recipient': 'anthony',
-        'amount': 100,
-      },
-      {
-        'sender': 'charles',
-        'recipient': 'pol',
-        'amount': 100,
-      },
-      {
-        'sender': 'charles',
-        'recipient': 'vincent',
-        'amount': 100,
-      },
-      {
-        'sender': 'charles',
-        'recipient': 'nicolas',
-        'amount': 100,
-      },
-      {
-        'sender': 'charles',
-        'recipient': 'kevin',
-        'amount': 100,
-      },
-      {
-        'sender': 'charles',
-        'recipient': 'willy',
-        'amount': 100,
-      },
-      {
-        'sender': 'charles',
-        'recipient': 'elodie',
-        'amount': 100,
-      },
-      {
-        'sender': 'charles',
-        'recipient': 'adrien',
-        'amount': 100,
-      },
-      {
-        'sender': 'charles',
-        'recipient': 'romain',
-        'amount': 100,
-      },
-      {
-        'sender': 'charles',
-        'recipient': 'quentin',
-        'amount': 100,
-      },
-      {
-        'sender': 'charles',
-        'recipient': 'jean-etienne',
-        'amount': 100,
-      },
-      {
-        'sender': 'charles',
-        'recipient': 'gael',
-        'amount': 100,
       }
+      // ...
     ];
 ```
 
 En vous basant sur ce qui a été fait précédemment avec la liste des cryptomonnaies Bitcoin, Ethereum et Ripple, faites en sorte que l'on puisse visualiser la liste des dernières transactions en Page d'accueil.
 
+P.S. : Pas besoin d'appeler réelement l'API Duckcoin pour le moment, vous pouvez simplement utiliser la variable _**this.transactions**_ : 
+
 ![](/assets/transaction_list_1.png)
 
-2\) Le signe dollar \($\) de la liste est ajouté automatiquement grâce à un pipe Angular \(concept abordé au [chapitre 7](/chap7)\). Comment d'après la documentation suivante, est-il possible de remplacer le $ en € ? Puis € en DRT ? [https://angular.io/api/common/CurrencyPipe](https://angular.io/api/common/CurrencyPipe).
+2\) Le signe dollar \($\) de la liste est ajouté automatiquement grâce à un pipe Angular \(concept abordé au [chapitre 7](/chap7)\). Comment d'après la documentation suivante, est-il possible de remplacer le $ en € ? Puis € en DCK ? [https://angular.io/api/common/CurrencyPipe](https://angular.io/api/common/CurrencyPipe).
 
 ![](/assets/transact_2.png)
 
@@ -113,7 +53,7 @@ En vous basant sur ce qui a été fait précédemment avec la liste des cryptomo
 
 Ouverture de la fenêtre avec passage de paramètres :
 
-```
+```js
 import { ModalController } from 'ionic-angular';
 import { MaPageModal } from './modal/modal'; // la page modale est dans le même dossier que la principale
 

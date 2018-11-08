@@ -245,7 +245,7 @@ let politiciens_U50 = politiciens.filter((politicien) => politicien.age <= 50 );
 
 #### Reduce
 
-Si la fonction **map** permet de créer un nouveau tableau en transformant chaque élément d'un tableau, et si **filter** permet quant à lui de créer un nouveau tableau en supprimer des éléments selon une condition déterminée, la méthode **reduce** permet de prendre tous les éléments du tableau pour les "réduire" à une unique valeur.
+Si la fonction **map** permet de créer un nouveau tableau en transformant chaque élément d'un tableau, et si **filter** permet quant à lui de créer un nouveau tableau en supprimant des éléments selon une condition donnée, la méthode **reduce** permet de prendre tous les éléments du tableau pour les "réduire" à une unique valeur.
 
 Considérons le tableau de politiciens de moins de 50 ans précécent. On aimerait cette fois calculer la moyenne d'âge de ces _"jeunes"_ faiseurs de lois.
 
