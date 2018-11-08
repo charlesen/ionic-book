@@ -4,7 +4,7 @@ Une directive est un élément qui va nous permettre d'étendre des fonctionnali
 
 * **Directive de type attribut** : vous en avez déjà vu, elles permettent de modifier du html. Citons par exemple _**text-center**_, une directive qui permet de centrer le contenu d'un élément, ou encore la directive _**padding**_, qui permet d'ajouter un padding à l'élément qui l'invoque.
 * **Directive de type composant** : oui au risque de vous embrouiller un peu, un composant est en réalité une directive, mais dotée d'un template html. La directive est en quelque sorte l'atome, le composant la molécule.
-* **Directive de type structure** : Ce type de directive sont faite pour la manipulation du DOM et commencent toujours par un **"\*"**. On peut citer parmi celles que nous avons déjà utilisé les directives **\*ngIf** et **\*ngFor**.
+* **Directive de type structure** : Ce type de directive est fait pour la manipulation du DOM et commence toujours par un **"\*"**. On peut citer parmi celles-ci deux que nous avons déjà utilisé à savoir **\*ngIf** et **\*ngFor**.
 
 la création d'une directive se fait simplement en saisissant la commande suivante :
 

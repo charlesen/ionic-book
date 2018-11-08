@@ -1,4 +1,4 @@
-## Angular dans les templates
+## Templates Angular
 
 ### \*ngFor
 

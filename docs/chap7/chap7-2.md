@@ -18,7 +18,7 @@
 
 ### Architecture Angular
 
-Le bloc de base d'une application Angular est le module qui sert de contexte d'execution à un autre élément nommé Composant. Un composant peut être vu comme comme la combinaison :
+Le bloc de base d'une application Angular est le module \(NgModules\) qui sert de contexte de compilation et d'execution à un autre élément nommé Composant. Un composant peut être vu comme comme la combinaison :
 
 * D'une **Vue** : du contenu HTML
 * D'un **Modèle** de données : les informations qui vont être affichées dans le contenu HTML
