@@ -17,7 +17,7 @@ Une fois votre code transpilé en JavaScript \(commande _**tsc**_\), il ressembl
 ```js
 var unArray = [1, "deux", 'trois'];
 for (var idx = 0; idx < unArray.length; idx++) {
-    var valeur = unArray[_i];
+    var valeur = unArray[idx];
     console.log(valeur);
 }
 ```
