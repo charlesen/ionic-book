@@ -35,7 +35,8 @@ Chose intéressante pour les chaînes de caractères, il est possible de les uti
 ```js
 let fullName: string = `Charles EDOU NZE`;
 let age: number = 30;
-let sentence: string = `Salut, mon name est ${ fullName }.
+let year: number = 2018;
+let sentence: string = `Salut, mon name est ${ fullName }. Nous sommes en ${ year }.
                         J'aurai ${ age + 1 } ans à la fin de l'année.`;
 ```
 
