@@ -12,23 +12,23 @@ for (let valeur of unArray) {
 }
 ```
 
-cette boucle est aussi celle qu'il faudra utiliser quand on voudra boucler sur des listes d'objets :
-
-```js
-let unArrayObjets = [{'nom':'etudiant 1', 'num':1}, {'nom':'etudiant 2', 'num':2}];
-
-for (let item of unArrayObjets) {
-    console.log(item.nom); // etudiant 1 etudiant 2
-}
-```
-
-Une fois votre code transpilé en JavaScript \(commande _**tsc**_\), il ressemblera plus à ceci : 
+Une fois votre code transpilé en JavaScript \(commande _**tsc**_\), il ressemblera plus à ceci :
 
 ```js
 var unArray = [1, "deux", 'trois'];
 for (var idx = 0; idx < unArray.length; idx++) {
     var valeur = unArray[_i];
     console.log(valeur);
+}
+```
+
+La boucle _**for..of**_ est aussi celle qu'il faudra utiliser quand on voudra boucler sur des listes d'objets :
+
+```js
+let unArrayObjets = [{'nom':'etudiant 1', 'num':1}, {'nom':'etudiant 2', 'num':2}];
+
+for (let item of unArrayObjets) {
+    console.log(item.nom); // etudiant 1 etudiant 2
 }
 ```
 
