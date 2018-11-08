@@ -115,6 +115,10 @@ monObjSet.forEach(function(value1, value1, set){
 })
 
 console.log(monObjSet.values()); // renvoie un iterateur avec les valeurs de chaque élément de l'ensemble
+let iterator1 = monObjSet.values();
+console.log(iterator1.next().value); // renvoie 1
+console.log(iterator1.next().value); // renvoie 2
+
 
 console.log(monObjSet.clear()); // Permet de retirer tous les éléments d'un ensemble Set.
 ```
