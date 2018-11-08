@@ -39,9 +39,11 @@ La boucle renvoie en fait les indexes de chaque valeur et ne doit être utilisé
 Mais le véritable intérêt pour moi de la boucle **for..in** est de pouvoir boucler sur les propriétés d'un objet.
 
 ```js
-let etudiant = {'nom':'Etudiant 001', 'num':1};
-for (let cle in etudiant) {
-    console.log(etudiant[cle].nom) // Renvoie Etudiant 001
+let etudiant = {'nom':'Etudiant 001', 'ine':1};
+for (let idx in etudiant) {
+    console.log(idx + ' : ' + etudiant[idx]);
+    // nom : Etudiant 001
+    // ine : 1
 }
 ```
 
@@ -49,7 +51,7 @@ Et un petit résumé de ce que renvoie l'une ou l'autre des deux boucles :
 
 ```js
 let list = [3, 4, 5];
-let etudiant = {'nom':'Etudiant', 'num':1};
+let etudiant = {'nom':'Etudiant', 'ine':1};
 
 for (let val of list) {
    console.log(val); // "3", "4", "5"
@@ -59,8 +61,10 @@ for (let idx in list) { // moyen mnémotechnique : "in" comme "in-dex"
    console.log(idx); // "0", "1", "2", 
 }
 
-for (let cle in etudiant) {
-    console.log(etudiant[cle]) // Renvoie Etudiant 001
+for (let idx in etudiant) {
+    console.log(idx + ' : ' + etudiant[idx]); 
+    // nom : Etudiant 001
+    // ine : 1
 }
 ```
 
