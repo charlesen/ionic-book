@@ -55,8 +55,8 @@ for (let val of list) {
    console.log(val); // "3", "4", "5"
 }
 
-for (let idx in list) {
-   console.log(idx); // "0", "1", "2",
+for (let idx in list) { // moyen mnémotechnique : "in" comme "in-dex"
+   console.log(idx); // "0", "1", "2", 
 }
 
 for (let cle in etudiant) {
