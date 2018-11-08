@@ -104,15 +104,18 @@ Il existe d'autres méthodes permettant de manipuler un ensemble : add, clear, d
 
 ```js
 console.log(monObjSet.add(7)); // Ajoute le chiffre 7
+
 console.log(monObjSet.delete(6)); // Supprime le chiffre 7 de la l'ensemble
-console.log(monObjSet.entries()); // Retour un iterateur avec l'ensemble des entrées
+
+console.log(monObjSet.entries()); // renvoie un iterateur avec l'ensemble des entrées
 
 console.log(monObjSet.forEach(funct)); permet d'exécuter une fonction donnée pour chaque valeur de l'ensemble
 monObjSet.forEach(function(value1, value1, set){
     console.log(value1, value2);
 })
 
-console.log(monObjSet.values(7));
+console.log(monObjSet.values()); // renvoie un iterateur avec les valeurs de chaque élément de l'ensemble
+
 console.log(monObjSet.clear()); // Permet de retirer tous les éléments d'un ensemble Set.
 ```
 
