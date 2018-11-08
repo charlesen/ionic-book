@@ -186,15 +186,13 @@ let politiciens = [{
 }];
 ```
 
-Pour extraire uniquement les noms tout en majuscule de chacun d'entre eux, JavaScript propose différentes solutions comme celle-ci :
+Pour extraire uniquement les noms en majuscule de chaque politicien, il existe différentes solutions comme celle-ci :
 
 ```js
 let politiciens_noms = [];
 
-for (let i = 0, max = politiciens.length; i < max; i += 1) {
-
-    politiciens_noms.push(politiciens[i].nom.toUpperCase());
-
+for (let pol of politiciens) {
+    politiciens_noms.push(pol.nom.toUpperCase());
 }
 
 // politiciens_noms
@@ -217,9 +215,7 @@ Mais avec la méthode Map, la récupération se fait de manière beaucoup plus e
 
 ```js
 let politiciens_noms = politiciens.map(function (politicien, index, array) {
-
     return politicien.nom.toUpperCase();
-
 });
 // politiciens_noms
 // (5) ["MACRON", "PHILIPPE", "LE MAIRE", "CALMELS", "JUPPÉ"]
@@ -227,7 +223,7 @@ let politiciens_noms = politiciens.map(function (politicien, index, array) {
 
 La méthode donne accès dans son callback à chaque item du tableau depuis la variable **politicien**, à sa position \(**index\)** à l’intérieur du tableau, et enfin du tableau lui-même \(**array**\).
 
-Avec cette méthode, vous n'aurez pas à vous inquiéter de l'index de la boucle ou d'utiliser la méthode push pour stocker vos éléments. De plus, la méthode renvoyant un Array, il est tout à fait possible de d'appliquer une autre méthode juste après la méthode map.
+Avec cette méthode, vous n'aurez pas à vous inquiéter de l'index de la boucle \(en JavaScript classique\) ou d'utiliser la méthode push pour stocker vos éléments. De plus, la méthode renvoyant un Array, il est tout à fait possible d'appliquer une autre méthode sur celui-ci juste après la méthode map.
 
 #### Filter
 
