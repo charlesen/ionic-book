@@ -78,5 +78,7 @@ Il sera intéressant par la suite de créer un provider spécifique au plugin St
 
 ## Intégration de Firebase
 
+### Annexe 
+
 [https://javebratt.com/ionic-firebase-tutorial-intro/](https://javebratt.com/ionic-firebase-tutorial-intro/)
 
