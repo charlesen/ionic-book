@@ -4,7 +4,7 @@ Maintenant que notre application a bien évolué, et que l'on peut même passé 
 
 Ionic propose un plugin de stockage de données facile à prendre en main. Le stockage se fait sous forme de paires clé / valeur et utilise une variété de moteurs de stockage différent, en choisissant le meilleur disponible en fonction de la plate-forme.
 
-Par la suite nous étudierons Firebase, un outil 
+Par la suite nous étudierons Firebase, un outil super pratique pour créer une application mobile sans se soucier de la partie backend \(serveur, base de donnée, monitoring,...\)
 
 ## Utilisation de Ionic Storage
 
