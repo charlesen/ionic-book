@@ -61,6 +61,20 @@ $ npm config set prefix '~/.npm-global'
 
 Cela vous évitera de saisir à chaque fois le mot clé **"**_**sudo"** _à chaque installation de paquet npm en mode global \(-g\) :
 
+Il faut ensuite mettre à jour le path de votre ordinateur pour prendre en compte ce nouveau répertoire. Editez par exemple le fichier **~/.profile** et ajoutez la ligne suivante : 
+
+```bash
+export PATH=~/.npm-global/bin:$PATH
+```
+
+Pour prendre en compte immédiatement ce changement, saisissez : 
+
+```bash
+$ source ~/.profile
+```
+
+Vous pouvez à présent faire des installations globales sans erreur de permission.
+
 ```bash
 $ npm install -g ionic cordova
 ```
