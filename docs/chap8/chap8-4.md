@@ -20,7 +20,8 @@ Pour créer un nouveau Pipe, il suffit de faire :
 ```js
 $ ionic g pipe monPipe
 
-// Création du dossier src/pipes/square/
+// Création du dossier src/pipes/monpipe
+/
 // Mise à jour du fichier src/pipes/pipes.module.ts
 ```
 
@@ -47,5 +48,5 @@ import {PipesModule} from '../pipes/pipes.module';
   ],
 ```
 
-Pour plus de détails : [https://www.tutorialspoint.com/angular4/angular4\_pipes.htm](https://www.tutorialspoint.com/angular4/angular4_pipes.htm)
+
 
