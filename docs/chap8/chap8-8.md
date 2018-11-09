@@ -8,6 +8,11 @@
 
 4\) Créez un Pipe que vous nommerez _**converter**_ que vous utiliserez dans votre liste de transactions pour convertir la valeur \(amount\) de chaque transaction en dollar, en Livre sterling et en tout autre monnaie qui vous viendrait à l'esprit.
 
+```js
+{{transact.amount | converter:'dollar'}}
+{{transact.amount | converter:'pound'}}
+```
+
 * **1 Livre sterling est égale 1,15 Euro**
 * **1 Dollar américain est égal à 0,88 Euro**
 
