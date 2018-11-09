@@ -15,5 +15,16 @@ let maVariable = "Hello mmi";
 <span>{{maVariable | uppercase}}</span>
 ```
 
+Pour créer un nouveau Pipe, il suffit de faire :
+
+```bash
+$ ionic g pipe monPipe
+
+// Création du dossier src/pipes/square/
+// Mise à jour du fichier src/pipes/pipes.module.ts
+```
+
+
+
 Pour plus de détails : [https://www.tutorialspoint.com/angular4/angular4\_pipes.htm](https://www.tutorialspoint.com/angular4/angular4_pipes.htm)
 
