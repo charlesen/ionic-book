@@ -16,6 +16,8 @@
 * **1 Livre sterling est égale 1,15 Euro**
 * **1 Dollar américain est égal à 0,88 Euro**
 
+![](/assets/duckcoin_devise.png)
+
 4\) Ajustons un peu notre page de login en enregistrant en base de données le login au clic sur le bouton de validation, et en l'affichant en page d'accueil de façon à ce que l'on ait ce message :
 
 ```
