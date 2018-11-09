@@ -6,11 +6,11 @@
 
 3\) Créez une directive que vous nommerez **"bigger"**. Celle-ci permettra d'augmenter la taille \(font-size\) de l’élément qui l'invoquerait.
 
-4\) Créez un Pipe que vous nommerez _**converter**_ que vous utiliserez dans votre liste de transactions pour convertir la valeur \(amount\) de chaque transaction en dollar, en Livre sterling et en tout autre monnaie qui vous viendrait à l'esprit.
+4\) Créez un Pipe que vous nommerez _**devise**_ que vous utiliserez dans votre liste de transactions pour convertir la valeur \(amount\) de chaque transaction en dollar, en Livre sterling et en tout autre monnaie qui vous viendrait à l'esprit.
 
 ```js
-{{transact.amount | converter:'dollar'}}
-{{transact.amount | converter:'pound'}}
+{{transact.amount | devise:'dollar'}}
+{{transact.amount | devise:'pound'}}
 ```
 
 * **1 Livre sterling est égale 1,15 Euro**
