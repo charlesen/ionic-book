@@ -25,13 +25,35 @@ Une première solution serait de copier le code de cette classe. Mais si une aut
 
 C'est là qu'interviennent les **Services**, qui sont en fait des bouts de codes métiers, des méthodes, qui peuvent appeler dans d'autres pages, sans devoir les réécrire. On code une fois, on les réutilise partout.
 
-Nous aurons par exemple besoin des services pour la gestion des sessions utilisateurs. En effet, à peu près toutes les pages de notre application auront besoin de s'assurer que notre utilisateur courant est bien connecté.
+Nous aurons par exemple besoin des services pour la gestion des sessions utilisateurs. En effet, à peu près toutes les pages de notre application auront besoin de s'assurer que notre utilisateur courant est bien connecté. Et pour ne pas dix mille fois implémenter la fonction vérifiant l'état de connexion d'un utilisateur, on va créer un service dédié à cela.
 
-```
+```bash
 $ ionic g provider User
 
 [OK] Generated a provider named User!
 ```
 
-Cette commande va créer un nouveau service **User**, dans lequel nous déclarerons un certain nombre de méthodes pour la gestion de l'authentification, la création de comptes utilisateur,...
+Cette commande va créer un nouveau service **User**, dans lequel nous déclarerons un certain nombre de méthodes pour la gestion de l'authentification, la création de comptes utilisateur,...Il suffira ensuiye d'appeler ce service dans n'importe quel page de notre application 
+
+```js
+export class MaPage {
+
+  isConneted: any[] = [];
+  userData;
+
+  constructor(private http: HttpClient, userProvider:User) {
+    this.isConnected = this.userProvider.getUserStatus();
+  }
+  
+  getUserData() {
+    this.userProvider.getUserData().subscribe(data => {
+        this.userData = data['transactions'];
+      }, err => {
+          console.log("Error occured.")
+      });
+  }
+}
+```
+
+
 
