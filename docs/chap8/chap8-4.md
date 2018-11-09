@@ -17,14 +17,35 @@ let maVariable = "Hello mmi";
 
 Pour créer un nouveau Pipe, il suffit de faire :
 
-```bash
+```js
 $ ionic g pipe monPipe
 
 // Création du dossier src/pipes/square/
 // Mise à jour du fichier src/pipes/pipes.module.ts
 ```
 
+Il vous faut ensuite importer le module Pipes dans le module principal de votre application :
 
+```js
+...
+
+import {PipesModule} from '../pipes/pipes.module';
+
+@NgModule({
+  declarations: [
+    DuckCoinApp,
+    MiningPage,
+    ...
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    ...
+    PipesModule, // On déclare notre module Pipes ici
+    ComponentsModule, // On déclare notre module Composant ici
+    DirectivesModule, // On déclare notre module Directives ici
+  ],
+```
 
 Pour plus de détails : [https://www.tutorialspoint.com/angular4/angular4\_pipes.htm](https://www.tutorialspoint.com/angular4/angular4_pipes.htm)
 
