@@ -14,6 +14,16 @@ $ ng new duckweb # Cette commande va créer un nouveau dossier duckweb.
 
 ![](/assets/angular_create_screen1.png)
 
+
+
+Si vous rencontrez une exception à la création du projet \(sous Windows notamment\), n'hésitez pas à supprimer le cache npm et recréer votre projet :
+
+```bash
+$ rm -rf duckweb # Suppresion du dossier, uniquement si ça bug.
+$ npm cache clean --force
+$ ng new duckweb
+```
+
 Une fois la création terminée, on va pouvoir lancer notre projet :
 
 ```bash
