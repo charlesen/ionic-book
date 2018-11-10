@@ -10,11 +10,9 @@ Vous avez du l'utiliser au moins une fois dans vos développements JavaScript.
 
 La méthode de logging de l'objet Console vous permet d'afficher le contenu d'une variable, du texte, un message...bref, à peu près tout, de votre code source vers le navigateur web.
 
-```
+```js
 console.log("Ceci est un message à mon navigateur web...Mayday ! Mayday !")
 ```
-
-Il est possible de jouer sur le type d'affichage
 
 ### Inspection du code source
 
