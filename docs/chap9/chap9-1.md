@@ -34,7 +34,7 @@ L'avantage de cette application par rapport à Ionic view est que vous n'avez pa
 Pour lancer votre application depuis un émulateur, il suffit de lancer la commande suivante
 
 ```
-$ ionic cordova run android
+$ ionic cordova run android # ou 'ios' si vous ciblez cette plateforme et êtes sous Mac
 ```
 
 La commande va d'abord vérifier si un appareil mobile est connecté à l'ordinateur \(voir partie suivante\), avant de lancer l'émulateur par défaut.
