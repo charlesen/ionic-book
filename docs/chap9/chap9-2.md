@@ -4,7 +4,7 @@ C'est sûrement la partie la moins drôle quand on développe en général, mais
 
 Faisons le tour de quelques méthodes qui vont vous aider à debugger efficacement votre application mobile.
 
-### L’indétrônable console.log\(\) et console.info\(\)
+### L’indétrônable console.log\(\) et son copain console.info\(\)
 
 Vous avez du l'utiliser au moins une fois dans vos développements JavaScript.
 
