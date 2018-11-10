@@ -5,7 +5,7 @@
 C'est la manière la plus simple pour tester votre application et comme nous l'avons il suffit de saisir la commande "serve" pour lancer votre application mobile dans un navigateur :
 
 ```bash
-$ ionic start -lc
+$ ionic serve -lc
 ```
 
 Pour information :
@@ -122,7 +122,7 @@ Si vous n'avez pas encore ajouté iOS comme plateforme cible, il n y aura pas de
 $ ionic cordova platform add ios
 ```
 
-Une fois votre projet ouvert dabs Xcode, connectez votre iPhone. Puis à droite du bouton play, choissiez à partir de quelle appareil votre application sera lancée. 
+Une fois votre projet ouvert dabs Xcode, connectez votre iPhone. Puis à droite du bouton play, choissiez à partir de quelle appareil votre application sera lancée.
 
 ![](/assets/running_ios.png)
 
