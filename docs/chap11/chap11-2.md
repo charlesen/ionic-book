@@ -72,7 +72,7 @@ Puis éditez le formulaire qui s'affichera en ajoutant le fichier **.p12** dans 
 
 > **P.S. :** il est également possible d'importer votre fichier **keystore** Android dans la section correspondante.
 
-Dans Ionic PRO, allez dans **Code &gt; Builds**, puis cliquer le bouton en forme de package à droite \(celui du milieu sur l'image ci-dessous\) pour compiler votre projet.
+Dans Ionic PRO, allez dans **Code &gt; Builds**, puis cliquez sur le bouton en forme de package à droite \(celui du milieu sur l'image ci-dessous\) pour compiler votre projet.
 
 Une fois la compilation terminée, téléchargez le fichier IPA.
 
@@ -80,7 +80,10 @@ Une fois la compilation terminée, téléchargez le fichier IPA.
 
 Si vous disposez d'un ordinateur Mac, un **ionic cordova run ios --device** devrait vous permettre de tester que la configuration s'est bien passée avant d'exporter votre application au format IPA.
 
-Pour plus d'informations sur les étapes annexes, n'hésitez pas à visite la page suivante : [https://ionicframework.com/docs/pro/package/ios.html](https://ionicframework.com/docs/pro/package/ios.html)
+Pour plus d'informations sur les étapes annexes, n'hésitez pas à visite les pages suivantes : 
+
+* Packaging iOS : [https://ionicframework.com/docs/pro/package/ios.html](https://ionicframework.com/docs/pro/package/ios.html)
+* Build Ionic : [https://ionicframework.com/docs/cli/cordova/build/](https://ionicframework.com/docs/cli/cordova/build/)
 
 ### Publication sur Itunes Connect
 
