@@ -108,7 +108,6 @@ drwxrwxr-x  2 charles charles 4096 nov.  15 10:14 profile
 drwxrwxr-x  4 charles charles 4096 nov.  15 10:19 services
 drwxrwxr-x  2 charles charles 4096 nov.  15 10:14 setting
 drwxrwxr-x  2 charles charles 4096 nov.  15 10:14 tabs
-
 ```
 
 ### Style SCSS
@@ -122,6 +121,12 @@ Copiez ensuite l'ensemble de vos pages **src/pages/mapage** vers  **src/app/mapa
 ```bash
 $ cp -R ../duckcoin/src/pages/* src/app/
 ```
+
+### Nouvelle arborescence
+
+| Ionic V3 | Ionic V4 |
+| :---: | :---: |
+| ![](/assets/ionic_v3.png) | ![](/assets/ionic_v4.png) |
 
 
 
