@@ -12,7 +12,7 @@ Vous trouverez dans cet annexe tout un ensemble de bugs couramment rencontrés, 
 
 #### **Solution**
 
-**\(**[**https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3**](https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3)**\)                                                      
+**\(**[**https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3**](https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3)**\)                                                        
 **
 
 dans le fichier index.html, ajouter le fichier **build/vendor.js**:
@@ -71,15 +71,15 @@ $ npm install @ionic/app-scripts@latest --save-dev
 
 ### **Problème : Error: ENOENT**
 
-**no such file or directory, open \*www/build/0.main.js.map in undefined at line undefined, col undefined, pos undefined at BuildError.Error \(native\)                                                      
+**no such file or directory, open \*www/build/0.main.js.map in undefined at line undefined, col undefined, pos undefined at BuildError.Error \(native\)                                                        
 **
 
-**Solution :                                                      
+**Solution :                                                        
 **Ce bug apparait quand vous souhaitez livrer votre application en prod avec la commande ionic package build…
 
 Le problème vient de source MAP, utile en developpement, mais qu’il faut désactiver lorsque l’on souhaite passer en prod
 
-Dans le fichier **package.json**, il faut supprimer la clé : **ionic\_generate\_source\_map                                                      
+Dans le fichier **package.json**, il faut supprimer la clé : **ionic\_generate\_source\_map                                                        
 **
 
 ### **Problème : TypeError: Cannot read property 'substr' of undefined**
@@ -144,7 +144,7 @@ please update the directory permissions.
 
 #### **Solution**
 
-Le problème apparait lorsque vous souhaitez créer votre paquet Android avec Ionic update. Pour le résoudre, passer à une version inférieur d’Android ou supérieur. La plupart il s’agit de passer à une version inférieur \(Modifier les fichiers **package.json** et **config.xml**\). Ex : 6.2.3 vers 6.2.0.**                                                      
+Le problème apparait lorsque vous souhaitez créer votre paquet Android avec Ionic update. Pour le résoudre, passer à une version inférieur d’Android ou supérieur. La plupart il s’agit de passer à une version inférieur \(Modifier les fichiers **package.json** et **config.xml**\). Ex : 6.2.3 vers 6.2.0.**                                                        
 **
 
 #### **Superposition de la barre d’état avec l'entête de l’application**
@@ -519,15 +519,11 @@ $ npm cache clean --force
 
 Puis recommencez l'action qui a échoué.
 
-
-
-
-
 ## Missing App Store Icon. iOS Apps must include a 1024x1024px App Store &gt; Icon in PNG format
 
 ### Détails
 
-> Missing App Store Icon - iOS Apps must include a 1024x1024px App Store Icon in PNG format. Without providing the icon in the Asset Catalog or via App Store Connect, apps cannot be submitted for App Review or Beta App Review. Refer to https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/app-icon/ for more information.
+> Missing App Store Icon - iOS Apps must include a 1024x1024px App Store Icon in PNG format. Without providing the icon in the Asset Catalog or via App Store Connect, apps cannot be submitted for App Review or Beta App Review. Refer to [https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/app-icon/](https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/app-icon/) for more information.
 
 Ce bug apparait le plus souvent moment de publier votre application via l'Application Loader sous XCode. Il signale l'absence d'icone dans votre application.
 
@@ -535,7 +531,9 @@ Ce bug apparait le plus souvent moment de publier votre application via l'Applic
 
 * Ouvrez votre application avec XCode
 * Allez dans Assets.xcassets 
-* Glisser déposer votre icone 1024x1024px comme indiqué dans l'image ci-dessous :
+* Glisser déposer votre icone 1024x1024px à l'emplacement indiquant un point d'exclamation :
+
+
 
 
 
