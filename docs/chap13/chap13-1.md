@@ -24,7 +24,6 @@ Installing dependencies may take several minutes.
  -->    Install DevApp: https://bit.ly/ionic-dev-app    <--
 
 ────────────────────────────────────────────────────────────
-
 ```
 
 A la question _**Install the free Ionic Pro SDK and connect your app?**_, répondez non pour le moment, vous aurez l'occasion de lier votre applicartion à Ionic PRO plus tard.
@@ -52,12 +51,15 @@ drwxr-xr-x 2 charles charles 4,0K nov.  15 09:47 environments/
 drwxr-xr-x 2 charles charles 4,0K nov.  15 09:47 theme/
 -rw-r--r-- 1 charles charles  194 nov.   1 20:23 tsconfig.app.json
 -rw-r--r-- 1 charles charles  303 nov.   1 20:23 tsconfig.spec.json
-
 ```
 
-## Migration de fichiers
+## Migration de documents
 
-Dans votre projet Ionic 3, copiez tous les documents présents dans le dossier **src/providers** dans le dossier **src/app/services** de votre Ionic 4. Puis ajustez vos services en ajoutant **{ providedIn: 'root' }** dans le décorateur **@Injectable\(\)** comme ceci : 
+### Services
+
+Dans votre projet Ionic 3, copiez tous les documents présents dans le dossier **src/providers** dans le dossier **src/app/services** de votre Ionic 4. Puis ajustez vos services en ajoutant **{ providedIn: 'root' }** dans le décorateur **@Injectable\(\)** comme ceci :
+
+**fichier : src/app/mon.service.ts**
 
 ```js
 import { Injectable } from '@angular/core';
@@ -71,6 +73,22 @@ export class MonService {
 ```
 
 Cette instruction permet de rendre votre service accessible à l'ensemble de l'application \(**root**\).
+
+### Composants, Directives et Pipe
+
+Copiez comme précédemment tous les documents présent dans le dossier **src/components** vers **src/app/components, **tous les documents présent dans le dossier **src/directives** vers **src/app/directives**, et **src/pipes** vers **src/app/pipes**.
+
+### Style SCSS
+
+Copiez le style globale de votre application **src/app/app.scss** vers **src/global.scss**.
+
+### Pages et autres dossiers
+
+Copiez ensuite l'ensemble de vos pages **src/pages/mapage** vers  **src/app/mapage**, et tout autre dossier dans le dossier **src/app**.
+
+```bash
+$ cp -R ../duckcoin/src/pages/* src/app/
+```
 
 
 
