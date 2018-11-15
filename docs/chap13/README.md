@@ -1,6 +1,6 @@
 # Chap 13 - Introduction à Ionic 4
 
-## Ouverture aux autres Frameworks JavaScript et standardisation
+## Ouverture aux autres Frameworks et standardisation
 
 Au moment de la rédaction de cette page, Ionic est dans sa version 4 Beta.
 
@@ -12,7 +12,7 @@ En s'alignant sur les standards du Web, cette V4 beta permet au noyau du Framewo
 
 Dans une application Ionic 3, on ne souciait pas vraiment de nos urls, tout se passait dans le **push**, **pop** et le **setRoot**. On avancait, on reculait, on allait directement dans une page. Une SPA \(single page application\) des plus classiques. Le système de routage interne nous passait un peu sous les yeux, sans trop nous déranger.
 
-Avec cette version 4, on retrouve un système de routage qui va nous permettre d'avoir de belles urls comme on peut le retrouver dans la plupart des Framework du web. Très pratique quand on fait aussi du PWA. Ce système de routing[^1] est directement influencé par Angular qui dans sa dernière version  encourage le passage à ce nouveau type de navigation.
+Avec cette version 4, on retrouve un système de routage qui va nous permettre d'avoir de belles urls, d'y passer des paramètres et de les récupérer dans nos contrôleurs, comme on peut le retrouver dans la plupart des Framework du web. Très pratique quand on fait aussi du PWA. Ce système de routing[^1] est directement influencé par Angular qui dans sa dernière version  encourage le passage à ce nouveau type de navigation.
 
 ## Une documentation épurée
 
