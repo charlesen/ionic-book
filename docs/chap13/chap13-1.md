@@ -57,7 +57,13 @@ drwxr-xr-x 2 charles charles 4,0K nov.  15 09:47 theme/
 
 ### Services
 
-Dans votre projet Ionic 3, copiez tous les documents présents dans le dossier **src/providers** dans le dossier **src/app/services** de votre Ionic 4. Puis ajustez vos services en ajoutant **{ providedIn: 'root' }** dans le décorateur **@Injectable\(\)** comme ceci :
+En vous plaçant à la racine de votre nouveau projet Ionic, copiez tous les documents présents dans le dossier **src/providers** de votre projet Ionic 3 vers le nouveau dossier **src/app/services**. 
+
+```
+$ cp -R ../duckcoin/src/providers src/app/services
+```
+
+Puis ajustez vos services en ajoutant **{ providedIn: 'root' }** dans le décorateur **@Injectable\(\)** comme ceci :
 
 **fichier : src/app/mon.service.ts**
 
@@ -76,7 +82,13 @@ Cette instruction permet de rendre votre service accessible à l'ensemble de l'a
 
 ### Composants, Directives et Pipe
 
-Copiez comme précédemment tous les documents présent dans le dossier **src/components** vers **src/app/components, **tous les documents présent dans le dossier **src/directives** vers **src/app/directives**, et **src/pipes** vers **src/app/pipes**.
+En vous plaçant toujours à la racine de votre nouvelle application, copiez comme précédemment tous les documents présent dans le dossier **src/components** vers **src/app/components, **tous les documents présent dans le dossier **src/directives** vers **src/app/directives**, et **src/pipes** vers **src/app/pipes**.
+
+```bash
+$ cp -R ../duckcoin/src/components src/app/components/
+$ cp -R ../duckcoin/src/pipes/ src/app/pipes
+$ cp -R ../duckcoin/src/directives/ src/app/pipes/directives
+```
 
 ### Style SCSS
 
