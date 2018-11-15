@@ -68,10 +68,12 @@
   * [Stencil](chap12/chap12-1.md)
   * [Capacitor](chap12/chap12-2.md)
 
+* [Chap 13 - Introduction à Ionic 4](chap13/README.md)
+  * [Migration de Ionic 3 vers Ionic 4](chap13/chap13-1.md)
+  * [Première application Ionic 4](chap13/chap13-2.md)
 ## Annexes
 
 * [Bugs courants](annexe/README.md)
-  * [Annexe 1 : Migration de Ionic 3 vers Ionic 4](annexe/annexe1-1.md)
-  * [Annexe 2 : Bugs courants et solutions](annexe/annexe1-2.md)
+  * [Bugs courants et solutions](annexe/annexe1-2.md)
 * [Glossaire](GLOSSARY.md)
 
