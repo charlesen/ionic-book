@@ -1,12 +1,12 @@
-# Chap 12 - Introduction au PWA avec Stencil et Capacitor
+# Chap 13 - Introduction à Ionic 4
 
-## Une Progressive Web App c'est quoi ?
+## Une version Beta qui promet de belles choses
 
-C'est une application disponible à la fois sur le web et sur le mobile, et qui se comporte comme une application mobile native.
+Au moment de la rédaction de cette page, Ionic est à sa version 4 Beta.
 
-Une étude a montré que bon nombre d'utilisateurs, autour de 20%, se désintéressaient d'une application du fait de sa relative complexité d'installation sur mobile. De plus, de nombreux utilisateurs sont hésitants à l'idée d'installer une application qui prendrait à la longue beaucoup trop de place sur leur téléphone à cause du cache, des fichiers statiques,...
+Cette version 4 constitue une avancée majeure dans les capacités sous-jacentes du Framework mobile, en mettant l'accent notamment sur les performances, la compatibilité et l'extensibilité globale. Bien que la V4 s'intègre toujours profondément à Angular via le package **@ionic/angular**, elle est désormais ouverte aux autres framework JavaScript tels que Vue, React, Preact, etc...,Mais rien ne vous empêche de n'utiliser aucun framework. C'est un choix que l'on évite la plupart du temps, mais oui, vous êtes tout à fait libre d'utiliser ce que vous voulez avec Ionic et ça c'est un mini-révolution.
 
-Le PWA vient en quelque sorte corriger ces problèmes et bien d'autres, rencontrés dans l'univers du mobile.
+En s'alignant sur les standards du Web, cette V4 beta permet au noyau du Framework Ionic de s’appuyer sur le modèle orienté composant, un standard pris en charge par tous les navigateurs modernes, plutôt que sur un modèle fait maison. Cela implique donc un temps de chargement plus rapide, de meilleures performances et moins de code inutile pour prendre en compte tous les types de moteur de rendu différents \(WebKit ou Blink, Gecko,...\). Moins de patchs pour plus de performance.
 
 ## Ionic à l'assaut du PWA
 
