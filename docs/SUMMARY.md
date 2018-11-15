@@ -67,13 +67,10 @@
 * [Chap 12 - Introduction au PWA avec Stencil et Capacitor](chap12/README.md)
   * [Stencil](chap12/chap12-1.md)
   * [Capacitor](chap12/chap12-2.md)
-
 * [Chap 13 - Introduction à Ionic 4](chap13/README.md)
   * [Migration de Ionic 3 vers Ionic 4](chap13/chap13-1.md)
   * [Première application Ionic 4](chap13/chap13-2.md)
-## Annexes
-
 * [Bugs courants](annexe/README.md)
-  * [Bugs courants et solutions](annexe/annexe1-2.md)
+  * [Annexe 1 : Bugs courants et solutions](annexe/annexe1-2.md)
 * [Glossaire](GLOSSARY.md)
 
