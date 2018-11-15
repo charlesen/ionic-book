@@ -71,6 +71,7 @@
 ## Annexes
 
 * [Bugs courants](annexe/README.md)
-  * [Annexe 1 : Bugs courants et solutions](annexe/annexe1-1.md)
+  * [Annexe 1 : Migration de Ionic 3 vers Ionic 4](annexe/annexe1-1.md)
+  * [Annexe 2 : Bugs courants et solutions](annexe/annexe1-2.md)
 * [Glossaire](GLOSSARY.md)
 
