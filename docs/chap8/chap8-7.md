@@ -169,7 +169,7 @@ Une fois la création effectuée, cliquez sur l'icone en forme de balise \(à dr
 
 ![](/assets/firebase_step4.png)
 
-Puis récupérez la configuration qui vous est proposée et complétez le contenu de la constante firebaseConfig : 
+Puis récupérez la configuration qui vous est proposée et complétez le contenu de la constante firebaseConfig :
 
 ```js
 export const firebaseConfig = {
@@ -183,11 +183,12 @@ export const firebaseConfig = {
 
 Il ne vous reste plus qu'à exploiter toute la puissance de Firebase.
 
-### Annexe
+### Annexe : pour aller plus loin
 
 * Documentation AngularFire : [https://github.com/angular/angularfire2/blob/master/docs/ionic/v3.md](https://github.com/angular/angularfire2/blob/master/docs/ionic/v3.md)
 * Authentification Facebook et Google sur Ionic avec Firebase : [https://github.com/angular/angularfire2/blob/master/docs/ionic/authentication.md](https://github.com/angular/angularfire2/blob/master/docs/ionic/authentication.md)
 * Prise en main de Firebase dans Ionic [https://javebratt.com/ionic-firebase-tutorial-intro/](https://javebratt.com/ionic-firebase-tutorial-intro/)
+* Store data inside Ionic : https://ionicacademy.com/store-data-inside-ionic/
 
 
 
