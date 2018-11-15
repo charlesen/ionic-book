@@ -16,5 +16,7 @@ Elle actuellement accesible à l'adresse [https://beta.ionicframework.com/docs/]
 
 ![](/assets/ionic-v4-docs.png)
 
+J'aime particulièrement la partie dédié au PWA qui a été améliorée avec un exemple de déploiement sur Firebase. Avant on devait presque fouiller pour trouver des informations de qualité. Aujourd'hui c'est chose faite. Merci.
 
+![](/assets/ionic-v4_screen_pwa.png)
 
