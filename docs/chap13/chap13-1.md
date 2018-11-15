@@ -57,7 +57,7 @@ drwxr-xr-x 2 charles charles 4,0K nov.  15 09:47 theme/
 
 ### Services
 
-En vous plaçant à la racine de votre nouveau projet Ionic, copiez tous les documents présents dans le dossier **src/providers** de votre projet Ionic 3 vers le nouveau dossier **src/app/services**. 
+En vous plaçant à la racine de votre nouveau projet Ionic, copiez tous les documents présents dans le dossier **src/providers** de votre projet Ionic 3 vers le nouveau dossier **src/app/services**.
 
 ```
 $ cp -R ../duckcoin/src/providers src/app/services
@@ -85,9 +85,30 @@ Cette instruction permet de rendre votre service accessible à l'ensemble de l'a
 En vous plaçant toujours à la racine de votre nouvelle application, copiez comme précédemment tous les documents présent dans le dossier **src/components** vers **src/app/components, **tous les documents présent dans le dossier **src/directives** vers **src/app/directives**, et **src/pipes** vers **src/app/pipes**.
 
 ```bash
-$ cp -R ../duckcoin/src/components src/app/components/
-$ cp -R ../duckcoin/src/pipes/ src/app/pipes
-$ cp -R ../duckcoin/src/directives/ src/app/pipes/directives
+$ cp -R ../duckcoin/src/components src/app/components
+$ cp -R ../duckcoin/src/pipes src/app/pipes
+$ cp -R ../duckcoin/src/directives src/app/directives
+
+$ ls -al src/app/
+total 72
+drwxr-xr-x 13 charles charles 4096 nov.  15 10:22 .
+drwxr-xr-x  6 charles charles 4096 nov.  15 09:47 ..
+-rw-r--r--  1 charles charles   63 nov.   1 20:23 app.component.html
+-rw-r--r--  1 charles charles 1583 nov.   1 20:23 app.component.spec.ts
+-rw-r--r--  1 charles charles  613 nov.   1 20:23 app.component.ts
+-rw-r--r--  1 charles charles  763 nov.   1 20:23 app.module.ts
+-rw-r--r--  1 charles charles  372 nov.   1 20:23 app-routing.module.ts
+drwxrwxr-x  3 charles charles 4096 nov.  15 10:16 components
+drwxrwxr-x  3 charles charles 4096 nov.  15 10:22 directives
+drwxr-xr-x  3 charles charles 4096 nov.  15 10:14 home
+drwxrwxr-x  2 charles charles 4096 nov.  15 10:14 login
+drwxrwxr-x  2 charles charles 4096 nov.  15 10:14 mining
+drwxrwxr-x  3 charles charles 4096 nov.  15 10:23 pipes
+drwxrwxr-x  2 charles charles 4096 nov.  15 10:14 profile
+drwxrwxr-x  4 charles charles 4096 nov.  15 10:19 services
+drwxrwxr-x  2 charles charles 4096 nov.  15 10:14 setting
+drwxrwxr-x  2 charles charles 4096 nov.  15 10:14 tabs
+
 ```
 
 ### Style SCSS
