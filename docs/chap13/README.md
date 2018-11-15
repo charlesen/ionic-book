@@ -10,9 +10,9 @@ En s'alignant sur les standards du Web, cette V4 beta permet au noyau du Framewo
 
 ## Système de routage
 
-Dans une application Ionic 3, on ne souciait pas vraiment de nos urls, tout se passait dans le **push**, **pop** et le **setRoot**. On avancait, on reculait, on allait directement dans une page. Une SPA \(single page application\) des plus classiques.
+Dans une application Ionic 3, on ne souciait pas vraiment de nos urls, tout se passait dans le **push**, **pop** et le **setRoot**. On avancait, on reculait, on allait directement dans une page. Une SPA \(single page application\) des plus classiques. Le système de routage interne nous passait un peu sous les yeux, sans trop nous déranger.
 
-Avec cette version 4, on retrouve un système de routage qui va nous permettre d'avoir belles urls comme on peut le retrouver dans la plupart des Framework du web. Ce système de routing est directement influencé par Angular qui dans sa dernière version  encourage le passage à cette nouvelle architecture.
+Avec cette version 4, on retrouve un système de routage qui va nous permettre d'avoir de belles urls comme on peut le retrouver dans la plupart des Framework du web. Très pratique quand on fait aussi du PWA. Ce système de routing[^1] est directement influencé par Angular qui dans sa dernière version  encourage le passage à cette nouvelle architecture.
 
 ## Une documentation épurée
 
@@ -25,4 +25,6 @@ Elle actuellement accesible à l'adresse [https://beta.ionicframework.com/docs/]
 J'aime particulièrement la partie dédié au PWA qui a été améliorée avec un exemple de déploiement sur Firebase. Avant on devait presque fouiller pour trouver des informations de qualité. Aujourd'hui c'est chose faite. Merci.
 
 ![](/assets/ionic-v4_screen_pwa.png)
+
+[^1]: Angular Router : https://angular.io/guide/router
 
