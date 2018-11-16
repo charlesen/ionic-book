@@ -8,7 +8,7 @@
 
 Tout comme Android, Apple requiert un compte développeur pour pouvoir publier une application mobile.
 
-La procédure est un peu moins évidente et je vous conseille la documentation Ionic très imagée à l'adresse : [https://ionicframework.com/docs/intro/deploying/](https://ionicframework.com/docs/intro/deploying/)
+La procédure est un peu moins évidente et je vous conseille la documentation Ionic très imagée à l'adresse : [https://ionicframework.com/docs/intro/deploying/](https://ionicframework.com/docs/intro/deploying/) \(Voir aussi l'article [https://www.joshmorony.com/deploying-capacitor-applications-to-ios-development-distribution/](https://www.joshmorony.com/deploying-capacitor-applications-to-ios-development-distribution/)\)
 
 Il faut globalement un certain nombre d'étapes permettant la signature de votre application et son authentification en tant que produit apple.
 
@@ -80,7 +80,7 @@ Une fois la compilation terminée, téléchargez le fichier IPA.
 
 Si vous disposez d'un ordinateur Mac, un **ionic cordova run ios --device** devrait vous permettre de tester que la configuration s'est bien passée avant d'exporter votre application au format IPA.
 
-Pour plus d'informations sur les étapes annexes, n'hésitez pas à visite les pages suivantes : 
+Pour plus d'informations sur les étapes annexes, n'hésitez pas à visite les pages suivantes :
 
 * Packaging iOS : [https://ionicframework.com/docs/pro/package/ios.html](https://ionicframework.com/docs/pro/package/ios.html)
 * Build Ionic : [https://ionicframework.com/docs/cli/cordova/build/](https://ionicframework.com/docs/cli/cordova/build/)
