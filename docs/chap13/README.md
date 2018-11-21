@@ -36,6 +36,12 @@ Dans une application Ionic 3, on ne souciait pas vraiment de nos urls, tout se p
 
 Avec cette version 4, on retrouve un système de routage qui va nous permettre d'avoir de belles urls, d'y passer des paramètres et de les récupérer dans nos contrôleurs, comme on peut le retrouver dans la plupart des Framework du web. Très pratique quand on fait aussi du PWA. Ce système de routing[^1] est directement influencé par Angular qui dans sa dernière version  encourage le passage à ce nouveau type de navigation.
 
+## Cordova Vs Capacitor
+
+Dans cette nouvelle version du Framework, un fort accent est mis sur Capacitor qui a mon avis prendra définitivement la place de Cordova. Rappelons que Cordova permet la communication entre votre code JavaScript et les éléments du mobile \(caméra, contact, sms,...\), tout comme Capacitor qui a en plus l'avantage de vraiment se conformer aux API et standards actuels du web. Capacitor est un fils spirituel de Cordova qui a su incorporer en son sein ce qui a fait le succès de projet comme React Native et Turbolinks, deux projets reconnus pour leur rapidité d'exécution. 
+
+Étant donné que les plugins Cordova sont compatibles avec les plugins Capacitor, la transition devrait se faire sans trop de mal.
+
 ## Une documentation épurée
 
 Je trouvais déjà personnellement que la documentation Ionic était surement l'une des meilleures du marché, mais avec cette version 4, elle a été complètement repensée pour vous permettre d'être encore plus efficace dans vos développements.
