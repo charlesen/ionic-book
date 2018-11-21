@@ -28,7 +28,7 @@ new Vue({
 
 Une liberté dans le choix de son Framework certes, mais rien ne vous empêche de n'utiliser aucun framework. C'est un choix que l'on évite la plupart du temps de peur de ne devoir réinventer la roue, mais oui, vous êtes tout à fait libre d'utiliser ce que vous voulez avec Ionic et ça c'est une mini-révolution.
 
-En s'alignant sur les standards du Web, cette V4 beta permet au noyau du Framework Ionic de s’appuyer sur le modèle orienté composant, un standard pris en charge par tous les navigateurs modernes, plutôt que sur un modèle «_fait maison_». Cela implique donc un temps de chargement plus rapide, de meilleures performances et moins de code inutile pour prendre en compte tous les types de moteur de rendu différents \(WebKit ou Blink, Gecko,...\). Moins de patchs pour plus de performance.
+En s'alignant sur les standards du Web, cette V4 beta permet au noyau du Framework Ionic de s’appuyer sur le modèle orienté composant, un standard pris en charge par tous les navigateurs modernes, plutôt que sur un modèle «_fait maison»_. Cela implique donc un temps de chargement plus rapide, de meilleures performances et moins de code inutile pour prendre en compte tous les types de moteur de rendu différents \(WebKit ou Blink, Gecko,...\). Moins de patchs pour plus de performance.
 
 ## Système de routage
 
