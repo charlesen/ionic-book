@@ -4,7 +4,7 @@
 
 Au moment de la rédaction de cette page, Ionic est dans sa version 4 Beta.
 
-Cette version constitue une avancée majeure dans les capacités sous-jacentes du Framework mobile, en mettant l'accent notamment sur les performances, la compatibilité et l'extensibilité globale. Bien que la V4 s'intègre toujours profondément à Angular via le package **@ionic/angular**, elle est désormais ouverte aux autres framework JavaScript tels que Vue, React, Preact, etc...
+Cette version constitue une avancée majeure dans les capacités sous-jacentes du Framework mobile, en mettant l'accent notamment sur les performances, la compatibilité et l'extensibilité globale. Bien que la V4 s'intègre toujours profondément à Angular via le package **@ionic/angular**, elle est désormais ouverte aux autres framework JavaScript tels que Vue[^2], React, Preact, etc...
 
 _**Exemple avec VueJS**_
 
@@ -49,4 +49,6 @@ J'aime particulièrement la partie dédié au PWA qui a été améliorée avec u
 ![](/assets/ionic-v4_screen_pwa.png)
 
 [^1]: Angular Router : [https://angular.io/guide/router](https://angular.io/guide/router)
+
+[^2]: Ionic VueJS : [https://github.com/ionic-team/ionic/tree/master/vue](https://github.com/ionic-team/ionic/tree/master/vue)
 
