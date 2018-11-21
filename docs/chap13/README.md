@@ -26,9 +26,9 @@ new Vue({
 }).$mount('#app');
 ```
 
-Une liberté dans le choix de son Framework certes, mais rien ne vous empêche de n'utiliser aucun framework. C'est un choix que l'on évite la plupart du temps de peur de ne devoir réinventer la roue, mais oui, vous êtes tout à fait libre d'utiliser ce que vous voulez avec Ionic et ça c'est un mini-révolution.
+Une liberté dans le choix de son Framework certes, mais rien ne vous empêche de n'utiliser aucun framework. C'est un choix que l'on évite la plupart du temps de peur de ne devoir réinventer la roue, mais oui, vous êtes tout à fait libre d'utiliser ce que vous voulez avec Ionic et ça c'est une mini-révolution.
 
-En s'alignant sur les standards du Web, cette V4 beta permet au noyau du Framework Ionic de s’appuyer sur le modèle orienté composant, un standard pris en charge par tous les navigateurs modernes, plutôt que sur un modèle fait maison. Cela implique donc un temps de chargement plus rapide, de meilleures performances et moins de code inutile pour prendre en compte tous les types de moteur de rendu différents \(WebKit ou Blink, Gecko,...\). Moins de patchs pour plus de performance.
+En s'alignant sur les standards du Web, cette V4 beta permet au noyau du Framework Ionic de s’appuyer sur le modèle orienté composant, un standard pris en charge par tous les navigateurs modernes, plutôt que sur un modèle «_fait maison_». Cela implique donc un temps de chargement plus rapide, de meilleures performances et moins de code inutile pour prendre en compte tous les types de moteur de rendu différents \(WebKit ou Blink, Gecko,...\). Moins de patchs pour plus de performance.
 
 ## Système de routage
 
@@ -38,7 +38,7 @@ Avec cette version 4, on retrouve un système de routage qui va nous permettre d
 
 ## Cordova Vs Capacitor
 
-Dans cette nouvelle version du Framework, un fort accent est mis sur Capacitor qui a mon avis prendra définitivement la place de Cordova. Rappelons que Cordova permet la communication entre votre code JavaScript et les éléments du mobile \(caméra, contact, sms,...\), tout comme Capacitor qui a en plus l'avantage de vraiment se conformer aux API et standards actuels du web. Capacitor est un fils spirituel de Cordova qui a su incorporer en son sein ce qui a fait le succès de projet comme React Native et Turbolinks, deux projets reconnus pour leur rapidité d'exécution. 
+Dans cette nouvelle version du Framework, un fort accent est mis sur Capacitor qui a mon avis prendra définitivement la place de Cordova. Rappelons que Cordova permet la communication entre votre code JavaScript et les éléments du mobile \(caméra, contact, sms,...\), tout comme Capacitor qui a en plus l'avantage de vraiment se conformer aux API et standards actuels du web. Capacitor est un fils spirituel de Cordova qui a su incorporer en son sein ce qui a fait le succès de projet comme React Native et Turbolinks, deux projets reconnus pour leur rapidité d'exécution.
 
 Étant donné que les plugins Cordova sont compatibles avec les plugins Capacitor, la transition devrait se faire sans trop de mal.
 
