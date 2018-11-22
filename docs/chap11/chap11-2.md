@@ -22,6 +22,14 @@ $ ionic cordova build ios --prod
 
 ### Création d'un "Provisioning profile"
 
+#### En utilisant votre Apple ID
+
+1. Ouvrez les préférences Xcode \(Xcode &gt; Preferences…\)
+2. Cliquez sur l'onglet Accounts
+3. Connectez-vous si nécessaire avec vos identifiants Apple
+
+Une fois connecté, vous verrez s'afficher dans le tableau du bas _Votre Nom \(Personal Team\) _avec le rôle User.
+
 On va tout d'abord générer un certificat en local, en ligne de commande :
 
 ```
