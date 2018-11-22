@@ -10,7 +10,7 @@ Le PWA vient en quelque sorte corriger ces problèmes et bien d'autres, rencontr
 
 ## Ionic à l'assaut du PWA
 
-La société éditrice du Framework mobile n'a pas attendu pour s'attaquer à ce qui pourrait s'appararenter au futur du web et du mobile. Pour faire de votre application Ionic une PWA, il suffit d'éditer le fichier **src/index.html** et décommenter la ligne suivante :
+Le Framework Ionic n'a pas attendu pour s'attaquer à ce qui pourrait s'appararenter au futur du web et du mobile. Pour faire de votre application Ionic une PWA, rien de bien compliquer, car il suffit d'éditer le fichier **src/index.html** et décommenter la ligne suivante :
 
 ```js
 <!-- un-comment this code to enable service worker
@@ -61,10 +61,9 @@ self.toolbox.router.any('/*', self.toolbox.fastest);
 // for any other requests go to the network, cache,
 // and then only use that cached resource if your user goes offline
 self.toolbox.router.default = self.toolbox.networkFirst;
- 
 ```
 
-On peut ajuster les paramètres de notre PWA en éditant également le fichier **src/manifest.json** 
+On peut ajuster les paramètres de notre PWA en éditant également le fichier **src/manifest.json**
 
 ```js
 {
@@ -80,8 +79,16 @@ On peut ajuster les paramètres de notre PWA en éditant également le fichier *
   "background_color": "#df4932",
   "theme_color": "#df4932"
 }
-
 ```
 
+Ce format, qui n'est pas propre à Ionic, est celui utilisé dans toutes les PWA. C'est le manifeste[^1] de l'application. Voyons un peu ce qui signifie chaque option :
+
+* **name** : C'est le nom de votre application, celui qui apparaitre sous l'icone une fois installé sur votre téléphone \(Oui une PWA s'installe, mais beaucoup plus vite qu'une application classique\)
+* **short\_name** : ce nom remplacera la valeur du "name" uniquement si l'accueil de votre téléphone est bondée d'applications et donc ne dispose pas d'assez de place à l'écran.
+* **start\_url** : c'est le point d'entrée de votre PWA
+* display : permet de gérer l'affichage de l'application.
+
 Ionic est très impliqué dans le PWA, pressentant certainement une ruée vers cette technologie dans l'univers du mobile. D'ailleurs la société éditrrice du Framework a créé en l'espace d'un an deux projets pour faciliter la création de PWA : Stencil et Capacitor.
+
+[^1]: Web App manifest, Google Developer [https://developers.google.com/web/fundamentals/web-app-manifest/](https://developers.google.com/web/fundamentals/web-app-manifest/)
 
