@@ -37,14 +37,14 @@ La commande a généré un fichier duckcoin\_app.keystore à la racine du projet
 Pour créer un package Android prêt à la production, il vous suffit de saisir la commande suivante :
 
 ```bash
-$ ionic cordova build android --prod --release
+$ ionic cordova build android --release
 ```
 
 Cette commande va générer un package **.apk** : **platforms/android/build/outputs/apk/monProjet.apk**.
 
 il faut ensuite signer ce package :
 
-```
+```bash
 $ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore duckcoin_app.keystore monProjet.apk duckcoin_app
 ```
 
@@ -55,6 +55,22 @@ $ zipalign -v 4 monProjet.apk monProjetMini.apk
 ```
 
 Voilà. C'est ce fichier **monProjetMini.apk** que nous allons pouvons publier sur le store.
+
+Vous pouvez également créer un fichier bash et faire toutes les étapes plus rapidement. Sous Linux, créez un fichier **package.sh** contenant les lignes suivante
+
+```bash
+ionic cordova build android --release
+jarsigner -tsa http://timestamp.digicert.com -verbose -sigalg SHA1withRSA -digestalg SHA1 -storepass motDePasse -keystore duckcoin_app.keystore platforms/android/build/outputs/apk/android-release-unsigned.apk monAlias
+zipalign -v 4 platforms/android/build/outputs/apk/android-release-unsigned.apk monProjetMini.apk
+
+```
+
+Il vous suffit ensuite de rendre executable ce fichier et de lancer le script.
+
+```bash
+$ chmod u+x package.sh
+$ ./package.sh
+```
 
 ### Google Play Store
 
@@ -72,7 +88,7 @@ et ajoutez des captures d'écran dans les formats recommandés, avant de valider
 
 ![](/assets/playstore_4.png)
 
-
 Il faut ensuite aller dans l'onglet **"Versions de l'application"** et cliquez sur **"Gérer la production" &gt; "Créer une version"**. C'est ici que l'on va pouvoir uploader notre APK avant de le publier :
 
 ![](/assets/playstore_6.png)
+
