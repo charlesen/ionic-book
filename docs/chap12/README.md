@@ -10,5 +10,78 @@ Le PWA vient en quelque sorte corriger ces problèmes et bien d'autres, rencontr
 
 ## Ionic à l'assaut du PWA
 
-La société éditrice du Framework mobile n'a pas attendu pour s'attaquer à ce qui pourrait s'appararenter au futur du web et du mobile. Elle a créé en l'espace d'un an deux projets pour faciliter la création de PWA : Stencil et Capacitor.
+La société éditrice du Framework mobile n'a pas attendu pour s'attaquer à ce qui pourrait s'appararenter au futur du web et du mobile. Pour faire de votre application Ionic une PWA, il suffit d'éditer le fichier **src/index.html** et décommenter la ligne suivante :
+
+```js
+<!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+    }
+  </script>-->
+```
+
+Voilà. Votre application est désormais une PWA et rien ne vous empeche de la publier sur le web.
+
+Le code que nous avons décommenté fait appel à Service Worker, un ensemble de scripts que le navigateur lance en arrière plan et qui va nous permettre de mettre en cache des fichiers et donc de les rendre disponible hors connexion, de faire de la synchronisation de données ou encore des notifications push.
+
+Il est tout a fait possible de controler quels fichiers sera mis en cache en éditant le fichier **src/service-worker.js**
+
+```js
+/**
+ * Check out https://googlechromelabs.github.io/sw-toolbox/ for
+ * more info on how to use sw-toolbox to custom configure your service worker.
+ */
+
+
+'use strict';
+importScripts('./build/sw-toolbox.js');
+
+self.toolbox.options.cache = {
+  name: 'ionic-cache'
+};
+
+// pre-cache our key assets
+self.toolbox.precache(
+  [
+    './build/main.js',
+    './build/vendor.js',
+    './build/main.css',
+    './build/polyfills.js',
+    'index.html',
+    'manifest.json'
+  ]
+);
+
+// dynamically cache any other local assets
+self.toolbox.router.any('/*', self.toolbox.fastest);
+
+// for any other requests go to the network, cache,
+// and then only use that cached resource if your user goes offline
+self.toolbox.router.default = self.toolbox.networkFirst;
+ 
+```
+
+On peut ajuster les paramètres de notre PWA en éditant également le fichier **src/manifest.json** 
+
+```js
+{
+  "name": "Duckcoin",
+  "short_name": "DCK",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/imgs/logo.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#df4932",
+  "theme_color": "#df4932"
+}
+
+```
+
+Ionic est très impliqué dans le PWA, pressentant certainement une ruée vers cette technologie dans l'univers du mobile. D'ailleurs la société éditrrice du Framework a créé en l'espace d'un an deux projets pour faciliter la création de PWA : Stencil et Capacitor.
 
