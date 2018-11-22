@@ -14,8 +14,8 @@ Il faut globalement un certain nombre d'étapes permettant la signature de votre
 
 ### Création d'un package de production
 
-```
-> ionic cordova build ios --prod
+```bash
+$ ionic cordova build ios --prod
 ```
 
 ### Création d'un "Provisioning profile"
