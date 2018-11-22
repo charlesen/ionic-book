@@ -10,7 +10,7 @@ Tout comme Android, Apple requiert de signer votre application mobile et il nous
 
 Cependant, pour la publication sur l'iTunes Store, vous aurez besoin d'être affilié au programme de développeurs Apple coutant 99€ par an.
 
-La procédure est un peu moins évidente et je vous conseille la documentation Ionic très imagée à l'adresse : [https://ionicframework.com/docs/intro/deploying/](https://ionicframework.com/docs/intro/deploying/) \(Voir aussi l'article [https://www.joshmorony.com/deploying-capacitor-applications-to-ios-development-distribution/](https://www.joshmorony.com/deploying-capacitor-applications-to-ios-development-distribution/)\)
+La procédure est un peu moins évidente et je vous conseille la documentation Ionic très imagée à l'adresse : [https://ionicframework.com/docs/intro/deploying/](https://ionicframework.com/docs/intro/deploying/).
 
 Il faut globalement un certain nombre d'étapes permettant la signature de votre application et son authentification en tant que produit apple.
 
@@ -123,6 +123,7 @@ N'hésitez surtout à visitez la page [https://ionic.mobiletuto.com/chap11/](htt
 
 * iOS Platform Guide \(Cordova\) : [https://cordova.apache.org/docs/fr/8.x/guide/platforms/ios/index.ht](https://cordova.apache.org/docs/fr/8.x/guide/platforms/ios/index.html)
 * Distribute Your App \(Doc Apple Officielle\) : [https://help.apple.com/xcode/mac/current/\#/dev8b4250b57](https://help.apple.com/xcode/mac/current/#/dev8b4250b57)
+* Deploying Capacitor Applications to iOS development distribution [https://www.joshmorony.com/deploying-capacitor-applications-to-ios-development-distribution/](https://www.joshmorony.com/deploying-capacitor-applications-to-ios-development-distribution/)
 
 
 
