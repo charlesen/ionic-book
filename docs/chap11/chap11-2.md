@@ -78,7 +78,7 @@ Une fois la compilation terminée, téléchargez le fichier IPA.
 
 ![](/assets/ionic_build.png)
 
-Si vous disposez d'un ordinateur Mac, un **ionic cordova run ios --device** devrait vous permettre de tester que la configuration s'est bien passée avant d'exporter votre application au format IPA.
+Si vous disposez d'un ordinateur Mac, un **ionic cordova run ios --device** devrait vous permettre de tester votre application depuis votre smartphone et s'assurer que la configuration s'est bien passée avant d'exporter votre application au format IPA.
 
 Pour plus d'informations sur les étapes annexes, n'hésitez pas à visite les pages suivantes :
 
