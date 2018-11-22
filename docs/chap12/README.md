@@ -85,8 +85,11 @@ Ce format, qui n'est pas propre à Ionic, est celui utilisé dans toutes les PWA
 
 * **name** : C'est le nom de votre application, celui qui apparaitre sous l'icone une fois installé sur votre téléphone \(Oui une PWA s'installe, mais beaucoup plus vite qu'une application classique\)
 * **short\_name** : ce nom remplacera la valeur du "name" uniquement si l'accueil de votre téléphone est bondée d'applications et donc ne dispose pas d'assez de place à l'écran.
-* **start\_url** : c'est le point d'entrée de votre PWA
-* display : permet de gérer l'affichage de l'application.
+* **start\_url** : c'est le point d'entrée de votre PWA. On aurait pu très bien mettre un fichier PHP ou autre.
+* display : permet de gérer l'affichage de l'application. le mode _Standalone_ permet d'avoir l'impression en ouvrant l'application d'être vraiment dans une application native. D'autres options existent : _fullscreen_, _browser_ \(affichage en mode page web classique\)
+* **icons** : liste d'icones pour chaque taille d'écran \(smartphone, tablette,...\)
+* **background\_color** : couleur d'arrière plan
+* **theme\_color** : couleur de la barre d'outil de votre appareil mobile.
 
 Ionic est très impliqué dans le PWA, pressentant certainement une ruée vers cette technologie dans l'univers du mobile. D'ailleurs la société éditrrice du Framework a créé en l'espace d'un an deux projets pour faciliter la création de PWA : Stencil et Capacitor.
 
