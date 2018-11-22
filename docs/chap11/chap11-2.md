@@ -86,7 +86,7 @@ Puis éditez le formulaire qui s'affichera en ajoutant le fichier **.p12** dans 
 
 > **P.S. :** il est également possible d'importer votre fichier **keystore** Android dans la section correspondante.
 
-### Création d'un package IPA \(iOS App Store Package\) 
+### Création d'un package IPA \(iOS App Store Package\)
 
 #### Depuis Xcode
 
@@ -118,4 +118,11 @@ Dans la section **"Mes apps"**, ajouter une nouvelle application en cliquant sur
 Complétez les informations liées à l'application \(nom, description,..\), puis dans la partie App version, ajoutez des images et surtout importez votre fichier compilé.
 
 N'hésitez surtout à visitez la page [https://ionic.mobiletuto.com/chap11/](https://ionic.mobiletuto.com/chap11/) et à y poser vos questions, si vous rencontrez des difficultés dans la publication
+
+### Annexes :
+
+* iOS Platform Guide \(Cordova\) : [https://cordova.apache.org/docs/fr/8.x/guide/platforms/ios/index.ht](https://cordova.apache.org/docs/fr/8.x/guide/platforms/ios/index.html)
+* Distribute Your App \(Doc Apple Officielle\) : [https://help.apple.com/xcode/mac/current/\#/dev8b4250b57](https://help.apple.com/xcode/mac/current/#/dev8b4250b57)
+
+
 
