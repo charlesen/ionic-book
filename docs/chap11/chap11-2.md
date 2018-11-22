@@ -4,9 +4,9 @@
 
 * Xcode 7 ou supérieur
 * iOS 9
-* Compte Développeur Apple : [https://developer.apple.com/](https://developer.apple.com/).
+* Un identifiant Apple \([https://appleid.apple.com/](https://appleid.apple.com/)\) ou un compte Développeur payant \([https://developer.apple.com/](https://developer.apple.com/)\).
 
-Tout comme Android, Apple requiert de signer votre application mobile et il nous faudra donc générer un provisioning profile. La bonne nouvelle est que depuis iOS 9, il est tout à fait possible de développer, puis tester son application sans disposer d'un compte développeur payant. 
+Tout comme Android, Apple requiert de signer votre application mobile et il nous faudra donc générer un provisioning profile. La bonne nouvelle est que depuis iOS 9, il est tout à fait possible de développer, puis tester son application sans disposer d'un compte développeur payant.
 
 Cependant, pour la publication sur l'iTunes Store, vous aurez besoin d'être affilié au programme de développeurs Apple coutant 99€ par an.
 
