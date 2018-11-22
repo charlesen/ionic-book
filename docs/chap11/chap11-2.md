@@ -6,7 +6,9 @@
 * iOS 9
 * Compte Développeur Apple : [https://developer.apple.com/](https://developer.apple.com/).
 
-Tout comme Android, Apple requiert un compte développeur pour pouvoir publier une application mobile.
+Tout comme Android, Apple requiert de signer votre application mobile et il nous faudra donc générer un provisioning profile. La bonne nouvelle est que depuis iOS 9, il est tout à fait possible de développer, puis tester son application sans disposer d'un compte développeur payant. 
+
+Cependant, pour la publication sur l'iTunes Store, vous aurez besoin d'être affilié au programme de développeurs Apple coutant 99€ par an.
 
 La procédure est un peu moins évidente et je vous conseille la documentation Ionic très imagée à l'adresse : [https://ionicframework.com/docs/intro/deploying/](https://ionicframework.com/docs/intro/deploying/) \(Voir aussi l'article [https://www.joshmorony.com/deploying-capacitor-applications-to-ios-development-distribution/](https://www.joshmorony.com/deploying-capacitor-applications-to-ios-development-distribution/)\)
 
