@@ -26,9 +26,13 @@ $ ionic cordova build ios --prod
 
 1. Ouvrez les préférences Xcode \(Xcode &gt; Preferences…\)
 2. Cliquez sur l'onglet Accounts
-3. Connectez-vous si nécessaire avec vos identifiants Apple
+3. Connectez-vous si nécessaire avec vos identifiants Apple en faisant _**+ &gt; Add Apple ID**_…
 
-Une fois connecté, vous verrez s'afficher dans le tableau du bas _Votre Nom \(Personal Team\) _avec le rôle User.
+Une fois connecté, vous verrez s'afficher dans le tableau du bas \_Votre Nom \(Personal Team\) \_avec le rôle User.
+
+#### En utilisant votre compte développeur \(nécessaire pour la publication\)
+
+La procédure est un peu plus complexe. N'hésitez pas à prendre connaissance des étapes sur le site d'Apple : [https://help.apple.com/xcode/mac/current/\#/dev60b6fbbc7](https://help.apple.com/xcode/mac/current/#/dev60b6fbbc7)
 
 On va tout d'abord générer un certificat en local, en ligne de commande :
 
@@ -81,6 +85,14 @@ Depuis le menu Settings &gt; Certificates, ajoutez un nouveau profil :
 Puis éditez le formulaire qui s'affichera en ajoutant le fichier **.p12** dans la partie **App Development/Store Certificate**, le fichier **.mobileprovision** dans la partie **Provisioning Profile**. Saisissez un mot de passe, si vous l'avez fait en créant votre certificat en local.
 
 > **P.S. :** il est également possible d'importer votre fichier **keystore** Android dans la section correspondante.
+
+### Création d'un package IPA \(iOS App Store Package\) 
+
+#### Depuis Xcode
+
+Ouvrez votre projet depuis Xcode en cliquant sur le fichier **platform/ios/monProjet.xcodeproj**. Sélectionnez votre projet dans Xcode et dans l'onglet général
+
+#### Depuis Ionic PRO
 
 Dans Ionic PRO, allez dans **Code &gt; Builds**, puis cliquez sur le bouton en forme de package à droite \(celui du milieu sur l'image ci-dessous\) pour compiler votre projet.
 
