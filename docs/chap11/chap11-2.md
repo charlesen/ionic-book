@@ -94,11 +94,19 @@ Ouvrez votre projet depuis Xcode en cliquant sur le fichier **platform/ios/monPr
 
 ![](/assets/ionic_profile_prov_1.png)
 
-Une fois la sélection faite, vous ne devriez plus avoir le message d'erreur en rouge. 
+Une fois la sélection faite, vous ne devriez plus avoir le message d'erreur en rouge.
 
 ![](/assets/ionic_profile_prov_2.png)
 
 Vous êtes prêt à compiler votre Projet.
+
+Toujours dans Xcode, non loin du bouton de compilation \(icon play\) , changez le device cible en **Generic iOS Device**. Une fois que cela a été fait, faites **Product &gt; Archive**. Cette étape va simplement créer votre application en package interpretable par les appareils Apple. Suivez les étapes dans la popup qui s'ouvre en sélectionnant l'option **Automatically manage signing **\(Si vous ne disposez pas encore d''un Certificat, l'outil vous aidera à le faire\).
+
+![](/assets/ios_distribution_001.png)
+
+Une fois l'Upload effectué, vous devriez voir s'afficher cette popup avec un message le message **"Upload Successful"**.
+
+![](/assets/ios_distribution_002.png) 
 
 #### Depuis Ionic PRO
 
@@ -123,7 +131,11 @@ Dans la section **"Mes apps"**, ajouter une nouvelle application en cliquant sur
 
 ![](/assets/itunes_connect_1.png)
 
-Complétez les informations liées à l'application \(nom, description,..\), puis dans la partie App version, ajoutez des images et surtout importez votre fichier compilé.
+Complétez les informations liées à l'application \(nom, description,..\), puis dans la partie App version, ajoutez des images et surtout importez votre fichier compilé en allant dans la section **"Builds"**.
+
+![](/assets/ios_distribution_003.png)
+
+Dès que vous êtes prêt, cliquez sur **Submit for Review**, et priez que le technicien Apple qui s'occupera de valider votre application ne sois pas trop dur avec vous.
 
 N'hésitez surtout à visitez la page [https://ionic.mobiletuto.com/chap11/](https://ionic.mobiletuto.com/chap11/) et à y poser vos questions, si vous rencontrez des difficultés dans la publication
 
