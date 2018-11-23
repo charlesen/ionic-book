@@ -128,8 +128,6 @@ $ cp -R ../duckcoin/src/pages/* src/app/
 | :---: | :---: |
 | ![](/assets/ionic_v3.png) | ![](/assets/ionic_v4.png) |
 
-
-
 ### Annexes :
 
 * _My Method for Upgrading from Ionic 3 to Ionic 4_, par Josh Morony [https://www.joshmorony.com/my-method-for-upgrading-from-ionic-3-to-ionic-4/](https://www.joshmorony.com/my-method-for-upgrading-from-ionic-3-to-ionic-4/)

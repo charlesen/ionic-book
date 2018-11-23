@@ -91,6 +91,12 @@ Ce format, qui n'est pas propre à Ionic, est celui utilisé dans toutes les PWA
 * **background\_color** : couleur d'arrière plan
 * **theme\_color** : couleur de la barre d'outil de votre appareil mobile.
 
+Il ne vous reste plus qu'à compiler le tout, et à faire pointer votre nom de domaine sur le dossier www contenant les fichiers sources de votre PWA 
+
+```bash
+$ npm run ionic:build -- --prod 
+```
+
 Ionic est très impliqué dans le PWA, pressentant certainement une ruée vers cette technologie dans l'univers du mobile. D'ailleurs la société éditrrice du Framework a créé en l'espace d'un an deux projets pour faciliter la création de PWA : Stencil et Capacitor.
 
 [^1]: Web App manifest, Google Developer [https://developers.google.com/web/fundamentals/web-app-manifest/](https://developers.google.com/web/fundamentals/web-app-manifest/)

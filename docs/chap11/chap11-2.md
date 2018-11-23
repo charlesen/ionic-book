@@ -90,7 +90,15 @@ Puis éditez le formulaire qui s'affichera en ajoutant le fichier **.p12** dans 
 
 #### Depuis Xcode
 
-Ouvrez votre projet depuis Xcode en cliquant sur le fichier **platform/ios/monProjet.xcodeproj**. Sélectionnez votre projet dans Xcode et dans l'onglet général
+Ouvrez votre projet depuis Xcode en cliquant sur le fichier **platform/ios/monProjet.xcodeproj**. Sélectionnez votre projet dans Xcode et dans l'onglet général, catégorie **Signing**, remplacez la **Team** par celle que vous avez créée précédemment.
+
+![](/assets/ionic_profile_prov_1.png)
+
+Une fois la sélection faite, vous ne devriez plus avoir le message d'erreur en rouge. 
+
+![](/assets/ionic_profile_prov_2.png)
+
+Vous êtes prêt à compiler votre Projet.
 
 #### Depuis Ionic PRO
 
