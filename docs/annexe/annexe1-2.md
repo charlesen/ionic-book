@@ -12,7 +12,7 @@ Vous trouverez dans cet annexe tout un ensemble de bugs couramment rencontrés, 
 
 #### **Solution**
 
-**\(**[**https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3**](https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3)**\)                                                        
+**\(**[**https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3**](https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3)**\)                                                          
 **
 
 dans le fichier index.html, ajouter le fichier **build/vendor.js**:
@@ -71,15 +71,15 @@ $ npm install @ionic/app-scripts@latest --save-dev
 
 ### **Problème : Error: ENOENT**
 
-**no such file or directory, open \*www/build/0.main.js.map in undefined at line undefined, col undefined, pos undefined at BuildError.Error \(native\)                                                        
+**no such file or directory, open \*www/build/0.main.js.map in undefined at line undefined, col undefined, pos undefined at BuildError.Error \(native\)                                                          
 **
 
-**Solution :                                                        
+**Solution :                                                          
 **Ce bug apparait quand vous souhaitez livrer votre application en prod avec la commande ionic package build…
 
 Le problème vient de source MAP, utile en developpement, mais qu’il faut désactiver lorsque l’on souhaite passer en prod
 
-Dans le fichier **package.json**, il faut supprimer la clé : **ionic\_generate\_source\_map                                                        
+Dans le fichier **package.json**, il faut supprimer la clé : **ionic\_generate\_source\_map                                                          
 **
 
 ### **Problème : TypeError: Cannot read property 'substr' of undefined**
@@ -144,7 +144,7 @@ please update the directory permissions.
 
 #### **Solution**
 
-Le problème apparait lorsque vous souhaitez créer votre paquet Android avec Ionic update. Pour le résoudre, passer à une version inférieur d’Android ou supérieur. La plupart il s’agit de passer à une version inférieur \(Modifier les fichiers **package.json** et **config.xml**\). Ex : 6.2.3 vers 6.2.0.**                                                        
+Le problème apparait lorsque vous souhaitez créer votre paquet Android avec Ionic update. Pour le résoudre, passer à une version inférieur d’Android ou supérieur. La plupart il s’agit de passer à une version inférieur \(Modifier les fichiers **package.json** et **config.xml**\). Ex : 6.2.3 vers 6.2.0.**                                                          
 **
 
 #### **Superposition de la barre d’état avec l'entête de l’application**
@@ -527,11 +527,51 @@ Puis recommencez l'action qui a échoué.
 
 Ce bug apparait le plus souvent moment de publier votre application via l'Application Loader sous XCode. Il signale l'absence d'icone dans votre application.
 
-### Solution
+### Solution 1 : vous n'avez pas d'icône pour la cible \(iPhone,...\)
 
 * Ouvrez votre application avec XCode
 * Allez dans Assets.xcassets 
 * Glisser déposer votre icone 1024x1024px à l'emplacement indiquant un point d'exclamation :
+
+
+
+### Solution 2 : vous n'avez pas d'icône pour la cible \(Apple Watch,...\)
+
+* Ouvrez votre application avec XCode
+* Allez dans Assets.xcassets 
+* Faire un clic-droit pour supprimer l'élement \(_**Remove selected**_...\)
+
+
+
+## this app has crashed because it attempted to access privacy-sensitive info.plist nsphotolibrary addusage
+
+### Détails
+
+> This app has crashed because it attempted to access privacy-sensitive data without a usage description. The app's Info.plist must contain an NSPhotoLibraryAddUsageDescription key with a string value explaining to the user how the app uses this data.
+
+Le bug apparait pour les version d'iOS supérieur à 10 lorsque vous utilisez par exemple des éléments comme la Caméra pour prendre des photos, les récupérer depuis la galerie ou tout simplement les sauvegarder dans le téléphone.
+
+### Solution
+
+Editez votre fichier **config.xml** en rajoutant les éléments suivants : 
+
+```js
+ <platform name="ios">            
+
+            <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+              <string>MonApplication souhaiterait accéder à la caméra</string>
+            </edit-config>
+            
+            <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+              <string>MonApplication souhaiterait accéder à la galerie</string>
+            </edit-config>
+            
+            <edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
+              <string>MonApplication souhaiterait sauvegarder des photos dans la galerie</string>
+            </edit-config>
+            ...
+</platform>
+```
 
 
 
