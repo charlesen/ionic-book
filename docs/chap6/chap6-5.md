@@ -12,7 +12,7 @@ if(une_conditon) {
 
 Et un switch-case :
 
-```
+```js
 switch(meteo) {
    case 'soleil': {
       //Il fait beau
