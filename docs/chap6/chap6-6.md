@@ -32,7 +32,7 @@ Que l'on peut ensuite appeler n'importe où, depuis la page d'accueil par exempl
 
 **src/pages/home/home.ts**
 
-```
+```js
 // config
 import { Config } from '../../config/config';
 ```
