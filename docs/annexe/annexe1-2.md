@@ -12,7 +12,7 @@ Vous trouverez dans cet annexe tout un ensemble de bugs couramment rencontrés, 
 
 #### **Solution**
 
-**\(**[**https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3**](https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3)**\)                                                                  
+**\(**[**https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3**](https://forum.ionicframework.com/t/webpackjsonp-not-found-when-running-ionic-starter-aws/97458/3)**\)                                                                    
 **
 
 dans le fichier index.html, ajouter le fichier **build/vendor.js**:
@@ -71,15 +71,15 @@ $ npm install @ionic/app-scripts@latest --save-dev
 
 ### **Problème : Error: ENOENT**
 
-**no such file or directory, open \*www/build/0.main.js.map in undefined at line undefined, col undefined, pos undefined at BuildError.Error \(native\)                                                                  
+**no such file or directory, open \*www/build/0.main.js.map in undefined at line undefined, col undefined, pos undefined at BuildError.Error \(native\)                                                                    
 **
 
-**Solution :                                                                  
+**Solution :                                                                    
 **Ce bug apparait quand vous souhaitez livrer votre application en prod avec la commande ionic package build…
 
 Le problème vient de source MAP, utile en developpement, mais qu’il faut désactiver lorsque l’on souhaite passer en prod
 
-Dans le fichier **package.json**, il faut supprimer la clé : **ionic\_generate\_source\_map                                                                  
+Dans le fichier **package.json**, il faut supprimer la clé : **ionic\_generate\_source\_map                                                                    
 **
 
 ### **Problème : TypeError: Cannot read property 'substr' of undefined**
@@ -144,7 +144,7 @@ please update the directory permissions.
 
 #### **Solution**
 
-Le problème apparait lorsque vous souhaitez créer votre paquet Android avec Ionic update. Pour le résoudre, passer à une version inférieur d’Android ou supérieur. La plupart il s’agit de passer à une version inférieur \(Modifier les fichiers **package.json** et **config.xml**\). Ex : 6.2.3 vers 6.2.0.**                                                                  
+Le problème apparait lorsque vous souhaitez créer votre paquet Android avec Ionic update. Pour le résoudre, passer à une version inférieur d’Android ou supérieur. La plupart il s’agit de passer à une version inférieur \(Modifier les fichiers **package.json** et **config.xml**\). Ex : 6.2.3 vers 6.2.0.**                                                                    
 **
 
 #### **Superposition de la barre d’état avec l'entête de l’application**
@@ -599,4 +599,37 @@ ou encore celle-ci sous Windows :
 ```
 
 Si vous préférez utiliser Android Studio, il vous faudra aller dans le SDK manager, sélectionner le SDK indiqué et si nécessaire l'installer et accepter la licence.
+
+
+
+## Failed to install 'cordova-sqlite-storage'
+
+### Détails
+
+_**CordovaError: Using "requireCordovaModule" to load non-cordova module "q" is not supported. Instead, add this module to your dependencies and use regular "require" to load it.   at Context.requireCordovaModule**_
+
+Impossible d'installer le plugin** cordova-sqlite-storage**. D'autres plugins sont également concernés par cette erreur. 
+
+Le bug apparait à partir de la version 9 de Cordova. 
+
+### Solution
+
+Deux solutions existent :
+
+* Passer à une version inférieur de cordova cli \(si vous possédez la version 9\)
+
+```bash
+$ npm uninstall -g cordova
+$ npm install -g cordova@8.1.2
+```
+
+* Faire évoluer la version du plugin concerné par le bug : ici il s'agira d'upgrader Cordova sqlite storage. La version 3.0.0 devrait faire l'affaire, mais une version supérieure marcherait aussi.
+
+```bash
+$ ionic cordova plugin add cordova-sqlite-storage@3.0.0 --save
+```
+
+L'une ou l'autre de ces solutions devrait corriger le problème.
+
+
 
