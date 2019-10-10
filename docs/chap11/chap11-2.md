@@ -10,7 +10,7 @@ Tout comme Android, Apple requiert de signer votre application mobile et il nous
 
 Cependant, pour la publication sur l'iTunes Store, vous aurez besoin d'être affilié au programme de développeurs Apple coutant 99€ par an.
 
-La procédure est un peu moins évidente et je vous conseille la documentation Ionic très imagée à l'adresse : [https://ionicframework.com/docs/intro/deploying/](https://ionicframework.com/docs/intro/deploying/) \(Voir aussi l'article [https://www.joshmorony.com/deploying-capacitor-applications-to-ios-development-distribution/](https://www.joshmorony.com/deploying-capacitor-applications-to-ios-development-distribution/)\)
+La procédure est un peu moins évidente et je vous conseille la documentation Ionic très imagée à l'adresse : [https://ionicframework.com/docs/intro/deploying/](https://ionicframework.com/docs/intro/deploying/).
 
 Il faut globalement un certain nombre d'étapes permettant la signature de votre application et son authentification en tant que produit apple.
 
@@ -90,7 +90,23 @@ Puis éditez le formulaire qui s'affichera en ajoutant le fichier **.p12** dans 
 
 #### Depuis Xcode
 
-Ouvrez votre projet depuis Xcode en cliquant sur le fichier **platform/ios/monProjet.xcodeproj**. Sélectionnez votre projet dans Xcode et dans l'onglet général
+Ouvrez votre projet depuis Xcode en cliquant sur le fichier **platform/ios/monProjet.xcodeproj**. Sélectionnez votre projet dans Xcode et dans l'onglet général, catégorie **Signing**, remplacez la **Team** par celle que vous avez créée précédemment.
+
+![](/assets/ionic_profile_prov_1.png)
+
+Une fois la sélection faite, vous ne devriez plus avoir le message d'erreur en rouge.
+
+![](/assets/ionic_profile_prov_2.png)
+
+Vous êtes prêt à compiler votre Projet.
+
+Toujours dans Xcode, non loin du bouton de compilation \(icon play\) , changez le device cible en **Generic iOS Device**. Une fois que cela a été fait, faites **Product &gt; Archive**. Cette étape va simplement créer votre application en package interpretable par les appareils Apple. Suivez les étapes dans la popup qui s'ouvre en sélectionnant l'option **Automatically manage signing **\(Si vous ne disposez pas encore d''un Certificat, l'outil vous aidera à le faire\).
+
+![](/assets/ios_distribution_001.png)
+
+Une fois l'Upload effectué, vous devriez voir s'afficher cette popup avec un message le message **"Upload Successful"**.
+
+![](/assets/ios_distribution_002.png) 
 
 #### Depuis Ionic PRO
 
@@ -115,7 +131,11 @@ Dans la section **"Mes apps"**, ajouter une nouvelle application en cliquant sur
 
 ![](/assets/itunes_connect_1.png)
 
-Complétez les informations liées à l'application \(nom, description,..\), puis dans la partie App version, ajoutez des images et surtout importez votre fichier compilé.
+Complétez les informations liées à l'application \(nom, description,..\), puis dans la partie App version, ajoutez des images et surtout importez votre fichier compilé en allant dans la section **"Builds"**.
+
+![](/assets/ios_distribution_003.png)
+
+Dès que vous êtes prêt, cliquez sur **Submit for Review**, et priez que le technicien Apple qui s'occupera de valider votre application ne sois pas trop dur avec vous.
 
 N'hésitez surtout à visitez la page [https://ionic.mobiletuto.com/chap11/](https://ionic.mobiletuto.com/chap11/) et à y poser vos questions, si vous rencontrez des difficultés dans la publication
 
@@ -123,6 +143,7 @@ N'hésitez surtout à visitez la page [https://ionic.mobiletuto.com/chap11/](htt
 
 * iOS Platform Guide \(Cordova\) : [https://cordova.apache.org/docs/fr/8.x/guide/platforms/ios/index.ht](https://cordova.apache.org/docs/fr/8.x/guide/platforms/ios/index.html)
 * Distribute Your App \(Doc Apple Officielle\) : [https://help.apple.com/xcode/mac/current/\#/dev8b4250b57](https://help.apple.com/xcode/mac/current/#/dev8b4250b57)
+* Deploying Capacitor Applications to iOS development distribution [https://www.joshmorony.com/deploying-capacitor-applications-to-ios-development-distribution/](https://www.joshmorony.com/deploying-capacitor-applications-to-ios-development-distribution/)
 
 
 
