@@ -8,11 +8,11 @@
       "shortName": "ionic-edounze-com"
     },
     "sitemap": {
-      "hostname": "https://ionic.mobiletuto.com"
+      "hostname": "https://ionic.mobiletuto.com/v3"
     }
   },
   "isbn": "9781980971207",
-  "title": "Développement d'applications mobiles avec Ionic",
+  "title": "Développement d'applications mobiles avec Ionic 3",
   "language": "fr",
   "styles": {
     "website": "./styles/website.css",

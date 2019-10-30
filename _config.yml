@@ -1,6 +1,6 @@
 theme: jekyll-theme-architect
-title: Développement d'applications mobiles avec le Framework Ionic
-description : Créez rapidement des applications mobiles multiplateformes, robustes et intuitives
+title: Développement d'applications mobiles avec Ionic 3
+description : Créez efficacement des applications mobiles multiplateformes avec Angular, ReactJS ou VueJS
 paginate: 5
 
 plugins:
